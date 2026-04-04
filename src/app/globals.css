@@ -1,0 +1,340 @@
+@import "tailwindcss";
+
+/* ─── Tailwind v4 dark mode variant ─────────────────────────────── */
+/* Enables dark: prefix when <html> carries the .dark class          */
+@variant dark (&:where(.dark, .dark *));
+
+/* ─── Design tokens ─────────────────────────────────────────────── */
+:root {
+  /* Semantic tokens used by Tailwind components */
+  --c-page:    #F7F5F2;   /* warm parchment */
+  --c-card:    #ffffff;
+  --c-heading: #1F2A44;   /* dark navy */
+  --c-mid:     #5a5a5a;   /* medium body text */
+  --c-muted:   #7A7A7A;   /* muted / secondary text */
+  --c-border:  #d6c9b8;
+
+  /* Legacy vars used by CSS classes below */
+  --bg:          #F7F5F2;
+  --surface:     #ffffff;
+  --primary:     #5F7A61;
+  --secondary:   #1F2A44;
+  --accent:      #D6A75E;
+  --text-dark:   #2E2E2E;
+  --text-light:  #7A7A7A;
+  --border:      #d6c9b8;
+  --accent-soft: rgba(214, 167, 94, 0.14);
+  --shadow:      0 14px 50px rgba(31, 42, 68, 0.08);
+}
+
+/* ─── Dark mode token overrides ─────────────────────────────────── */
+html.dark {
+  color-scheme: dark;
+
+  --c-page:    #131411;   /* warm charcoal */
+  --c-card:    #1c1e1b;   /* dark surface */
+  --c-heading: #dddbd6;   /* warm off-white */
+  --c-mid:     #9e9c99;
+  --c-muted:   #666664;
+  --c-border:  #2d2f2c;
+
+  --bg:          #131411;
+  --surface:     #1c1e1b;
+  --primary:     #7aab7c;
+  --secondary:   #dddbd6;
+  --accent:      #c99a52;
+  --text-dark:   #d0cec9;
+  --text-light:  #666664;
+  --border:      #2d2f2c;
+  --accent-soft: rgba(122, 171, 124, 0.10);
+  --shadow:      0 14px 50px rgba(0, 0, 0, 0.30);
+}
+
+/* ─── Base reset ────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  font-family: "Inter", "Noto Sans", system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ─── Typography defaults ───────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--secondary);
+  margin: 0 0 0.5em;
+}
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+blockquote {
+  margin: 1.2rem 0 0;
+  border-left: 2px solid var(--primary);
+  padding-left: 1.1rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
+blockquote footer {
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+  font-style: normal;
+  color: #4b4a48;
+}
+
+html.dark blockquote footer {
+  color: #7a7875;
+}
+
+/* ─── Spacing system ────────────────────────────────────────────── */
+.section {
+  padding: 5rem 0;
+}
+
+.section + .section {
+  border-top: 1px solid var(--border);
+}
+
+.prose-col {
+  max-width: 65ch;
+  margin-inline: auto;
+}
+
+/* ─── Card ──────────────────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--secondary);
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-light);
+}
+
+.cards-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  margin-top: 1.4rem;
+}
+
+/* ─── Practice list ─────────────────────────────────────────────── */
+.practice-list {
+  list-style: none;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.85rem;
+}
+
+.practice-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 1rem 1.2rem;
+  color: var(--text-light);
+}
+
+.practice-list strong {
+  color: var(--text-dark);
+}
+
+/* ─── Forms ─────────────────────────────────────────────────────── */
+.contact-form {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.2rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 0.65rem;
+  background: var(--surface);
+  color: var(--text-dark);
+  min-height: 2.5rem;
+  transition: border-color 0.2s, background-color 0.3s, color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-light);
+  opacity: 0.6;
+}
+
+.contact-form button[type="submit"] {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-form button[type="submit"]:hover {
+  filter: brightness(0.9);
+}
+
+.notice {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.notice.success { color: #2c6a43; }
+.notice.error   { color: #8a2e2e; }
+
+html.dark .notice.success { color: #6aab7c; }
+html.dark .notice.error   { color: #cc7070; }
+
+/* ─── Utility helpers ───────────────────────────────────────────── */
+.fine {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   DARK MODE GLOBAL OVERRIDES
+   These CSS attribute-selector rules handle dark mode for all
+   Tailwind arbitrary-value classes without touching component files.
+   Specificity is higher than Tailwind utility classes so no
+   !important is needed.
+   ───────────────────────────────────────────────────────────────── */
+
+/* Page / section backgrounds (warm parchment → warm charcoal) */
+html.dark [class*="bg-[#F7F5F2]"] {
+  background-color: #131411;
+}
+
+/* Surface / card backgrounds */
+html.dark [class*="bg-white"] {
+  background-color: #1c1e1b;
+}
+
+/*
+ * Exception: restore transparent white overlays used on dark sections
+ * (e.g. testimonial cards bg-white/[0.05] inside bg-[#1F2A44])
+ */
+html.dark .bg-\[\#1F2A44\] [class*="bg-white"],
+html.dark .bg-\[\#0f1724\] [class*="bg-white"] {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Heading / label text (dark navy → warm off-white) */
+html.dark [class*="text-[#1F2A44]"] {
+  color: #dddbd6;
+}
+
+/* Medium body text */
+html.dark [class*="text-[#5a5a5a]"] {
+  color: #9e9c99;
+}
+
+/* Subtle text tones */
+html.dark [class*="text-[#8e96a8]"] {
+  color: #b5b3ae;
+}
+html.dark [class*="text-[#c8cdd8]"] {
+  color: #d0cec9;
+}
+
+/* Muted / secondary text */
+html.dark [class*="text-[#7A7A7A]"] {
+  color: #666664;
+}
+
+/* Borders */
+html.dark [class*="border-[#d6c9b8]"] {
+  border-color: #2d2f2c;
+}
+
+/* Near-black text (#2E2E2E) used in body/legacy CSS */
+html.dark [class*="text-[#2E2E2E]"] {
+  color: #d0cec9;
+}
+
+/* Image placeholders — lighten the gradient slightly in dark mode */
+html.dark [class*="from-[#e8e4dc]"] {
+  --tw-gradient-from: #232520;
+}
+html.dark [class*="from-[#eae6de]"] {
+  --tw-gradient-from: #232520;
+}
+html.dark [class*="from-[#e4e0d8]"] {
+  --tw-gradient-from: #1f211e;
+}
+html.dark [class*="from-[#e8e4dc]"],
+html.dark [class*="via-[#ddd8cf]"],
+html.dark [class*="to-[#cec8be]"],
+html.dark [class*="to-[#c8c0b2]"],
+html.dark [class*="to-[#d4cfc7]"],
+html.dark [class*="via-[#d8d2c8]"],
+html.dark [class*="from-[#eae6de]"],
+html.dark [class*="to-[#d4cfc7]"],
+html.dark [class*="via-[#dcd7ce]"],
+html.dark [class*="to-[#d0cbbf]"] {
+  --tw-gradient-from: #1e201d;
+  --tw-gradient-via: #232520;
+  --tw-gradient-to:  #2a2c28;
+}
+
+/* ─── Reduced-motion ────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
