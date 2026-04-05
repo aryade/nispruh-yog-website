@@ -82,7 +82,7 @@ export default function Benefits() {
     <section
       id="benefits"
       aria-labelledby="benefits-heading"
-      className="py-24 bg-white border-t border-[var(--border-soft)]/50"
+      className="py-24 bg-gradient-to-b from-[var(--bg-secondary)]/30 to-transparent border-t border-[var(--border-soft)]/50"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -120,11 +120,11 @@ export default function Benefits() {
             <motion.li
               key={title}
               variants={CARD_VARIANTS}
-              className="group flex flex-col gap-5 rounded-2xl border border-[var(--border-soft)]/60 bg-[var(--bg-primary)]/60 p-7 transition-shadow duration-300 hover:shadow-[0_8px_32px_rgba(45,42,74,0.07)]"
+              className="group flex flex-col gap-5 rounded-2xl border border-[var(--border-soft)]/60 bg-gradient-to-br from-[var(--bg-secondary)]/50 to-[var(--bg-primary)]/30 p-7 transition-all duration-300 hover:shadow-[0_12px_40px_rgba(201,162,39,0.12)] hover:bg-gradient-to-br hover:from-[var(--bg-secondary)]/60 hover:to-[var(--bg-primary)]/40"
             >
               {/* Icon bubble */}
               <div
-                className="w-11 h-11 rounded-xl flex items-center justify-center bg-[var(--bg-accent)]/10 text-[var(--bg-accent)] transition-colors duration-300 group-hover:bg-[var(--bg-accent)]/18"
+                className="w-11 h-11 rounded-xl flex items-center justify-center bg-gradient-to-br from-[var(--bg-accent)]/15 to-[var(--bg-accent)]/8 text-[var(--bg-accent)] transition-all duration-300 group-hover:from-[var(--bg-accent)]/25 group-hover:to-[var(--bg-accent)]/15 group-hover:shadow-[0_4px_12px_rgba(201,162,39,0.2)]"
                 aria-hidden="true"
               >
                 {icon}

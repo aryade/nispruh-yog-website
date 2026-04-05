@@ -30,30 +30,30 @@ export function Hero() {
         className="pointer-events-none absolute inset-0 -z-10"
         aria-hidden="true"
       >
-        {/* Warm parchment base */}
+        {/* Soft rose base */}
         <div className="absolute inset-0 bg-[var(--bg-primary)]" />
-        {/* Soft sage bloom — upper left */}
+        {/* Rose bloom — upper left */}
         <div
-          className="absolute -top-32 -left-32 w-[55vw] h-[55vw] max-w-[680px] max-h-[680px] rounded-full opacity-40"
+          className="absolute -top-32 -left-32 w-[55vw] h-[55vw] max-w-[680px] max-h-[680px] rounded-full opacity-35"
           style={{
             background:
-              "radial-gradient(circle, rgba(201,162,39,0.18) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(230,230,250,0.4) 0%, transparent 70%)",
           }}
         />
-        {/* Warm amber wash — upper right */}
+        {/* Gold wash — upper right */}
         <div
-          className="absolute -top-16 right-0 w-[40vw] h-[40vw] max-w-[540px] max-h-[540px] rounded-full opacity-30"
+          className="absolute -top-16 right-0 w-[40vw] h-[40vw] max-w-[540px] max-h-[540px] rounded-full opacity-25"
           style={{
             background:
-              "radial-gradient(circle, rgba(201,162,39,0.22) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(201,162,39,0.15) 0%, transparent 70%)",
           }}
         />
-        {/* Deep navy undertone — bottom center */}
+        {/* Lavender undertone — bottom center */}
         <div
-          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70vw] h-[38vh] rounded-full opacity-[0.07]"
+          className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70vw] h-[38vh] rounded-full opacity-[0.06]"
           style={{
             background:
-              "radial-gradient(ellipse, rgba(45,42,74,1) 0%, transparent 70%)",
+              "radial-gradient(ellipse, rgba(230,230,250,0.5) 0%, transparent 70%)",
           }}
         />
       </motion.div>
@@ -99,7 +99,7 @@ export function Hero() {
         >
           <Link
             href="/practices"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[var(--bg-accent)] text-white text-[0.9rem] font-medium tracking-wide hover:bg-[#B8952D] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-[var(--bg-accent)] to-[#B88F1A] text-white text-[0.9rem] font-medium tracking-wide hover:shadow-lg hover:shadow-[rgba(201,162,39,0.3)] hover:-translate-y-0.5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2"
           >
             Begin Your Journey
             <svg
@@ -116,7 +116,7 @@ export function Hero() {
 
           <Link
             href="/about-kriya-yoga"
-            className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[var(--text-heading)]/70 hover:text-[var(--text-heading)] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+            className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[var(--bg-accent)] border-2 border-[var(--bg-accent)] hover:bg-[rgba(201,162,39,0.08)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60"
           >
             What is Kriya Yoga?
           </Link>

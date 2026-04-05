@@ -101,17 +101,17 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className={[
-                    "relative px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)]",
+                    "relative px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)]",
                     active
-                      ? "text-[var(--text-heading)]"
-                      : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)]",
+                      ? "text-[var(--text-heading)] dark:text-[var(--c-heading)]"
+                      : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)] hover:bg-[rgba(201,162,39,0.08)] dark:hover:bg-[rgba(212,181,80,0.06)]",
                   ].join(" ")}
                 >
                   {label}
                   {active && (
                     <motion.span
                       layoutId="nav-pill"
-                      className="absolute inset-0 rounded-full bg-[var(--bg-accent)]/15"
+                      className="absolute inset-0 rounded-full bg-gradient-to-r from-[rgba(201,162,39,0.2)] to-[rgba(201,162,39,0.08)] dark:from-[rgba(212,181,80,0.15)] dark:to-[rgba(212,181,80,0.05)]"
                       transition={{ type: "spring", stiffness: 340, damping: 36 }}
                     />
                   )}

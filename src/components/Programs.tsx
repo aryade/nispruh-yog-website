@@ -70,7 +70,7 @@ export default function Programs() {
     <section
       id="programs"
       aria-labelledby="programs-heading"
-      className="py-24 bg-[var(--bg-primary)] border-t border-[var(--border-soft)]/50"
+      className="py-24 bg-gradient-to-b from-transparent via-[var(--bg-secondary)]/20 to-[var(--bg-primary)]/40 border-t border-[var(--border-soft)]/50"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -114,13 +114,13 @@ export default function Programs() {
             <motion.article
               key={title}
               variants={CARD}
-              className="group relative flex flex-col rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(31,42,68,0.09)]"
+              className="group relative flex flex-col rounded-2xl border border-[var(--border-soft)]/60 bg-gradient-to-br from-white/80 to-[var(--bg-secondary)]/50 overflow-hidden transition-all duration-300 hover:shadow-[0_16px_48px_rgba(201,162,39,0.12)] hover:from-white hover:to-[var(--bg-secondary)]/60"
               aria-labelledby={`prog-${title.replace(/\s+/g, "-").toLowerCase()}`}
             >
               {/* Top accent stripe */}
               <div
-                className="h-[3px] w-full"
-                style={{ background: accent }}
+                className="h-[3px] w-full bg-gradient-to-r"
+                style={{ backgroundImage: `linear-gradient(90deg, ${accent}, ${accent}80)` }}
                 aria-hidden="true"
               />
 

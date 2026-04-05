@@ -98,7 +98,7 @@ export default function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-muted)] border border-white/10 hover:text-white hover:border-[var(--bg-accent)]/60 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+                className="w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-muted)] border border-[rgba(255,255,255,0.15)] hover:text-white hover:border-[var(--bg-accent)]/80 hover:bg-[rgba(201,162,39,0.08)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
               >
                 {icon}
               </a>
@@ -122,7 +122,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-[0.88rem] text-[var(--text-muted)] hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+                  className="text-[0.88rem] text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
                 >
                   {label}
                 </Link>
@@ -146,7 +146,7 @@ export default function Footer() {
             <li>
               <a
                 href="mailto:info@nispruhyog.com"
-                className="hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
                 info@nispruhyog.com
               </a>
@@ -154,7 +154,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/contact"
-                className="hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
                 Send a message
               </Link>
@@ -162,7 +162,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/courses-programs"
-                className="hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
                 Join a course
               </Link>
