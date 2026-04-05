@@ -42,10 +42,10 @@ interface Event {
 
 /* ── data ─────────────────────────────────────────────────────────── */
 const TYPE_COLOUR: Record<EventType, string> = {
-  Retreat:        "#1F2A44",
-  Workshop:       "#5F7A61",
-  Satsang:        "#D6A75E",
-  "Day Immersion": "#7A6A8A",
+  Retreat:        "var(--text-heading)",
+  Workshop:       "var(--bg-accent)",
+  Satsang:        "var(--bg-accent)",
+  "Day Immersion": "var(--bg-secondary)",
 };
 
 const EVENTS: Event[] = [
@@ -195,14 +195,14 @@ function SpotsBar({ left, total }: { left: number; total: number }) {
   const pct = Math.round(((total - left) / total) * 100);
   return (
     <div className="mt-1">
-      <div className="h-1 w-full rounded-full bg-[#d6c9b8]/50 overflow-hidden">
+      <div className="h-1 w-full rounded-full bg-[var(--border-soft)]/50 overflow-hidden">
         <div
-          className="h-full rounded-full bg-[#5F7A61]/50 transition-all duration-500"
+          className="h-full rounded-full bg-[var(--bg-accent)]/50 transition-all duration-500"
           style={{ width: `${pct}%` }}
           aria-hidden="true"
         />
       </div>
-      <p className="mt-1 text-[0.72rem] text-[#7A7A7A]">
+      <p className="mt-1 text-[0.72rem] text-[var(--text-muted)]">
         {left} {left === 1 ? "place" : "places"} remaining
       </p>
     </div>
@@ -220,8 +220,8 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
       className={[
         "rounded-2xl border overflow-hidden transition-shadow duration-300",
         isOpen
-          ? "border-[#d6c9b8]/60 bg-white hover:shadow-[0_10px_40px_rgba(31,42,68,0.08)]"
-          : "border-[#d6c9b8]/40 bg-[#F7F5F2]/60 opacity-70",
+          ? "border-[var(--border-soft)]/60 bg-white hover:shadow-[0_10px_40px_rgba(31,42,68,0.08)]"
+          : "border-[var(--border-soft)]/40 bg-[var(--bg-primary)]/60 opacity-70",
       ].join(" ")}
     >
       {/* Accent stripe */}
@@ -240,7 +240,7 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
               {event.type}
             </span>
             {event.past && (
-              <span className="text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-2.5 py-1 rounded-full text-[#7A7A7A] bg-[#d6c9b8]/40">
+              <span className="text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-2.5 py-1 rounded-full text-[var(--text-muted)] bg-[var(--border-soft)]/40">
                 Past event
               </span>
             )}
@@ -248,11 +248,11 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
 
           <h2
             id={`event-${event.id}-title`}
-            className="text-[1.1rem] font-semibold text-[#1F2A44] leading-snug mb-1"
+            className="text-[1.1rem] font-semibold text-[var(--text-heading)] leading-snug mb-1"
           >
             {event.title}
           </h2>
-          <p className="text-[0.85rem] text-[#7A7A7A] mb-5">{event.subtitle}</p>
+          <p className="text-[0.85rem] text-[var(--text-muted)] mb-5">{event.subtitle}</p>
 
           <p className="text-[0.9rem] leading-[1.8] text-[#5a5a5a] mb-6 max-w-[58ch]">
             {event.description}
@@ -261,7 +261,7 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
           {/* Highlights */}
           <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 gap-y-1.5 gap-x-6">
             {event.highlights.map((h) => (
-              <li key={h} className="flex items-start gap-2 text-[0.82rem] text-[#7A7A7A]">
+              <li key={h} className="flex items-start gap-2 text-[0.82rem] text-[var(--text-muted)]">
                 <span
                   className="mt-[0.35rem] w-1.5 h-1.5 rounded-full shrink-0"
                   style={{ background: accent }}
@@ -275,17 +275,17 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
 
         {/* ── Sidebar ──────────────────────────────────────────── */}
         <div
-          className="flex flex-col justify-between p-7 border-t lg:border-t-0 lg:border-l border-[#d6c9b8]/40"
+          className="flex flex-col justify-between p-7 border-t lg:border-t-0 lg:border-l border-[var(--border-soft)]/40"
           style={{ background: `${accent}07` }}
         >
           <dl className="flex flex-col gap-5 mb-8">
             {/* Date */}
             <div>
-              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[#7A7A7A]/60 mb-0.5">
+              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 mb-0.5">
                 Date
               </dt>
               <dd>
-                <time dateTime={event.dateISO} className="text-[0.9rem] font-semibold text-[#1F2A44]">
+                <time dateTime={event.dateISO} className="text-[0.9rem] font-semibold text-[var(--text-heading)]">
                   {event.dateLabel}
                 </time>
               </dd>
@@ -293,35 +293,35 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
 
             {/* Location */}
             <div>
-              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[#7A7A7A]/60 mb-0.5">
+              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 mb-0.5">
                 Location
               </dt>
               <dd>
-                <p className="text-[0.9rem] font-medium text-[#1F2A44]">{event.location}</p>
-                <p className="text-[0.78rem] text-[#7A7A7A] mt-0.5">{event.locationDetail}</p>
+                <p className="text-[0.9rem] font-medium text-[var(--text-heading)]">{event.location}</p>
+                <p className="text-[0.78rem] text-[var(--text-muted)] mt-0.5">{event.locationDetail}</p>
               </dd>
             </div>
 
             {/* Duration */}
             <div>
-              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[#7A7A7A]/60 mb-0.5">
+              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 mb-0.5">
                 Duration
               </dt>
-              <dd className="text-[0.9rem] font-medium text-[#1F2A44]">{event.duration}</dd>
+              <dd className="text-[0.9rem] font-medium text-[var(--text-heading)]">{event.duration}</dd>
             </div>
 
             {/* Price */}
             <div>
-              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[#7A7A7A]/60 mb-0.5">
+              <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 mb-0.5">
                 Investment
               </dt>
-              <dd className="text-[0.9rem] font-medium text-[#1F2A44]">{event.price}</dd>
+              <dd className="text-[0.9rem] font-medium text-[var(--text-heading)]">{event.price}</dd>
             </div>
 
             {/* Spots remaining */}
             {isOpen && event.spotsLeft !== null && (
               <div>
-                <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[#7A7A7A]/60 mb-0.5">
+                <dt className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 mb-0.5">
                   Availability
                 </dt>
                 <dd>
@@ -361,12 +361,12 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
 /* ── page ─────────────────────────────────────────────────────────── */
 export default function EventsClient() {
   return (
-    <div className="bg-[#F7F5F2]">
+    <div className="bg-[var(--bg-primary)]">
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section
         aria-labelledby="events-heading"
-        className="relative pt-20 pb-24 overflow-hidden border-b border-[#d6c9b8]/50"
+        className="relative pt-20 pb-24 overflow-hidden border-b border-[var(--border-soft)]/50"
       >
         <div className="pointer-events-none absolute inset-0" aria-hidden="true">
           <div className="absolute -top-20 -right-20 w-[50vw] h-[50vw] max-w-[580px] rounded-full opacity-30"
@@ -378,20 +378,20 @@ export default function EventsClient() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <motion.div variants={STAGGER} initial="hidden" animate="show">
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
               Gather. Sit. Return.
             </motion.p>
             <motion.h1
               id="events-heading"
               variants={FADE_UP}
-              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[#1F2A44] mb-6"
+              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[var(--text-heading)] mb-6"
             >
               Events &amp;
               <br />
-              <span className="text-[#5F7A61]">Retreats</span>
+              <span className="text-[var(--bg-accent)]">Retreats</span>
             </motion.h1>
             <motion.p variants={FADE_UP}
-              className="text-[1.02rem] leading-[1.85] text-[#7A7A7A] max-w-[44ch]">
+              className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[44ch]">
               Periodic gatherings held as invitations — not obligations. Each is
               an opportunity to go deeper in good company, or simply to rest in
               shared silence.
@@ -410,7 +410,7 @@ export default function EventsClient() {
               <motion.span
                 key={type}
                 variants={FADE_UP}
-                className="flex items-center gap-2.5 text-[0.78rem] text-[#7A7A7A] bg-white border border-[#d6c9b8]/60 rounded-full px-3.5 py-1.5"
+                className="flex items-center gap-2.5 text-[0.78rem] text-[var(--text-muted)] bg-white border border-[var(--border-soft)]/60 rounded-full px-3.5 py-1.5"
               >
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color }} aria-hidden="true" />
                 {type}
@@ -429,7 +429,7 @@ export default function EventsClient() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
-            className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-10"
+            className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-10"
           >
             Upcoming
           </motion.h2>
@@ -452,7 +452,7 @@ export default function EventsClient() {
       {PAST.length > 0 && (
         <section
           aria-labelledby="past-heading"
-          className="py-16 border-t border-[#d6c9b8]/50"
+          className="py-16 border-t border-[var(--border-soft)]/50"
         >
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <motion.h2
@@ -461,7 +461,7 @@ export default function EventsClient() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
               viewport={{ once: true }}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-[#7A7A7A]/60 font-semibold mb-10"
+              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--text-muted)]/60 font-semibold mb-10"
             >
               Past events
             </motion.h2>
@@ -482,7 +482,7 @@ export default function EventsClient() {
       )}
 
       {/* ── Mailing list note ──────────────────────────────────── */}
-      <section className="py-20 bg-[#1F2A44] border-t border-white/[0.06]">
+      <section className="py-20 bg-[var(--text-heading)] border-t border-white/[0.06]">
         <div className="mx-auto max-w-3xl px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -490,7 +490,7 @@ export default function EventsClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-6">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-6">
               Stay informed — quietly
             </p>
             <p className="text-[1rem] leading-[1.85] text-white/65 max-w-[44ch] mx-auto mb-10">
@@ -500,7 +500,7 @@ export default function EventsClient() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#5F7A61] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#1F2A44] group"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[var(--bg-accent)] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
             >
               Get notified
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"

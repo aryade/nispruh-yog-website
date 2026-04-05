@@ -31,13 +31,13 @@ export function Hero() {
         aria-hidden="true"
       >
         {/* Warm parchment base */}
-        <div className="absolute inset-0 bg-[#F7F5F2]" />
+        <div className="absolute inset-0 bg-[var(--bg-primary)]" />
         {/* Soft sage bloom — upper left */}
         <div
           className="absolute -top-32 -left-32 w-[55vw] h-[55vw] max-w-[680px] max-h-[680px] rounded-full opacity-40"
           style={{
             background:
-              "radial-gradient(circle, rgba(95,122,97,0.18) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(201,162,39,0.18) 0%, transparent 70%)",
           }}
         />
         {/* Warm amber wash — upper right */}
@@ -45,7 +45,7 @@ export function Hero() {
           className="absolute -top-16 right-0 w-[40vw] h-[40vw] max-w-[540px] max-h-[540px] rounded-full opacity-30"
           style={{
             background:
-              "radial-gradient(circle, rgba(214,167,94,0.22) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(201,162,39,0.22) 0%, transparent 70%)",
           }}
         />
         {/* Deep navy undertone — bottom center */}
@@ -53,7 +53,7 @@ export function Hero() {
           className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[70vw] h-[38vh] rounded-full opacity-[0.07]"
           style={{
             background:
-              "radial-gradient(ellipse, rgba(31,42,68,1) 0%, transparent 70%)",
+              "radial-gradient(ellipse, rgba(45,42,74,1) 0%, transparent 70%)",
           }}
         />
       </motion.div>
@@ -68,7 +68,7 @@ export function Hero() {
         {/* Eyebrow */}
         <motion.p
           variants={FADE_UP}
-          className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6"
+          className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6"
         >
           Kriya Yoga · Ancient Science of Breath
         </motion.p>
@@ -76,17 +76,17 @@ export function Hero() {
         {/* Headline */}
         <motion.h1
           variants={FADE_UP}
-          className="text-[clamp(2.4rem,6vw,4rem)] font-semibold leading-[1.12] tracking-tight text-[#1F2A44] mb-7"
+          className="text-[clamp(2.4rem,6vw,4rem)] font-semibold leading-[1.12] tracking-tight text-[var(--text-heading)] mb-7"
         >
           Still the mind.
           <br />
-          <span className="text-[#5F7A61]">Awaken the self.</span>
+          <span className="text-[var(--bg-accent)]">Awaken the self.</span>
         </motion.h1>
 
         {/* Subtext */}
         <motion.p
           variants={FADE_UP}
-          className="text-[1.05rem] leading-[1.8] text-[#7A7A7A] max-w-[40ch] mx-auto mb-10"
+          className="text-[1.05rem] leading-[1.8] text-[var(--text-muted)] max-w-[40ch] mx-auto mb-10"
         >
           A sacred space for sincere seekers. Rooted in the living tradition of
           Kriya Yoga — a path of breath, awareness, and inner inquiry.
@@ -99,7 +99,7 @@ export function Hero() {
         >
           <Link
             href="/practices"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#5F7A61] text-white text-[0.9rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/60 focus-visible:ring-offset-2"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[var(--bg-accent)] text-white text-[0.9rem] font-medium tracking-wide hover:bg-[#B8952D] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2"
           >
             Begin Your Journey
             <svg
@@ -116,7 +116,7 @@ export function Hero() {
 
           <Link
             href="/about-kriya-yoga"
-            className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[#1F2A44]/70 hover:text-[#1F2A44] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+            className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[var(--text-heading)]/70 hover:text-[var(--text-heading)] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
           >
             What is Kriya Yoga?
           </Link>
@@ -131,11 +131,11 @@ export function Hero() {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
         aria-hidden="true"
       >
-        <span className="text-[0.68rem] uppercase tracking-[0.2em] text-[#7A7A7A]/60">
+        <span className="text-[0.68rem] uppercase tracking-[0.2em] text-[var(--text-muted)]/60">
           Scroll
         </span>
         <motion.span
-          className="block w-px h-10 bg-gradient-to-b from-[#5F7A61]/40 to-transparent"
+          className="block w-px h-10 bg-gradient-to-b from-[var(--bg-accent)]/40 to-transparent"
           animate={{ scaleY: [1, 0.4, 1], opacity: [0.6, 1, 0.6] }}
           transition={{ duration: DURATIONS.verySlow, repeat: Infinity, ease: "easeInOut" as const }}
         />

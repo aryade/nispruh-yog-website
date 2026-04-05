@@ -6,47 +6,68 @@
 
 /* ─── Design tokens ─────────────────────────────────────────────── */
 :root {
+  /* New Color Palette */
+  --bg-primary:    #F6E0E8;   /* soft rose - primary background */
+  --bg-secondary:  #E6E6FA;   /* lavender - secondary background */
+  --bg-accent:     #C9A227;   /* soft gold - accent color */
+
+  --text-heading:  #2D2A4A;   /* deep plum - headings, navbar, footer */
+  --text-primary:  #2E2E2E;   /* dark charcoal - main body text */
+  --text-muted:    #6B6B7A;   /* muted gray - secondary descriptions */
+
+  --border-soft:   #E8E0EB;   /* soft rose tinted border */
+
   /* Semantic tokens used by Tailwind components */
-  --c-page:    #F7F5F2;   /* warm parchment */
-  --c-card:    #ffffff;
-  --c-heading: #1F2A44;   /* dark navy */
-  --c-mid:     #5a5a5a;   /* medium body text */
-  --c-muted:   #7A7A7A;   /* muted / secondary text */
-  --c-border:  #d6c9b8;
+  --c-page:    #F6E0E8;   /* soft rose */
+  --c-card:    #E6E6FA;   /* lavender */
+  --c-heading: #2D2A4A;   /* deep plum */
+  --c-mid:     #2E2E2E;   /* primary text */
+  --c-muted:   #6B6B7A;   /* muted text */
+  --c-border:  #E8E0EB;   /* soft border */
 
   /* Legacy vars used by CSS classes below */
-  --bg:          #F7F5F2;
-  --surface:     #ffffff;
-  --primary:     #5F7A61;
-  --secondary:   #1F2A44;
-  --accent:      #D6A75E;
+  --bg:          #F6E0E8;
+  --surface:     #E6E6FA;
+  --primary:     #C9A227;   /* gold accent */
+  --secondary:   #2D2A4A;   /* deep plum */
+  --accent:      #C9A227;   /* soft gold */
   --text-dark:   #2E2E2E;
-  --text-light:  #7A7A7A;
-  --border:      #d6c9b8;
-  --accent-soft: rgba(214, 167, 94, 0.14);
-  --shadow:      0 14px 50px rgba(31, 42, 68, 0.08);
+  --text-light:  #6B6B7A;
+  --border:      #E8E0EB;
+  --accent-soft: rgba(201, 162, 39, 0.12);
+  --shadow:      0 14px 50px rgba(45, 42, 74, 0.08);
 }
 
 /* ─── Dark mode token overrides ─────────────────────────────────── */
 html.dark {
   color-scheme: dark;
 
-  --c-page:    #131411;   /* warm charcoal */
-  --c-card:    #1c1e1b;   /* dark surface */
-  --c-heading: #dddbd6;   /* warm off-white */
-  --c-mid:     #9e9c99;
-  --c-muted:   #666664;
-  --c-border:  #2d2f2c;
+  --bg-primary:    #1A1620;   /* dark rose-tinted background */
+  --bg-secondary:  #25222E;   /* dark lavender-tinted background */
+  --bg-accent:     #D4B550;   /* lighter gold for visibility */
 
-  --bg:          #131411;
-  --surface:     #1c1e1b;
-  --primary:     #7aab7c;
-  --secondary:   #dddbd6;
-  --accent:      #c99a52;
-  --text-dark:   #d0cec9;
-  --text-light:  #666664;
-  --border:      #2d2f2c;
-  --accent-soft: rgba(122, 171, 124, 0.10);
+  --text-heading:  #E8E5F0;   /* light rose-tinted text */
+  --text-primary:  #D8D5DC;   /* light gray for primary text */
+  --text-muted:    #A8A5B0;   /* lighter muted gray */
+
+  --border-soft:   #3A3540;   /* dark rose-tinted border */
+
+  --c-page:    #1A1620;
+  --c-card:    #25222E;
+  --c-heading: #E8E5F0;
+  --c-mid:     #D8D5DC;
+  --c-muted:   #A8A5B0;
+  --c-border:  #3A3540;
+
+  --bg:          #1A1620;
+  --surface:     #25222E;
+  --primary:     #D4B550;
+  --secondary:   #E8E5F0;
+  --accent:      #D4B550;
+  --text-dark:   #D8D5DC;
+  --text-light:  #A8A5B0;
+  --border:      #3A3540;
+  --accent-soft: rgba(212, 181, 80, 0.10);
   --shadow:      0 14px 50px rgba(0, 0, 0, 0.30);
 }
 
@@ -252,81 +273,101 @@ html.dark .notice.error   { color: #cc7070; }
    !important is needed.
    ───────────────────────────────────────────────────────────────── */
 
-/* Page / section backgrounds (warm parchment → warm charcoal) */
+/* Page / section backgrounds (soft rose → dark rose-tinted) */
+html.dark [class*="bg-[#F6E0E8]"],
 html.dark [class*="bg-[#F7F5F2]"] {
-  background-color: #131411;
+  background-color: #1A1620;
 }
 
-/* Surface / card backgrounds */
+/* Surface / card backgrounds (lavender → dark lavender-tinted) */
+html.dark [class*="bg-[#E6E6FA]"],
 html.dark [class*="bg-white"] {
-  background-color: #1c1e1b;
+  background-color: #25222E;
 }
 
 /*
  * Exception: restore transparent white overlays used on dark sections
- * (e.g. testimonial cards bg-white/[0.05] inside bg-[#1F2A44])
+ * (e.g. testimonial cards bg-white/[0.05] inside bg-[#2D2A4A])
  */
-html.dark .bg-\[\#1F2A44\] [class*="bg-white"],
-html.dark .bg-\[\#0f1724\] [class*="bg-white"] {
-  background-color: rgba(255, 255, 255, 0.04);
+html.dark .bg-\[\#2D2A4A\],
+html.dark .bg-\[\#1F2A44\],
+html.dark .bg-\[\#0f1724\] {
+  [class*="bg-white"],
+  [class*="bg-\[#E6E6FA\]"] {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
 }
 
-/* Heading / label text (dark navy → warm off-white) */
+/* Heading / label text (deep plum → light rose-tinted) */
+html.dark [class*="text-[#2D2A4A]"],
 html.dark [class*="text-[#1F2A44]"] {
-  color: #dddbd6;
+  color: #E8E5F0;
+}
+
+/* Primary text (dark charcoal → light gray) */
+html.dark [class*="text-[#2E2E2E]"] {
+  color: #D8D5DC;
 }
 
 /* Medium body text */
 html.dark [class*="text-[#5a5a5a]"] {
-  color: #9e9c99;
+  color: #D8D5DC;
+}
+
+/* Muted / secondary text (muted gray → lighter muted gray) */
+html.dark [class*="text-[#6B6B7A]"],
+html.dark [class*="text-[#7A7A7A]"] {
+  color: #A8A5B0;
 }
 
 /* Subtle text tones */
 html.dark [class*="text-[#8e96a8]"] {
-  color: #b5b3ae;
+  color: #C0BCC7;
 }
 html.dark [class*="text-[#c8cdd8]"] {
-  color: #d0cec9;
+  color: #D8D5DC;
 }
 
-/* Muted / secondary text */
-html.dark [class*="text-[#7A7A7A]"] {
-  color: #666664;
-}
-
-/* Borders */
+/* Borders (soft rose-tinted → dark rose-tinted) */
+html.dark [class*="border-[#E8E0EB]"],
 html.dark [class*="border-[#d6c9b8]"] {
-  border-color: #2d2f2c;
+  border-color: #3A3540;
 }
 
-/* Near-black text (#2E2E2E) used in body/legacy CSS */
-html.dark [class*="text-[#2E2E2E]"] {
-  color: #d0cec9;
+/* Gold accent color (soft gold → lighter gold) */
+html.dark [class*="text-[#C9A227]"],
+html.dark [class*="bg-[#C9A227]"] {
+  color: #D4B550;
+  background-color: #D4B550;
 }
 
-/* Image placeholders — lighten the gradient slightly in dark mode */
-html.dark [class*="from-[#e8e4dc]"] {
-  --tw-gradient-from: #232520;
+/* Image placeholders — darken the gradient in dark mode */
+html.dark [class*="from-[#e8e4dc]"],
+html.dark [class*="from-[#F6E0E8]"] {
+  --tw-gradient-from: #2A2530;
 }
-html.dark [class*="from-[#eae6de]"] {
-  --tw-gradient-from: #232520;
+html.dark [class*="from-[#eae6de]"],
+html.dark [class*="from-[#E6E6FA]"] {
+  --tw-gradient-from: #302D38;
 }
 html.dark [class*="from-[#e4e0d8]"] {
-  --tw-gradient-from: #1f211e;
+  --tw-gradient-from: #282330;
 }
-html.dark [class*="from-[#e8e4dc]"],
+html.dark [class*="from-[#eae6de]"],
 html.dark [class*="via-[#ddd8cf]"],
 html.dark [class*="to-[#cec8be]"],
 html.dark [class*="to-[#c8c0b2]"],
 html.dark [class*="to-[#d4cfc7]"],
 html.dark [class*="via-[#d8d2c8]"],
-html.dark [class*="from-[#eae6de]"],
+html.dark [class*="from-[#e8e4dc]"],
 html.dark [class*="to-[#d4cfc7]"],
 html.dark [class*="via-[#dcd7ce]"],
-html.dark [class*="to-[#d0cbbf]"] {
-  --tw-gradient-from: #1e201d;
-  --tw-gradient-via: #232520;
-  --tw-gradient-to:  #2a2c28;
+html.dark [class*="to-[#d0cbbf]"],
+html.dark [class*="from-[#F6E0E8]"],
+html.dark [class*="from-[#E6E6FA]"] {
+  --tw-gradient-from: #2A2530;
+  --tw-gradient-via: #302D38;
+  --tw-gradient-to:  #37333D;
 }
 
 /* ─── Reduced-motion ────────────────────────────────────────────── */

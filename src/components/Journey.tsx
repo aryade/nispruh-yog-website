@@ -44,7 +44,7 @@ export function Journey() {
     <section
       id="journey"
       aria-labelledby="journey-heading"
-      className="py-24 bg-white border-t border-[#d6c9b8]/50"
+      className="py-24 bg-white border-t border-[var(--border-soft)]/50"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -56,16 +56,16 @@ export function Journey() {
           viewport={{ once: true, margin: "-60px" }}
           className="max-w-[44ch] mb-16"
         >
-          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-4">
+          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
             The path
           </p>
           <h2
             id="journey-heading"
-            className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44]"
+            className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
           >
             Where are you
             <br />
-            <span className="text-[#5F7A61]">on the journey?</span>
+            <span className="text-[var(--bg-accent)]">on the journey?</span>
           </h2>
         </motion.div>
 
@@ -82,28 +82,28 @@ export function Journey() {
             <motion.li
               key={title}
               variants={ITEM}
-              className="relative flex flex-col lg:border-r lg:last:border-r-0 border-[#d6c9b8]/50 lg:pr-8 lg:pl-8 first:pl-0 last:pr-0"
+              className="relative flex flex-col lg:border-r lg:last:border-r-0 border-[var(--border-soft)]/50 lg:pr-8 lg:pl-8 first:pl-0 last:pr-0"
             >
               {/* Connector dot visible on large screens */}
               {i < STEPS.length - 1 && (
                 <span
-                  className="hidden lg:block absolute top-[1.1rem] right-0 translate-x-1/2 w-2 h-2 rounded-full bg-[#d6c9b8] z-10"
+                  className="hidden lg:block absolute top-[1.1rem] right-0 translate-x-1/2 w-2 h-2 rounded-full bg-[var(--border-soft)] z-10"
                   aria-hidden="true"
                 />
               )}
 
               {/* Step number */}
               <span
-                className="text-[0.72rem] font-semibold tracking-[0.18em] text-[#5F7A61]/60 mb-5 uppercase"
+                className="text-[0.72rem] font-semibold tracking-[0.18em] text-[var(--bg-accent)]/60 mb-5 uppercase"
                 aria-hidden="true"
               >
                 {number}
               </span>
 
-              <h3 className="text-[1.05rem] font-semibold text-[#1F2A44] mb-3">
+              <h3 className="text-[1.05rem] font-semibold text-[var(--text-heading)] mb-3">
                 {title}
               </h3>
-              <p className="text-[0.88rem] leading-[1.8] text-[#7A7A7A]">
+              <p className="text-[0.88rem] leading-[1.8] text-[var(--text-muted)]">
                 {body}
               </p>
             </motion.li>
@@ -116,7 +116,7 @@ export function Journey() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.5 }}
           viewport={{ once: true }}
-          className="hidden lg:block mt-10 text-[0.72rem] uppercase tracking-[0.2em] text-[#d6c9b8] text-center"
+          className="hidden lg:block mt-10 text-[0.72rem] uppercase tracking-[0.2em] text-[var(--border-soft)] text-center"
           aria-hidden="true"
         >
           Curious &nbsp;→&nbsp; Seeker &nbsp;→&nbsp; Student &nbsp;→&nbsp; Practitioner

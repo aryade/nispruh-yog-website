@@ -10,7 +10,7 @@ const PROGRAMS = [
     description:
       "Guided sitting sessions for beginners and returning practitioners alike. Each class moves through breath awareness, body scan, and silent observation — a quiet hour to step out of the noise.",
     cta: { label: "View schedule", href: "/courses-programs#meditation" },
-    accent: "#5F7A61",
+    accent: "var(--bg-accent)",
     glyph: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
         <circle cx="16" cy="16" r="12" />
@@ -26,7 +26,7 @@ const PROGRAMS = [
     description:
       "A structured initiation into the techniques of Kriya Yoga — pranayama, dharana, and the foundational kriyas. Taught in small groups to preserve the intimacy the tradition requires.",
     cta: { label: "Learn & enroll", href: "/courses-programs#kriya-course" },
-    accent: "#D6A75E",
+    accent: "var(--bg-accent)",
     glyph: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
         <path d="M16 3C16 3 8 10 8 18a8 8 0 0 0 16 0C24 10 16 3 16 3z" />
@@ -40,7 +40,7 @@ const PROGRAMS = [
     description:
       "Immersive 3- to 7-day silent retreats held in natural settings. A chance to go deeper — away from ordinary life, sustained by practice, simplicity, and collective silence.",
     cta: { label: "See upcoming dates", href: "/events-retreats" },
-    accent: "#1F2A44",
+    accent: "var(--text-heading)",
     glyph: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
         <path d="M4 26 L16 6 L28 26 Z" />
@@ -70,7 +70,7 @@ export default function Programs() {
     <section
       id="programs"
       aria-labelledby="programs-heading"
-      className="py-24 bg-[#F7F5F2] border-t border-[#d6c9b8]/50"
+      className="py-24 bg-[var(--bg-primary)] border-t border-[var(--border-soft)]/50"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -83,20 +83,20 @@ export default function Programs() {
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14"
         >
           <div className="max-w-[40ch]">
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
               Offerings
             </p>
             <h2
               id="programs-heading"
-              className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44]"
+              className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
             >
               Ways to walk
               <br />
-              <span className="text-[#5F7A61]">this path</span>
+              <span className="text-[var(--bg-accent)]">this path</span>
             </h2>
           </div>
 
-          <p className="text-[0.9rem] leading-[1.75] text-[#7A7A7A] max-w-[36ch]">
+          <p className="text-[0.9rem] leading-[1.75] text-[var(--text-muted)] max-w-[36ch]">
             Each offering meets you where you are — whether you are curious,
             returning, or ready to go deep.
           </p>
@@ -114,7 +114,7 @@ export default function Programs() {
             <motion.article
               key={title}
               variants={CARD}
-              className="group relative flex flex-col rounded-2xl border border-[#d6c9b8]/60 bg-white overflow-hidden transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(31,42,68,0.09)]"
+              className="group relative flex flex-col rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden transition-shadow duration-300 hover:shadow-[0_12px_40px_rgba(31,42,68,0.09)]"
               aria-labelledby={`prog-${title.replace(/\s+/g, "-").toLowerCase()}`}
             >
               {/* Top accent stripe */}
@@ -146,13 +146,13 @@ export default function Programs() {
                 {/* Title */}
                 <h3
                   id={`prog-${title.replace(/\s+/g, "-").toLowerCase()}`}
-                  className="text-[1.15rem] font-semibold leading-snug text-[#1F2A44] mb-4"
+                  className="text-[1.15rem] font-semibold leading-snug text-[var(--text-heading)] mb-4"
                 >
                   {title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-[0.9rem] leading-[1.8] text-[#7A7A7A] flex-1 mb-8">
+                <p className="text-[0.9rem] leading-[1.8] text-[var(--text-muted)] flex-1 mb-8">
                   {description}
                 </p>
 
@@ -203,7 +203,7 @@ export default function Programs() {
         >
           <Link
             href="/courses-programs"
-            className="text-[0.85rem] text-[#7A7A7A] hover:text-[#1F2A44] transition-colors duration-200 underline underline-offset-4 decoration-[#d6c9b8] hover:decoration-[#1F2A44]/40 focus-visible:outline-none"
+            className="text-[0.85rem] text-[var(--text-muted)] hover:text-[var(--text-heading)] transition-colors duration-200 underline underline-offset-4 decoration-[var(--border-soft)] hover:decoration-[var(--text-heading)]/40 focus-visible:outline-none"
           >
             View all courses & programmes
           </Link>

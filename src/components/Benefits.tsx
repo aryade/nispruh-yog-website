@@ -82,7 +82,7 @@ export default function Benefits() {
     <section
       id="benefits"
       aria-labelledby="benefits-heading"
-      className="py-24 bg-white border-t border-[#d6c9b8]/50"
+      className="py-24 bg-white border-t border-[var(--border-soft)]/50"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -94,16 +94,16 @@ export default function Benefits() {
           viewport={{ once: true, margin: "-60px" }}
           className="max-w-[44ch] mb-16"
         >
-          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-4">
+          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
             Why practice
           </p>
           <h2
             id="benefits-heading"
-            className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44]"
+            className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
           >
             What the practice
             <br />
-            <span className="text-[#5F7A61]">opens within you</span>
+            <span className="text-[var(--bg-accent)]">opens within you</span>
           </h2>
         </motion.div>
 
@@ -120,21 +120,21 @@ export default function Benefits() {
             <motion.li
               key={title}
               variants={CARD_VARIANTS}
-              className="group flex flex-col gap-5 rounded-2xl border border-[#d6c9b8]/60 bg-[#F7F5F2]/60 p-7 transition-shadow duration-300 hover:shadow-[0_8px_32px_rgba(31,42,68,0.07)]"
+              className="group flex flex-col gap-5 rounded-2xl border border-[var(--border-soft)]/60 bg-[var(--bg-primary)]/60 p-7 transition-shadow duration-300 hover:shadow-[0_8px_32px_rgba(45,42,74,0.07)]"
             >
               {/* Icon bubble */}
               <div
-                className="w-11 h-11 rounded-xl flex items-center justify-center bg-[#5F7A61]/10 text-[#5F7A61] transition-colors duration-300 group-hover:bg-[#5F7A61]/18"
+                className="w-11 h-11 rounded-xl flex items-center justify-center bg-[var(--bg-accent)]/10 text-[var(--bg-accent)] transition-colors duration-300 group-hover:bg-[var(--bg-accent)]/18"
                 aria-hidden="true"
               >
                 {icon}
               </div>
 
               <div>
-                <h3 className="text-[1rem] font-semibold text-[#1F2A44] mb-2">
+                <h3 className="text-[1rem] font-semibold text-[var(--text-heading)] mb-2">
                   {title}
                 </h3>
-                <p className="text-[0.9rem] leading-[1.78] text-[#7A7A7A]">
+                <p className="text-[0.9rem] leading-[1.78] text-[var(--text-muted)]">
                   {body}
                 </p>
               </div>
@@ -148,13 +148,13 @@ export default function Benefits() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mt-16 border-l-2 border-[#5F7A61]/40 pl-5 max-w-[50ch]"
+          className="mt-16 border-l-2 border-[var(--bg-accent)]/40 pl-5 max-w-[50ch]"
         >
-          <p className="text-[1rem] leading-[1.8] text-[#7A7A7A] italic font-light">
+          <p className="text-[1rem] leading-[1.8] text-[var(--text-muted)] italic font-light">
             "These are not promises — they are natural unfoldings that arise
             when we stop resisting our own stillness."
           </p>
-          <footer className="mt-2 text-[0.75rem] uppercase tracking-[0.14em] text-[#5F7A61] font-semibold not-italic">
+          <footer className="mt-2 text-[0.75rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold not-italic">
             From the teachings
           </footer>
         </motion.blockquote>

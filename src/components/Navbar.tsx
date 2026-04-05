@@ -60,7 +60,7 @@ export default function Navbar() {
         className={[
           "fixed top-0 left-0 right-0 z-50 transition-colors duration-500",
           scrolled
-            ? "bg-[rgba(247,245,242,0.9)] dark:bg-[rgba(19,20,17,0.88)] backdrop-blur-md border-b border-[rgba(214,201,184,0.6)] dark:border-[rgba(45,47,44,0.6)] shadow-[0_1px_24px_rgba(31,42,68,0.06)] dark:shadow-[0_1px_24px_rgba(0,0,0,0.32)]"
+            ? "bg-[rgba(246,224,232,0.9)] dark:bg-[rgba(26,22,32,0.88)] backdrop-blur-md border-b border-[rgba(232,224,235,0.6)] dark:border-[rgba(58,53,64,0.6)] shadow-[0_1px_24px_rgba(45,42,74,0.06)] dark:shadow-[0_1px_24px_rgba(0,0,0,0.32)]"
             : "bg-transparent",
         ].join(" ")}
         initial={{ y: -64, opacity: 0 }}
@@ -71,13 +71,13 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="group flex items-center gap-2 text-[var(--secondary)] dark:text-[var(--c-heading)] no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(95,122,97,0.3)] rounded-sm"
+            className="group flex items-center gap-2 text-[var(--text-heading)] dark:text-[var(--c-heading)] no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)] rounded-sm"
             aria-label="Nispruh Yog – home"
           >
             {/* Subtle lotus glyph */}
             <span
               aria-hidden="true"
-              className="text-[var(--primary)] text-lg leading-none transition-transform duration-700 group-hover:scale-110 select-none"
+              className="text-[var(--bg-accent)] text-lg leading-none transition-transform duration-700 group-hover:scale-110 select-none"
             >
               ꩜
             </span>
@@ -101,17 +101,17 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className={[
-                    "relative px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(95,122,97,0.3)]",
+                    "relative px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)]",
                     active
-                      ? "text-[var(--secondary)]"
-                      : "text-[var(--text-light)] hover:text-[var(--secondary)] dark:text-[var(--text-light)] dark:hover:text-[var(--c-heading)]",
+                      ? "text-[var(--text-heading)]"
+                      : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)]",
                   ].join(" ")}
                 >
                   {label}
                   {active && (
                     <motion.span
                       layoutId="nav-pill"
-                      className="absolute inset-0 rounded-full bg-[var(--primary)]/10"
+                      className="absolute inset-0 rounded-full bg-[var(--bg-accent)]/15"
                       transition={{ type: "spring", stiffness: 340, damping: 36 }}
                     />
                   )}
@@ -128,20 +128,20 @@ export default function Navbar() {
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             onClick={() => setMenuOpen((v) => !v)}
-            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(95,122,97,0.3)]"
+            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)]"
           >
             <motion.span
-              className="block h-px w-5 bg-[var(--secondary)] dark:bg-[var(--c-heading)] origin-center"
+              className="block h-px w-5 bg-[var(--text-heading)] dark:bg-[var(--c-heading)] origin-center"
               animate={menuOpen ? { rotate: 45, y: 4 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             />
             <motion.span
-              className="block h-px w-5 bg-[var(--secondary)] dark:bg-[var(--c-heading)] origin-center"
+              className="block h-px w-5 bg-[var(--text-heading)] dark:bg-[var(--c-heading)] origin-center"
               animate={menuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
               transition={{ duration: 0.2 }}
             />
             <motion.span
-              className="block h-px w-5 bg-[var(--secondary)] dark:bg-[var(--c-heading)] origin-center"
+              className="block h-px w-5 bg-[var(--text-heading)] dark:bg-[var(--c-heading)] origin-center"
               animate={menuOpen ? { rotate: -45, y: -4 } : { rotate: 0, y: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             />
@@ -156,7 +156,7 @@ export default function Navbar() {
             {/* Backdrop */}
             <motion.div
               key="backdrop"
-              className="fixed inset-0 z-40 bg-[var(--secondary)]/20 dark:bg-[var(--c-heading)]/10 backdrop-blur-sm lg:hidden"
+              className="fixed inset-0 z-40 bg-[var(--text-heading)]/20 dark:bg-[var(--c-heading)]/10 backdrop-blur-sm lg:hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -171,14 +171,14 @@ export default function Navbar() {
               ref={menuRef}
               role="dialog"
               aria-label="Navigation menu"
-              className="fixed top-0 right-0 bottom-0 z-50 w-[min(80vw,22rem)] bg-[var(--bg)] dark:bg-[var(--bg)] flex flex-col pt-20 pb-10 px-8 lg:hidden"
+              className="fixed top-0 right-0 bottom-0 z-50 w-[min(80vw,22rem)] bg-[var(--bg-primary)] dark:bg-[var(--bg-primary)] flex flex-col pt-20 pb-10 px-8 lg:hidden"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", stiffness: 300, damping: 34 }}
             >
               {/* Decorative line */}
-              <div className="mb-8 h-px w-12 bg-[#5F7A61]/40" />
+              <div className="mb-8 h-px w-12 bg-[var(--bg-accent)]/40" />
 
               <nav aria-label="Mobile primary" className="flex flex-col gap-1">
                 {NAV_LINKS.map(({ label, href }, i) => {
@@ -196,10 +196,10 @@ export default function Navbar() {
                       <Link
                         href={href}
                         className={[
-                          "block py-3 text-base font-medium tracking-wide border-b border-[rgba(214,201,184,0.4)] dark:border-[rgba(45,47,44,0.4)] transition-colors duration-200 focus-visible:outline-none",
+                          "block py-3 text-base font-medium tracking-wide border-b border-[rgba(232,224,235,0.4)] dark:border-[rgba(58,53,64,0.4)] transition-colors duration-200 focus-visible:outline-none",
                           active
-                            ? "text-[var(--secondary)]"
-                            : "text-[var(--text-light)] hover:text-[var(--secondary)] dark:text-[var(--text-light)] dark:hover:text-[var(--c-heading)]",
+                            ? "text-[var(--text-heading)]"
+                            : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)]",
                         ].join(" ")}
                       >
                         {label}
@@ -210,7 +210,7 @@ export default function Navbar() {
               </nav>
 
               {/* Subtle footer quote */}
-              <p className="mt-auto text-xs text-[#7A7A7A]/70 leading-relaxed italic">
+              <p className="mt-auto text-xs text-[var(--text-muted)]/70 leading-relaxed italic">
                 "Be still, and know."
               </p>
             </motion.div>

@@ -26,7 +26,7 @@ export default function WhatIsKriyaYoga() {
     <section
       id="what-is-kriya-yoga"
       aria-labelledby="wiky-heading"
-      className="py-24 bg-[#F7F5F2]"
+      className="py-24 bg-[var(--bg-primary)]"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -41,7 +41,7 @@ export default function WhatIsKriyaYoga() {
             {/* Eyebrow */}
             <motion.p
               variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-5"
+              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5"
             >
               The practice
             </motion.p>
@@ -50,7 +50,7 @@ export default function WhatIsKriyaYoga() {
             <motion.h2
               id="wiky-heading"
               variants={FADE_UP}
-              className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44] mb-8"
+              className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-8"
             >
               What is Kriya Yoga?
             </motion.h2>
@@ -91,7 +91,7 @@ export default function WhatIsKriyaYoga() {
             <motion.div variants={FADE_UP}>
               <Link
                 href="/about-kriya-yoga"
-                className="inline-flex items-center gap-2 text-[0.9rem] font-medium text-[#5F7A61] border-b border-[#5F7A61]/40 pb-0.5 hover:border-[#5F7A61] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50 focus-visible:rounded-sm group"
+                className="inline-flex items-center gap-2 text-[0.9rem] font-medium text-[var(--bg-accent)] border-b border-[var(--bg-accent)]/40 pb-0.5 hover:border-[var(--bg-accent)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50 focus-visible:rounded-sm group"
               >
                 Learn more about the lineage
                 <svg
@@ -120,7 +120,7 @@ export default function WhatIsKriyaYoga() {
           >
             {/* Outer decorative frame */}
             <div
-              className="absolute -inset-3 rounded-[2rem] border border-[#5F7A61]/12 pointer-events-none"
+              className="absolute -inset-3 rounded-[2rem] border border-[var(--bg-accent)]/12 pointer-events-none"
               aria-hidden="true"
             />
 
@@ -142,12 +142,12 @@ export default function WhatIsKriyaYoga() {
 
               {/* Lotus placeholder glyph */}
               <span
-                className="text-[4rem] text-[#5F7A61]/30 leading-none select-none"
+                className="text-[4rem] text-[var(--bg-accent)]/30 leading-none select-none"
                 aria-hidden="true"
               >
                 ꩜
               </span>
-              <p className="text-[0.75rem] uppercase tracking-[0.18em] text-[#7A7A7A]/60 font-medium">
+              <p className="text-[0.75rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/60 font-medium">
                 Image placeholder
               </p>
             </div>
@@ -158,12 +158,12 @@ export default function WhatIsKriyaYoga() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45, duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
               viewport={{ once: true }}
-              className="absolute -bottom-6 -left-4 sm:-left-8 max-w-[18rem] bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-4 shadow-[0_8px_32px_rgba(31,42,68,0.1)] border border-[#d6c9b8]/50"
+              className="absolute -bottom-6 -left-4 sm:-left-8 max-w-[18rem] bg-white/90 backdrop-blur-sm rounded-2xl px-5 py-4 shadow-[0_8px_32px_rgba(31,42,68,0.1)] border border-[var(--border-soft)]/50"
             >
               <p className="text-[0.82rem] leading-[1.7] text-[#5a5a5a] italic">
                 "Breathe. Be still. The answer you seek is already within."
               </p>
-              <p className="mt-2 text-[0.7rem] uppercase tracking-[0.14em] text-[#5F7A61] font-semibold">
+              <p className="mt-2 text-[0.7rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold">
                 Kriya teaching
               </p>
             </motion.div>

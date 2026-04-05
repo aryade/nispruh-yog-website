@@ -33,11 +33,11 @@ interface Post {
 }
 
 const TAG_COLOUR: Record<Tag, string> = {
-  Practice:    "#5F7A61",
-  Reflection:  "#D6A75E",
-  Lineage:     "#1F2A44",
-  "Daily Life": "#7A6A8A",
-  Philosophy:  "#7A7A7A",
+  Practice:    "var(--bg-accent)",
+  Reflection:  "var(--bg-accent)",
+  Lineage:     "var(--text-heading)",
+  "Daily Life": "var(--bg-secondary)",
+  Philosophy:  "var(--text-muted)",
 };
 
 const POSTS: Post[] = [
@@ -142,12 +142,12 @@ const REST     = POSTS.filter((p) => !p.featured);
 /* ── component ────────────────────────────────────────────────────── */
 export default function BlogClient() {
   return (
-    <div className="bg-[#F7F5F2]">
+    <div className="bg-[var(--bg-primary)]">
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section
         aria-labelledby="blog-heading"
-        className="relative pt-20 pb-20 overflow-hidden border-b border-[#d6c9b8]/50"
+        className="relative pt-20 pb-20 overflow-hidden border-b border-[var(--border-soft)]/50"
       >
         <div className="pointer-events-none absolute inset-0" aria-hidden="true">
           <div className="absolute -top-16 -left-16 w-[48vw] h-[48vw] max-w-[560px] rounded-full opacity-35"
@@ -157,18 +157,18 @@ export default function BlogClient() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
           <motion.div variants={STAGGER} initial="hidden" animate="show" className="max-w-[52ch]">
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
               Words from the path
             </motion.p>
             <motion.h1
               id="blog-heading"
               variants={FADE_UP}
-              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[#1F2A44] mb-6"
+              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[var(--text-heading)] mb-6"
             >
               Blog
             </motion.h1>
             <motion.p variants={FADE_UP}
-              className="text-[1.02rem] leading-[1.85] text-[#7A7A7A] max-w-[46ch]">
+              className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[46ch]">
               Short reflections on practice, quiet living, and the daily unfolding
               of awareness. Written when there is something simple and true to share
               — not on a content schedule.
@@ -178,7 +178,7 @@ export default function BlogClient() {
       </section>
 
       {/* ── Featured post ──────────────────────────────────────── */}
-      <section aria-label="Featured post" className="py-14 border-b border-[#d6c9b8]/50">
+      <section aria-label="Featured post" className="py-14 border-b border-[var(--border-soft)]/50">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <motion.div
             initial={{ opacity: 0, y: 18 }}
@@ -188,7 +188,7 @@ export default function BlogClient() {
           >
             <Link
               href={`/blog/${FEATURED.slug}`}
-              className="group grid grid-cols-1 lg:grid-cols-[1fr_380px] rounded-2xl border border-[#d6c9b8]/60 bg-white overflow-hidden hover:shadow-[0_12px_48px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50"
+              className="group grid grid-cols-1 lg:grid-cols-[1fr_380px] rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_12px_48px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
               aria-labelledby="featured-title"
             >
               {/* Text */}
@@ -200,24 +200,24 @@ export default function BlogClient() {
                   >
                     {FEATURED.tag}
                   </span>
-                  <span className="text-[0.72rem] text-[#7A7A7A]/60">{FEATURED.readTime} read</span>
-                  <span className="text-[0.72rem] text-[#7A7A7A]/60">&middot;</span>
-                  <time dateTime={FEATURED.dateISO} className="text-[0.72rem] text-[#7A7A7A]/60">
+                  <span className="text-[0.72rem] text-[var(--text-muted)]/60">{FEATURED.readTime} read</span>
+                  <span className="text-[0.72rem] text-[var(--text-muted)]/60">&middot;</span>
+                  <time dateTime={FEATURED.dateISO} className="text-[0.72rem] text-[var(--text-muted)]/60">
                     {FEATURED.date}
                   </time>
                 </div>
 
                 <h2
                   id="featured-title"
-                  className="text-[clamp(1.5rem,3vw,2rem)] font-semibold leading-[1.2] text-[#1F2A44] mb-5 group-hover:text-[#5F7A61] transition-colors duration-200"
+                  className="text-[clamp(1.5rem,3vw,2rem)] font-semibold leading-[1.2] text-[var(--text-heading)] mb-5 group-hover:text-[var(--bg-accent)] transition-colors duration-200"
                 >
                   {FEATURED.title}
                 </h2>
-                <p className="text-[0.95rem] leading-[1.82] text-[#7A7A7A] mb-8 max-w-[50ch]">
+                <p className="text-[0.95rem] leading-[1.82] text-[var(--text-muted)] mb-8 max-w-[50ch]">
                   {FEATURED.excerpt}
                 </p>
 
-                <span className="inline-flex items-center gap-2 text-[0.85rem] font-medium text-[#5F7A61]">
+                <span className="inline-flex items-center gap-2 text-[0.85rem] font-medium text-[var(--bg-accent)]">
                   Read article
                   <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"
                     strokeLinecap="round" strokeLinejoin="round"
@@ -235,7 +235,7 @@ export default function BlogClient() {
               >
                 <div className="absolute inset-0"
                   style={{ background: "radial-gradient(ellipse at 40% 40%, rgba(95,122,97,0.15) 0%, transparent 65%)" }} />
-                <span className="text-[4rem] text-[#5F7A61]/20 select-none">꩜</span>
+                <span className="text-[4rem] text-[var(--bg-accent)]/20 select-none">꩜</span>
               </div>
             </Link>
           </motion.div>
@@ -243,17 +243,17 @@ export default function BlogClient() {
       </section>
 
       {/* ── Tag filter ─────────────────────────────────────────── */}
-      <div className="sticky top-16 z-30 bg-[#F7F5F2]/90 backdrop-blur-md border-b border-[#d6c9b8]/50">
+      <div className="sticky top-16 z-30 bg-[var(--bg-primary)]/90 backdrop-blur-md border-b border-[var(--border-soft)]/50">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <nav aria-label="Filter posts by tag" className="flex gap-1.5 overflow-x-auto py-4 scrollbar-none">
             {TAGS.map((tag, i) => (
               <button
                 key={tag}
                 className={[
-                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50",
+                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50",
                   i === 0
-                    ? "bg-[#5F7A61] text-white"
-                    : "text-[#7A7A7A] hover:text-[#1F2A44] border border-[#d6c9b8]/80 hover:border-[#5F7A61]/40",
+                    ? "bg-[var(--bg-accent)] text-white"
+                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--bg-accent)]/40",
                 ].join(" ")}
               >
                 {tag}
@@ -278,7 +278,7 @@ export default function BlogClient() {
               <motion.li key={post.slug} variants={FADE_UP}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="group flex flex-col h-full rounded-2xl border border-[#d6c9b8]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50"
+                  className="group flex flex-col h-full rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
                 >
                   {/* Thumbnail placeholder */}
                   <div
@@ -299,25 +299,25 @@ export default function BlogClient() {
                       >
                         {post.tag}
                       </span>
-                      <span className="text-[0.7rem] text-[#7A7A7A]/60">{post.readTime} read</span>
-                      <span className="text-[0.7rem] text-[#7A7A7A]/60">&middot;</span>
-                      <time dateTime={post.dateISO} className="text-[0.7rem] text-[#7A7A7A]/60">
+                      <span className="text-[0.7rem] text-[var(--text-muted)]/60">{post.readTime} read</span>
+                      <span className="text-[0.7rem] text-[var(--text-muted)]/60">&middot;</span>
+                      <time dateTime={post.dateISO} className="text-[0.7rem] text-[var(--text-muted)]/60">
                         {post.date}
                       </time>
                     </div>
 
                     {/* Title */}
-                    <h2 className="text-[1rem] font-semibold leading-snug text-[#1F2A44] mb-3 group-hover:text-[#5F7A61] transition-colors duration-200">
+                    <h2 className="text-[1rem] font-semibold leading-snug text-[var(--text-heading)] mb-3 group-hover:text-[var(--bg-accent)] transition-colors duration-200">
                       {post.title}
                     </h2>
 
                     {/* Excerpt */}
-                    <p className="text-[0.875rem] leading-[1.78] text-[#7A7A7A] flex-1 mb-5">
+                    <p className="text-[0.875rem] leading-[1.78] text-[var(--text-muted)] flex-1 mb-5">
                       {post.excerpt}
                     </p>
 
                     {/* Read link */}
-                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[#5F7A61]">
+                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[var(--bg-accent)]">
                       Read
                       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"
                         strokeLinecap="round" strokeLinejoin="round"
@@ -340,7 +340,7 @@ export default function BlogClient() {
             viewport={{ once: true }}
             className="mt-14 text-center"
           >
-            <button className="px-7 py-3 rounded-full border border-[#d6c9b8] text-[0.85rem] text-[#7A7A7A] hover:text-[#1F2A44] hover:border-[#5F7A61]/40 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50">
+            <button className="px-7 py-3 rounded-full border border-[var(--border-soft)] text-[0.85rem] text-[var(--text-muted)] hover:text-[var(--text-heading)] hover:border-[var(--bg-accent)]/40 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50">
               Load older posts
             </button>
           </motion.div>
@@ -348,7 +348,7 @@ export default function BlogClient() {
       </section>
 
       {/* ── Closing note ───────────────────────────────────────── */}
-      <section className="py-20 bg-white border-t border-[#d6c9b8]/50">
+      <section className="py-20 bg-white border-t border-[var(--border-soft)]/50">
         <div className="mx-auto max-w-3xl px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
@@ -356,13 +356,13 @@ export default function BlogClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <span className="block text-[3rem] text-[#5F7A61]/25 font-serif leading-none mb-5 select-none" aria-hidden="true">"</span>
+            <span className="block text-[3rem] text-[var(--bg-accent)]/25 font-serif leading-none mb-5 select-none" aria-hidden="true">"</span>
             <blockquote className="border-0 p-0 not-italic">
               <p className="text-[1.02rem] leading-[1.85] text-[#5a5a5a] italic font-light max-w-[44ch] mx-auto">
                 Writing about practice is useful only when it sends you back to the
                 cushion. Read lightly. Sit deeply.
               </p>
-              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[#5F7A61] font-semibold not-italic">
+              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold not-italic">
                 From the teacher
               </footer>
             </blockquote>

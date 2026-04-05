@@ -65,12 +65,12 @@ const fadeUp = {
 export default function Footer() {
   return (
     <footer
-      className="bg-[#0f1724] dark:bg-[#131411] text-[#c8cdd8] dark:text-[var(--text-light)]"
+      className="bg-[var(--text-heading)] dark:bg-[var(--bg-primary)] text-[var(--text-muted)] dark:text-[var(--text-muted)]"
       role="contentinfo"
       aria-label="Site footer"
     >
       {/* Thin accent line at top */}
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-[rgba(95,122,97,0.5)] to-transparent" />
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[rgba(201,162,39,0.5)] to-transparent" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
 
@@ -84,10 +84,10 @@ export default function Footer() {
           className="lg:col-span-1"
         >
           <div className="flex items-center gap-2 mb-5">
-            <span className="text-[#5F7A61] text-xl leading-none select-none" aria-hidden="true">꩜</span>
+            <span className="text-[var(--bg-accent)] text-xl leading-none select-none" aria-hidden="true">꩜</span>
             <span className="text-white font-semibold tracking-wide text-[0.95rem]">Nispruh Yog</span>
           </div>
-          <p className="text-[0.9rem] leading-[1.75] text-[#8e96a8] max-w-[32ch]">
+          <p className="text-[0.9rem] leading-[1.75] text-[var(--text-muted)] max-w-[32ch]">
             A quiet space for sincere seekers. Rooted in the ancient science of
             Kriya Yoga — awakening through breath, stillness, and self-inquiry.
           </p>
@@ -98,7 +98,7 @@ export default function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="w-9 h-9 rounded-full flex items-center justify-center text-[#8e96a8] border border-white/10 hover:text-white hover:border-[#5F7A61]/60 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50"
+                className="w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-muted)] border border-white/10 hover:text-white hover:border-[var(--bg-accent)]/60 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
               >
                 {icon}
               </a>
@@ -114,7 +114,7 @@ export default function Footer() {
           viewport={{ once: true }}
           custom={1}
         >
-          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[#5F7A61] font-semibold mb-6">
+          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold mb-6">
             Explore
           </h2>
           <ul className="space-y-3" role="list">
@@ -122,7 +122,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-[0.88rem] text-[#8e96a8] hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+                  className="text-[0.88rem] text-[var(--text-muted)] hover:text-white transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
                 >
                   {label}
                 </Link>
@@ -139,10 +139,10 @@ export default function Footer() {
           viewport={{ once: true }}
           custom={2}
         >
-          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[#5F7A61] font-semibold mb-6">
+          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold mb-6">
             Connect
           </h2>
-          <ul className="space-y-3 text-[0.88rem] text-[#8e96a8]" role="list">
+          <ul className="space-y-3 text-[0.88rem] text-[var(--text-muted)]" role="list">
             <li>
               <a
                 href="mailto:info@nispruhyog.com"
@@ -170,11 +170,11 @@ export default function Footer() {
           </ul>
 
           {/* Sanskrit pull-quote */}
-          <blockquote className="mt-10 border-l-2 border-[#5F7A61]/40 pl-4">
-            <p className="text-[1.05rem] text-[#c8cdd8]/60 italic leading-relaxed font-light">
+          <blockquote className="mt-10 border-l-2 border-[var(--bg-accent)]/40 pl-4">
+            <p className="text-[1.05rem] text-[var(--text-muted)]/60 italic leading-relaxed font-light">
               "Tat tvam asi."
             </p>
-            <footer className="mt-1 text-[0.78rem] text-[#8e96a8]/60">
+            <footer className="mt-1 text-[0.78rem] text-[var(--text-muted)]/60">
               That thou art — Chandogya Upanishad
             </footer>
           </blockquote>
@@ -183,7 +183,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/[0.06] mx-5 sm:mx-8">
-        <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-[0.78rem] text-[#8e96a8]/60">
+        <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-[0.78rem] text-[var(--text-muted)]/60">
           <p>© {new Date().getFullYear()} Nispruh Yog · All rights reserved</p>
           <p className="text-center">
             Crafted with stillness &middot; Guided by inner light

@@ -22,7 +22,7 @@ export default function FinalCTA() {
     <section
       id="begin"
       aria-labelledby="cta-heading"
-      className="relative py-32 overflow-hidden bg-[#F7F5F2] border-t border-[#d6c9b8]/50"
+      className="relative py-32 overflow-hidden bg-[var(--bg-primary)] border-t border-[var(--border-soft)]/50"
     >
       {/* Background radial washes */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
@@ -52,7 +52,7 @@ export default function FinalCTA() {
           {/* Eyebrow */}
           <motion.p
             variants={FADE_UP}
-            className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6"
+            className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6"
           >
             The path begins with one breath
           </motion.p>
@@ -61,17 +61,17 @@ export default function FinalCTA() {
           <motion.h2
             id="cta-heading"
             variants={FADE_UP}
-            className="text-[clamp(2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[#1F2A44] mb-7"
+            className="text-[clamp(2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[var(--text-heading)] mb-7"
           >
             Begin Your Inner
             <br />
-            <span className="text-[#5F7A61]">Journey Today</span>
+            <span className="text-[var(--bg-accent)]">Journey Today</span>
           </motion.h2>
 
           {/* Supporting text */}
           <motion.p
             variants={FADE_UP}
-            className="text-[1rem] leading-[1.85] text-[#7A7A7A] max-w-[42ch] mx-auto mb-12"
+            className="text-[1rem] leading-[1.85] text-[var(--text-muted)] max-w-[42ch] mx-auto mb-12"
           >
             There is no perfect moment to begin. Only this one. Whether you are
             curious, searching, or ready — a place is here for you.
@@ -84,7 +84,7 @@ export default function FinalCTA() {
           >
             <Link
               href="/courses-programs"
-              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[#5F7A61] text-white text-[0.92rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/60 focus-visible:ring-offset-2 group"
+              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[var(--bg-accent)] text-white text-[0.92rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 group"
             >
               Join a Program
               <svg
@@ -103,7 +103,7 @@ export default function FinalCTA() {
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-1.5 px-6 py-4 rounded-full text-[0.88rem] font-medium text-[#1F2A44]/60 hover:text-[#1F2A44] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+              className="inline-flex items-center gap-1.5 px-6 py-4 rounded-full text-[0.88rem] font-medium text-[var(--text-heading)]/60 hover:text-[var(--text-heading)] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
             >
               Or ask a question first
             </Link>
@@ -112,7 +112,7 @@ export default function FinalCTA() {
           {/* Reassurance line */}
           <motion.p
             variants={FADE_UP}
-            className="mt-10 text-[0.78rem] text-[#7A7A7A]/60 tracking-wide"
+            className="mt-10 text-[0.78rem] text-[var(--text-muted)]/60 tracking-wide"
           >
             No obligation &middot; No rush &middot; Just an open door
           </motion.p>

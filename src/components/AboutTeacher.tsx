@@ -22,7 +22,7 @@ export default function AboutTeacher() {
     <section
       id="about-teacher"
       aria-labelledby="teacher-heading"
-      className="py-24 bg-white border-t border-[#d6c9b8]/50"
+      className="py-24 bg-white border-t border-[var(--border-soft)]/50"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
@@ -37,7 +37,7 @@ export default function AboutTeacher() {
           >
             {/* Offset decorative square */}
             <div
-              className="absolute -bottom-5 -right-5 w-3/4 h-3/4 rounded-[1.5rem] border border-[#5F7A61]/15 pointer-events-none"
+              className="absolute -bottom-5 -right-5 w-3/4 h-3/4 rounded-[1.5rem] border border-[var(--bg-accent)]/15 pointer-events-none"
               aria-hidden="true"
             />
 
@@ -63,15 +63,15 @@ export default function AboutTeacher() {
                 className="w-20 h-20 opacity-20"
                 aria-hidden="true"
               >
-                <circle cx="32" cy="20" r="14" fill="#1F2A44" />
+                <circle cx="32" cy="20" r="14" fill="var(--text-heading)" />
                 <path
                   d="M4 76c0-15.464 12.536-28 28-28s28 12.536 28 28"
-                  stroke="#1F2A44"
+                  stroke="var(--text-heading)"
                   strokeWidth="3"
                   strokeLinecap="round"
                 />
               </svg>
-              <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[#7A7A7A]/60 font-medium">
+              <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/60 font-medium">
                 Photo placeholder
               </p>
             </div>
@@ -82,7 +82,7 @@ export default function AboutTeacher() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
               viewport={{ once: true }}
-              className="absolute top-8 -right-4 sm:-right-8 z-20 bg-[#1F2A44] text-white rounded-2xl px-5 py-4 shadow-[0_8px_32px_rgba(31,42,68,0.18)]"
+              className="absolute top-8 -right-4 sm:-right-8 z-20 bg-[var(--text-heading)] text-white rounded-2xl px-5 py-4 shadow-[0_8px_32px_rgba(31,42,68,0.18)]"
             >
               <p className="text-[1.6rem] font-semibold leading-none">20+</p>
               <p className="text-[0.7rem] uppercase tracking-[0.14em] text-white/60 mt-1 font-medium">
@@ -101,7 +101,7 @@ export default function AboutTeacher() {
           >
             <motion.p
               variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-5"
+              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5"
             >
               The teacher
             </motion.p>
@@ -109,14 +109,14 @@ export default function AboutTeacher() {
             <motion.h2
               id="teacher-heading"
               variants={FADE_UP}
-              className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44] mb-2"
+              className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-2"
             >
               Swami Nispruh
             </motion.h2>
 
             <motion.p
               variants={FADE_UP}
-              className="text-[0.82rem] uppercase tracking-[0.14em] text-[#D6A75E] font-semibold mb-8"
+              className="text-[0.82rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold mb-8"
             >
               Kriya Yoga Acharya · Lineage of Mahavatar Babaji
             </motion.p>
@@ -155,7 +155,7 @@ export default function AboutTeacher() {
             {/* Divider */}
             <motion.div
               variants={FADE_UP}
-              className="h-px bg-[#d6c9b8]/60 mb-10"
+              className="h-px bg-[var(--border-soft)]/60 mb-10"
             />
 
             {/* Credentials row */}
@@ -172,10 +172,10 @@ export default function AboutTeacher() {
               ].map((item) => (
                 <li
                   key={item}
-                  className="flex items-center gap-2 text-[0.82rem] text-[#7A7A7A]"
+                  className="flex items-center gap-2 text-[0.82rem] text-[var(--text-muted)]"
                 >
                   <span
-                    className="w-1 h-1 rounded-full bg-[#5F7A61] inline-block"
+                    className="w-1 h-1 rounded-full bg-[var(--bg-accent)] inline-block"
                     aria-hidden="true"
                   />
                   {item}
@@ -187,7 +187,7 @@ export default function AboutTeacher() {
             <motion.div variants={FADE_UP}>
               <Link
                 href="/about-kriya-yoga"
-                className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full border border-[#1F2A44]/25 text-[#1F2A44] text-[0.88rem] font-medium tracking-wide hover:bg-[#1F2A44] hover:text-white hover:border-[#1F2A44] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1F2A44]/40 focus-visible:ring-offset-2 group"
+                className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full border border-[var(--text-heading)]/25 text-[var(--text-heading)] text-[0.88rem] font-medium tracking-wide hover:bg-[var(--text-heading)] hover:text-white hover:border-[var(--text-heading)] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--text-heading)]/40 focus-visible:ring-offset-2 group"
               >
                 Read full story
                 <svg

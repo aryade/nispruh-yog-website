@@ -157,20 +157,20 @@ const PRACTICES = [
 ];
 
 const LEVEL_COLOUR: Record<string, string> = {
-  Beginner: "#5F7A61",
-  Intermediate: "#D6A75E",
-  Advanced: "#1F2A44",
+  Beginner: "var(--bg-accent)",
+  Intermediate: "var(--bg-accent)",
+  Advanced: "var(--text-heading)",
 };
 
 /* ── component ────────────────────────────────────────────────────── */
 export default function PracticesClient() {
   return (
-    <div className="bg-[#F7F5F2]">
+    <div className="bg-[var(--bg-primary)]">
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section
         aria-labelledby="practices-heading"
-        className="relative pt-20 pb-20 overflow-hidden border-b border-[#d6c9b8]/50"
+        className="relative pt-20 pb-20 overflow-hidden border-b border-[var(--border-soft)]/50"
       >
         <div className="pointer-events-none absolute inset-0" aria-hidden="true">
           <div className="absolute -top-24 -right-16 w-[48vw] h-[48vw] max-w-[580px] rounded-full opacity-30"
@@ -185,18 +185,18 @@ export default function PracticesClient() {
             className="max-w-[54ch]"
           >
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
               Step-by-step guides
             </motion.p>
             <motion.h1
               id="practices-heading"
               variants={FADE_UP}
-              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[#1F2A44] mb-6"
+              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[var(--text-heading)] mb-6"
             >
               Practices
             </motion.h1>
             <motion.p variants={FADE_UP}
-              className="text-[1.02rem] leading-[1.85] text-[#7A7A7A] max-w-[46ch]">
+              className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[46ch]">
               A small, sincere daily gesture is worth more than a strained
               hour once a week. Begin where you are. Practise without pressure.
               Return without guilt.
@@ -205,7 +205,7 @@ export default function PracticesClient() {
             {/* Level legend */}
             <motion.div variants={FADE_UP} className="flex flex-wrap gap-4 mt-8">
               {Object.entries(LEVEL_COLOUR).map(([level, color]) => (
-                <span key={level} className="flex items-center gap-2 text-[0.78rem] text-[#7A7A7A]">
+                <span key={level} className="flex items-center gap-2 text-[0.78rem] text-[var(--text-muted)]">
                   <span className="w-2 h-2 rounded-full inline-block" style={{ background: color }} aria-hidden="true" />
                   {level}
                 </span>
@@ -216,17 +216,17 @@ export default function PracticesClient() {
       </section>
 
       {/* ── Level filter ───────────────────────────────────────── */}
-      <div className="sticky top-16 z-30 bg-[#F7F5F2]/90 backdrop-blur-md border-b border-[#d6c9b8]/50">
+      <div className="sticky top-16 z-30 bg-[var(--bg-primary)]/90 backdrop-blur-md border-b border-[var(--border-soft)]/50">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <nav aria-label="Filter practices by level" className="flex gap-1.5 overflow-x-auto py-4 scrollbar-none">
             {LEVELS.map((lvl, i) => (
               <button
                 key={lvl}
                 className={[
-                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50",
+                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50",
                   i === 0
-                    ? "bg-[#5F7A61] text-white"
-                    : "text-[#7A7A7A] hover:text-[#1F2A44] border border-[#d6c9b8]/80 hover:border-[#5F7A61]/40",
+                    ? "bg-[var(--bg-accent)] text-white"
+                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--bg-accent)]/40",
                 ].join(" ")}
               >
                 {lvl}
@@ -249,7 +249,7 @@ export default function PracticesClient() {
           >
             {PRACTICES.map(({ level, duration, type, title, description, steps, href, icon }) => (
               <motion.li key={title} variants={FADE_UP}>
-                <div className="group grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-0 rounded-2xl border border-[#d6c9b8]/60 bg-white overflow-hidden hover:shadow-[0_8px_32px_rgba(31,42,68,0.07)] transition-shadow duration-300">
+                <div className="group grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-0 rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_8px_32px_rgba(31,42,68,0.07)] transition-shadow duration-300">
 
                   <div className="p-7 sm:p-8">
                     {/* Meta row */}
@@ -261,9 +261,9 @@ export default function PracticesClient() {
                       >
                         {level}
                       </span>
-                      <span className="text-[0.72rem] text-[#7A7A7A]/70">{type}</span>
-                      <span className="text-[0.72rem] text-[#7A7A7A]/70">&middot;</span>
-                      <span className="text-[0.72rem] text-[#7A7A7A]/70">{duration}</span>
+                      <span className="text-[0.72rem] text-[var(--text-muted)]/70">{type}</span>
+                      <span className="text-[0.72rem] text-[var(--text-muted)]/70">&middot;</span>
+                      <span className="text-[0.72rem] text-[var(--text-muted)]/70">{duration}</span>
                     </div>
 
                     <div className="flex items-start gap-5">
@@ -277,17 +277,17 @@ export default function PracticesClient() {
                       </div>
 
                       <div className="flex-1 min-w-0">
-                        <h2 className="text-[1.05rem] font-semibold text-[#1F2A44] mb-2 leading-snug">
+                        <h2 className="text-[1.05rem] font-semibold text-[var(--text-heading)] mb-2 leading-snug">
                           {title}
                         </h2>
-                        <p className="text-[0.9rem] leading-[1.78] text-[#7A7A7A] mb-5">
+                        <p className="text-[0.9rem] leading-[1.78] text-[var(--text-muted)] mb-5">
                           {description}
                         </p>
 
                         {/* Steps */}
                         <ol className="flex flex-col gap-1.5" aria-label={`Steps for ${title}`}>
                           {steps.map((step, i) => (
-                            <li key={i} className="flex items-start gap-3 text-[0.82rem] text-[#7A7A7A]">
+                            <li key={i} className="flex items-start gap-3 text-[0.82rem] text-[var(--text-muted)]">
                               <span
                                 className="shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[0.62rem] font-semibold mt-0.5"
                                 style={{ background: `${LEVEL_COLOUR[level]}14`, color: LEVEL_COLOUR[level] }}
@@ -304,10 +304,10 @@ export default function PracticesClient() {
                   </div>
 
                   {/* Right CTA column */}
-                  <div className="flex items-center justify-center lg:justify-end lg:border-l border-t lg:border-t-0 border-[#d6c9b8]/40 px-7 py-5 lg:py-0 lg:w-48">
+                  <div className="flex items-center justify-center lg:justify-end lg:border-l border-t lg:border-t-0 border-[var(--border-soft)]/40 px-7 py-5 lg:py-0 lg:w-48">
                     <Link
                       href={href}
-                      className="inline-flex items-center gap-2 text-[0.82rem] font-medium rounded-full px-5 py-2.5 border border-[#d6c9b8] text-[#1F2A44] hover:bg-[#1F2A44] hover:text-white hover:border-[#1F2A44] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1F2A44]/40 group/link"
+                      className="inline-flex items-center gap-2 text-[0.82rem] font-medium rounded-full px-5 py-2.5 border border-[var(--border-soft)] text-[var(--text-heading)] hover:bg-[var(--text-heading)] hover:text-white hover:border-[var(--text-heading)] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--text-heading)]/40 group/link"
                     >
                       Full guide
                       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"
@@ -326,7 +326,7 @@ export default function PracticesClient() {
       </section>
 
       {/* ── Not yet initiated note ─────────────────────────────── */}
-      <section className="py-20 bg-[#1F2A44] border-t border-white/[0.06]">
+      <section className="py-20 bg-[var(--text-heading)] border-t border-white/[0.06]">
         <div className="mx-auto max-w-3xl px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
@@ -334,7 +334,7 @@ export default function PracticesClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-6">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-6">
               A gentle note
             </p>
             <p className="text-[1rem] leading-[1.85] text-white/65 max-w-[46ch] mx-auto mb-10">
@@ -345,7 +345,7 @@ export default function PracticesClient() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#5F7A61] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#1F2A44] group"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[var(--bg-accent)] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
             >
               Ask about initiation
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"

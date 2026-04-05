@@ -45,7 +45,7 @@ export function Testimonials() {
     <section
       id="testimonials"
       aria-labelledby="testimonials-heading"
-      className="py-24 bg-[#1F2A44] border-t border-white/[0.06]"
+      className="py-24 bg-[var(--text-heading)] border-t border-white/[0.06]"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -57,7 +57,7 @@ export function Testimonials() {
           viewport={{ once: true, margin: "-60px" }}
           className="max-w-[40ch] mb-16"
         >
-          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-4">
+          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
             From the community
           </p>
           <h2
@@ -87,7 +87,7 @@ export function Testimonials() {
             >
               {/* Large open-quote mark */}
               <span
-                className="block text-[3.5rem] leading-none text-[#5F7A61]/40 font-serif mb-2 select-none"
+                className="block text-[3.5rem] leading-none text-[var(--bg-accent)]/40 font-serif mb-2 select-none"
                 aria-hidden="true"
               >
                 "
@@ -107,7 +107,7 @@ export function Testimonials() {
               <footer className="flex items-center gap-3 not-italic">
                 {/* Avatar initial */}
                 <div
-                  className="w-9 h-9 rounded-full bg-[#5F7A61]/25 flex items-center justify-center text-[0.8rem] font-semibold text-[#8ea890] shrink-0"
+                  className="w-9 h-9 rounded-full bg-[var(--bg-accent)]/25 flex items-center justify-center text-[0.8rem] font-semibold text-[#8ea890] shrink-0"
                   aria-hidden="true"
                 >
                   {initial}

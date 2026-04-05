@@ -22,7 +22,7 @@ export default function ContactSection() {
     <section
       id="join"
       aria-labelledby="contact-heading"
-      className="py-24 bg-[#F7F5F2] border-t border-[#d6c9b8]/50"
+      className="py-24 bg-[var(--bg-primary)] border-t border-[var(--border-soft)]/50"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
@@ -36,7 +36,7 @@ export default function ContactSection() {
           >
             <motion.p
               variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-5"
+              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5"
             >
               Reach out
             </motion.p>
@@ -44,16 +44,16 @@ export default function ContactSection() {
             <motion.h2
               id="contact-heading"
               variants={FADE_UP}
-              className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44] mb-6"
+              className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-6"
             >
               A quiet word
               <br />
-              <span className="text-[#5F7A61]">is always welcome</span>
+              <span className="text-[var(--bg-accent)]">is always welcome</span>
             </motion.h2>
 
             <motion.p
               variants={FADE_UP}
-              className="text-[1rem] leading-[1.85] text-[#7A7A7A] max-w-[38ch] mb-10"
+              className="text-[1rem] leading-[1.85] text-[var(--text-muted)] max-w-[38ch] mb-10"
             >
               If you feel drawn — to a class, a course, or simply to ask a
               question — send a short note. We respond from a mindful place,
@@ -71,9 +71,9 @@ export default function ContactSection() {
                 "We reply within two to three days",
                 "Your details are never shared",
               ].map((item) => (
-                <li key={item} className="flex items-start gap-3 text-[0.88rem] text-[#7A7A7A]">
+                <li key={item} className="flex items-start gap-3 text-[0.88rem] text-[var(--text-muted)]">
                   <span
-                    className="mt-[0.35rem] w-1.5 h-1.5 rounded-full bg-[#5F7A61]/50 shrink-0"
+                    className="mt-[0.35rem] w-1.5 h-1.5 rounded-full bg-[var(--bg-accent)]/50 shrink-0"
                     aria-hidden="true"
                   />
                   {item}
@@ -84,9 +84,9 @@ export default function ContactSection() {
             {/* Pull quote */}
             <motion.blockquote
               variants={FADE_UP}
-              className="mt-12 border-l-2 border-[#5F7A61]/30 pl-5 not-italic"
+              className="mt-12 border-l-2 border-[var(--bg-accent)]/30 pl-5 not-italic"
             >
-              <p className="text-[0.95rem] leading-[1.8] text-[#7A7A7A]/80 italic font-light">
+              <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)]/80 italic font-light">
                 "The door is always open. There is no wrong time to knock."
               </p>
             </motion.blockquote>
@@ -98,7 +98,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true, margin: "-60px" }}
-            className="bg-white rounded-2xl border border-[#d6c9b8]/60 p-8 shadow-[0_8px_40px_rgba(31,42,68,0.06)]"
+            className="bg-white rounded-2xl border border-[var(--border-soft)]/60 p-8 shadow-[0_8px_40px_rgba(31,42,68,0.06)]"
           >
             <ContactForm />
             <p className="fine mt-4 text-center">

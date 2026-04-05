@@ -54,7 +54,7 @@ const BENEFITS = [
 /* ── component ────────────────────────────────────────────────────── */
 export default function AboutKriyaYogaPage() {
   return (
-    <div className="bg-[#F7F5F2]">
+    <div className="bg-[var(--bg-primary)]">
 
       {/* ── Hero ──────────────────────────────────────────────────── */}
       <section
@@ -76,17 +76,17 @@ export default function AboutKriyaYogaPage() {
             animate="show"
           >
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
               The science of inner awakening
             </motion.p>
             <motion.h1
               id="about-hero-heading"
               variants={FADE_UP}
-              className="text-[clamp(2.2rem,5vw,3.4rem)] font-semibold leading-[1.12] tracking-tight text-[#1F2A44] mb-7"
+              className="text-[clamp(2.2rem,5vw,3.4rem)] font-semibold leading-[1.12] tracking-tight text-[var(--text-heading)] mb-7"
             >
               About
               <br />
-              <span className="text-[#5F7A61]">Kriya Yoga</span>
+              <span className="text-[var(--bg-accent)]">Kriya Yoga</span>
             </motion.h1>
             <motion.p variants={FADE_UP}
               className="text-[1.05rem] leading-[1.85] text-[#5a5a5a] max-w-[52ch]">
@@ -103,7 +103,7 @@ export default function AboutKriyaYogaPage() {
       <section
         id="what-is"
         aria-labelledby="what-is-heading"
-        className="py-24 bg-white border-t border-[#d6c9b8]/50"
+        className="py-24 bg-white border-t border-[var(--border-soft)]/50"
       >
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
@@ -116,13 +116,13 @@ export default function AboutKriyaYogaPage() {
               viewport={{ once: true, margin: "-60px" }}
             >
               <motion.p variants={FADE_UP}
-                className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-5">
+                className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5">
                 The foundation
               </motion.p>
               <motion.h2
                 id="what-is-heading"
                 variants={FADE_UP}
-                className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44] mb-8"
+                className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-8"
               >
                 What is Kriya Yoga?
               </motion.h2>
@@ -146,7 +146,7 @@ export default function AboutKriyaYogaPage() {
               viewport={{ once: true, margin: "-60px" }}
               className="relative"
             >
-              <div className="absolute -inset-3 rounded-[2rem] border border-[#5F7A61]/10 pointer-events-none" aria-hidden="true" />
+              <div className="absolute -inset-3 rounded-[2rem] border border-[var(--bg-accent)]/10 pointer-events-none" aria-hidden="true" />
               <div
                 role="img"
                 aria-label="Kriya Yoga meditation — image coming soon"
@@ -154,8 +154,8 @@ export default function AboutKriyaYogaPage() {
               >
                 <div className="absolute inset-0 pointer-events-none" aria-hidden="true"
                   style={{ background: "radial-gradient(ellipse at 35% 30%, rgba(95,122,97,0.16) 0%, transparent 60%)" }} />
-                <span className="text-[4rem] text-[#5F7A61]/25 leading-none select-none" aria-hidden="true">꩜</span>
-                <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[#7A7A7A]/50 font-medium">Image placeholder</p>
+                <span className="text-[4rem] text-[var(--bg-accent)]/25 leading-none select-none" aria-hidden="true">꩜</span>
+                <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/50 font-medium">Image placeholder</p>
               </div>
             </motion.div>
 
@@ -167,7 +167,7 @@ export default function AboutKriyaYogaPage() {
       <section
         id="how-it-works"
         aria-labelledby="how-heading"
-        className="py-24 bg-[#F7F5F2] border-t border-[#d6c9b8]/50"
+        className="py-24 bg-[var(--bg-primary)] border-t border-[var(--border-soft)]/50"
       >
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -178,16 +178,16 @@ export default function AboutKriyaYogaPage() {
             viewport={{ once: true, margin: "-60px" }}
             className="max-w-[44ch] mb-16"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
               The mechanism
             </p>
             <h2
               id="how-heading"
-              className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44]"
+              className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
             >
               How Kriya Yoga
               <br />
-              <span className="text-[#5F7A61]">actually works</span>
+              <span className="text-[var(--bg-accent)]">actually works</span>
             </h2>
           </motion.div>
 
@@ -206,14 +206,14 @@ export default function AboutKriyaYogaPage() {
                 className="flex gap-6"
               >
                 <span
-                  className="text-[0.72rem] font-semibold tracking-[0.16em] text-[#5F7A61]/50 uppercase pt-1 shrink-0"
+                  className="text-[0.72rem] font-semibold tracking-[0.16em] text-[var(--bg-accent)]/50 uppercase pt-1 shrink-0"
                   aria-hidden="true"
                 >
                   {step}
                 </span>
                 <div>
-                  <h3 className="text-[1rem] font-semibold text-[#1F2A44] mb-3">{title}</h3>
-                  <p className="text-[0.92rem] leading-[1.82] text-[#7A7A7A]">{body}</p>
+                  <h3 className="text-[1rem] font-semibold text-[var(--text-heading)] mb-3">{title}</h3>
+                  <p className="text-[0.92rem] leading-[1.82] text-[var(--text-muted)]">{body}</p>
                 </div>
               </motion.li>
             ))}
@@ -226,7 +226,7 @@ export default function AboutKriyaYogaPage() {
       <section
         id="benefits"
         aria-labelledby="benefits-about-heading"
-        className="py-24 bg-white border-t border-[#d6c9b8]/50"
+        className="py-24 bg-white border-t border-[var(--border-soft)]/50"
       >
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
 
@@ -237,16 +237,16 @@ export default function AboutKriyaYogaPage() {
             viewport={{ once: true, margin: "-60px" }}
             className="max-w-[44ch] mb-16"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
               Natural unfoldings
             </p>
             <h2
               id="benefits-about-heading"
-              className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44]"
+              className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
             >
               What opens
               <br />
-              <span className="text-[#5F7A61]">through practice</span>
+              <span className="text-[var(--bg-accent)]">through practice</span>
             </h2>
           </motion.div>
 
@@ -262,11 +262,11 @@ export default function AboutKriyaYogaPage() {
               <motion.li
                 key={title}
                 variants={FADE_UP}
-                className="rounded-2xl border border-[#d6c9b8]/60 bg-[#F7F5F2]/70 p-7"
+                className="rounded-2xl border border-[var(--border-soft)]/60 bg-[var(--bg-primary)]/70 p-7"
               >
-                <div className="w-1.5 h-1.5 rounded-full bg-[#5F7A61] mb-5" aria-hidden="true" />
-                <h3 className="text-[0.95rem] font-semibold text-[#1F2A44] mb-2">{title}</h3>
-                <p className="text-[0.88rem] leading-[1.78] text-[#7A7A7A]">{body}</p>
+                <div className="w-1.5 h-1.5 rounded-full bg-[var(--bg-accent)] mb-5" aria-hidden="true" />
+                <h3 className="text-[0.95rem] font-semibold text-[var(--text-heading)] mb-2">{title}</h3>
+                <p className="text-[0.88rem] leading-[1.78] text-[var(--text-muted)]">{body}</p>
               </motion.li>
             ))}
           </motion.ul>
@@ -276,13 +276,13 @@ export default function AboutKriyaYogaPage() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-14 border-l-2 border-[#5F7A61]/35 pl-5 max-w-[48ch] not-italic"
+            className="mt-14 border-l-2 border-[var(--bg-accent)]/35 pl-5 max-w-[48ch] not-italic"
           >
-            <p className="text-[0.95rem] leading-[1.8] text-[#7A7A7A] italic font-light">
+            <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)] italic font-light">
               "These are not promises to be sold — they are natural movements
               that arise when we stop resisting our own depth."
             </p>
-            <footer className="mt-2 text-[0.72rem] uppercase tracking-[0.14em] text-[#5F7A61] font-semibold not-italic">
+            <footer className="mt-2 text-[0.72rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold not-italic">
               From the teachings
             </footer>
           </motion.blockquote>
@@ -294,7 +294,7 @@ export default function AboutKriyaYogaPage() {
       <section
         id="begin"
         aria-labelledby="about-cta-heading"
-        className="py-24 bg-[#1F2A44] border-t border-white/[0.06]"
+        className="py-24 bg-[var(--text-heading)] border-t border-white/[0.06]"
       >
         <div className="mx-auto max-w-3xl px-5 sm:px-8 text-center">
 
@@ -305,7 +305,7 @@ export default function AboutKriyaYogaPage() {
             viewport={{ once: true, margin: "-60px" }}
           >
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
               Ready to begin?
             </motion.p>
 
@@ -329,7 +329,7 @@ export default function AboutKriyaYogaPage() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/courses-programs"
-                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[#5F7A61] text-white text-[0.9rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#1F2A44] group"
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[var(--bg-accent)] text-white text-[0.9rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
               >
                 Explore programs
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"

@@ -40,7 +40,7 @@ const COURSES = [
     ],
     suitable: "Anyone. No experience needed.",
     cta: { label: "Reserve a seat", href: "/contact?program=meditation" },
-    accent: "#5F7A61",
+    accent: "var(--bg-accent)",
     featured: false,
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
@@ -72,7 +72,7 @@ const COURSES = [
     ],
     suitable: "Sincere seekers who have attended at least one meditation class.",
     cta: { label: "Apply for next cohort", href: "/contact?program=kriya-course" },
-    accent: "#D6A75E",
+    accent: "var(--bg-accent)",
     featured: true,
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
@@ -102,7 +102,7 @@ const COURSES = [
     ],
     suitable: "Those with an established daily practice. Prior course attendance preferred.",
     cta: { label: "See upcoming dates", href: "/events-retreats" },
-    accent: "#1F2A44",
+    accent: "var(--text-heading)",
     featured: false,
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
@@ -131,7 +131,7 @@ const COURSES = [
     ],
     suitable: "Any stage of practice. Particularly useful at turning points.",
     cta: { label: "Enquire privately", href: "/contact?program=one-to-one" },
-    accent: "#5F7A61",
+    accent: "var(--bg-accent)",
     featured: false,
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
@@ -147,12 +147,12 @@ const COURSES = [
 /* ── component ────────────────────────────────────────────────────── */
 export default function CoursesClient() {
   return (
-    <div className="bg-[#F7F5F2]">
+    <div className="bg-[var(--bg-primary)]">
 
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section
         aria-labelledby="courses-heading"
-        className="relative pt-20 pb-24 overflow-hidden border-b border-[#d6c9b8]/50"
+        className="relative pt-20 pb-24 overflow-hidden border-b border-[var(--border-soft)]/50"
       >
         <div className="pointer-events-none absolute inset-0" aria-hidden="true">
           <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[60vw] h-[40vw] max-w-[700px] rounded-full opacity-35"
@@ -162,20 +162,20 @@ export default function CoursesClient() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <motion.div variants={STAGGER} initial="hidden" animate="show">
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[#5F7A61] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
               Ways to walk this path
             </motion.p>
             <motion.h1
               id="courses-heading"
               variants={FADE_UP}
-              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[#1F2A44] mb-6"
+              className="text-[clamp(2.2rem,5vw,3.2rem)] font-semibold leading-[1.12] tracking-tight text-[var(--text-heading)] mb-6"
             >
               Courses &amp;
               <br />
-              <span className="text-[#5F7A61]">Programs</span>
+              <span className="text-[var(--bg-accent)]">Programs</span>
             </motion.h1>
             <motion.p variants={FADE_UP}
-              className="text-[1.02rem] leading-[1.85] text-[#7A7A7A] max-w-[44ch]">
+              className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[44ch]">
               Each offering is paced for integration — not consumption. We do
               not fill seats; we welcome sincere seekers at the stage where
               they actually are.
@@ -195,7 +195,7 @@ export default function CoursesClient() {
                 key={id}
                 variants={FADE_UP}
                 href={`#${id}`}
-                className="flex items-center gap-3 rounded-xl border border-[#d6c9b8]/60 bg-white px-4 py-3.5 text-[0.82rem] font-medium text-[#1F2A44] hover:border-[#5F7A61]/40 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50"
+                className="flex items-center gap-3 rounded-xl border border-[var(--border-soft)]/60 bg-white px-4 py-3.5 text-[0.82rem] font-medium text-[var(--text-heading)] hover:border-[var(--bg-accent)]/40 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
               >
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ background: accent }} aria-hidden="true" />
                 {title}
@@ -220,13 +220,13 @@ export default function CoursesClient() {
               className={[
                 "relative rounded-2xl border overflow-hidden",
                 featured
-                  ? "border-[#D6A75E]/40 shadow-[0_16px_56px_rgba(31,42,68,0.1)]"
-                  : "border-[#d6c9b8]/60",
+                  ? "border-[var(--bg-accent)]/40 shadow-[0_16px_56px_rgba(31,42,68,0.1)]"
+                  : "border-[var(--border-soft)]/60",
               ].join(" ")}
             >
               {/* Featured badge */}
               {featured && (
-                <div className="absolute top-6 right-6 text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-3 py-1 rounded-full bg-[#D6A75E]/15 text-[#D6A75E]">
+                <div className="absolute top-6 right-6 text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-3 py-1 rounded-full bg-[var(--bg-accent)]/15 text-[var(--bg-accent)]">
                   Most popular
                 </div>
               )}
@@ -255,15 +255,15 @@ export default function CoursesClient() {
                         >
                           {tag}
                         </span>
-                        <span className="text-[0.75rem] text-[#7A7A7A]/70">{format}</span>
+                        <span className="text-[0.75rem] text-[var(--text-muted)]/70">{format}</span>
                       </div>
                       <h2
                         id={`course-${id}-title`}
-                        className="text-[1.25rem] font-semibold text-[#1F2A44] leading-snug"
+                        className="text-[1.25rem] font-semibold text-[var(--text-heading)] leading-snug"
                       >
                         {title}
                       </h2>
-                      <p className="text-[0.88rem] text-[#7A7A7A] mt-1">{subtitle}</p>
+                      <p className="text-[0.88rem] text-[var(--text-muted)] mt-1">{subtitle}</p>
                     </div>
                   </div>
 
@@ -274,12 +274,12 @@ export default function CoursesClient() {
 
                   {/* What's included */}
                   <div className="mb-6">
-                    <p className="text-[0.72rem] uppercase tracking-[0.16em] font-semibold text-[#1F2A44]/50 mb-3">
+                    <p className="text-[0.72rem] uppercase tracking-[0.16em] font-semibold text-[var(--text-heading)]/50 mb-3">
                       What&apos;s included
                     </p>
                     <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6">
                       {includes.map((item) => (
-                        <li key={item} className="flex items-start gap-2.5 text-[0.85rem] text-[#7A7A7A]">
+                        <li key={item} className="flex items-start gap-2.5 text-[0.85rem] text-[var(--text-muted)]">
                           <span
                             className="mt-[0.35rem] w-1.5 h-1.5 rounded-full shrink-0"
                             style={{ background: accent }}
@@ -292,15 +292,15 @@ export default function CoursesClient() {
                   </div>
 
                   {/* Suitable for */}
-                  <p className="text-[0.82rem] text-[#7A7A7A] italic">
-                    <span className="font-medium not-italic text-[#1F2A44]/70">Suitable for: </span>
+                  <p className="text-[0.82rem] text-[var(--text-muted)] italic">
+                    <span className="font-medium not-italic text-[var(--text-heading)]/70">Suitable for: </span>
                     {suitable}
                   </p>
                 </div>
 
                 {/* Right — details + CTA */}
                 <div
-                  className="flex flex-col justify-between p-8 border-t lg:border-t-0 lg:border-l border-[#d6c9b8]/40"
+                  className="flex flex-col justify-between p-8 border-t lg:border-t-0 lg:border-l border-[var(--border-soft)]/40"
                   style={{ background: `${accent}07` }}
                 >
                   {/* Detail rows */}
@@ -312,10 +312,10 @@ export default function CoursesClient() {
                       { label: "Investment", value: price },
                     ].map(({ label, value }) => (
                       <div key={label}>
-                        <dt className="text-[0.68rem] uppercase tracking-[0.14em] font-semibold text-[#7A7A7A]/60 mb-0.5">
+                        <dt className="text-[0.68rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 mb-0.5">
                           {label}
                         </dt>
-                        <dd className="text-[0.9rem] font-medium text-[#1F2A44]">{value}</dd>
+                        <dd className="text-[0.9rem] font-medium text-[var(--text-heading)]">{value}</dd>
                       </div>
                     ))}
                   </dl>
@@ -350,7 +350,7 @@ export default function CoursesClient() {
       {/* ── FAQ / note ─────────────────────────────────────────── */}
       <section
         aria-labelledby="courses-faq-heading"
-        className="py-20 bg-white border-t border-[#d6c9b8]/50"
+        className="py-20 bg-white border-t border-[var(--border-soft)]/50"
       >
         <div className="mx-auto max-w-3xl px-5 sm:px-8">
           <motion.div
@@ -359,12 +359,12 @@ export default function CoursesClient() {
             transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[#5F7A61] font-semibold mb-5">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5">
               Before you enrol
             </p>
             <h2
               id="courses-faq-heading"
-              className="text-[clamp(1.6rem,3.5vw,2.2rem)] font-semibold leading-[1.15] tracking-tight text-[#1F2A44] mb-10"
+              className="text-[clamp(1.6rem,3.5vw,2.2rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-10"
             >
               A few honest answers
             </h2>
@@ -375,7 +375,7 @@ export default function CoursesClient() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="flex flex-col divide-y divide-[#d6c9b8]/50"
+            className="flex flex-col divide-y divide-[var(--border-soft)]/50"
           >
             {[
               {
@@ -396,8 +396,8 @@ export default function CoursesClient() {
               },
             ].map(({ q, a }) => (
               <motion.div key={q} variants={FADE_UP} className="py-6">
-                <dt className="text-[0.95rem] font-semibold text-[#1F2A44] mb-2">{q}</dt>
-                <dd className="text-[0.9rem] leading-[1.8] text-[#7A7A7A]">{a}</dd>
+                <dt className="text-[0.95rem] font-semibold text-[var(--text-heading)] mb-2">{q}</dt>
+                <dd className="text-[0.9rem] leading-[1.8] text-[var(--text-muted)]">{a}</dd>
               </motion.div>
             ))}
           </motion.dl>
@@ -411,7 +411,7 @@ export default function CoursesClient() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-[0.88rem] font-medium text-[#5F7A61] border-b border-[#5F7A61]/40 pb-0.5 hover:border-[#5F7A61] transition-colors duration-200 focus-visible:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-[#5F7A61]/50 group"
+              className="inline-flex items-center gap-2 text-[0.88rem] font-medium text-[var(--bg-accent)] border-b border-[var(--bg-accent)]/40 pb-0.5 hover:border-[var(--bg-accent)] transition-colors duration-200 focus-visible:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50 group"
             >
               Still have a question? Write to us
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"
