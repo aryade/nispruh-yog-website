@@ -71,7 +71,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="group flex items-center gap-2 text-[var(--text-heading)] dark:text-[var(--c-heading)] no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)] rounded-sm"
+            className="group flex items-center gap-2 text-[var(--text-heading)] dark:text-[var(--c-heading)] no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)] rounded-sm"
             aria-label="Nispruh Yog – home"
           >
             {/* Subtle lotus glyph */}
@@ -101,17 +101,17 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className={[
-                    "relative px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)]",
+                    "relative px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)]",
                     active
                       ? "text-[var(--text-heading)] dark:text-[var(--c-heading)]"
-                      : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)] hover:bg-[rgba(201,162,39,0.08)] dark:hover:bg-[rgba(212,181,80,0.06)]",
+                      : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)] hover:bg-[rgba(147,197,114,0.08)] dark:hover:bg-[rgba(168,217,135,0.06)]",
                   ].join(" ")}
                 >
                   {label}
                   {active && (
                     <motion.span
                       layoutId="nav-pill"
-                      className="absolute inset-0 rounded-full bg-gradient-to-r from-[rgba(201,162,39,0.2)] to-[rgba(201,162,39,0.08)] dark:from-[rgba(212,181,80,0.15)] dark:to-[rgba(212,181,80,0.05)]"
+                      className="absolute inset-0 rounded-full bg-gradient-to-r from-[rgba(147,197,114,0.2)] to-[rgba(147,197,114,0.08)] dark:from-[rgba(168,217,135,0.15)] dark:to-[rgba(168,217,135,0.05)]"
                       transition={{ type: "spring", stiffness: 340, damping: 36 }}
                     />
                   )}
@@ -128,7 +128,7 @@ export default function Navbar() {
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             onClick={() => setMenuOpen((v) => !v)}
-            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(201,162,39,0.3)]"
+            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)]"
           >
             <motion.span
               className="block h-px w-5 bg-[var(--text-heading)] dark:bg-[var(--c-heading)] origin-center"

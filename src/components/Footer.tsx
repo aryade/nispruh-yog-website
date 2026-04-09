@@ -70,7 +70,7 @@ export default function Footer() {
       aria-label="Site footer"
     >
       {/* Thin accent line at top */}
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-[rgba(201,162,39,0.5)] to-transparent" />
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[rgba(147,197,114,0.5)] to-transparent" />
 
       <div className="mx-auto max-w-7xl px-5 sm:px-8 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
 
@@ -98,7 +98,7 @@ export default function Footer() {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-muted)] border border-[rgba(255,255,255,0.15)] hover:text-white hover:border-[var(--bg-accent)]/80 hover:bg-[rgba(201,162,39,0.08)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+                className="w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-muted)] border border-[rgba(255,255,255,0.15)] hover:text-white hover:border-[var(--bg-accent)]/80 hover:bg-[rgba(147,197,114,0.08)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
               >
                 {icon}
               </a>

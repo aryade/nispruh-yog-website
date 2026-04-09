@@ -114,7 +114,7 @@ export default function Programs() {
             <motion.article
               key={title}
               variants={CARD}
-              className="group relative flex flex-col rounded-2xl border border-[var(--border-soft)]/60 bg-gradient-to-br from-white/80 to-[var(--bg-secondary)]/50 overflow-hidden transition-all duration-300 hover:shadow-[0_16px_48px_rgba(201,162,39,0.12)] hover:from-white hover:to-[var(--bg-secondary)]/60"
+              className="group relative flex flex-col rounded-2xl border border-[var(--border-soft)]/60 bg-gradient-to-br from-white/80 to-[var(--bg-secondary)]/50 overflow-hidden transition-all duration-300 hover:shadow-[0_16px_48px_rgba(147,197,114,0.12)] hover:from-white hover:to-[var(--bg-secondary)]/60"
               aria-labelledby={`prog-${title.replace(/\s+/g, "-").toLowerCase()}`}
             >
               {/* Top accent stripe */}

@@ -9,7 +9,9 @@
   /* New Color Palette */
   --bg-primary:    #F6E0E8;   /* soft rose - primary background */
   --bg-secondary:  #E6E6FA;   /* lavender - secondary background */
-  --bg-accent:     #C9A227;   /* soft gold - accent color */
+
+  /* Primary action color - pista green */
+  --pista-green:   #93C572;   /* pista green - buttons, CTAs, primary actions */
 
   --text-heading:  #2D2A4A;   /* deep plum - headings, navbar, footer */
   --text-primary:  #2E2E2E;   /* dark charcoal - main body text */
@@ -28,18 +30,18 @@
   /* Legacy vars used by CSS classes below */
   --bg:          #F6E0E8;
   --surface:     #E6E6FA;
-  --primary:     #C9A227;   /* gold accent */
+  --primary:     #93C572;   /* pista green - primary action */
   --secondary:   #2D2A4A;   /* deep plum */
-  --accent:      #C9A227;   /* soft gold */
+  --accent:      #93C572;   /* pista green - primary action */
   --text-dark:   #2E2E2E;
   --text-light:  #6B6B7A;
   --border:      #E8E0EB;
-  --accent-soft: rgba(201, 162, 39, 0.12);
+  --accent-soft: rgba(147, 197, 114, 0.12);
   --shadow:      0 14px 50px rgba(45, 42, 74, 0.08);
 
   /* Gradient definitions */
   --gradient-rose-lavender: linear-gradient(135deg, #F6E0E8 0%, #E6E6FA 100%);
-  --gradient-gold-fade: linear-gradient(135deg, rgba(201, 162, 39, 0.1) 0%, transparent 100%);
+  --gradient-green-fade: linear-gradient(135deg, rgba(147, 197, 114, 0.1) 0%, transparent 100%);
   --gradient-plum-fade: linear-gradient(180deg, rgba(45, 42, 74, 0.05) 0%, transparent 100%);
 }
 
@@ -49,7 +51,9 @@ html.dark {
 
   --bg-primary:    #1A1620;   /* dark rose-tinted background */
   --bg-secondary:  #25222E;   /* dark lavender-tinted background */
-  --bg-accent:     #D4B550;   /* lighter gold for visibility */
+
+  /* Pista green - lighter variant for dark mode visibility */
+  --pista-green:   #A8D987;   /* lighter pista green for dark backgrounds */
 
   --text-heading:  #E8E5F0;   /* light rose-tinted text */
   --text-primary:  #D8D5DC;   /* light gray for primary text */
@@ -66,18 +70,18 @@ html.dark {
 
   --bg:          #1A1620;
   --surface:     #25222E;
-  --primary:     #D4B550;
+  --primary:     #A8D987;   /* lighter pista green for dark mode */
   --secondary:   #E8E5F0;
-  --accent:      #D4B550;
+  --accent:      #A8D987;   /* lighter pista green for dark mode */
   --text-dark:   #D8D5DC;
   --text-light:  #A8A5B0;
   --border:      #3A3540;
-  --accent-soft: rgba(212, 181, 80, 0.10);
+  --accent-soft: rgba(168, 217, 135, 0.10);
   --shadow:      0 14px 50px rgba(0, 0, 0, 0.30);
 
   /* Dark mode gradients */
   --gradient-rose-lavender: linear-gradient(135deg, #25222E 0%, #2A2530 100%);
-  --gradient-gold-fade: linear-gradient(135deg, rgba(212, 181, 80, 0.08) 0%, transparent 100%);
+  --gradient-green-fade: linear-gradient(135deg, rgba(168, 217, 135, 0.08) 0%, transparent 100%);
   --gradient-plum-fade: linear-gradient(180deg, rgba(232, 229, 240, 0.03) 0%, transparent 100%);
 }
 
@@ -260,15 +264,15 @@ html.dark blockquote footer {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, #B88F1A 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #7CB54D 100%);
   color: #fff;
-  box-shadow: 0 4px 12px rgba(201, 162, 39, 0.25);
+  box-shadow: 0 4px 12px rgba(147, 197, 114, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(201, 162, 39, 0.35);
-  background: linear-gradient(135deg, #B88F1A 0%, #A67D15 100%);
+  box-shadow: 0 8px 20px rgba(147, 197, 114, 0.4);
+  background: linear-gradient(135deg, #7CB54D 0%, #6FA53D 100%);
 }
 
 .btn-secondary {
@@ -282,7 +286,7 @@ html.dark blockquote footer {
 }
 
 .contact-form button[type="submit"] {
-  background: linear-gradient(135deg, var(--primary) 0%, #B88F1A 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #7CB54D 100%);
   color: #fff;
   border: none;
   border-radius: 999px;
@@ -291,13 +295,13 @@ html.dark blockquote footer {
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(201, 162, 39, 0.2);
+  box-shadow: 0 4px 12px rgba(147, 197, 114, 0.3);
 }
 
 .contact-form button[type="submit"]:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(201, 162, 39, 0.3);
-  background: linear-gradient(135deg, #B88F1A 0%, #A67D15 100%);
+  box-shadow: 0 8px 16px rgba(147, 197, 114, 0.4);
+  background: linear-gradient(135deg, #7CB54D 0%, #6FA53D 100%);
 }
 
 .notice {
@@ -390,8 +394,15 @@ html.dark [class*="border-[#d6c9b8]"] {
 /* Gold accent color (soft gold → lighter gold) */
 html.dark [class*="text-[#C9A227]"],
 html.dark [class*="bg-[#C9A227]"] {
-  color: #D4B550;
-  background-color: #D4B550;
+  color: #A8D987;
+  background-color: #A8D987;
+}
+
+/* Pista green accent - dark mode overrides */
+html.dark [class*="text-[#93C572]"],
+html.dark [class*="bg-[#93C572]"] {
+  color: #A8D987;
+  background-color: #A8D987;
 }
 
 /* Image placeholders — darken the gradient in dark mode */
@@ -425,11 +436,11 @@ html.dark [class*="from-[#E6E6FA]"] {
 
 /* Dark mode button improvements */
 html.dark .btn-primary {
-  box-shadow: 0 4px 12px rgba(212, 181, 80, 0.2);
+  box-shadow: 0 4px 12px rgba(168, 217, 135, 0.25);
 }
 
 html.dark .btn-primary:hover {
-  box-shadow: 0 8px 20px rgba(212, 181, 80, 0.3);
+  box-shadow: 0 8px 20px rgba(168, 217, 135, 0.35);
 }
 
 html.dark .btn-secondary {
@@ -438,7 +449,7 @@ html.dark .btn-secondary {
 }
 
 html.dark .btn-secondary:hover {
-  background: rgba(212, 181, 80, 0.1);
+  background: rgba(168, 217, 135, 0.1);
 }
 
 /* ─── Reduced-motion ────────────────────────────────────────────── */
