@@ -54,6 +54,75 @@ describe("Footer", () => {
   it("has dark background styling", () => {
     const { container } = render(<Footer />);
     const footer = container.querySelector("footer[role='contentinfo']");
-    expect(footer).toHaveClass("bg-[#0f1724]");
+    expect(footer).toHaveClass("bg-[var(--text-heading)]");
+    expect(footer).toHaveClass("dark:bg-[var(--bg-primary)]");
+  });
+
+  it("renders motion sections with animation variants", () => {
+    const { container } = render(<Footer />);
+    const motionDivs = container.querySelectorAll("[class*='grid']");
+    expect(motionDivs.length).toBeGreaterThan(0);
+  });
+
+  it("renders accent line with gradient", () => {
+    const { container } = render(<Footer />);
+    const accentLine = container.querySelector(
+      ".bg-gradient-to-r.from-transparent.via-\\[rgba\\(147\\,197\\,114\\,0\\.5\\)\\].to-transparent"
+    );
+    expect(accentLine).toBeInTheDocument();
+  });
+
+  it("renders social icons with proper styling", () => {
+    render(<Footer />);
+    const socialLinks = [
+      screen.getByLabelText("YouTube"),
+      screen.getByLabelText("Instagram"),
+      screen.getByLabelText("Facebook"),
+      screen.getByLabelText("X / Twitter"),
+    ];
+    socialLinks.forEach((link) => {
+      expect(link).toHaveClass("w-9", "h-9", "rounded-full");
+    });
+  });
+
+  it("renders quick links section with proper structure", () => {
+    render(<Footer />);
+    const linkText = screen.getByText("Explore");
+    expect(linkText).toBeInTheDocument();
+    expect(linkText).toHaveClass("text-[var(--bg-accent)]");
+  });
+
+  it("renders connect section with proper styling", () => {
+    render(<Footer />);
+    const connectText = screen.getByText("Connect");
+    expect(connectText).toBeInTheDocument();
+    expect(connectText).toHaveClass("uppercase");
+  });
+
+  it("renders all quick links with correct hrefs", () => {
+    render(<Footer />);
+    expect(screen.getByRole("link", { name: /home/i })).toHaveAttribute("href", "/");
+    expect(screen.getByRole("link", { name: /about/i })).toHaveAttribute("href", "/about-kriya-yoga");
+    expect(screen.getByRole("link", { name: /teachings/i })).toHaveAttribute("href", "/teachings");
+    expect(screen.getByRole("link", { name: /practices/i })).toHaveAttribute("href", "/practices");
+    expect(screen.getByRole("link", { name: /courses/i })).toHaveAttribute("href", "/courses-programs");
+  });
+
+  it("renders email link correctly", () => {
+    render(<Footer />);
+    const emailLink = screen.getByRole("link", { name: /info@nispruhyog.com/i });
+    expect(emailLink).toHaveAttribute("href", "mailto:info@nispruhyog.com");
+  });
+
+  it("message link navigates to contact page", () => {
+    render(<Footer />);
+    const messageLink = screen.getByRole("link", { name: /send a message/i });
+    expect(messageLink).toHaveAttribute("href", "/contact");
+  });
+
+  it("join course link navigates to programs page", () => {
+    render(<Footer />);
+    const courseLink = screen.getByRole("link", { name: /join a course/i });
+    expect(courseLink).toHaveAttribute("href", "/courses-programs");
   });
 });

@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 const FADE_UP: Variants = {
@@ -18,6 +20,12 @@ const STAGGER: Variants = {
 };
 
 export default function AboutTeacher() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <section
       id="about-teacher"
@@ -36,43 +44,50 @@ export default function AboutTeacher() {
             className="relative order-2 lg:order-1"
           >
             {/* Offset decorative square */}
-            <div
-              className="absolute -bottom-5 -right-5 w-3/4 h-3/4 rounded-[1.5rem] border border-[var(--bg-accent)]/15 pointer-events-none"
-              aria-hidden="true"
+            {/* <div */}
+              {/* className="absolute -bottom-5 -right-5 w-3/4 h-3/4 rounded-[1.5rem] border border-[var(--bg-accent)]/15 pointer-events-none" */}
+              {/* aria-hidden="true" */}
+            {/* /> */}
+
+            <Image
+              src="/frontpage_Image_.png"
+              alt="Yoga instructor in meditation pose"
+              width={400}
+              height={500}
+              className="w-full h-full object-cover rounded-lg"
             />
 
-            {/* Photo placeholder */}
             <div
-              role="img"
-              aria-label="Teacher portrait — image coming soon"
-              className="relative z-10 overflow-hidden rounded-[1.5rem] aspect-[3/4] bg-gradient-to-br from-[#e4e0d8] via-[#d8d2c8] to-[#c8c0b2] flex flex-col items-center justify-center gap-3"
+              //role="img" 
+              //aria-label="Teacher portrait — image coming soon"
+              //className="relative z-10 overflow-hidden rounded-[1.5rem] aspect-[3/4] bg-gradient-to-br from-[#e4e0d8] via-[#d8d2c8] to-[#c8c0b2] flex flex-col items-center justify-center gap-3" 
             >
               {/* Inner glow */}
               <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  background:
-                    "radial-gradient(ellipse at 35% 30%, rgba(95,122,97,0.16) 0%, transparent 60%), radial-gradient(ellipse at 75% 85%, rgba(214,167,94,0.12) 0%, transparent 55%)",
-                }}
-                aria-hidden="true"
-              />
+                //className="absolute inset-0 pointer-events-none"
+                //style={{
+                  //background:
+                    //"radial-gradient(ellipse at 35% 30%, rgba(95,122,97,0.16) 0%, transparent 60%), radial-gradient(ellipse at 75% 85%, rgba(214,167,94,0.12) 0%, transparent 55%)",
+                //}}
+                //aria-hidden="true"
+              /> 
               {/* Silhouette glyph */}
               <svg
-                viewBox="0 0 64 80"
-                fill="none"
-                className="w-20 h-20 opacity-20"
-                aria-hidden="true"
-              >
-                <circle cx="32" cy="20" r="14" fill="var(--text-heading)" />
-                <path
-                  d="M4 76c0-15.464 12.536-28 28-28s28 12.536 28 28"
-                  stroke="var(--text-heading)"
-                  strokeWidth="3"
-                  strokeLinecap="round"
+                //viewBox="0 0 64 80"
+                //fill="none"
+                //className="w-20 h-20 opacity-20"
+                //aria-hidden="true"
+              > 
+                {/* <circle cx="32" cy="20" r="14" fill="var(--text-heading)" /> */}
+                //<path
+                  //d="M4 76c0-15.464 12.536-28 28-28s28 12.536 28 28"
+                  //stroke="var(--text-heading)"
+                  //strokeWidth="3"
+                  //strokeLinecap="round"
                 />
               </svg>
               <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/60 font-medium">
-                Photo placeholder
+                {/* Photo placeholder */}
               </p>
             </div>
 
@@ -111,7 +126,7 @@ export default function AboutTeacher() {
               variants={FADE_UP}
               className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-2"
             >
-              Swami Nispruh
+              Swami Nispruh{isMounted ? " Spandan" : ""}
             </motion.h2>
 
             <motion.p
@@ -125,7 +140,7 @@ export default function AboutTeacher() {
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-5"
             >
-              Swami Nispruh has walked the path of Kriya Yoga for over two
+              Swami Nispruh Spandan has walked the path of Kriya Yoga for over two
               decades, receiving initiation and guidance from teachers in the
               direct lineage of Mahavatar Babaji. His teaching is quiet,
               unhurried, and grounded in lived experience rather than

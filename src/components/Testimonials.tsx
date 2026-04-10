@@ -5,24 +5,24 @@ import { motion, type Variants } from "framer-motion";
 const TESTIMONIALS = [
   {
     quote:
-      "I used to search everywhere — books, teachers, retreats across the world. The answer was always closer than I thought. Kriya brought me back to the breath, and in the breath I found the stillness I had been chasing.",
-    name: "Ashoke R.",
-    context: "Student · 3 years of practice",
-    initial: "A",
+      "My life went through complete transformation. Suddenly everything inside me started changing, slowly, effectively. With Kriya Yog and Swamiji, I learned to let go off ego, how to love unconditionally and surrender. This has been the most precious gift life has offered. Much Grateful!",
+    name: "Paulina Haouami",
+    context: "Entrepreneur, Helsinki, Finland",
+    initial: "P",
   },
   {
     quote:
-      "The pace here is unlike anything else I have encountered. No performance, no pressure to 'achieve' a state. Just quiet, consistent guidance — and a gradual, undeniable shift in how I meet each day.",
-    name: "Lila M.",
-    context: "Practitioner · Kriya Yoga Course",
-    initial: "L",
+      "Kriya path changed me very deeply. Pride, desires and ego diminished. Happiness and inner peace increased. Many times, I can catch the present moment, because i don’t think too much. Kriya Yog changed everything and at the same time nothing in my life.",
+    name: "Tuula-Maria Tarmo",
+    context: "Project Assistant, Jyväskyla, Finland​",
+    initial: "T",
   },
   {
     quote:
-      "I came as a complete skeptic. I stayed because the practice simply works. Six months in, my mind is quieter, my reactions slower, my sense of self steadier. I cannot explain it — I can only recommend it.",
-    name: "Devraj S.",
-    context: "Practitioner · Retreat participant",
-    initial: "D",
+      "Kriya Yog under the guidance of true Guru is THE key to a happy life. Make no mistake about it. You can keep chasing happiness from external things, never really finding it or you can delve deep with Kriya and find well of bliss.",
+    name: "Kamer Surmeli",
+    context: "Student, Finland",
+    initial: "K",
   },
 ];
 
