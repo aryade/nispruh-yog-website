@@ -97,7 +97,8 @@ export function Hero() {
           variants={FADE_UP}
           className="text-[1.15rem] leading-[1.8] text-[var(--text-heading)] max-w-[42ch] mx-auto mb-10 border-l-4 border-[var(--bg-accent)] pl-6 italic"
         >
-          <p className="mb-3">One kriya, which takes about a half a minute, is equivalent to one year of spiritual growth.</p>
+          <p className="mb-3">My love for you is pure and unconditional. But until you will not break the barriers of your Ego, you will never experience the divinity of my love.</p>
+          <p className="text-[0.95rem] text-[var(--text-muted)] mt-3">— Swami Nispruh Spandan</p>
           <footer className="text-[0.9rem] font-semibold not-italic text-[var(--bg-accent)]">
             — Paramhans Yogananda
           </footer>
