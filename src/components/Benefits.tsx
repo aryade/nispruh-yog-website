@@ -95,16 +95,19 @@ export default function Benefits() {
           className="max-w-[44ch] mb-16"
         >
           <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
-            Why practice
+            Benefits of Meditation
           </p>
           <h2
             id="benefits-heading"
-            className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
+            className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-6"
           >
             What the practice
             <br />
             <span className="text-[var(--bg-accent)]">opens within you</span>
           </h2>
+          <p className="text-[0.95rem] leading-[1.75] text-[var(--text-muted)]">
+            Meditation is not about becoming a different person than the living world or becoming a new person. It is about training yourself in full awareness and getting a healthy sense of perspective. Meditation teaches you to systematically explore your inner dimensions. It is a system of commitment, not a commandment.
+          </p>
         </motion.div>
 
         {/* Grid */}

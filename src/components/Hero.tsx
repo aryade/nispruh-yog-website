@@ -92,6 +92,17 @@ export function Hero() {
           Kriya Yoga — a path of breath, awareness, and inner inquiry.
         </motion.p>
 
+        {/* Featured Quote */}
+        <motion.blockquote
+          variants={FADE_UP}
+          className="text-[1.15rem] leading-[1.8] text-[var(--text-heading)] max-w-[42ch] mx-auto mb-10 border-l-4 border-[var(--bg-accent)] pl-6 italic"
+        >
+          <p className="mb-3">One kriya, which takes about a half a minute, is equivalent to one year of spiritual growth.</p>
+          <footer className="text-[0.9rem] font-semibold not-italic text-[var(--bg-accent)]">
+            — Paramhans Yogananda
+          </footer>
+        </motion.blockquote>
+
         {/* CTA row */}
         <motion.div
           variants={FADE_UP}

@@ -60,31 +60,21 @@ export default function WhatIsKriyaYoga() {
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-5"
             >
-              Kriya Yoga is an ancient meditative science transmitted through an
-              unbroken lineage of masters. The word <em>Kriya</em> means
-              "action with awareness" — a precise inner technique that works
-              directly with the breath, the spine, and the life-force to quiet
-              the restless mind and reveal the stillness beneath.
+              Yog of Awareness. Krishna explains Kriya Yog as the practice of purifying the physiological as well as mental and spiritual systems. It is an ancient meditation technique that is a part of the spiritual path.
             </motion.p>
 
             <motion.p
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-5"
             >
-              Unlike belief-based paths, Kriya Yoga is experiential. It does not
-              ask for faith — only a willingness to sit, breathe, and observe.
-              Through consistent practice the seeker discovers that peace is not
-              something to be found outside, but a quality already present within.
+              An effective scientific meditation technique or sadhana which works on all the seven chakras and helps purify oneself and reach a higher level of consciousness. This technique is much more direct and works directly on chakras with the source of spiritual energy deep in our spines. It helps the practitioner to control the life force by mentally drawing it up and down the spine, with awareness and will.
             </motion.p>
 
             <motion.p
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-10"
             >
-              Carried forward through the lineage of Mahavatar Babaji, Lahiri
-              Mahasaya, and Sri Yukteswar, these teachings remain as alive today
-              as they were in the high Himalayas. Every sincere seeker is welcome
-              — whatever their background, belief, or beginning.
+              Kriya Yoga is a living meditation tradition woven by breath, attention, and simple devotion. It is not a product, but an invitation into yourself. Repeat quiet practice and hold awareness with tenderness. Allow small shifts to settle into your daily rhythm.
             </motion.p>
 
             {/* Learn more link */}

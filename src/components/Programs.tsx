@@ -6,9 +6,9 @@ import { motion, type Variants } from "framer-motion";
 const PROGRAMS = [
   {
     eyebrow: "Weekly · Online & In-person",
-    title: "Meditation Classes",
+    title: "Weekly Online Meditation",
     description:
-      "Guided sitting sessions for beginners and returning practitioners alike. Each class moves through breath awareness, body scan, and silent observation — a quiet hour to step out of the noise.",
+      "Guided meditation sessions on Thursdays and Sundays. Kriya Yog offers a unique opportunity to transform yourself to full awareness and lead a stress-free, happy life.",
     cta: { label: "View schedule", href: "/courses-programs#meditation" },
     accent: "var(--bg-accent)",
     glyph: (
@@ -21,10 +21,10 @@ const PROGRAMS = [
     ),
   },
   {
-    eyebrow: "8-week programme",
+    eyebrow: "2-Day Programme",
     title: "Kriya Yoga Course",
     description:
-      "A structured initiation into the techniques of Kriya Yoga — pranayama, dharana, and the foundational kriyas. Taught in small groups to preserve the intimacy the tradition requires.",
+      "Simple scientific meditation techniques and breathing exercises that help you achieve subtle transformations in body and mind. A structured initiation into the foundational kriyas.",
     cta: { label: "Learn & enroll", href: "/courses-programs#kriya-course" },
     accent: "var(--bg-accent)",
     glyph: (
@@ -35,17 +35,16 @@ const PROGRAMS = [
     ),
   },
   {
-    eyebrow: "Seasonal · Residential",
-    title: "Retreats",
+    eyebrow: "Health & Wellness",
+    title: "Yog & Pranayama",
     description:
-      "Immersive 3- to 7-day silent retreats held in natural settings. A chance to go deeper — away from ordinary life, sustained by practice, simplicity, and collective silence.",
-    cta: { label: "See upcoming dates", href: "/events-retreats" },
-    accent: "var(--text-heading)",
+      "Yoga and pranayama (breathing) techniques offer physical and mental health benefits for people of all ages. Transform your body and calm your mind with ancient practices.",
+    cta: { label: "Learn more", href: "/practices" },
+    accent: "var(--bg-accent)",
     glyph: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
-        <path d="M4 26 L16 6 L28 26 Z" />
-        <path d="M10 26 L10 19 Q16 14 22 19 L22 26" />
-        <path d="M16 6 v4" />
+        <path d="M16 3C16 3 8 10 8 18a8 8 0 0 0 16 0C24 10 16 3 16 3z" />
+        <path d="M16 12v8M12 16h8" />
       </svg>
     ),
   },

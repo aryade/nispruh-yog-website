@@ -92,17 +92,26 @@ export default function Footer() {
             Kriya Yoga — awakening through breath, stillness, and self-inquiry.
           </p>
           {/* Social icons */}
-          <div className="flex items-center gap-3 mt-8">
-            {SOCIAL_LINKS.map(({ label, href, icon }) => (
-              <a
-                key={label}
-                href={href}
-                aria-label={label}
-                className="w-9 h-9 rounded-full flex items-center justify-center text-[var(--text-muted)] border border-[rgba(255,255,255,0.15)] hover:text-white hover:border-[var(--bg-accent)]/80 hover:bg-[rgba(147,197,114,0.08)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
-              >
-                {icon}
-              </a>
-            ))}
+          <div className="mt-8">
+            <p className="text-[0.75rem] uppercase tracking-[0.15em] text-[var(--bg-accent)] font-semibold mb-4">
+              Follow Us
+            </p>
+            <div className="flex items-center gap-4">
+              {SOCIAL_LINKS.map(({ label, href, icon }) => (
+                <motion.a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Follow us on ${label}`}
+                  className="w-11 h-11 rounded-full flex items-center justify-center text-[var(--text-muted)] border-2 border-[rgba(147,197,114,0.3)] hover:text-white hover:border-[var(--bg-accent)] hover:bg-[rgba(147,197,114,0.15)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+                  whileHover={{ scale: 1.15 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {icon}
+                </motion.a>
+              ))}
+            </div>
           </div>
         </motion.div>
 
@@ -145,10 +154,18 @@ export default function Footer() {
           <ul className="space-y-3 text-[0.88rem] text-[var(--text-muted)]" role="list">
             <li>
               <a
-                href="mailto:info@nispruhyog.com"
+                href="tel:+358465710507"
                 className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
-                info@nispruhyog.com
+                +358 (46) 571 0507
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:nispruhyogkriyayog@gmail.com"
+                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+              >
+                nispruhyogkriyayog@gmail.com
               </a>
             </li>
             <li>

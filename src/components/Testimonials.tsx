@@ -24,6 +24,13 @@ const TESTIMONIALS = [
     context: "Student, Finland",
     initial: "K",
   },
+  {
+    quote:
+      "An eye opening experience that brings you to terms with what is existential purpose on this planet. Keeps you humble, keeps you well grounded and gets you positive vibrations with a never say die spirit. Swamiji gets you to leave the I out of everything that you do.",
+    name: "Nispruhyog Admirer",
+    context: "Enterprise Architect, Finland",
+    initial: "N",
+  },
 ];
 
 const CONTAINER: Variants = {
