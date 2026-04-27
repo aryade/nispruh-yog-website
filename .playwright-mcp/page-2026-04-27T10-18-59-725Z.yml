@@ -1,0 +1,166 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Nispruh Yog – home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: ꩜
+        - generic [ref=e6]: Nispruh Yog
+      - navigation "Primary" [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e10] [cursor=pointer]:
+          - /url: /about-kriya-yoga
+        - link "Teachings" [ref=e11] [cursor=pointer]:
+          - /url: /teachings
+        - link "Practices" [ref=e12] [cursor=pointer]:
+          - /url: /practices
+        - link "Courses" [ref=e13] [cursor=pointer]:
+          - /url: /courses-programs
+        - link "Events" [ref=e14] [cursor=pointer]:
+          - /url: /events-retreats
+        - link "Blog" [ref=e15] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [active] [ref=e16] [cursor=pointer]:
+          - /url: /contact
+          - text: Contact
+      - button "Switch to dark mode" [ref=e370]:
+        - img [ref=e371]
+  - generic [ref=e18]:
+    - main "Page content" [ref=e378]:
+      - generic [ref=e379]:
+        - region "Get in touch" [ref=e380]:
+          - generic [ref=e382]:
+            - paragraph [ref=e383]: An open door
+            - heading "Get in touch" [level=1] [ref=e384]
+            - paragraph [ref=e385]: We keep communication mindful and unhurried. Write a short note — a question about practice, a course enquiry, or simply a hello. We respond within two to three days, from a calm place.
+        - region "Contact details and form" [ref=e386]:
+          - generic [ref=e388]:
+            - generic [ref=e389]:
+              - list [ref=e390]:
+                - listitem [ref=e391]:
+                  - img [ref=e393]
+                  - generic [ref=e396]:
+                    - paragraph [ref=e397]: Email
+                    - link "info@nispruhyog.com" [ref=e398] [cursor=pointer]:
+                      - /url: mailto:info@nispruhyog.com
+                - listitem [ref=e399]:
+                  - img [ref=e401]
+                  - generic [ref=e403]:
+                    - paragraph [ref=e404]: Phone
+                    - link "+91 98765 43210" [ref=e405] [cursor=pointer]:
+                      - /url: tel:+919876543210
+                - listitem [ref=e406]:
+                  - img [ref=e408]
+                  - generic [ref=e411]:
+                    - paragraph [ref=e412]: Address
+                    - paragraph [ref=e413]: Nispruh Yog Centre Andheri West, Mumbai Maharashtra, India
+                - listitem [ref=e414]:
+                  - img [ref=e416]
+                  - generic [ref=e419]:
+                    - paragraph [ref=e420]: Hours
+                    - paragraph [ref=e421]: "Mon – Sat: 7 am – 8 pm Sunday: by appointment"
+              - generic [ref=e422]:
+                - paragraph [ref=e423]: Find us
+                - img "Map showing Nispruh Yog Centre location — interactive map coming soon" [ref=e424]:
+                  - img [ref=e425]
+                  - generic [ref=e428]:
+                    - img [ref=e430]
+                    - generic [ref=e432]: Nispruh Yog Centre
+                  - paragraph [ref=e433]: Map placeholder
+              - list [ref=e434]:
+                - listitem [ref=e435]: No obligation — every enquiry is welcome
+                - listitem [ref=e437]: Your details are never shared or sold
+                - listitem [ref=e439]: We reply within 2–3 working days
+            - generic [ref=e441]:
+              - paragraph [ref=e442]: Send a message
+              - heading "We'd love to hear from you" [level=2] [ref=e443]
+              - form "Contact form" [ref=e444]:
+                - generic [ref=e445]:
+                  - text: Name
+                  - textbox "Name" [ref=e446]
+                - generic [ref=e447]:
+                  - text: Email
+                  - textbox "Email" [ref=e448]
+                - generic [ref=e449]:
+                  - text: Message
+                  - textbox "Message" [ref=e450]
+                - button "Send request" [ref=e451] [cursor=pointer]
+              - paragraph [ref=e452]: No push. No urgency. Just an open door.
+        - generic [ref=e455]:
+          - generic [ref=e456]: "\""
+          - blockquote [ref=e457]:
+            - paragraph [ref=e458]: The door is always open. There is no wrong time to knock, no wrong question to ask, no wrong place to begin.
+            - generic [ref=e459]: Nispruh Yog
+    - contentinfo "Site footer" [ref=e309]:
+      - generic [ref=e311]:
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - generic [ref=e314]: ꩜
+            - generic [ref=e315]: Nispruh Yog
+          - paragraph [ref=e316]: A quiet space for sincere seekers. Rooted in the ancient science of Kriya Yoga — awakening through breath, stillness, and self-inquiry.
+          - generic [ref=e317]:
+            - paragraph [ref=e318]: Follow Us
+            - generic [ref=e319]:
+              - link "Follow us on YouTube" [ref=e320] [cursor=pointer]:
+                - /url: https://www.youtube.com/@KriyayogNispruhyog
+                - img [ref=e321]
+              - link "Follow us on Instagram" [ref=e323] [cursor=pointer]:
+                - /url: https://www.instagram.com/nispruhyog_finland?igshid=OGQ5ZDc2ODk2ZA%3D%3D
+                - img [ref=e324]
+              - link "Follow us on Facebook" [ref=e326] [cursor=pointer]:
+                - /url: https://www.facebook.com/nispruhyogkriyayogpath/
+                - img [ref=e327]
+              - link "Follow us on X / Twitter" [ref=e329] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e330]
+        - generic [ref=e332]:
+          - heading "Explore" [level=2] [ref=e333]
+          - list [ref=e334]:
+            - listitem [ref=e335]:
+              - link "Home" [ref=e336] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e337]:
+              - link "About" [ref=e338] [cursor=pointer]:
+                - /url: /about-kriya-yoga
+            - listitem [ref=e339]:
+              - link "Teachings" [ref=e340] [cursor=pointer]:
+                - /url: /teachings
+            - listitem [ref=e341]:
+              - link "Practices" [ref=e342] [cursor=pointer]:
+                - /url: /practices
+            - listitem [ref=e343]:
+              - link "Courses" [ref=e344] [cursor=pointer]:
+                - /url: /courses-programs
+            - listitem [ref=e345]:
+              - link "Events" [ref=e346] [cursor=pointer]:
+                - /url: /events-retreats
+            - listitem [ref=e347]:
+              - link "Blog" [ref=e348] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e349]:
+              - link "Contact" [ref=e350] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e351]:
+          - heading "Connect" [level=2] [ref=e352]
+          - list [ref=e353]:
+            - listitem [ref=e354]:
+              - link "+358 (46) 571 0507" [ref=e355] [cursor=pointer]:
+                - /url: tel:+358465710507
+            - listitem [ref=e356]:
+              - link "nispruhyogkriyayog@gmail.com" [ref=e357] [cursor=pointer]:
+                - /url: mailto:nispruhyogkriyayog@gmail.com
+            - listitem [ref=e358]:
+              - link "Send a message" [ref=e359] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e360]:
+              - link "Join a course" [ref=e361] [cursor=pointer]:
+                - /url: /courses-programs
+          - blockquote [ref=e362]:
+            - paragraph [ref=e363]: "\"Tat tvam asi.\""
+            - contentinfo [ref=e364]: That thou art — Chandogya Upanishad
+      - generic [ref=e366]:
+        - paragraph [ref=e367]: © 2026 Nispruh Yog · All rights reserved
+        - paragraph [ref=e368]: Crafted with stillness · Guided by inner light
+  - link "Skip to main content" [ref=e369] [cursor=pointer]:
+    - /url: "#main-content"
+  - alert [ref=e375]: Contact · Nispruh Yog

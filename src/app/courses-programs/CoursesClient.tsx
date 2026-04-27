@@ -19,6 +19,74 @@ const STAGGER: Variants = {
 };
 
 /* ── data ─────────────────────────────────────────────────────────── */
+const SERVICES = [
+  {
+    id: "online-meditation",
+    title: "Online Meditation Weekly",
+    description: "Weekly online meditation is guided by Pujya Paramahans Swamiji Nispruh Spandan. Those who are already initiated join these sessions on Thursdays and Sundays.",
+    icon: "🧘",
+  },
+  {
+    id: "trust-experience",
+    title: "Trust Your Own Experience",
+    description: "Kriyayog carves you and introduces you to the real you within. Breathing techniques work on us through meditation practices, helping empty our mind, calm it, and open the door to a stress-free life.",
+    icon: "✨",
+  },
+  {
+    id: "kriya-meditation-courses",
+    title: "Kriya Yog Courses – Meditation",
+    description: "Meditation is not about becoming a different person — it is about training yourself with full awareness and getting a healthy sense of perspective. It teaches you to systematically explore your inner dimensions.",
+    highlights: ["What is Kriyayog? Background of Kriyayog", "How Kriya works on the human body and mind", "Importance of Exercises, Pranayam, and breathing techniques", "Kriya – Practices to heal yourself, body and mind", "Satsang with Pujya Guruji on different topics"],
+    contact: { phone: "(91) 99756 90339 (India) | (+358) 46 5710507 (Finland)", email: "nispruhyogkriyayog (at) gmail.com" },
+    icon: "📿",
+  },
+  {
+    id: "yoga-courses",
+    title: "Yoga Courses",
+    description: "Yoga offers physical and mental health benefits for people of all ages. Improves flexibility, strength, stamina, relaxes body and mind for better sleep, and leads to better moods and more energy.",
+    highlights: ["Asanas, Pranayama, Stretching exercises", "Surya Namaskar and relaxing techniques", "Benefits: improved flexibility, strength, and stamina"],
+    contact: { phone: "(91) 99756 90339", email: "nispruhyogkriyayog (at) gmail.com" },
+    icon: "🙏",
+  },
+  {
+    id: "astrology-horoscope",
+    title: "Astrology – Horoscope",
+    description: "The study of movements and relative positions of celestial bodies interpreted as having an influence on human affairs. The 7 colours in sunlight represent 7 Chakras in the body.",
+    highlights: ["Kundali (Patrika) creation", "Reading of horoscope (Patrika)", "Solutions to help reduce issues"],
+    contact: { phone: "(91) 99756 90339", email: "nispruhyogkriyayog (at) gmail.com" },
+    icon: "🌟",
+  },
+  {
+    id: "spiritual-healing-tattoos",
+    title: "Spiritual Healing Tattoos",
+    description: "Tattoo designs laden with symbolism and deeply rooted in spirituality. Tattoos can restore energy when someone experiences a blockage around a particular chakra.",
+    highlights: ["Identification of your Spiritual Tattoo", "Tattoo Designing based on Yantra, Mantra, and Tantra", "Tattoo Restructuring"],
+    contact: { phone: "(91) 99756 90339", email: "nispruhyogkriyayog (at) gmail.com" },
+    icon: "🎨",
+  },
+];
+
+const FEATURED_COURSES = [
+  {
+    id: "prep-course",
+    title: "Preparatory Course – 4 Hours",
+    description: "Explore your inner dimensions systematically. Meditation helps you train yourself in full awareness and get a healthy sense of perspective.",
+    details: "Discounted price for students. Held in Espoo on 8th March and Jyväskylä on 6th April 2025.",
+  },
+  {
+    id: "kriya-advance-course",
+    title: "Kriyayog Advance Course – 2 Days",
+    description: "Simple scientific meditation techniques and breathing exercises that help achieve subtle transformations in body and mind.",
+    details: "Discounted price for students. Held in Jyväskylä on 12–13 April and Espoo on 26–27 April 2025.",
+  },
+  {
+    id: "bal-sanskar",
+    title: "Kriyayog BalSanskar Day",
+    description: "A course focused on giving the right attitude and healthy mindset to youth. Currently offered in Finland (Helsinki, Espoo).",
+    details: "Designed for young practitioners seeking spiritual foundation.",
+  },
+];
+
 const COURSES = [
   {
     id: "meditation",
@@ -344,6 +412,126 @@ export default function CoursesClient() {
               </div>
             </motion.article>
           ))}
+        </div>
+      </section>
+
+      {/* ── Featured Courses ──────────────────────────────────── */}
+      <section
+        id="featured-courses"
+        aria-labelledby="featured-heading"
+        className="py-20 bg-white border-t border-[var(--border-soft)]/50"
+      >
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const }}
+            viewport={{ once: true }}
+            className="max-w-[48ch] mb-12"
+          >
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+              Coming soon
+            </p>
+            <h2
+              id="featured-heading"
+              className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
+            >
+              Featured Courses
+            </h2>
+          </motion.div>
+
+          <motion.div
+            variants={STAGGER}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-60px" }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {FEATURED_COURSES.map(({ id, title, description, details }) => (
+              <motion.div
+                key={id}
+                variants={FADE_UP}
+                className="rounded-2xl border border-[var(--border-soft)]/40 bg-[var(--bg-primary)]/40 p-8 hover:border-[var(--bg-accent)]/40 hover:shadow-sm transition-all duration-300"
+              >
+                <h3 className="text-[1.05rem] font-semibold text-[var(--text-heading)] mb-3">
+                  {title}
+                </h3>
+                <p className="text-[0.9rem] leading-[1.8] text-[var(--text-muted)] mb-4">
+                  {description}
+                </p>
+                <p className="text-[0.82rem] text-[var(--text-muted)]/60 italic">
+                  {details}
+                </p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Services ──────────────────────────────────────────── */}
+      <section
+        id="services"
+        aria-labelledby="services-heading"
+        className="py-20 bg-[var(--bg-primary)] border-t border-[var(--border-soft)]/50"
+      >
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const }}
+            viewport={{ once: true }}
+            className="max-w-[48ch] mb-12"
+          >
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+              Holistic offerings
+            </p>
+            <h2
+              id="services-heading"
+              className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
+            >
+              Services
+            </h2>
+          </motion.div>
+
+          <motion.div
+            variants={STAGGER}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-60px" }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          >
+            {SERVICES.map(({ id, title, description, highlights, contact, icon }) => (
+              <motion.div
+                key={id}
+                variants={FADE_UP}
+                className="rounded-2xl border border-[var(--border-soft)]/40 bg-white/50 p-8 hover:border-[var(--bg-accent)]/40 hover:shadow-sm transition-all duration-300"
+              >
+                <div className="text-[2.5rem] mb-4">{icon}</div>
+                <h3 className="text-[1.05rem] font-semibold text-[var(--text-heading)] mb-3">
+                  {title}
+                </h3>
+                <p className="text-[0.9rem] leading-[1.8] text-[var(--text-muted)] mb-4">
+                  {description}
+                </p>
+                {highlights && highlights.length > 0 && (
+                  <ul className="space-y-2 mb-5">
+                    {highlights.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-[0.82rem] text-[var(--text-muted)]">
+                        <span className="w-1 h-1 rounded-full bg-[var(--bg-accent)] mt-2 shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {contact && (
+                  <div className="pt-5 border-t border-[var(--border-soft)]/30 text-[0.75rem] text-[var(--text-muted)]/60 space-y-1">
+                    <p>{contact.phone}</p>
+                    <p>{contact.email}</p>
+                  </div>
+                )}
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
