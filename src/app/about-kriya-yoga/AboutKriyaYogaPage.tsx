@@ -57,10 +57,10 @@ const GURU_PARAMPARA = [
     subsections: [
       {
         title: "Krishna Parampara",
-        content: "Lord Krishna is the incarnation of Lord Vishnu and the central character in the Mahabharata. His teachings are codified in 700 verses as the Bhagavad Gita. Lord Krishna taught the science of Kriyayog to Arjuna thousands of years ago. " +
-                  "Yada yada hi dharmasya glanirbhavati bharata. " +
-                  "Abhythanamadharmasya tadatmanam srijamyaham. " +
-                  "Paritranaya sadhunang vinashay cha dushkritam. " +
+        content: "Lord Krishna is the incarnation of Lord Vishnu and the central character in the Mahabharata. His teachings are codified in 700 verses as the Bhagavad Gita. Lord Krishna taught the science of Kriyayog to Arjuna thousands of years ago. ",
+                  "Yada yada hi dharmasya glanirbhavati bharata. " :
+                  "Abhythanamadharmasya tadatmanam srijamyaham. " ,
+                  "Paritranaya sadhunang vinashay cha dushkritam. " :
                   "Dharmasangsthapanarthay sambhabami yuge yuge – Shrimad Bhagavadgeeta.",
       },
       {
@@ -69,7 +69,87 @@ const GURU_PARAMPARA = [
       },
     ],
   },
-  // ... rest of GURU_PARAMPARA array
+  {
+    name: "Mahavatar Babaji",
+    subsections: [
+      {
+        title: "Mahavatar Babaji",
+        content: "Mahavatar Babaji is the supreme Guru for all Yogis, believed to have been living in the Himalayas for hundreds of years. He is said to have been born on November 30, 203 AD in a coastal village in Tamil Nadu. Babaji revived the technique of Kriyayog for the betterment of humankind and passed it to Lahiri Mahasaya. He reportedly said that the Kriyayog he was transmitting in the 19th century was the same science Krishna gave to Arjuna millennia ago, and which was later known to Patanjali and other disciples.",
+      },
+    ],
+  },
+  {
+    name: "Shamacharan Lahiri (Lahiri Mahasaya)",
+    subsections: [
+      {
+        title: "Shamacharan Lahiri (Lahiri Mahasaya)",
+        content: "Shyama Charan Lahiri was a householder working in British Railways in Bengal. While on official duty in Ranikhet near the Himalayas, he heard a young man calling his name — who turned out to be Mahavatar Babaji. Babaji's gentle touch on his forehead awakened memories of previous incarnations. Babaji then initiated him into the sacred science of Kriyayog and later gave him permission to teach and initiate others. Lahiri Mahasaya entered Maha Samadhi in Banaras on September 26, 1985.",
+      },
+    ],
+  },
+  {
+    name: "Sri Yukteswara Giri",
+    subsections: [
+      {
+        title: "Sri Yukteswara Giri",
+        content: "Born on May 10, 1855, in Serampore, West Bengal (birth name: Priyanath Karar), Sri Yukteswara Giri was initiated into Kriyayog by Lahiri Mahasaya. He met Mahavatar Babaji at the Kumbha Mela in Allahabad in 1894, and at Babaji's request wrote a book called Kaivalya Darsanam. His most famous disciple was Paramahansa Yogananda, who later carried Kriyayog to the West. He attained Mahasamadhi on March 9, 1935.",
+      },
+    ],
+  },
+  {
+    name: "Sathyananda Giri",
+    subsections: [
+      {
+        title: "Sathyananda Giri",
+        content: "Born on November 17, 1896, in Bengal, Sathyananda Giri was trained by Swami Sri Yukteswar Giri at his Puri Karar Ashram in 1919 and was also a disciple of Paramahansa Yogananda. He lived in hermitages at Puri and Ranchi and had thousands of devotees. He attained Nirvana on August 2, 1971, at the age of 74.",
+      },
+    ],
+  },
+  {
+    name: "Pahadi Baba (Shree Hariharanandji)",
+    subsections: [
+      {
+        title: "Pahadi Baba (Shree Hariharanandji)",
+        content: "Shree Hariharanandji was a Tantra Samrat and Kriyayogi who lived in a cave on the hills (\"Pahadi\" in Hindi), and so was called \"Pahadi Baba.\" He was an enlightened yogi (Sidhha Purush) knowledgeable in many sadhanas. Madan Mohanji Sahay met him while passing by those hills, kept visiting, and was later initiated by Pahadi Baba into Kriyayog.",
+      },
+    ],
+  },
+  {
+    name: "Madan Mohanji Sahay",
+    subsections: [
+      {
+        title: "Madan Mohanji Sahay",
+        content: "Shree Madan Mohanji Sahay was a family man who retired as a Divisional Manager from LIC in 1989. After meeting Pahadi Baba, his life turned toward spirituality. Pahadi Baba tested and transformed him through various trials, turning his materialistic habits into spiritual ones. He later became the Guru of Swami Nispruh Spandan and gave Swamiji his current name — Paramhansa Swami Nispruh Spandan.",
+      },
+    ],
+  },
+  {
+    name: "Tauji – Banarasilal Saraf",
+    subsections: [
+      {
+        title: "Tauji – Banarasilal Saraf",
+        content: "Sri Banarasilal Saraf was a disciple of Madan Mohanji Sahay. Swamiji met him at Guruji's Ashram and called him \"Tauji\" affectionately. Tauji loved the young and devoted Swamiji and passed on his spiritual knowledge and blessings to him.",
+      },
+    ],
+  },
+  {
+    name: "Shree Aghorinath-Shobharam (Hariom Wale Babaji)",
+    subsections: [
+      {
+        title: "Shree Aghorinath-Shobharam (Hariom Wale Babaji)",
+        content: "Shree Aghorinath-Shobharam was a government servant and family man, blessed with many Siddhis by his Guru. He was the father and first Guru of Swami Nispruh Spandan, training him with strict rules and discipline. Enlightened yogis and saints frequently visited their home for Satsang. At a young age, Nispruh Spandan left home to find a Guru, stayed at many holy places including the Himalayas and Puri, and eventually found Madan Mohanji Sahay.",
+      },
+    ],
+  },
+  {
+    name: "Paramahansa Yogananda – Autobiography of a Yogi",
+    subsections: [
+      {
+        title: "Paramahansa Yogananda – Autobiography of a Yogi",
+        content: "As guided by Babaji, Sri Yukteswara Giri met a boy named Mukunda at the Kumbha Mela in Allahabad in 1894, who later became the renowned Paramahansa Yogananda. Born January 5, 1893, in Gorakhpur, India, Yogananda taught meditation and Kriyayog to millions in India and the USA. His book Autobiography of a Yogi sold over four million copies and was listed by HarperSan Francisco as one of the \"100 best spiritual books of the 20th Century.\" He attained Nirvana on March 7, 1952.",
+      },
+    ],
+  },// ... rest of GURU_PARAMPARA array
 ];
 
 const GURU_STATS = [
