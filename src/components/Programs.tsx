@@ -10,7 +10,7 @@ const PROGRAMS = [
     description:
       "Guided meditation sessions on Thursdays and Sundays. Kriya Yog offers a unique opportunity to transform yourself to full awareness and lead a stress-free, happy life.",
     cta: { label: "View schedule", href: "/courses-programs#meditation" },
-    accent: "var(--bg-accent)",
+    accent: "var(--pista-green)",
     glyph: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
         <circle cx="16" cy="16" r="12" />
@@ -26,7 +26,7 @@ const PROGRAMS = [
     description:
       "Simple scientific meditation techniques and breathing exercises that help you achieve subtle transformations in body and mind. A structured initiation into the foundational kriyas.",
     cta: { label: "Learn & enroll", href: "/courses-programs#kriya-course" },
-    accent: "var(--bg-accent)",
+    accent: "var(--pista-green)",
     glyph: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
         <path d="M16 3C16 3 8 10 8 18a8 8 0 0 0 16 0C24 10 16 3 16 3z" />
@@ -40,7 +40,7 @@ const PROGRAMS = [
     description:
       "Yoga and pranayama (breathing) techniques offer physical and mental health benefits for people of all ages. Transform your body and calm your mind with ancient practices.",
     cta: { label: "Learn more", href: "/practices" },
-    accent: "var(--bg-accent)",
+    accent: "var(--pista-green)",
     glyph: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
         <path d="M16 3C16 3 8 10 8 18a8 8 0 0 0 16 0C24 10 16 3 16 3z" />
@@ -82,7 +82,7 @@ export default function Programs() {
           className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-14"
         >
           <div className="max-w-[40ch]">
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
               Offerings
             </p>
             <h2
@@ -91,7 +91,7 @@ export default function Programs() {
             >
               Ways to walk
               <br />
-              <span className="text-[var(--bg-accent)]">this path</span>
+              <span className="text-[var(--pista-green)]">this path</span>
             </h2>
           </div>
 

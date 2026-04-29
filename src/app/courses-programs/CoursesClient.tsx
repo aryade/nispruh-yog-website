@@ -108,7 +108,7 @@ const COURSES = [
     ],
     suitable: "Anyone. No experience needed.",
     cta: { label: "Reserve a seat", href: "/contact?program=meditation" },
-    accent: "var(--bg-accent)",
+    accent: "var(--pista-green)",
     featured: false,
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
@@ -140,7 +140,7 @@ const COURSES = [
     ],
     suitable: "Sincere seekers who have attended at least one meditation class.",
     cta: { label: "Apply for next cohort", href: "/contact?program=kriya-course" },
-    accent: "var(--bg-accent)",
+    accent: "var(--pista-green)",
     featured: true,
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
@@ -199,7 +199,7 @@ const COURSES = [
     ],
     suitable: "Any stage of practice. Particularly useful at turning points.",
     cta: { label: "Enquire privately", href: "/contact?program=one-to-one" },
-    accent: "var(--bg-accent)",
+    accent: "var(--pista-green)",
     featured: false,
     icon: (
       <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7" aria-hidden="true">
@@ -230,7 +230,7 @@ export default function CoursesClient() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <motion.div variants={STAGGER} initial="hidden" animate="show">
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               Ways to walk this path
             </motion.p>
             <motion.h1
@@ -240,7 +240,7 @@ export default function CoursesClient() {
             >
               Courses &amp;
               <br />
-              <span className="text-[var(--bg-accent)]">Programs</span>
+              <span className="text-[var(--pista-green)]">Programs</span>
             </motion.h1>
             <motion.p variants={FADE_UP}
               className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[44ch]">
@@ -263,7 +263,7 @@ export default function CoursesClient() {
                 key={id}
                 variants={FADE_UP}
                 href={`#${id}`}
-                className="flex items-center gap-3 rounded-xl border border-[var(--border-soft)]/60 bg-white px-4 py-3.5 text-[0.82rem] font-medium text-[var(--text-heading)] hover:border-[var(--bg-accent)]/40 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+                className="flex items-center gap-3 rounded-xl border border-[var(--border-soft)]/60 bg-white px-4 py-3.5 text-[0.82rem] font-medium text-[var(--text-heading)] hover:border-[var(--pista-green)]/40 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
               >
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ background: accent }} aria-hidden="true" />
                 {title}
@@ -288,13 +288,13 @@ export default function CoursesClient() {
               className={[
                 "relative rounded-2xl border overflow-hidden",
                 featured
-                  ? "border-[var(--bg-accent)]/40 shadow-[0_16px_56px_rgba(31,42,68,0.1)]"
+                  ? "border-[var(--pista-green)]/40 shadow-[0_16px_56px_rgba(31,42,68,0.1)]"
                   : "border-[var(--border-soft)]/60",
               ].join(" ")}
             >
               {/* Featured badge */}
               {featured && (
-                <div className="absolute top-6 right-6 text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-3 py-1 rounded-full bg-[var(--bg-accent)]/15 text-[var(--bg-accent)]">
+                <div className="absolute top-6 right-6 text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-3 py-1 rounded-full bg-[var(--pista-green)]/15 text-[var(--pista-green)]">
                   Most popular
                 </div>
               )}
@@ -429,7 +429,7 @@ export default function CoursesClient() {
             viewport={{ once: true }}
             className="max-w-[48ch] mb-12"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
               Coming soon
             </p>
             <h2
@@ -451,7 +451,7 @@ export default function CoursesClient() {
               <motion.div
                 key={id}
                 variants={FADE_UP}
-                className="rounded-2xl border border-[var(--border-soft)]/40 bg-[var(--bg-primary)]/40 p-8 hover:border-[var(--bg-accent)]/40 hover:shadow-sm transition-all duration-300"
+                className="rounded-2xl border border-[var(--border-soft)]/40 bg-[var(--bg-primary)]/40 p-8 hover:border-[var(--pista-green)]/40 hover:shadow-sm transition-all duration-300"
               >
                 <h3 className="text-[1.05rem] font-semibold text-[var(--text-heading)] mb-3">
                   {title}
@@ -482,7 +482,7 @@ export default function CoursesClient() {
             viewport={{ once: true }}
             className="max-w-[48ch] mb-12"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
               Holistic offerings
             </p>
             <h2
@@ -504,7 +504,7 @@ export default function CoursesClient() {
               <motion.div
                 key={id}
                 variants={FADE_UP}
-                className="rounded-2xl border border-[var(--border-soft)]/40 bg-white/50 p-8 hover:border-[var(--bg-accent)]/40 hover:shadow-sm transition-all duration-300"
+                className="rounded-2xl border border-[var(--border-soft)]/40 bg-white/50 p-8 hover:border-[var(--pista-green)]/40 hover:shadow-sm transition-all duration-300"
               >
                 <div className="text-[2.5rem] mb-4">{icon}</div>
                 <h3 className="text-[1.05rem] font-semibold text-[var(--text-heading)] mb-3">
@@ -517,7 +517,7 @@ export default function CoursesClient() {
                   <ul className="space-y-2 mb-5">
                     {highlights.map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[0.82rem] text-[var(--text-muted)]">
-                        <span className="w-1 h-1 rounded-full bg-[var(--bg-accent)] mt-2 shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[var(--pista-green)] mt-2 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -547,7 +547,7 @@ export default function CoursesClient() {
             transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-5">
               Before you enrol
             </p>
             <h2
@@ -599,7 +599,7 @@ export default function CoursesClient() {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 text-[0.88rem] font-medium text-[var(--bg-accent)] border-b border-[var(--bg-accent)]/40 pb-0.5 hover:border-[var(--bg-accent)] transition-colors duration-200 focus-visible:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50 group"
+              className="inline-flex items-center gap-2 text-[0.88rem] font-medium text-[var(--pista-green)] border-b border-[var(--pista-green)]/40 pb-0.5 hover:border-[var(--pista-green)] transition-colors duration-200 focus-visible:outline-none focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50 group"
             >
               Still have a question? Write to us
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"

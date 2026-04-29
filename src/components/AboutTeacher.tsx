@@ -45,7 +45,7 @@ export default function AboutTeacher() {
           >
             {/* Offset decorative square */}
             {/* <div */}
-              {/* className="absolute -bottom-5 -right-5 w-3/4 h-3/4 rounded-[1.5rem] border border-[var(--bg-accent)]/15 pointer-events-none" */}
+              {/* className="absolute -bottom-5 -right-5 w-3/4 h-3/4 rounded-[1.5rem] border border-[var(--pista-green)]/15 pointer-events-none" */}
               {/* aria-hidden="true" */}
             {/* /> */}
 
@@ -116,7 +116,7 @@ export default function AboutTeacher() {
           >
             <motion.p
               variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5"
+              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-5"
             >
               The teacher
             </motion.p>
@@ -131,7 +131,7 @@ export default function AboutTeacher() {
 
             <motion.p
               variants={FADE_UP}
-              className="text-[0.82rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold mb-8"
+              className="text-[0.82rem] uppercase tracking-[0.14em] text-[var(--pista-green)] font-semibold mb-8"
             >
               Kriya Yoga Acharya · Lineage of Mahavatar Babaji
             </motion.p>
@@ -190,7 +190,7 @@ export default function AboutTeacher() {
                   className="flex items-center gap-2 text-[0.82rem] text-[var(--text-muted)]"
                 >
                   <span
-                    className="w-1 h-1 rounded-full bg-[var(--bg-accent)] inline-block"
+                    className="w-1 h-1 rounded-full bg-[var(--pista-green)] inline-block"
                     aria-hidden="true"
                   />
                   {item}

@@ -77,7 +77,7 @@ export default function Navbar() {
             {/* Subtle lotus glyph */}
             <span
               aria-hidden="true"
-              className="text-[var(--bg-accent)] text-lg leading-none transition-transform duration-700 group-hover:scale-110 select-none"
+              className="text-[var(--pista-green)] text-lg leading-none transition-transform duration-700 group-hover:scale-110 select-none"
             >
               ꩜
             </span>
@@ -178,7 +178,7 @@ export default function Navbar() {
               transition={{ type: "spring", stiffness: 300, damping: 34 }}
             >
               {/* Decorative line */}
-              <div className="mb-8 h-px w-12 bg-[var(--bg-accent)]/40" />
+              <div className="mb-8 h-px w-12 bg-[var(--pista-green)]/40" />
 
               <nav aria-label="Mobile primary" className="flex flex-col gap-1">
                 {NAV_LINKS.map(({ label, href }, i) => {

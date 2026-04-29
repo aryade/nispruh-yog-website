@@ -84,7 +84,7 @@ export default function Footer() {
           className="lg:col-span-1"
         >
           <div className="flex items-center gap-2 mb-5">
-            <span className="text-[var(--bg-accent)] text-xl leading-none select-none" aria-hidden="true">꩜</span>
+            <span className="text-[var(--pista-green)] text-xl leading-none select-none" aria-hidden="true">꩜</span>
             <span className="text-white font-semibold tracking-wide text-[0.95rem]">Nispruh Yog</span>
           </div>
           <p className="text-[0.9rem] leading-[1.75] text-[var(--text-muted)] max-w-[32ch]">
@@ -93,7 +93,7 @@ export default function Footer() {
           </p>
           {/* Social icons */}
           <div className="mt-8">
-            <p className="text-[0.75rem] uppercase tracking-[0.15em] text-[var(--bg-accent)] font-semibold mb-4">
+            <p className="text-[0.75rem] uppercase tracking-[0.15em] text-[var(--pista-green)] font-semibold mb-4">
               Follow Us
             </p>
             <div className="flex items-center gap-4">
@@ -104,7 +104,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Follow us on ${label}`}
-                  className="w-11 h-11 rounded-full flex items-center justify-center text-[var(--text-muted)] border-2 border-[rgba(147,197,114,0.3)] hover:text-white hover:border-[var(--bg-accent)] hover:bg-[rgba(147,197,114,0.15)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-[var(--pista-green)] border-2 border-[var(--pista-green)]/40 hover:text-white hover:border-[var(--pista-green)] hover:bg-[var(--pista-green)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                   whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -123,7 +123,7 @@ export default function Footer() {
           viewport={{ once: true }}
           custom={1}
         >
-          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold mb-6">
+          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--pista-green)] font-semibold mb-6">
             Explore
           </h2>
           <ul className="space-y-3" role="list">
@@ -148,7 +148,7 @@ export default function Footer() {
           viewport={{ once: true }}
           custom={2}
         >
-          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold mb-6">
+          <h2 className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--pista-green)] font-semibold mb-6">
             Connect
           </h2>
           <ul className="space-y-3 text-[0.88rem] text-[var(--text-muted)]" role="list">
@@ -187,11 +187,11 @@ export default function Footer() {
           </ul>
 
           {/* Sanskrit pull-quote */}
-          <blockquote className="mt-10 border-l-2 border-[var(--bg-accent)]/40 pl-4">
-            <p className="text-[1.05rem] text-[var(--text-muted)]/60 italic leading-relaxed font-light">
+          <blockquote className="mt-10 border-l-2 border-[var(--pista-green)]/40 pl-4\">
+            <p className="text-[1.05rem] text-[var(--text-muted)]/80 italic leading-relaxed font-light">
               "Tat tvam asi."
             </p>
-            <footer className="mt-1 text-[0.78rem] text-[var(--text-muted)]/60">
+            <footer className="mt-1 text-[0.78rem] text-[var(--text-muted)]/70">
               That thou art — Chandogya Upanishad
             </footer>
           </blockquote>
@@ -200,7 +200,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/[0.06] mx-5 sm:mx-8">
-        <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-[0.78rem] text-[var(--text-muted)]/60">
+        <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-[0.78rem] text-[var(--text-muted)]/80">
           <p>© {new Date().getFullYear()} Nispruh Yog · All rights reserved</p>
           <p className="text-center">
             Crafted with stillness &middot; Guided by inner light

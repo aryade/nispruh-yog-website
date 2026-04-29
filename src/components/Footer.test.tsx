@@ -89,7 +89,7 @@ describe("Footer", () => {
     render(<Footer />);
     const linkText = screen.getByText("Explore");
     expect(linkText).toBeInTheDocument();
-    expect(linkText).toHaveClass("text-[var(--bg-accent)]");
+    expect(linkText).toHaveClass("text-[var(--pista-green)]");
   });
 
   it("renders connect section with proper styling", () => {

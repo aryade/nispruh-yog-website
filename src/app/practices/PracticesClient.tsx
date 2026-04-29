@@ -157,8 +157,8 @@ const PRACTICES = [
 ];
 
 const LEVEL_COLOUR: Record<string, string> = {
-  Beginner: "var(--bg-accent)",
-  Intermediate: "var(--bg-accent)",
+  Beginner: "var(--pista-green)",
+  Intermediate: "var(--pista-green)",
   Advanced: "var(--text-heading)",
 };
 
@@ -185,7 +185,7 @@ export default function PracticesClient() {
             className="max-w-[54ch]"
           >
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               Step-by-step guides
             </motion.p>
             <motion.h1
@@ -223,10 +223,10 @@ export default function PracticesClient() {
               <button
                 key={lvl}
                 className={[
-                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50",
+                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50",
                   i === 0
-                    ? "bg-[var(--bg-accent)] text-white"
-                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--bg-accent)]/40",
+                    ? "bg-[var(--pista-green)] text-white"
+                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--pista-green)]/40",
                 ].join(" ")}
               >
                 {lvl}
@@ -334,7 +334,7 @@ export default function PracticesClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-6">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-6">
               A gentle note
             </p>
             <p className="text-[1rem] leading-[1.85] text-white/65 max-w-[46ch] mx-auto mb-10">
@@ -345,7 +345,7 @@ export default function PracticesClient() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[var(--bg-accent)] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[var(--pista-green)] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
             >
               Ask about initiation
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"

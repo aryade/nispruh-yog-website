@@ -56,7 +56,7 @@ export function Journey() {
           viewport={{ once: true, margin: "-60px" }}
           className="max-w-[44ch] mb-16"
         >
-          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
             The path
           </p>
           <h2
@@ -65,7 +65,7 @@ export function Journey() {
           >
             Where are you
             <br />
-            <span className="text-[var(--bg-accent)]">on the journey?</span>
+            <span className="text-[var(--pista-green)]">on the journey?</span>
           </h2>
         </motion.div>
 
@@ -94,7 +94,7 @@ export function Journey() {
 
               {/* Step number */}
               <span
-                className="text-[0.72rem] font-semibold tracking-[0.18em] text-[var(--bg-accent)]/60 mb-5 uppercase"
+                className="text-[0.72rem] font-semibold tracking-[0.18em] text-[var(--pista-green)]/60 mb-5 uppercase"
                 aria-hidden="true"
               >
                 {number}

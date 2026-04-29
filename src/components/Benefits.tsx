@@ -94,7 +94,7 @@ export default function Benefits() {
           viewport={{ once: true, margin: "-60px" }}
           className="max-w-[44ch] mb-16"
         >
-          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+          <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
             Benefits of Meditation
           </p>
           <h2
@@ -103,7 +103,7 @@ export default function Benefits() {
           >
             What the practice
             <br />
-            <span className="text-[var(--bg-accent)]">opens within you</span>
+            <span className="text-[var(--pista-green)]">opens within you</span>
           </h2>
           <p className="text-[0.95rem] leading-[1.75] text-[var(--text-muted)]">
             Meditation is not about becoming a different person than the living world or becoming a new person. It is about training yourself in full awareness and getting a healthy sense of perspective. Meditation teaches you to systematically explore your inner dimensions. It is a system of commitment, not a commandment.
@@ -127,7 +127,7 @@ export default function Benefits() {
             >
               {/* Icon bubble */}
               <div
-                className="w-11 h-11 rounded-xl flex items-center justify-center bg-gradient-to-br from-[var(--bg-accent)]/15 to-[var(--bg-accent)]/8 text-[var(--bg-accent)] transition-all duration-300 group-hover:from-[var(--bg-accent)]/25 group-hover:to-[var(--bg-accent)]/15 group-hover:shadow-[0_4px_12px_rgba(147,197,114,0.2)]"
+                className="w-11 h-11 rounded-xl flex items-center justify-center bg-gradient-to-br from-[var(--pista-green)]/15 to-[var(--pista-green)]/8 text-[var(--pista-green)] transition-all duration-300 group-hover:from-[var(--pista-green)]/25 group-hover:to-[var(--pista-green)]/15 group-hover:shadow-[0_4px_12px_rgba(147,197,114,0.2)]"
                 aria-hidden="true"
               >
                 {icon}
@@ -151,13 +151,13 @@ export default function Benefits() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="mt-16 border-l-2 border-[var(--bg-accent)]/40 pl-5 max-w-[50ch]"
+          className="mt-16 border-l-2 border-[var(--pista-green)]/40 pl-5 max-w-[50ch]"
         >
           <p className="text-[1rem] leading-[1.8] text-[var(--text-muted)] italic font-light">
             "These are not promises — they are natural unfoldings that arise
             when we stop resisting our own stillness."
           </p>
-          <footer className="mt-2 text-[0.75rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold not-italic">
+          <footer className="mt-2 text-[0.75rem] uppercase tracking-[0.14em] text-[var(--pista-green)] font-semibold not-italic">
             From the teachings
           </footer>
         </motion.blockquote>

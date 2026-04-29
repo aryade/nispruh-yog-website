@@ -36,7 +36,7 @@ export default function ContactSection() {
           >
             <motion.p
               variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5"
+              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-5"
             >
               Reach out
             </motion.p>
@@ -48,7 +48,7 @@ export default function ContactSection() {
             >
               A quiet word
               <br />
-              <span className="text-[var(--bg-accent)]">is always welcome</span>
+              <span className="text-[var(--pista-green)]">is always welcome</span>
             </motion.h2>
 
             <motion.p
@@ -73,7 +73,7 @@ export default function ContactSection() {
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-[0.88rem] text-[var(--text-muted)]">
                   <span
-                    className="mt-[0.35rem] w-1.5 h-1.5 rounded-full bg-[var(--bg-accent)]/50 shrink-0"
+                    className="mt-[0.35rem] w-1.5 h-1.5 rounded-full bg-[var(--pista-green)]/50 shrink-0"
                     aria-hidden="true"
                   />
                   {item}
@@ -84,7 +84,7 @@ export default function ContactSection() {
             {/* Pull quote */}
             <motion.blockquote
               variants={FADE_UP}
-              className="mt-12 border-l-2 border-[var(--bg-accent)]/30 pl-5 not-italic"
+              className="mt-12 border-l-2 border-[var(--pista-green)]/30 pl-5 not-italic"
             >
               <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)]/80 italic font-light">
                 "The door is always open. There is no wrong time to knock."

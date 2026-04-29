@@ -33,8 +33,8 @@ interface Post {
 }
 
 const TAG_COLOUR: Record<Tag, string> = {
-  Practice:    "var(--bg-accent)",
-  Reflection:  "var(--bg-accent)",
+  Practice:    "var(--pista-green)",
+  Reflection:  "var(--pista-green)",
   Lineage:     "var(--text-heading)",
   "Daily Life": "var(--bg-secondary)",
   Philosophy:  "var(--text-muted)",
@@ -157,7 +157,7 @@ export default function BlogClient() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
           <motion.div variants={STAGGER} initial="hidden" animate="show" className="max-w-[52ch]">
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               Words from the path
             </motion.p>
             <motion.h1
@@ -188,7 +188,7 @@ export default function BlogClient() {
           >
             <Link
               href={`/blog/${FEATURED.slug}`}
-              className="group grid grid-cols-1 lg:grid-cols-[1fr_380px] rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_12px_48px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+              className="group grid grid-cols-1 lg:grid-cols-[1fr_380px] rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_12px_48px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
               aria-labelledby="featured-title"
             >
               {/* Text */}
@@ -209,7 +209,7 @@ export default function BlogClient() {
 
                 <h2
                   id="featured-title"
-                  className="text-[clamp(1.5rem,3vw,2rem)] font-semibold leading-[1.2] text-[var(--text-heading)] mb-5 group-hover:text-[var(--bg-accent)] transition-colors duration-200"
+                  className="text-[clamp(1.5rem,3vw,2rem)] font-semibold leading-[1.2] text-[var(--text-heading)] mb-5 group-hover:text-[var(--pista-green)] transition-colors duration-200"
                 >
                   {FEATURED.title}
                 </h2>
@@ -217,7 +217,7 @@ export default function BlogClient() {
                   {FEATURED.excerpt}
                 </p>
 
-                <span className="inline-flex items-center gap-2 text-[0.85rem] font-medium text-[var(--bg-accent)]">
+                <span className="inline-flex items-center gap-2 text-[0.85rem] font-medium text-[var(--pista-green)]">
                   Read article
                   <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"
                     strokeLinecap="round" strokeLinejoin="round"
@@ -235,7 +235,7 @@ export default function BlogClient() {
               >
                 <div className="absolute inset-0"
                   style={{ background: "radial-gradient(ellipse at 40% 40%, rgba(95,122,97,0.15) 0%, transparent 65%)" }} />
-                <span className="text-[4rem] text-[var(--bg-accent)]/20 select-none">꩜</span>
+                <span className="text-[4rem] text-[var(--pista-green)]/20 select-none">꩜</span>
               </div>
             </Link>
           </motion.div>
@@ -250,10 +250,10 @@ export default function BlogClient() {
               <button
                 key={tag}
                 className={[
-                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50",
+                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50",
                   i === 0
-                    ? "bg-[var(--bg-accent)] text-white"
-                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--bg-accent)]/40",
+                    ? "bg-[var(--pista-green)] text-white"
+                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--pista-green)]/40",
                 ].join(" ")}
               >
                 {tag}
@@ -278,7 +278,7 @@ export default function BlogClient() {
               <motion.li key={post.slug} variants={FADE_UP}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="group flex flex-col h-full rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+                  className="group flex flex-col h-full rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                 >
                   {/* Thumbnail placeholder */}
                   <div
@@ -307,7 +307,7 @@ export default function BlogClient() {
                     </div>
 
                     {/* Title */}
-                    <h2 className="text-[1rem] font-semibold leading-snug text-[var(--text-heading)] mb-3 group-hover:text-[var(--bg-accent)] transition-colors duration-200">
+                    <h2 className="text-[1rem] font-semibold leading-snug text-[var(--text-heading)] mb-3 group-hover:text-[var(--pista-green)] transition-colors duration-200">
                       {post.title}
                     </h2>
 
@@ -317,7 +317,7 @@ export default function BlogClient() {
                     </p>
 
                     {/* Read link */}
-                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[var(--bg-accent)]">
+                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[var(--pista-green)]">
                       Read
                       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"
                         strokeLinecap="round" strokeLinejoin="round"
@@ -340,7 +340,7 @@ export default function BlogClient() {
             viewport={{ once: true }}
             className="mt-14 text-center"
           >
-            <button className="px-7 py-3 rounded-full border border-[var(--border-soft)] text-[0.85rem] text-[var(--text-muted)] hover:text-[var(--text-heading)] hover:border-[var(--bg-accent)]/40 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50">
+            <button className="px-7 py-3 rounded-full border border-[var(--border-soft)] text-[0.85rem] text-[var(--text-muted)] hover:text-[var(--text-heading)] hover:border-[var(--pista-green)]/40 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50">
               Load older posts
             </button>
           </motion.div>
@@ -356,13 +356,13 @@ export default function BlogClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <span className="block text-[3rem] text-[var(--bg-accent)]/25 font-serif leading-none mb-5 select-none" aria-hidden="true">"</span>
+            <span className="block text-[3rem] text-[var(--pista-green)]/25 font-serif leading-none mb-5 select-none" aria-hidden="true">"</span>
             <blockquote className="border-0 p-0 not-italic">
               <p className="text-[1.02rem] leading-[1.85] text-[#5a5a5a] italic font-light max-w-[44ch] mx-auto">
                 Writing about practice is useful only when it sends you back to the
                 cushion. Read lightly. Sit deeply.
               </p>
-              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold not-italic">
+              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--pista-green)] font-semibold not-italic">
                 From the teacher
               </footer>
             </blockquote>

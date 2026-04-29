@@ -41,7 +41,7 @@ export default function WhatIsKriyaYoga() {
             {/* Eyebrow */}
             <motion.p
               variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5"
+              className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-5"
             >
               The practice
             </motion.p>
@@ -81,7 +81,7 @@ export default function WhatIsKriyaYoga() {
             <motion.div variants={FADE_UP}>
               <Link
                 href="/about-kriya-yoga"
-                className="inline-flex items-center gap-2 text-[0.9rem] font-medium text-[var(--bg-accent)] border-b border-[var(--bg-accent)]/40 pb-0.5 hover:border-[var(--bg-accent)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50 focus-visible:rounded-sm group"
+                className="inline-flex items-center gap-2 text-[0.9rem] font-medium text-[var(--pista-green)] border-b border-[var(--pista-green)]/40 pb-0.5 hover:border-[var(--pista-green)] transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50 focus-visible:rounded-sm group"
               >
                 Learn more about the lineage
                 <svg
@@ -110,7 +110,7 @@ export default function WhatIsKriyaYoga() {
           >
             {/* Outer decorative frame */}
             <div
-              className="absolute -inset-3 rounded-[2rem] border border-[var(--bg-accent)]/12 pointer-events-none"
+              className="absolute -inset-3 rounded-[2rem] border border-[var(--pista-green)]/12 pointer-events-none"
               aria-hidden="true"
             />
 
@@ -132,7 +132,7 @@ export default function WhatIsKriyaYoga() {
 
               {/* Lotus placeholder glyph */}
               <span
-                className="text-[4rem] text-[var(--bg-accent)]/30 leading-none select-none"
+                className="text-[4rem] text-[var(--pista-green)]/30 leading-none select-none"
                 aria-hidden="true"
               >
                 ꩜
@@ -153,7 +153,7 @@ export default function WhatIsKriyaYoga() {
               <p className="text-[0.82rem] leading-[1.7] text-[#5a5a5a] italic">
                 "Breathe. Be still. The answer you seek is already within."
               </p>
-              <p className="mt-2 text-[0.7rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold">
+              <p className="mt-2 text-[0.7rem] uppercase tracking-[0.14em] text-[var(--pista-green)] font-semibold">
                 Kriya teaching
               </p>
             </motion.div>

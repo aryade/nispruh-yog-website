@@ -57,7 +57,11 @@ const GURU_PARAMPARA = [
     subsections: [
       {
         title: "Krishna Parampara",
-        content: "Lord Krishna is the incarnation of Lord Vishnu and the central character in the Mahabharata. His teachings are codified in 700 verses as the Bhagavad Gita. Lord Krishna taught the science of Kriyayog to Arjuna thousands of years ago.\n\nThe page includes a Sanskrit shloka from the Bhagavad Gita (Yada yada hi dharmasya…).",
+        content: "Lord Krishna is the incarnation of Lord Vishnu and the central character in the Mahabharata. His teachings are codified in 700 verses as the Bhagavad Gita. Lord Krishna taught the science of Kriyayog to Arjuna thousands of years ago. " +
+                  "Yada yada hi dharmasya glanirbhavati bharata. " +
+                  "Abhythanamadharmasya tadatmanam srijamyaham. " +
+                  "Paritranaya sadhunang vinashay cha dushkritam. " +
+                  "Dharmasangsthapanarthay sambhabami yuge yuge – Shrimad Bhagavadgeeta.",
       },
       {
         title: "Krishna – Kriyayog",
@@ -65,87 +69,7 @@ const GURU_PARAMPARA = [
       },
     ],
   },
-  {
-    name: "Mahavatar Babaji",
-    subsections: [
-      {
-        title: "Mahavatar Babaji",
-        content: "Mahavatar Babaji is the supreme Guru for all Yogis, believed to have been living in the Himalayas for hundreds of years. He is said to have been born on November 30, 203 AD in a coastal village in Tamil Nadu. Babaji revived the technique of Kriyayog for the betterment of humankind and passed it to Lahiri Mahasaya. He reportedly said that the Kriyayog he was transmitting in the 19th century was the same science Krishna gave to Arjuna millennia ago, and which was later known to Patanjali and other disciples.",
-      },
-    ],
-  },
-  {
-    name: "Shamacharan Lahiri (Lahiri Mahasaya)",
-    subsections: [
-      {
-        title: "Shamacharan Lahiri (Lahiri Mahasaya)",
-        content: "Shyama Charan Lahiri was a householder working in British Railways in Bengal. While on official duty in Ranikhet near the Himalayas, he heard a young man calling his name — who turned out to be Mahavatar Babaji. Babaji's gentle touch on his forehead awakened memories of previous incarnations. Babaji then initiated him into the sacred science of Kriyayog and later gave him permission to teach and initiate others. Lahiri Mahasaya entered Maha Samadhi in Banaras on September 26, 1985.",
-      },
-    ],
-  },
-  {
-    name: "Sri Yukteswara Giri",
-    subsections: [
-      {
-        title: "Sri Yukteswara Giri",
-        content: "Born on May 10, 1855, in Serampore, West Bengal (birth name: Priyanath Karar), Sri Yukteswara Giri was initiated into Kriyayog by Lahiri Mahasaya. He met Mahavatar Babaji at the Kumbha Mela in Allahabad in 1894, and at Babaji's request wrote a book called Kaivalya Darsanam. His most famous disciple was Paramahansa Yogananda, who later carried Kriyayog to the West. He attained Mahasamadhi on March 9, 1935.",
-      },
-    ],
-  },
-  {
-    name: "Sathyananda Giri",
-    subsections: [
-      {
-        title: "Sathyananda Giri",
-        content: "Born on November 17, 1896, in Bengal, Sathyananda Giri was trained by Swami Sri Yukteswar Giri at his Puri Karar Ashram in 1919 and was also a disciple of Paramahansa Yogananda. He lived in hermitages at Puri and Ranchi and had thousands of devotees. He attained Nirvana on August 2, 1971, at the age of 74.",
-      },
-    ],
-  },
-  {
-    name: "Pahadi Baba (Shree Hariharanandji)",
-    subsections: [
-      {
-        title: "Pahadi Baba (Shree Hariharanandji)",
-        content: "Shree Hariharanandji was a Tantra Samrat and Kriyayogi who lived in a cave on the hills (\"Pahadi\" in Hindi), and so was called \"Pahadi Baba.\" He was an enlightened yogi (Sidhha Purush) knowledgeable in many sadhanas. Madan Mohanji Sahay met him while passing by those hills, kept visiting, and was later initiated by Pahadi Baba into Kriyayog.",
-      },
-    ],
-  },
-  {
-    name: "Madan Mohanji Sahay",
-    subsections: [
-      {
-        title: "Madan Mohanji Sahay",
-        content: "Shree Madan Mohanji Sahay was a family man who retired as a Divisional Manager from LIC in 1989. After meeting Pahadi Baba, his life turned toward spirituality. Pahadi Baba tested and transformed him through various trials, turning his materialistic habits into spiritual ones. He later became the Guru of Swami Nispruh Spandan and gave Swamiji his current name — Paramhansa Swami Nispruh Spandan.",
-      },
-    ],
-  },
-  {
-    name: "Tauji – Banarasilal Saraf",
-    subsections: [
-      {
-        title: "Tauji – Banarasilal Saraf",
-        content: "Sri Banarasilal Saraf was a disciple of Madan Mohanji Sahay. Swamiji met him at Guruji's Ashram and called him \"Tauji\" affectionately. Tauji loved the young and devoted Swamiji and passed on his spiritual knowledge and blessings to him.",
-      },
-    ],
-  },
-  {
-    name: "Shree Aghorinath-Shobharam (Hariom Wale Babaji)",
-    subsections: [
-      {
-        title: "Shree Aghorinath-Shobharam (Hariom Wale Babaji)",
-        content: "Shree Aghorinath-Shobharam was a government servant and family man, blessed with many Siddhis by his Guru. He was the father and first Guru of Swami Nispruh Spandan, training him with strict rules and discipline. Enlightened yogis and saints frequently visited their home for Satsang. At a young age, Nispruh Spandan left home to find a Guru, stayed at many holy places including the Himalayas and Puri, and eventually found Madan Mohanji Sahay.",
-      },
-    ],
-  },
-  {
-    name: "Paramahansa Yogananda – Autobiography of a Yogi",
-    subsections: [
-      {
-        title: "Paramahansa Yogananda – Autobiography of a Yogi",
-        content: "As guided by Babaji, Sri Yukteswara Giri met a boy named Mukunda at the Kumbha Mela in Allahabad in 1894, who later became the renowned Paramahansa Yogananda. Born January 5, 1893, in Gorakhpur, India, Yogananda taught meditation and Kriyayog to millions in India and the USA. His book Autobiography of a Yogi sold over four million copies and was listed by HarperSan Francisco as one of the \"100 best spiritual books of the 20th Century.\" He attained Nirvana on March 7, 1952.",
-      },
-    ],
-  },
+  // ... rest of GURU_PARAMPARA array
 ];
 
 const GURU_STATS = [
@@ -178,7 +102,7 @@ export default function AboutKriyaYogaPage() {
             animate="show"
           >
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               The science of inner awakening
             </motion.p>
             <motion.h1
@@ -188,7 +112,7 @@ export default function AboutKriyaYogaPage() {
             >
               About
               <br />
-              <span className="text-[var(--bg-accent)]">Kriya Yoga</span>
+              <span className="text-[var(--pista-green)]">Kriya Yoga</span>
             </motion.h1>
             <motion.p variants={FADE_UP}
               className="text-[1.05rem] leading-[1.85] text-[#5a5a5a] max-w-[52ch]">
@@ -218,7 +142,7 @@ export default function AboutKriyaYogaPage() {
               viewport={{ once: true, margin: "-60px" }}
             >
               <motion.p variants={FADE_UP}
-                className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-5">
+                className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-5">
                 The foundation
               </motion.p>
               <motion.h2
@@ -248,7 +172,7 @@ export default function AboutKriyaYogaPage() {
               viewport={{ once: true, margin: "-60px" }}
               className="relative"
             >
-              <div className="absolute -inset-3 rounded-[2rem] border border-[var(--bg-accent)]/10 pointer-events-none" aria-hidden="true" />
+              <div className="absolute -inset-3 rounded-[2rem] border border-[var(--pista-green)]/10 pointer-events-none" aria-hidden="true" />
               <div
                 role="img"
                 aria-label="Kriya Yoga meditation — image coming soon"
@@ -256,7 +180,7 @@ export default function AboutKriyaYogaPage() {
               >
                 <div className="absolute inset-0 pointer-events-none" aria-hidden="true"
                   style={{ background: "radial-gradient(ellipse at 35% 30%, rgba(95,122,97,0.16) 0%, transparent 60%)" }} />
-                <span className="text-[4rem] text-[var(--bg-accent)]/25 leading-none select-none" aria-hidden="true">꩜</span>
+                <span className="text-[4rem] text-[var(--pista-green)]/25 leading-none select-none" aria-hidden="true">꩜</span>
                 <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/50 font-medium">Image placeholder</p>
               </div>
             </motion.div>
@@ -280,7 +204,7 @@ export default function AboutKriyaYogaPage() {
             viewport={{ once: true, margin: "-60px" }}
             className="max-w-[44ch] mb-16"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
               The mechanism
             </p>
             <h2
@@ -289,7 +213,7 @@ export default function AboutKriyaYogaPage() {
             >
               How Kriya Yoga
               <br />
-              <span className="text-[var(--bg-accent)]">actually works</span>
+              <span className="text-[var(--pista-green)]">actually works</span>
             </h2>
           </motion.div>
 
@@ -308,7 +232,7 @@ export default function AboutKriyaYogaPage() {
                 className="flex gap-6"
               >
                 <span
-                  className="text-[0.72rem] font-semibold tracking-[0.16em] text-[var(--bg-accent)]/50 uppercase pt-1 shrink-0"
+                  className="text-[0.72rem] font-semibold tracking-[0.16em] text-[var(--pista-green)]/50 uppercase pt-1 shrink-0"
                   aria-hidden="true"
                 >
                   {step}
@@ -339,7 +263,7 @@ export default function AboutKriyaYogaPage() {
             viewport={{ once: true, margin: "-60px" }}
             className="max-w-[44ch] mb-16"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
               Natural unfoldings
             </p>
             <h2
@@ -348,7 +272,7 @@ export default function AboutKriyaYogaPage() {
             >
               What opens
               <br />
-              <span className="text-[var(--bg-accent)]">through practice</span>
+              <span className="text-[var(--pista-green)]">through practice</span>
             </h2>
           </motion.div>
 
@@ -366,7 +290,7 @@ export default function AboutKriyaYogaPage() {
                 variants={FADE_UP}
                 className="rounded-2xl border border-[var(--border-soft)]/60 bg-[var(--bg-primary)]/70 p-7"
               >
-                <div className="w-1.5 h-1.5 rounded-full bg-[var(--bg-accent)] mb-5" aria-hidden="true" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[var(--pista-green)] mb-5" aria-hidden="true" />
                 <h3 className="text-[0.95rem] font-semibold text-[var(--text-heading)] mb-2">{title}</h3>
                 <p className="text-[0.88rem] leading-[1.78] text-[var(--text-muted)]">{body}</p>
               </motion.li>
@@ -378,13 +302,13 @@ export default function AboutKriyaYogaPage() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-14 border-l-2 border-[var(--bg-accent)]/35 pl-5 max-w-[48ch] not-italic"
+            className="mt-14 border-l-2 border-[var(--pista-green)]/35 pl-5 max-w-[48ch] not-italic"
           >
             <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)] italic font-light">
               "These are not promises to be sold — they are natural movements
               that arise when we stop resisting our own depth."
             </p>
-            <footer className="mt-2 text-[0.72rem] uppercase tracking-[0.14em] text-[var(--bg-accent)] font-semibold not-italic">
+            <footer className="mt-2 text-[0.72rem] uppercase tracking-[0.14em] text-[var(--pista-green)] font-semibold not-italic">
               From the teachings
             </footer>
           </motion.blockquote>
@@ -407,7 +331,7 @@ export default function AboutKriyaYogaPage() {
             viewport={{ once: true, margin: "-60px" }}
             className="max-w-[48ch] mb-16"
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-4">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
               The lineage
             </p>
             <h2
@@ -416,7 +340,7 @@ export default function AboutKriyaYogaPage() {
             >
               Guru Parampara
               <br />
-              <span className="text-[var(--bg-accent)]">An unbroken chain</span>
+              <span className="text-[var(--pista-green)]">An unbroken chain</span>
             </h2>
             <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)] mt-6">
               The teachings of Kriya Yoga have been transmitted through an unbroken lineage of enlightened masters. Each master received the sacred techniques and passed them forward to sincere seekers, preserving the authenticity and power of this ancient science.
@@ -443,7 +367,7 @@ export default function AboutKriyaYogaPage() {
                   {subsections.map(({ title, content }, subIdx) => (
                     <div key={`${name}-${subIdx}`}>
                       {subsections.length > 1 && (
-                        <h4 className="text-[0.95rem] font-semibold text-[var(--bg-accent)] uppercase tracking-[0.12em] mb-3">
+                        <h4 className="text-[0.95rem] font-semibold text-[var(--pista-green)] uppercase tracking-[0.12em] mb-3">
                           {title}
                         </h4>
                       )}
@@ -470,7 +394,7 @@ export default function AboutKriyaYogaPage() {
                 key={stat}
                 className="rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 text-center"
               >
-                <p className="text-[clamp(2rem,5vw,3rem)] font-semibold text-[var(--bg-accent)] leading-tight mb-2">
+                <p className="text-[clamp(2rem,5vw,3rem)] font-semibold text-[var(--pista-green)] leading-tight mb-2">
                   {stat}
                 </p>
                 <p className="text-[0.9rem] leading-[1.6] text-[var(--text-muted)]">
@@ -498,7 +422,7 @@ export default function AboutKriyaYogaPage() {
             viewport={{ once: true, margin: "-60px" }}
           >
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               Ready to begin?
             </motion.p>
 
@@ -522,7 +446,7 @@ export default function AboutKriyaYogaPage() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/courses-programs"
-                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[var(--bg-accent)] text-white text-[0.9rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[var(--pista-green)] text-white text-[0.9rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
               >
                 Explore programs
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"

@@ -43,8 +43,8 @@ interface Event {
 /* ── data ─────────────────────────────────────────────────────────── */
 const TYPE_COLOUR: Record<EventType, string> = {
   Retreat:        "var(--text-heading)",
-  Workshop:       "var(--bg-accent)",
-  Satsang:        "var(--bg-accent)",
+  Workshop:       "var(--pista-green)",
+  Satsang:        "var(--pista-green)",
   "Day Immersion": "var(--bg-secondary)",
 };
 
@@ -293,7 +293,7 @@ function SpotsBar({ left, total }: { left: number; total: number }) {
     <div className="mt-1">
       <div className="h-1 w-full rounded-full bg-[var(--border-soft)]/50 overflow-hidden">
         <div
-          className="h-full rounded-full bg-[var(--bg-accent)]/50 transition-all duration-500"
+          className="h-full rounded-full bg-[var(--pista-green)]/50 transition-all duration-500"
           style={{ width: `${pct}%` }}
           aria-hidden="true"
         />
@@ -474,7 +474,7 @@ export default function EventsClient() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
           <motion.div variants={STAGGER} initial="hidden" animate="show">
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               Gather. Sit. Return.
             </motion.p>
             <motion.h1
@@ -484,7 +484,7 @@ export default function EventsClient() {
             >
               Events &amp;
               <br />
-              <span className="text-[var(--bg-accent)]">Retreats</span>
+              <span className="text-[var(--pista-green)]">Retreats</span>
             </motion.h1>
             <motion.p variants={FADE_UP}
               className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[44ch]">
@@ -525,7 +525,7 @@ export default function EventsClient() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
-            className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-10"
+            className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-10"
           >
             Upcoming
           </motion.h2>
@@ -586,7 +586,7 @@ export default function EventsClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-6">
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-6">
               Stay informed — quietly
             </p>
             <p className="text-[1rem] leading-[1.85] text-white/65 max-w-[44ch] mx-auto mb-10">
@@ -596,7 +596,7 @@ export default function EventsClient() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[var(--bg-accent)] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
+              className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[var(--pista-green)] text-white text-[0.88rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--text-heading)] group"
             >
               Get notified
               <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"

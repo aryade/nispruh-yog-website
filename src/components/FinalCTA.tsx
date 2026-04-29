@@ -52,7 +52,7 @@ export default function FinalCTA() {
           {/* Eyebrow */}
           <motion.p
             variants={FADE_UP}
-            className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6"
+            className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6"
           >
             The path begins with one breath
           </motion.p>
@@ -65,7 +65,7 @@ export default function FinalCTA() {
           >
             Begin Your Inner
             <br />
-            <span className="text-[var(--bg-accent)]">Journey Today</span>
+            <span className="text-[var(--pista-green)]">Journey Today</span>
           </motion.h2>
 
           {/* Supporting text */}
@@ -84,7 +84,7 @@ export default function FinalCTA() {
           >
             <Link
               href="/courses-programs"
-              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[var(--bg-accent)] text-white text-[0.92rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2 group"
+              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[var(--pista-green)] text-white text-[0.92rem] font-medium tracking-wide hover:bg-[#4e6851] transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60 focus-visible:ring-offset-2 group"
             >
               Join a Program
               <svg

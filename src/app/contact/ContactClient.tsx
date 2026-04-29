@@ -87,7 +87,7 @@ export default function ContactClient() {
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
           <motion.div variants={STAGGER} initial="hidden" animate="show" className="max-w-[48ch]">
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               An open door
             </motion.p>
             <motion.h1
@@ -123,7 +123,7 @@ export default function ContactClient() {
               <motion.ul role="list" variants={FADE_UP} className="flex flex-col gap-7 mb-14">
                 {DETAILS.map(({ label, value, href, icon }) => (
                   <li key={label} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[var(--bg-accent)]/10 text-[var(--bg-accent)] flex items-center justify-center shrink-0">
+                    <div className="w-10 h-10 rounded-xl bg-[var(--pista-green)]/10 text-[var(--pista-green)] flex items-center justify-center shrink-0">
                       {icon}
                     </div>
                     <div>
@@ -133,7 +133,7 @@ export default function ContactClient() {
                       {href ? (
                         <a
                           href={href}
-                          className="text-[0.95rem] font-medium text-[var(--text-heading)] hover:text-[var(--bg-accent)] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+                          className="text-[0.95rem] font-medium text-[var(--text-heading)] hover:text-[var(--pista-green)] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
                         >
                           {value}
                         </a>
@@ -176,7 +176,7 @@ export default function ContactClient() {
 
                   {/* Pin */}
                   <div className="relative z-10 flex flex-col items-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-[var(--bg-accent)] flex items-center justify-center shadow-[0_4px_16px_rgba(95,122,97,0.4)]">
+                    <div className="w-10 h-10 rounded-full bg-[var(--pista-green)] flex items-center justify-center shadow-[0_4px_16px_rgba(95,122,97,0.4)]">
                       <svg viewBox="0 0 16 16" fill="white" className="w-5 h-5" aria-hidden="true">
                         <path d="M8 1a5 5 0 0 1 5 5c0 3.5-5 9-5 9S3 9.5 3 6a5 5 0 0 1 5-5zm0 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
                       </svg>
@@ -203,7 +203,7 @@ export default function ContactClient() {
                   "We reply within 2–3 working days",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-[0.85rem] text-[var(--text-muted)]">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--bg-accent)]/60 shrink-0" aria-hidden="true" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[var(--pista-green)]/60 shrink-0" aria-hidden="true" />
                     {item}
                   </li>
                 ))}
@@ -218,7 +218,7 @@ export default function ContactClient() {
               viewport={{ once: true, margin: "-60px" }}
               className="rounded-2xl border border-[var(--border-soft)]/60 bg-white p-8 sm:p-10 shadow-[0_8px_48px_rgba(31,42,68,0.06)]"
             >
-              <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--bg-accent)] font-semibold mb-2">
+              <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-2">
                 Send a message
               </p>
               <h2 className="text-[1.2rem] font-semibold text-[var(--text-heading)] mb-7">
@@ -245,13 +245,13 @@ export default function ContactClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <span className="block text-[3rem] text-[var(--bg-accent)]/30 font-serif leading-none mb-5 select-none" aria-hidden="true">"</span>
+            <span className="block text-[3rem] text-[var(--pista-green)]/30 font-serif leading-none mb-5 select-none" aria-hidden="true">"</span>
             <blockquote className="border-0 p-0 not-italic">
               <p className="text-[1rem] leading-[1.85] text-white/60 italic font-light max-w-[42ch] mx-auto">
                 The door is always open. There is no wrong time to knock,
                 no wrong question to ask, no wrong place to begin.
               </p>
-              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold not-italic">
+              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--pista-green)] font-semibold not-italic">
                 Nispruh Yog
               </footer>
             </blockquote>

@@ -68,7 +68,7 @@ export function Hero() {
         {/* Eyebrow */}
         <motion.p
           variants={FADE_UP}
-          className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6"
+          className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6"
         >
           Kriya Yoga · Ancient Science of Breath
         </motion.p>
@@ -80,7 +80,7 @@ export function Hero() {
         >
           Still the mind.
           <br />
-          <span className="text-[var(--bg-accent)]">Awaken the self.</span>
+          <span className="text-[var(--pista-green)]">Awaken the self.</span>
         </motion.h1>
 
         {/* Subtext */}
@@ -95,12 +95,12 @@ export function Hero() {
         {/* Featured Quote */}
         <motion.blockquote
           variants={FADE_UP}
-          className="text-[1.15rem] leading-[1.8] text-[var(--text-heading)] max-w-[42ch] mx-auto mb-10 border-l-4 border-[var(--bg-accent)] pl-6 italic"
+          className="text-[1.15rem] leading-[1.8] text-[var(--text-heading)] max-w-[42ch] mx-auto mb-10 border-l-4 border-[var(--pista-green)] pl-6 italic"
         >
           <p className="mb-3">My love for you is pure and unconditional. But until you will not break the barriers of your Ego, you will never experience the divinity of my love.</p>
           <p className="text-[0.95rem] text-[var(--text-muted)] mt-3">— Swami Nispruh Spandan</p>
-          <footer className="text-[0.9rem] font-semibold not-italic text-[var(--bg-accent)]">
-            — Paramhans Yogananda
+          <footer className="text-[0.9rem] font-semibold not-italic text-[var(--pista-green)]">
+            {/* — Paramhans Yogananda */}
           </footer>
         </motion.blockquote>
 
@@ -111,7 +111,7 @@ export function Hero() {
         >
           <Link
             href="/practices"
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-[var(--bg-accent)] to-[#7CB54D] text-white text-[0.9rem] font-medium tracking-wide hover:shadow-lg hover:shadow-[rgba(147,197,114,0.3)] hover:-translate-y-0.5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60 focus-visible:ring-offset-2"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-gradient-to-r from-[var(--pista-green)] to-[#7CB54D] text-white text-[0.9rem] font-medium tracking-wide hover:shadow-lg hover:shadow-[rgba(147,197,114,0.3)] hover:-translate-y-0.5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60 focus-visible:ring-offset-2"
           >
             Begin Your Journey
             <svg
@@ -128,7 +128,7 @@ export function Hero() {
 
           <Link
             href="/about-kriya-yoga"
-            className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[var(--bg-accent)] border-2 border-[var(--bg-accent)] hover:bg-[rgba(147,197,114,0.08)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/60"
+            className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[var(--pista-green)] border-2 border-[var(--pista-green)] hover:bg-[rgba(147,197,114,0.08)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60"
           >
             What is Kriya Yoga?
           </Link>
@@ -147,7 +147,7 @@ export function Hero() {
           Scroll
         </span>
         <motion.span
-          className="block w-px h-10 bg-gradient-to-b from-[var(--bg-accent)]/40 to-transparent"
+          className="block w-px h-10 bg-gradient-to-b from-[var(--pista-green)]/40 to-transparent"
           animate={{ scaleY: [1, 0.4, 1], opacity: [0.6, 1, 0.6] }}
           transition={{ duration: DURATIONS.verySlow, repeat: Infinity, ease: "easeInOut" as const }}
         />

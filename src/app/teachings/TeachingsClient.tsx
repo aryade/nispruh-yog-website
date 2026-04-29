@@ -119,7 +119,7 @@ export default function TeachingsClient() {
             className="max-w-[52ch]"
           >
             <motion.p variants={FADE_UP}
-              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--bg-accent)] font-semibold mb-6">
+              className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6">
               Knowledge for the path
             </motion.p>
             <motion.h1
@@ -150,10 +150,10 @@ export default function TeachingsClient() {
               <button
                 key={cat}
                 className={[
-                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50",
+                  "shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50",
                   i === 0
-                    ? "bg-[var(--bg-accent)] text-white"
-                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--bg-accent)]/40",
+                    ? "bg-[var(--pista-green)] text-white"
+                    : "text-[var(--text-muted)] hover:text-[var(--text-heading)] border border-[var(--border-soft)]/80 hover:border-[var(--pista-green)]/40",
                 ].join(" ")}
               >
                 {cat}
@@ -178,7 +178,7 @@ export default function TeachingsClient() {
               <motion.li key={title} variants={FADE_UP}>
                 <Link
                   href={href}
-                  className="group flex flex-col h-full rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+                  className="group flex flex-col h-full rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                 >
                   {/* Image placeholder */}
                   <div
@@ -187,20 +187,20 @@ export default function TeachingsClient() {
                   >
                     <div className="absolute inset-0"
                       style={{ background: "radial-gradient(ellipse at 40% 40%, rgba(95,122,97,0.13) 0%, transparent 65%)" }} />
-                    <span className="text-[2.2rem] text-[var(--bg-accent)]/20 select-none">꩜</span>
+                    <span className="text-[2.2rem] text-[var(--pista-green)]/20 select-none">꩜</span>
                   </div>
 
                   <div className="flex flex-col flex-1 p-6">
                     {/* Meta */}
                     <div className="flex items-center justify-between mb-4">
-                      <span className="text-[0.68rem] uppercase tracking-[0.16em] font-semibold text-[var(--bg-accent)]">
+                      <span className="text-[0.68rem] uppercase tracking-[0.16em] font-semibold text-[var(--pista-green)]">
                         {category}
                       </span>
                       <span className="text-[0.72rem] text-[var(--text-muted)]/70">{readTime}</span>
                     </div>
 
                     {/* Title */}
-                    <h2 className="text-[1rem] font-semibold leading-snug text-[var(--text-heading)] mb-3 group-hover:text-[var(--bg-accent)] transition-colors duration-200">
+                    <h2 className="text-[1rem] font-semibold leading-snug text-[var(--text-heading)] mb-3 group-hover:text-[var(--pista-green)] transition-colors duration-200">
                       {title}
                     </h2>
 
@@ -210,7 +210,7 @@ export default function TeachingsClient() {
                     </p>
 
                     {/* Read link */}
-                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[var(--bg-accent)]">
+                    <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[var(--pista-green)]">
                       Read teaching
                       <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.6"
                         strokeLinecap="round" strokeLinejoin="round"
@@ -234,7 +234,7 @@ export default function TeachingsClient() {
             className="mt-14 text-center"
           >
             <button
-              className="px-7 py-3 rounded-full border border-[var(--border-soft)] text-[0.85rem] text-[var(--text-muted)] hover:text-[var(--text-heading)] hover:border-[var(--bg-accent)]/40 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--bg-accent)]/50"
+              className="px-7 py-3 rounded-full border border-[var(--border-soft)] text-[0.85rem] text-[var(--text-muted)] hover:text-[var(--text-heading)] hover:border-[var(--pista-green)]/40 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
             >
               Load more teachings
             </button>
@@ -251,13 +251,13 @@ export default function TeachingsClient() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] as const }}
             viewport={{ once: true }}
           >
-            <span className="block text-[3rem] text-[var(--bg-accent)]/25 font-serif leading-none mb-4 select-none" aria-hidden="true">"</span>
+            <span className="block text-[3rem] text-[var(--pista-green)]/25 font-serif leading-none mb-4 select-none" aria-hidden="true">"</span>
             <blockquote className="border-0 p-0 not-italic">
               <p className="text-[1.05rem] leading-[1.85] text-[#5a5a5a] italic font-light max-w-[44ch] mx-auto">
                 A teaching is not the truth — it is a finger pointing at the
                 moon. Read with the heart open, then close the book and sit.
               </p>
-              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--bg-accent)] font-semibold not-italic">
+              <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--pista-green)] font-semibold not-italic">
                 From the tradition
               </footer>
             </blockquote>
