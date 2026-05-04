@@ -57,11 +57,7 @@ const GURU_PARAMPARA = [
     subsections: [
       {
         title: "Krishna Parampara",
-        content: "Lord Krishna is the incarnation of Lord Vishnu and the central character in the Mahabharata. His teachings are codified in 700 verses as the Bhagavad Gita. Lord Krishna taught the science of Kriyayog to Arjuna thousands of years ago. ",
-                  "Yada yada hi dharmasya glanirbhavati bharata. " :
-                  "Abhythanamadharmasya tadatmanam srijamyaham. " ,
-                  "Paritranaya sadhunang vinashay cha dushkritam. " :
-                  "Dharmasangsthapanarthay sambhabami yuge yuge – Shrimad Bhagavadgeeta.",
+        content: "Lord Krishna is the incarnation of Lord Vishnu and the central character in the Mahabharata. His teachings are codified in 700 verses as the Bhagavad Gita. Lord Krishna taught the science of Kriyayog to Arjuna thousands of years ago.\n\n\"Yada yada hi dharmasya glanirbhavati bharata.\nAbhythanamadharmasya tadatmanam srijamyaham.\nParitranaya sadhunang vinashay cha dushkritam.\nDharmasangsthapanarthay sambhabami yuge yuge – Shrimad Bhagavadgeeta.\"",
       },
       {
         title: "Krishna – Kriyayog",
