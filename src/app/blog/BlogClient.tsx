@@ -42,6 +42,17 @@ const TAG_COLOUR: Record<Tag, string> = {
 
 const POSTS: Post[] = [
   {
+    slug: "swami-nispruh-spandan",
+    tag: "Lineage",
+    readTime: "8 min",
+    date: "3 May 2026",
+    dateISO: "2026-05-03",
+    title: "Who is Swami Nispruh Spandan?",
+    excerpt:
+      "The life, journey, and teachings of the Kriya yogi guiding students in India and Finland since the early 2000s.",
+    featured: true,
+  },
+  {
     slug: "what-happens-when-you-sit",
     tag: "Practice",
     readTime: "5 min",
@@ -50,7 +61,6 @@ const POSTS: Post[] = [
     title: "What Actually Happens When You Sit",
     excerpt:
       "Most people expect meditation to feel peaceful. Often it feels like the opposite — restless, loud, resistant. This is not failure. This is the practice beginning.",
-    featured: true,
   },
   {
     slug: "lineage-why-it-matters",
@@ -61,6 +71,26 @@ const POSTS: Post[] = [
     title: "Why Lineage Matters in Kriya Yoga",
     excerpt:
       "The word \u2018transmission\u2019 is not mystical jargon. It points at something precise: the difference between reading a map and walking the terrain with someone who knows it.",
+  },
+  {
+    slug: "guru-parampara-lineage",
+    tag: "Lineage",
+    readTime: "10 min",
+    date: "4 May 2026",
+    dateISO: "2026-05-04",
+    title: "1,200 Years of Kriyayog — The Guru Parampara Lineage Explained",
+    excerpt:
+      "How an ancient science passed from Lord Krishna through the Himalayas, across continents, and into living rooms in Finland today.",
+  },
+  {
+    slug: "begin-kriyayog-practice",
+    tag: "Practice",
+    readTime: "9 min",
+    date: "5 May 2026",
+    dateISO: "2026-05-05",
+    title: "How to Begin Your Kriyayog Practice — A Guide for Complete Beginners",
+    excerpt:
+      "Everything you need to know before your first session, from someone who has never meditated before.",
   },
   {
     slug: "morning-without-a-phone",
