@@ -241,7 +241,7 @@ export default function AboutKriyaYogaPage() {
               ))}
             </motion.div>
 
-            {/* Image placeholder */}
+            {/* Image */}
             <motion.div
               initial={{ opacity: 0, scale: 0.97 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -250,15 +250,12 @@ export default function AboutKriyaYogaPage() {
               className="relative"
             >
               <div className="absolute -inset-3 rounded-[2rem] border border-[var(--pista-green)]/10 pointer-events-none" aria-hidden="true" />
-              <div
-                role="img"
-                aria-label="Kriya Yoga meditation — image coming soon"
-                className="relative overflow-hidden rounded-[1.5rem] aspect-square bg-gradient-to-br from-[#e8e4dc] via-[#ddd8cf] to-[#cec8be] flex flex-col items-center justify-center gap-3"
-              >
-                <div className="absolute inset-0 pointer-events-none" aria-hidden="true"
-                  style={{ background: "radial-gradient(ellipse at 35% 30%, rgba(95,122,97,0.16) 0%, transparent 60%)" }} />
-                <span className="text-[4rem] text-[var(--pista-green)]/25 leading-none select-none" aria-hidden="true">꩜</span>
-                <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/50 font-medium">Image placeholder</p>
+              <div className="relative overflow-hidden rounded-[1.5rem] aspect-square">
+                <img
+                  src="/images/practices/kriya-meditation-about.png"
+                  alt="Kriya Yoga meditation practice"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
 
