@@ -100,7 +100,7 @@ export default function WhatIsKriyaYoga() {
             </motion.div>
           </motion.div>
 
-          {/* ── Image placeholder column ─────────────────────── */}
+          {/* ── Image column ─────────────────────────────────── */}
           <motion.div
             variants={FADE_IN}
             initial="hidden"
@@ -114,32 +114,13 @@ export default function WhatIsKriyaYoga() {
               aria-hidden="true"
             />
 
-            {/* Placeholder image box */}
-            <div
-              role="img"
-              aria-label="Kriya Yoga meditation — image coming soon"
-              className="relative overflow-hidden rounded-[1.5rem] aspect-[4/5] bg-gradient-to-br from-[#e8e4dc] via-[#ddd8cf] to-[#cec8be] flex flex-col items-center justify-center gap-4"
-            >
-              {/* Subtle inner radial glow */}
-              <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  background:
-                    "radial-gradient(ellipse at 40% 35%, rgba(95,122,97,0.14) 0%, transparent 65%), radial-gradient(ellipse at 70% 80%, rgba(214,167,94,0.12) 0%, transparent 55%)",
-                }}
-                aria-hidden="true"
+            {/* Image */}
+            <div className="relative overflow-hidden rounded-[1.5rem] aspect-[4/5]">
+              <img
+                src="/images/practices/kriya-meditation.png"
+                alt="Kriya Yoga meditation practice"
+                className="w-full h-full object-cover"
               />
-
-              {/* Lotus placeholder glyph */}
-              <span
-                className="text-[4rem] text-[var(--pista-green)]/30 leading-none select-none"
-                aria-hidden="true"
-              >
-                ꩜
-              </span>
-              <p className="text-[0.75rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/60 font-medium">
-                Image placeholder
-              </p>
             </div>
 
             {/* Floating quote card */}
