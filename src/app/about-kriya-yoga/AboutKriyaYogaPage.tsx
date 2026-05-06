@@ -435,7 +435,7 @@ export default function AboutKriyaYogaPage() {
               <motion.div
                 key={name}
                 variants={FADE_UP}
-                className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Banarasilal Saraf" || name === "Mahavatar Babaji" || name === "Shamacharan Lahiri (Lahiri Mahasaya)" || name === "Sri Yukteswara Giri" || name === "Sathyananda Giri" || name === "Pahadi Baba (Shree Hariharanandji)" || name === "Madan Mohanji Sahay") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
+                className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Banarasilal Saraf" || name === "Mahavatar Babaji" || name === "Shamacharan Lahiri (Lahiri Mahasaya)" || name === "Sri Yukteswara Giri" || name === "Sathyananda Giri" || name === "Pahadi Baba (Shree Hariharanandji)" || name === "Madan Mohanji Sahay" || name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
               >
                 {idx === 0 && (
                   <div className="relative">
@@ -534,6 +534,19 @@ export default function AboutKriyaYogaPage() {
                     <Image
                       src="/images/gurus/Banarasilal_Saraf_BW.png"
                       alt="Sri Banarasilal Saraf (Tauji) - Spiritual guide and mentor"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Guru_300x400.png"
+                      alt="Shree Aghorinath-Shobharam (Hariom Wale Babaji) - Father and first Guru of Swami Nispruh Spandan"
                       width={300}
                       height={400}
                       className="relative w-72 h-auto rounded-xl shadow-lg"

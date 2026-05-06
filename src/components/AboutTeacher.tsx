@@ -50,37 +50,18 @@ export default function AboutTeacher() {
             {/* /> */}
 
             <div
-              //role="img" 
-              //aria-label="Teacher portrait — image coming soon"
-              //className="relative z-10 overflow-hidden rounded-[1.5rem] aspect-[3/4] bg-gradient-to-br from-[#e4e0d8] via-[#d8d2c8] to-[#c8c0b2] flex flex-col items-center justify-center gap-3" 
+              role="img"
+              aria-label="Swami Nispruh Spandan — Kriya Yoga Teacher"
+              className="relative z-10 overflow-hidden rounded-[1.5rem] aspect-[3/4]"
             >
-              {/* Inner glow */}
-              <div
-                //className="absolute inset-0 pointer-events-none"
-                //style={{
-                  //background:
-                    //"radial-gradient(ellipse at 35% 30%, rgba(95,122,97,0.16) 0%, transparent 60%), radial-gradient(ellipse at 75% 85%, rgba(214,167,94,0.12) 0%, transparent 55%)",
-                //}}
-                //aria-hidden="true"
-              /> 
-              {/* Silhouette glyph */}
-              <svg
-                //viewBox="0 0 64 80"
-                //fill="none"
-                //className="w-20 h-20 opacity-20"
-                //aria-hidden="true"
-              > 
-                {/* <circle cx="32" cy="20" r="14" fill="var(--text-heading)" /> */}
-                //<path
-                  //d="M4 76c0-15.464 12.536-28 28-28s28 12.536 28 28"
-                  //stroke="var(--text-heading)"
-                  //strokeWidth="3"
-                  //strokeLinecap="round"
-                />
-              </svg>
-              <p className="text-[0.72rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/60 font-medium">
-                {/* Photo placeholder */}
-              </p>
+              <Image
+                src="/images/teacher/Swami_Nispruh_Spandan_color_900x1350 copy.png"
+                alt="Swami Nispruh Spandan"
+                width={900}
+                height={1350}
+                priority={true}
+                className="w-full h-full object-cover"
+              />
             </div>
 
             {/* Floating years-of-practice badge */}

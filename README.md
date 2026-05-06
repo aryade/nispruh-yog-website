@@ -1,37 +1,48 @@
 # Kriya Yoga Website
 
-A calm, minimal Kriya Yoga website built as a Next.js app using the App Router.
+A calm, minimal Kriya Yoga website built with Next.js for a spiritual, meditative experience.
 
-## Overview
+## 🚀 Quick Start
 
-- A gentle landing experience with a spiritual, meditative tone.
-- Main pages include Home, About, Teachings, Practices, Courses / Programs, Events / Retreats, Blog, and Contact.
-- Includes a reusable contact form and a simple API route for form submissions.
-- Uses component-driven page structure for clarity and ease of updates.
+**For Website Content Editors (Add Text/Photos):**
+See `PROJECT_GUIDE.md` → "FOR WEBSITE OWNERS (CONTENT EDITORS)"
 
-## Pages
+**For Developers (Setup & Development):**
+See `PROJECT_GUIDE.md` → "FOR DEVELOPERS"
 
-- `/` — Home
-- `/about-kriya-yoga` — About Kriya Yoga
-- `/teachings` — Teachings
-- `/practices` — Practices
-- `/courses-programs` — Courses / Programs
-- `/events-retreats` — Events / Retreats
-- `/blog` — Blog
-- `/contact` — Contact
+## 📖 Documentation
 
-## Scripts
+**All documentation is in:** `PROJECT_GUIDE.md`
+
+This single guide contains:
+- ✅ Setup & installation
+- ✅ How to edit content and add photos
+- ✅ Project structure
+- ✅ Testing instructions
+- ✅ Deployment guide
+- ✅ Color system
+- ✅ Common tasks
+
+## 📋 Quick Links
+
+- Home: `/`
+- About: `/about-kriya-yoga`
+- Teachings: `/teachings`
+- Practices: `/practices`
+- Courses: `/courses-programs`
+- Events: `/events-retreats`
+- Blog: `/blog`
+- Contact: `/contact`
+
+## 🛠️ Basic Commands
 
 ```bash
-npm install
-npm run dev
-npm run build
-npm start
-npm run lint
+npm install       # Install dependencies
+npm run dev       # Start development server
+npm run build     # Build for production
+npm test          # Run tests
 ```
 
-## Notes
+---
 
-- The app currently uses a calm palette and a minimal layout.
-- The contact form is wired to `src/app/api/contact/route.ts` for server-side validation.
-- If Tailwind or Framer Motion is added later, this README can be updated with the specific setup.
+**For complete documentation, see `PROJECT_GUIDE.md`**
