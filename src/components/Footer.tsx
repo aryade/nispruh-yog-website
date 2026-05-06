@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const QUICK_LINKS = [
@@ -83,8 +84,15 @@ export default function Footer() {
           custom={0}
           className="lg:col-span-1"
         >
-          <div className="flex items-center gap-2 mb-5">
-            <span className="text-[var(--pista-green)] text-xl leading-none select-none" aria-hidden="true">꩜</span>
+          <div className="flex items-center gap-3 mb-5">
+            <Image
+              src="/images/logo_A_tnsp.png"
+              alt=""
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
             <span className="text-white font-semibold tracking-wide text-[0.95rem]">Nispruh Yog</span>
           </div>
           <p className="text-[0.9rem] leading-[1.75] text-[var(--text-muted)] max-w-[32ch]">

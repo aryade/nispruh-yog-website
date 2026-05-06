@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 /* ── shared animation variants ───────────────────────────────────── */
@@ -434,24 +435,130 @@ export default function AboutKriyaYogaPage() {
               <motion.div
                 key={name}
                 variants={FADE_UP}
-                className="rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10"
+                className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Banarasilal Saraf" || name === "Mahavatar Babaji" || name === "Shamacharan Lahiri (Lahiri Mahasaya)" || name === "Sri Yukteswara Giri" || name === "Sathyananda Giri" || name === "Pahadi Baba (Shree Hariharanandji)" || name === "Madan Mohanji Sahay") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
               >
-                <h3 className="text-[1.25rem] font-semibold text-[var(--text-heading)] mb-6">
-                  {name}
-                </h3>
-                <div className="space-y-6">
-                  {subsections.map(({ title, content }, subIdx) => (
-                    <div key={`${name}-${subIdx}`}>
-                      {subsections.length > 1 && (
-                        <h4 className="text-[0.95rem] font-semibold text-[var(--pista-green)] uppercase tracking-[0.12em] mb-3">
-                          {title}
-                        </h4>
-                      )}
-                      <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)]">
-                        {content}
-                      </p>
-                    </div>
-                  ))}
+                {idx === 0 && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/krishna_image.png"
+                      alt="Lord Krishna - Avatar of Vishnu, transmitter of Kriya Yoga"
+                      width={300}
+                      height={400}
+                      className="relative w-80 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Mahavatar Babaji" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Mahaavatar_Babaji_300x400.png"
+                      alt="Mahavatar Babaji - Supreme Guru of all Yogis"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Shamacharan Lahiri (Lahiri Mahasaya)" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Lahiri_Mahashay_300x400.png"
+                      alt="Shamacharan Lahiri (Lahiri Mahasaya) - Transmitter of Kriya Yoga"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Sri Yukteswara Giri" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Yukteshwar_Giri_ji_300x400.png"
+                      alt="Sri Yukteswara Giri - Guru of Paramahansa Yogananda"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Sathyananda Giri" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Satyanandji_300x400.png"
+                      alt="Sathyananda Giri - Direct disciple of Sri Yukteswar Giri"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Pahadi Baba (Shree Hariharanandji)" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/PahadiBaba_Hariharanand_300x400.png"
+                      alt="Pahadi Baba (Shree Hariharanandji) - Enlightened Kriyayogi"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Madan Mohanji Sahay" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Madan_Mohanji_Sahay_300x400.png"
+                      alt="Madan Mohanji Sahay - Guru of Swami Nispruh Spandan"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Tauji – Banarasilal Saraf" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Banarasilal_Saraf_BW.png"
+                      alt="Sri Banarasilal Saraf (Tauji) - Spiritual guide and mentor"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                <div>
+                  <h3 className="text-[1.25rem] font-semibold text-[var(--text-heading)] mb-6">
+                    {name}
+                  </h3>
+                  <div className="space-y-6">
+                    {subsections.map(({ title, content }, subIdx) => (
+                      <div key={`${name}-${subIdx}`}>
+                        {subsections.length > 1 && (
+                          <h4 className="text-[0.95rem] font-semibold text-[var(--pista-green)] uppercase tracking-[0.12em] mb-3">
+                            {title}
+                          </h4>
+                        )}
+                        <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)]">
+                          {content}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             ))}

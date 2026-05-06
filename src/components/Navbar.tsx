@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
@@ -71,19 +72,17 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="group flex items-center gap-2 text-[var(--text-heading)] dark:text-[var(--c-heading)] no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)] rounded-sm"
+            className="group flex items-center text-[var(--text-heading)] dark:text-[var(--c-heading)] no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)] rounded-sm"
             aria-label="Nispruh Yog – home"
           >
-            {/* Subtle lotus glyph */}
-            <span
-              aria-hidden="true"
-              className="text-[var(--pista-green)] text-lg leading-none transition-transform duration-700 group-hover:scale-110 select-none"
-            >
-              ꩜
-            </span>
-            <span className="font-semibold tracking-wide text-[0.95rem] sm:text-[1rem]">
-              Nispruh Yog
-            </span>
+            <Image
+              src="/images/logo_A_tnsp.png"
+              alt=""
+              width={40}
+              height={40}
+              className="h-10 w-auto transition-transform duration-700 group-hover:scale-110"
+              priority
+            />
           </Link>
 
           {/* Desktop nav */}

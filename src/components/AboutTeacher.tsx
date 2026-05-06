@@ -49,14 +49,6 @@ export default function AboutTeacher() {
               {/* aria-hidden="true" */}
             {/* /> */}
 
-            <Image
-              src="/frontpage_Image_.png"
-              alt="Yoga instructor in meditation pose"
-              width={400}
-              height={500}
-              className="w-full h-full object-cover rounded-lg"
-            />
-
             <div
               //role="img" 
               //aria-label="Teacher portrait — image coming soon"
