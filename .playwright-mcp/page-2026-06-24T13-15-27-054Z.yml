@@ -1,0 +1,350 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Nispruh Yog – home" [ref=e4] [cursor=pointer]:
+        - /url: /
+      - navigation "Primary" [ref=e5]:
+        - link "Home" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - text: Home
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: /about-kriya-yoga
+        - link "Teachings" [ref=e9] [cursor=pointer]:
+          - /url: /teachings
+        - link "Practices" [ref=e10] [cursor=pointer]:
+          - /url: /practices
+        - link "Courses" [ref=e11] [cursor=pointer]:
+          - /url: /courses-programs
+        - link "Events" [ref=e12] [cursor=pointer]:
+          - /url: /events-retreats
+        - link "Blog" [ref=e13] [cursor=pointer]:
+          - /url: /blog
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: /contact
+  - generic [ref=e16]:
+    - main "Page content" [ref=e18]:
+      - region "Welcome to Nispruh Yog" [ref=e19]:
+        - generic [ref=e20]:
+          - paragraph [ref=e21]: Kriyayog · Ancient Science of Breath
+          - heading "Still the mind. Awaken the self." [level=1] [ref=e22]:
+            - text: Still the mind.
+            - text: Awaken the self.
+          - paragraph [ref=e23]: A sacred space for sincere seekers. Rooted in the living tradition of Kriyayog — a path of breath, awareness, and inner inquiry.
+          - blockquote [ref=e24]:
+            - paragraph [ref=e25]: My love for you is pure and unconditional. But until you will not break the barriers of your Ego, you will never experience the divinity of my love.
+            - paragraph [ref=e26]: — Paramahamsa Shri Swami Nispruh Spandan
+          - generic [ref=e27]:
+            - link "Begin Your Journey" [ref=e28] [cursor=pointer]:
+              - /url: /practices
+              - text: Begin Your Journey
+              - img [ref=e29]
+            - link "What is Kriyayog?" [ref=e31] [cursor=pointer]:
+              - /url: /about-kriya-yoga
+        - generic [ref=e33]: Scroll
+      - region "What is Kriyayog?" [ref=e35]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - paragraph [ref=e39]: The practice
+            - heading "What is Kriyayog?" [level=2] [ref=e40]
+            - paragraph [ref=e41]: Yog of Awareness. Krishna explains Kriyayog as the practice of purifying the physiological as well as mental and spiritual systems. It is an ancient meditation technique that is a part of the spiritual path.
+            - paragraph [ref=e42]: An effective scientific meditation technique or sadhana which works on all the seven chakras and helps purify oneself and reach a higher level of consciousness. This technique is much more direct and works directly on chakras with the source of spiritual energy deep in our spines. It helps the practitioner to control the life force by mentally drawing it up and down the spine, with awareness and will.
+            - paragraph [ref=e43]: Kriyayog is a living meditation tradition woven by breath, attention, and simple devotion. It is not a product, but an invitation into yourself. Repeat quiet practice and hold awareness with tenderness. Allow small shifts to settle into your daily rhythm.
+            - link "Learn more about the lineage" [ref=e45] [cursor=pointer]:
+              - /url: /about-kriya-yoga
+              - text: Learn more about the lineage
+              - img [ref=e46]
+          - generic [ref=e48]:
+            - img "Kriyayog meditation practice" [ref=e50]
+            - generic [ref=e51]:
+              - paragraph [ref=e52]: "\"Breathe. Be still. The answer you seek is already within.\""
+              - paragraph [ref=e53]: Kriyayog teaching
+      - region "What the practice opens within you" [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Benefits of Meditation
+            - heading "What the practice opens within you" [level=2] [ref=e58]:
+              - text: What the practice
+              - text: opens within you
+            - paragraph [ref=e59]: Meditation is not about becoming a different person than the living world or becoming a new person. It is about training yourself in full awareness and getting a healthy sense of perspective. Meditation teaches you to systematically explore your inner dimensions. It is a system of commitment, not a commandment.
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - img [ref=e63]
+              - generic [ref=e68]:
+                - heading "Inner Peace" [level=3] [ref=e69]
+                - paragraph [ref=e70]: Regular practice settles the nervous system, creating a baseline of calm that persists through daily life — not just on the cushion.
+            - listitem [ref=e71]:
+              - img [ref=e73]
+              - generic [ref=e76]:
+                - heading "Mental Clarity" [level=3] [ref=e77]
+                - paragraph [ref=e78]: Pranayama and focused awareness clear the mental fog that accumulates from constant stimulation, restoring a quiet, perceptive mind.
+            - listitem [ref=e79]:
+              - img [ref=e81]
+              - generic [ref=e83]:
+                - heading "Emotional Balance" [level=3] [ref=e84]
+                - paragraph [ref=e85]: As breath and awareness deepen, reactive patterns soften. You begin to meet experience with steadiness rather than being swept by it.
+            - listitem [ref=e86]:
+              - img [ref=e88]
+              - generic [ref=e91]:
+                - heading "Better Focus" [level=3] [ref=e92]
+                - paragraph [ref=e93]: Single-pointed concentration — practised inwardly — naturally carries into work, relationships, and creative life with greater depth.
+            - listitem [ref=e94]:
+              - img [ref=e96]
+              - generic [ref=e99]:
+                - heading "Stress Reduction" [level=3] [ref=e100]
+                - paragraph [ref=e101]: The slow, conscious breath of Kriya activates the parasympathetic system — the body's innate rest response — releasing held tension at its root.
+            - listitem [ref=e102]:
+              - img [ref=e104]
+              - generic [ref=e107]:
+                - heading "Self-Awareness" [level=3] [ref=e108]
+                - paragraph [ref=e109]: Witnessing the mind without judgment is the first step of wisdom. Kriya creates the inner space where honest self-knowing becomes possible.
+          - blockquote [ref=e110]:
+            - paragraph [ref=e111]: "\"These are not promises — they are natural unfoldings that arise when we stop resisting our own stillness.\""
+            - generic [ref=e112]: From the teachings
+      - region "Ways to walk this path" [ref=e113]:
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - paragraph [ref=e117]: Offerings
+              - heading "Ways to walk this path" [level=2] [ref=e118]:
+                - text: Ways to walk
+                - text: this path
+            - paragraph [ref=e119]: Each offering meets you where you are — whether you are curious, returning, or ready to go deep.
+          - generic [ref=e120]:
+            - article "Weekly Online Meditation" [ref=e121]:
+              - generic [ref=e123]:
+                - img [ref=e125]
+                - paragraph [ref=e130]: Weekly · Online & In-person
+                - heading "Weekly Online Meditation" [level=3] [ref=e131]
+                - paragraph [ref=e132]: Guided meditation sessions on Thursdays and Sundays. Kriyayog offers a unique opportunity to transform yourself to full awareness and lead a stress-free, happy life.
+                - link "View schedule" [ref=e133] [cursor=pointer]:
+                  - /url: /courses-programs#meditation
+                  - text: View schedule
+                  - img [ref=e134]
+            - article "Kriyayog Course" [ref=e136]:
+              - generic [ref=e138]:
+                - img [ref=e140]
+                - paragraph [ref=e143]: 2-Day Programme
+                - heading "Kriyayog Course" [level=3] [ref=e144]
+                - paragraph [ref=e145]: Simple scientific meditation techniques and breathing exercises that help you achieve subtle transformations in body and mind. A structured initiation into the foundational kriyas.
+                - link "Learn & enroll" [ref=e146] [cursor=pointer]:
+                  - /url: /courses-programs#kriya-course
+                  - text: Learn & enroll
+                  - img [ref=e147]
+            - article "Yog & Pranayama" [ref=e149]:
+              - generic [ref=e151]:
+                - img [ref=e153]
+                - paragraph [ref=e156]: Health & Wellness
+                - heading "Yog & Pranayama" [level=3] [ref=e157]
+                - paragraph [ref=e158]: Yoga and pranayama (breathing) techniques offer physical and mental health benefits for people of all ages. Transform your body and calm your mind with ancient practices.
+                - link "Learn more" [ref=e159] [cursor=pointer]:
+                  - /url: /practices
+                  - text: Learn more
+                  - img [ref=e160]
+          - link "View all courses & programmes" [ref=e163] [cursor=pointer]:
+            - /url: /courses-programs
+      - region "Where are you on the journey?" [ref=e164]:
+        - generic [ref=e165]:
+          - generic [ref=e166]:
+            - paragraph [ref=e167]: The path
+            - heading "Where are you on the journey?" [level=2] [ref=e168]:
+              - text: Where are you
+              - text: on the journey?
+          - list [ref=e169]:
+            - listitem [ref=e170]:
+              - generic [ref=e172]: "01"
+              - heading "Curious" [level=3] [ref=e173]
+              - paragraph [ref=e174]: A quiet question arises. You sense there is something beneath the surface of daily life. You begin to notice the breath.
+            - listitem [ref=e175]:
+              - generic [ref=e177]: "02"
+              - heading "Seeker" [level=3] [ref=e178]
+              - paragraph [ref=e179]: The question deepens. You explore teachings, attend a class, and begin a gentle sitting practice. The search becomes sincere.
+            - listitem [ref=e180]:
+              - generic [ref=e182]: "03"
+              - heading "Student" [level=3] [ref=e183]
+              - paragraph [ref=e184]: You receive initiation into the Kriya techniques. Practice becomes regular. A teacher guides you. Subtlety begins to emerge.
+            - listitem [ref=e185]:
+              - generic [ref=e186]: "04"
+              - heading "Practitioner" [level=3] [ref=e187]
+              - paragraph [ref=e188]: The practice is no longer something you do — it is how you live. Stillness is not achieved; it is remembered, again and again.
+          - paragraph [ref=e189]: Curious → Seeker → Student → Practitioner
+      - region "Paramahamsa Shri Swami" [ref=e190]:
+        - generic [ref=e192]:
+          - generic [ref=e193]:
+            - img "Swami Nispruh Spandan — Kriyayog Teacher" [ref=e194]:
+              - img "Swami Nispruh Spandan" [ref=e195]
+            - generic [ref=e196]:
+              - paragraph [ref=e197]: 20+
+              - paragraph [ref=e198]: Years of practice
+          - generic [ref=e199]:
+            - paragraph [ref=e200]: The teacher
+            - heading "Paramahamsa Shri Swami" [level=2] [ref=e201]
+            - paragraph [ref=e202]: Kriyayog Acharya · Lineage of Mahavatar Babaji
+            - paragraph [ref=e203]: Paramahamsa Shri Swami Nispruh Spandan has walked the path of Kriyayog for over two decades, receiving initiation and guidance from teachers in the direct lineage of Mahavatar Babaji. His teaching is quiet, unhurried, and grounded in lived experience rather than doctrine.
+            - paragraph [ref=e204]: After years of solitary practice in the foothills of the Himalayas, he was called to teach — not to build an institution, but to offer a hand to those genuinely seeking their own inner stillness. His approach honours the sacred nature of the transmission while remaining accessible to modern practitioners.
+            - paragraph [ref=e205]: He teaches in small groups and one-to-one settings, believing that real practice cannot be mass-produced. Every student is met where they are.
+            - list [ref=e207]:
+              - listitem [ref=e208]: Kriyayog Initiation
+              - listitem [ref=e210]: Vedanta Studies
+              - listitem [ref=e212]: Himalayan Sadhana
+              - listitem [ref=e214]: Sanskrit & Scripture
+            - link "Read full story" [ref=e217] [cursor=pointer]:
+              - /url: /about-kriya-yoga
+              - text: Read full story
+              - img [ref=e218]
+      - region "Words from those who have walked it" [ref=e220]:
+        - generic [ref=e221]:
+          - generic [ref=e222]:
+            - paragraph [ref=e223]: From the community
+            - heading "Words from those who have walked it" [level=2] [ref=e224]:
+              - text: Words from those
+              - text: who have walked it
+          - list [ref=e225]:
+            - listitem [ref=e226]:
+              - generic [ref=e227]: "\""
+              - blockquote [ref=e228]:
+                - paragraph [ref=e229]: My life went through complete transformation. Suddenly everything inside me started changing, slowly, effectively. With Kriya Yog and Swamiji, I learned to let go off ego, how to love unconditionally and surrender. This has been the most precious gift life has offered. Much Grateful!
+              - generic [ref=e231]:
+                - generic [ref=e232]: P
+                - generic [ref=e233]:
+                  - paragraph [ref=e234]: Paulina Haouami
+                  - paragraph [ref=e235]: Entrepreneur, Helsinki, Finland
+            - listitem [ref=e236]:
+              - generic [ref=e237]: "\""
+              - blockquote [ref=e238]:
+                - paragraph [ref=e239]: Kriya path changed me very deeply. Pride, desires and ego diminished. Happiness and inner peace increased. Many times, I can catch the present moment, because i don’t think too much. Kriya Yog changed everything and at the same time nothing in my life.
+              - generic [ref=e241]:
+                - generic [ref=e242]: T
+                - generic [ref=e243]:
+                  - paragraph [ref=e244]: Tuula-Maria Tarmo
+                  - paragraph [ref=e245]: Project Assistant, Jyväskyla, Finland
+            - listitem [ref=e246]:
+              - generic [ref=e247]: "\""
+              - blockquote [ref=e248]:
+                - paragraph [ref=e249]: Kriya Yog under the guidance of true Guru is THE key to a happy life. Make no mistake about it. You can keep chasing happiness from external things, never really finding it or you can delve deep with Kriya and find well of bliss.
+              - generic [ref=e251]:
+                - generic [ref=e252]: K
+                - generic [ref=e253]:
+                  - paragraph [ref=e254]: Kamer Surmeli
+                  - paragraph [ref=e255]: Student, Finland
+            - listitem [ref=e256]:
+              - generic [ref=e257]: "\""
+              - blockquote [ref=e258]:
+                - paragraph [ref=e259]: An eye opening experience that brings you to terms with what is existential purpose on this planet. Keeps you humble, keeps you well grounded and gets you positive vibrations with a never say die spirit. Swamiji gets you to leave the I out of everything that you do.
+              - generic [ref=e261]:
+                - generic [ref=e262]: "N"
+                - generic [ref=e263]:
+                  - paragraph [ref=e264]: Nispruhyog Admirer
+                  - paragraph [ref=e265]: Enterprise Architect, Finland
+      - region "Begin Your Inner Journey Today" [ref=e266]:
+        - generic [ref=e268]:
+          - paragraph [ref=e269]: The path begins with one breath
+          - heading "Begin Your Inner Journey Today" [level=2] [ref=e270]:
+            - text: Begin Your Inner
+            - text: Journey Today
+          - paragraph [ref=e271]: There is no perfect moment to begin. Only this one. Whether you are curious, searching, or ready — a place is here for you.
+          - generic [ref=e272]:
+            - link "Join a Program" [ref=e273] [cursor=pointer]:
+              - /url: /courses-programs
+              - text: Join a Program
+              - img [ref=e274]
+            - link "Or ask a question first" [ref=e276] [cursor=pointer]:
+              - /url: /contact
+          - paragraph [ref=e277]: No obligation · No rush · Just an open door
+      - region "A quiet word is always welcome" [ref=e278]:
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - paragraph [ref=e282]: Reach out
+            - heading "A quiet word is always welcome" [level=2] [ref=e283]:
+              - text: A quiet word
+              - text: is always welcome
+            - paragraph [ref=e284]: If you feel drawn — to a class, a course, or simply to ask a question — send a short note. We respond from a mindful place, without urgency or sales pressure.
+            - list [ref=e285]:
+              - listitem [ref=e286]: No obligation or commitment required
+              - listitem [ref=e288]: We reply within two to three days
+              - listitem [ref=e290]: Your details are never shared
+            - blockquote [ref=e292]:
+              - paragraph [ref=e293]: "\"The door is always open. There is no wrong time to knock.\""
+          - generic [ref=e294]:
+            - form "Contact form" [ref=e295]:
+              - generic [ref=e296]:
+                - text: Name
+                - textbox "Name" [ref=e297]
+              - generic [ref=e298]:
+                - text: Email
+                - textbox "Email" [ref=e299]
+              - generic [ref=e300]:
+                - text: Message
+                - textbox "Message" [ref=e301]
+              - button "Send request" [ref=e302] [cursor=pointer]
+              - status
+            - paragraph [ref=e303]: No push. No urgency. Just an invitation.
+    - contentinfo "Site footer" [ref=e304]:
+      - generic [ref=e306]:
+        - generic [ref=e307]:
+          - generic [ref=e309]: Nispruh Yog
+          - paragraph [ref=e310]: A quiet space for sincere seekers. Rooted in the ancient science of Kriyayog — awakening through breath, stillness, and self-inquiry.
+          - generic [ref=e311]:
+            - paragraph [ref=e312]: Follow Us
+            - generic [ref=e313]:
+              - link "Follow us on YouTube" [ref=e314] [cursor=pointer]:
+                - /url: https://www.youtube.com/@KriyayogNispruhyog
+                - img [ref=e315]
+              - link "Follow us on Instagram" [ref=e317] [cursor=pointer]:
+                - /url: https://www.instagram.com/nispruhyog_finland?igshid=OGQ5ZDc2ODk2ZA%3D%3D
+                - img [ref=e318]
+              - link "Follow us on Facebook" [ref=e320] [cursor=pointer]:
+                - /url: https://www.facebook.com/nispruhyogKriyayogpath/
+                - img [ref=e321]
+              - link "Follow us on X / Twitter" [ref=e323] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e324]
+        - generic [ref=e326]:
+          - heading "Explore" [level=2] [ref=e327]
+          - list [ref=e328]:
+            - listitem [ref=e329]:
+              - link "Home" [ref=e330] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e331]:
+              - link "About" [ref=e332] [cursor=pointer]:
+                - /url: /about-kriya-yoga
+            - listitem [ref=e333]:
+              - link "Teachings" [ref=e334] [cursor=pointer]:
+                - /url: /teachings
+            - listitem [ref=e335]:
+              - link "Practices" [ref=e336] [cursor=pointer]:
+                - /url: /practices
+            - listitem [ref=e337]:
+              - link "Courses" [ref=e338] [cursor=pointer]:
+                - /url: /courses-programs
+            - listitem [ref=e339]:
+              - link "Events" [ref=e340] [cursor=pointer]:
+                - /url: /events-retreats
+            - listitem [ref=e341]:
+              - link "Blog" [ref=e342] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=e343]:
+              - link "Contact" [ref=e344] [cursor=pointer]:
+                - /url: /contact
+        - generic [ref=e345]:
+          - heading "Connect" [level=2] [ref=e346]
+          - list [ref=e347]:
+            - listitem [ref=e348]:
+              - link "+358 (46) 571 0507" [ref=e349] [cursor=pointer]:
+                - /url: tel:+358465710507
+            - listitem [ref=e350]:
+              - link "info@nispruhyog.com" [ref=e351] [cursor=pointer]:
+                - /url: mailto:info@nispruhyog.com
+            - listitem [ref=e352]:
+              - link "Send a message" [ref=e353] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e354]:
+              - link "Join a course" [ref=e355] [cursor=pointer]:
+                - /url: /courses-programs
+          - blockquote [ref=e356]:
+            - paragraph [ref=e357]: "\"Tat tvam asi.\""
+            - contentinfo [ref=e358]: That thou art — Chandogya Upanishad
+      - generic [ref=e360]:
+        - paragraph [ref=e361]: © 2026 Nispruh Yog · All rights reserved
+        - paragraph [ref=e362]: Crafted with stillness · Guided by inner light
+  - link "Skip to main content" [ref=e363] [cursor=pointer]:
+    - /url: "#main-content"
