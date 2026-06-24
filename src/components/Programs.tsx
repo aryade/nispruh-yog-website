@@ -8,7 +8,7 @@ const PROGRAMS = [
     eyebrow: "Weekly · Online & In-person",
     title: "Weekly Online Meditation",
     description:
-      "Guided meditation sessions on Thursdays and Sundays. Kriya Yog offers a unique opportunity to transform yourself to full awareness and lead a stress-free, happy life.",
+      "Guided meditation sessions on Thursdays and Sundays. Kriyayog offers a unique opportunity to transform yourself to full awareness and lead a stress-free, happy life.",
     cta: { label: "View schedule", href: "/courses-programs#meditation" },
     accent: "var(--pista-green)",
     glyph: (
@@ -22,7 +22,7 @@ const PROGRAMS = [
   },
   {
     eyebrow: "2-Day Programme",
-    title: "Kriya Yoga Course",
+    title: "Kriyayog Course",
     description:
       "Simple scientific meditation techniques and breathing exercises that help you achieve subtle transformations in body and mind. A structured initiation into the foundational kriyas.",
     cta: { label: "Learn & enroll", href: "/courses-programs#kriya-course" },

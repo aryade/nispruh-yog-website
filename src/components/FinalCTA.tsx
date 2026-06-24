@@ -71,7 +71,7 @@ export default function FinalCTA() {
           {/* Supporting text */}
           <motion.p
             variants={FADE_UP}
-            className="text-[1rem] leading-[1.85] text-[var(--text-muted)] max-w-[42ch] mx-auto mb-12"
+            className="text-center text-[1rem] leading-[1.85] text-[var(--text-muted)] max-w-[42ch] mx-auto mb-12"
           >
             There is no perfect moment to begin. Only this one. Whether you are
             curious, searching, or ready — a place is here for you.

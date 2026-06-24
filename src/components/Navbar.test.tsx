@@ -12,9 +12,12 @@ vi.mock("next/navigation", () => ({
 }));
 
 describe("Navbar", () => {
-  it("renders logo and brand name", () => {
+  it("renders logo with accessible brand link", () => {
     render(<Navbar />);
-    expect(screen.getByText("Nispruh Yog")).toBeInTheDocument();
+    // Brand is a logo-only link; its accessible name comes from aria-label.
+    const brandLink = screen.getByRole("link", { name: /nispruh yog – home/i });
+    expect(brandLink).toBeInTheDocument();
+    expect(brandLink).toHaveAttribute("href", "/");
   });
 
   it("renders all navigation links on desktop", () => {

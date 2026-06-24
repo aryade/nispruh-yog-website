@@ -1,30 +1,91 @@
-import { NextRequest, NextResponse } from "next/server";
+import { Resend } from "resend";
 
-function validateEmail(email: string) {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request: NextRequest) {
-  const body = await request.json().catch(() => null);
+export async function POST(request: Request) {
+  try {
+    const { name, email, message } = await request.json();
 
-  if (!body || typeof body !== "object") {
-    return NextResponse.json({ error: "Invalid payload." }, { status: 400 });
+    if (!name || !email || !message) {
+      return Response.json(
+        { error: "Missing required fields" },
+        { status: 400 }
+      );
+    }
+
+    // Send email to info@nispruhyog.com with the inquiry
+    const adminEmailResponse = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "info@nispruhyog.com",
+      subject: `New Contact Form Inquiry from ${name}`,
+      html: `
+        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333;">
+          <h2>New Contact Form Inquiry</h2>
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong></p>
+          <p style="white-space: pre-wrap; background: #f5f5f5; padding: 12px; border-radius: 4px;">
+            ${message}
+          </p>
+          <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+          <p style="font-size: 12px; color: #666;">
+            This is an automated email from your Kriya Yoga website contact form.
+          </p>
+        </div>
+      `,
+    });
+
+    if (adminEmailResponse.error) {
+      console.error("Failed to send admin email:", adminEmailResponse.error);
+      return Response.json(
+        { error: "Failed to send message to admin" },
+        { status: 500 }
+      );
+    }
+
+    // Send confirmation email to the user
+    const userEmailResponse = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: email,
+      subject: "Thank you for reaching out to Nispruh Yog",
+      html: `
+        <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333;">
+          <p>Dear ${name},</p>
+          <p>Thank you for reaching out to us. We have received your message and appreciate you taking the time to contact Nispruh Yog.</p>
+          <p>We will review your inquiry carefully and respond within 2-3 working days from a calm place.</p>
+          <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+          <p style="font-size: 12px; color: #666;">
+            <strong>Your message:</strong><br/>
+            <span style="white-space: pre-wrap; background: #f5f5f5; padding: 12px; border-radius: 4px; display: block;">
+              ${message}
+            </span>
+          </p>
+          <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
+          <p style="font-size: 14px; color: #666;">
+            Warm regards,<br/>
+            <strong>Nispruh Yog Team</strong>
+          </p>
+        </div>
+      `,
+    });
+
+    if (userEmailResponse.error) {
+      console.error("Failed to send user confirmation email:", userEmailResponse.error);
+      return Response.json(
+        { error: "Failed to send confirmation email" },
+        { status: 500 }
+      );
+    }
+
+    return Response.json(
+      { success: true, message: "Email sent successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Contact form error:", error);
+    return Response.json(
+      { error: "An error occurred while processing your request" },
+      { status: 500 }
+    );
   }
-
-  const name = String(body.name || "").trim();
-  const email = String(body.email || "").trim();
-  const message = String(body.message || "").trim();
-
-  if (!name || !email || !message) {
-    return NextResponse.json({ error: "All fields (name, email, message) are required." }, { status: 400 });
-  }
-
-  if (!validateEmail(email)) {
-    return NextResponse.json({ error: "Email looks invalid." }, { status: 400 });
-  }
-
-  // Place for real backend processing (email, db, external service)
-  await new Promise((resolve) => setTimeout(resolve, 400));
-
-  return NextResponse.json({ status: "ok", message: "We received your note." }, { status: 200 });
 }

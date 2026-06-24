@@ -1,6 +1,6 @@
-# Kriya Yoga Website — Complete Project Guide
+# Kriyayog Website — Complete Project Guide
 
-A calm, minimal Kriya Yoga website built with Next.js and a spiritual meditation-focused aesthetic.
+A calm, minimal Kriyayog website built with Next.js and a spiritual meditation-focused aesthetic.
 
 ---
 
@@ -22,7 +22,7 @@ A calm, minimal Kriya Yoga website built with Next.js and a spiritual meditation
 2. Save with descriptive names (e.g., `teacher-profile.jpg`)
 
 ### Step 2: Upload Photos
-1. Open file explorer → navigate to `kriyayoga_website/public/images/`
+1. Open file explorer → navigate to `Kriyayoga_website/public/images/`
 2. Choose folder: `teacher/`, `practices/`, `events/`, `blog/`, `gurus/`, or `locations/`
 3. Drag & drop compressed images
 
@@ -44,7 +44,7 @@ After uploading photos, update the component files with new image paths.
 |---------|------|-------------|
 | Navigation | `src/components/Navbar.tsx` | Menu items |
 | Hero / Homepage Title | `src/components/Hero.tsx` | Headline, subheading, button text |
-| What is Kriya Yoga | `src/components/WhatIsKriyaYoga.tsx` | Section title & description |
+| What is Kriyayog | `src/components/WhatIsKriyaYoga.tsx` | Section title & description |
 | Benefits | `src/components/Benefits.tsx` | Benefit titles & descriptions (look for `BENEFITS` array) |
 | Programs | `src/components/Programs.tsx` | Program names, descriptions, features |
 | Teacher Profile | `src/components/AboutTeacher.tsx` | Teacher bio & photo |
@@ -54,7 +54,7 @@ After uploading photos, update the component files with new image paths.
 | Page | File |
 |------|------|
 | Home | `/src/app/page.tsx` |
-| About Kriya Yoga | `src/app/about-kriya-yoga/AboutKriyaYogaPage.tsx` |
+| About Kriyayog | `src/app/about-kriya-yoga/AboutKriyaYogaPage.tsx` |
 | Teachings | `src/app/teachings/page.tsx` |
 | Practices | `src/app/practices/page.tsx` |
 | Courses/Programs | `src/app/courses-programs/page.tsx` |
@@ -69,7 +69,7 @@ After uploading photos, update the component files with new image paths.
 | Section | Folder | Recommended Size | Format |
 |---------|--------|------------------|--------|
 | Teacher Profile | `public/images/teacher/` | 400×500 | JPG/PNG |
-| What is Kriya Yoga | `public/images/practices/` | 600×500 | JPG/PNG |
+| What is Kriyayog | `public/images/practices/` | 600×500 | JPG/PNG |
 | Blog Thumbnails | `public/images/blog/` | 300×200 | JPG/PNG |
 | Events/Retreats | `public/images/events/` | 400×300 | JPG/PNG |
 | Gurus | `public/images/gurus/` | 300×400 | JPG/PNG |
@@ -153,8 +153,8 @@ Don't edit colors unless you know what you're doing. See `src/app/globals.css` f
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-org/kriyayoga_website.git
-cd kriyayoga_website
+git clone https://github.com/your-org/Kriyayoga_website.git
+cd Kriyayoga_website
 
 # 2. Install dependencies
 npm install
@@ -171,7 +171,7 @@ npm run dev
 ## 📦 Project Structure
 
 ```
-kriyayoga_website/
+Kriyayoga_website/
 ├── src/
 │   ├── app/                    # Pages (App Router)
 │   │   ├── page.tsx            # Home page
@@ -454,5 +454,5 @@ For issues:
 ---
 
 **Last Updated:** May 6, 2026  
-**Project Name:** Kriya Yoga Website  
+**Project Name:** Kriyayog Website  
 **Status:** Production Ready ✅

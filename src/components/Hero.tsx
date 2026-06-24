@@ -70,7 +70,7 @@ export function Hero() {
           variants={FADE_UP}
           className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6"
         >
-          Kriya Yoga · Ancient Science of Breath
+          Kriyayog · Ancient Science of Breath
         </motion.p>
 
         {/* Headline */}
@@ -89,7 +89,7 @@ export function Hero() {
           className="text-[1.05rem] leading-[1.8] text-[var(--text-muted)] max-w-[40ch] mx-auto mb-10"
         >
           A sacred space for sincere seekers. Rooted in the living tradition of
-          Kriya Yoga — a path of breath, awareness, and inner inquiry.
+          Kriyayog — a path of breath, awareness, and inner inquiry.
         </motion.p>
 
         {/* Featured Quote */}
@@ -98,7 +98,7 @@ export function Hero() {
           className="text-[1.15rem] leading-[1.8] text-[var(--text-heading)] max-w-[42ch] mx-auto mb-10 border-l-4 border-[var(--pista-green)] pl-6 italic"
         >
           <p className="mb-3">My love for you is pure and unconditional. But until you will not break the barriers of your Ego, you will never experience the divinity of my love.</p>
-          <p className="text-[0.95rem] text-[var(--text-muted)] mt-3">— Swami Nispruh Spandan</p>
+          <p className="text-[0.95rem] text-[var(--text-muted)] mt-3">— Paramahamsa Shri Swami Nispruh Spandan</p>
           <footer className="text-[0.9rem] font-semibold not-italic text-[var(--pista-green)]">
             {/* — Paramhans Yogananda */}
           </footer>
@@ -130,7 +130,7 @@ export function Hero() {
             href="/about-kriya-yoga"
             className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[var(--pista-green)] border-2 border-[var(--pista-green)] hover:bg-[rgba(147,197,114,0.08)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60"
           >
-            What is Kriya Yoga?
+            What is Kriyayog?
           </Link>
         </motion.div>
       </motion.div>

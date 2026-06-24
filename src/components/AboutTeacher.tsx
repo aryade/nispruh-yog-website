@@ -51,7 +51,7 @@ export default function AboutTeacher() {
 
             <div
               role="img"
-              aria-label="Swami Nispruh Spandan — Kriya Yoga Teacher"
+              aria-label="Swami Nispruh Spandan — Kriyayog Teacher"
               className="relative z-10 overflow-hidden rounded-[1.5rem] aspect-[3/4]"
             >
               <Image
@@ -99,21 +99,21 @@ export default function AboutTeacher() {
               variants={FADE_UP}
               className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-2"
             >
-              Swami Nispruh{isMounted ? " Spandan" : ""}
+              Paramahamsa Shri Swami{isMounted ? " Nispruh Spandan" : ""}
             </motion.h2>
 
             <motion.p
               variants={FADE_UP}
               className="text-[0.82rem] uppercase tracking-[0.14em] text-[var(--pista-green)] font-semibold mb-8"
             >
-              Kriya Yoga Acharya · Lineage of Mahavatar Babaji
+              Kriyayog Acharya · Lineage of Mahavatar Babaji
             </motion.p>
 
             <motion.p
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-5"
             >
-              Swami Nispruh Spandan has walked the path of Kriya Yoga for over two
+              Paramahamsa Shri Swami Nispruh Spandan has walked the path of Kriyayog for over two
               decades, receiving initiation and guidance from teachers in the
               direct lineage of Mahavatar Babaji. His teaching is quiet,
               unhurried, and grounded in lived experience rather than
@@ -153,7 +153,7 @@ export default function AboutTeacher() {
               className="flex flex-wrap gap-x-8 gap-y-3 mb-10"
             >
               {[
-                "Kriya Yoga Initiation",
+                "Kriyayog Initiation",
                 "Vedanta Studies",
                 "Himalayan Sadhana",
                 "Sanskrit & Scripture",

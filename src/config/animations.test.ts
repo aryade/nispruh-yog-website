@@ -61,13 +61,13 @@ describe("Animations Configuration", () => {
 
     it("creates correct show state", () => {
       const variant = fadeUp();
-      expect(variant.show?.opacity).toBe(1);
-      expect(variant.show?.y).toBe(0);
+      expect((variant.show as any).opacity).toBe(1);
+      expect((variant.show as any).y).toBe(0);
     });
 
     it("uses default duration and delay", () => {
       const variant = fadeUp();
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.standard);
       expect(transition.delay).toBe(DELAYS.none);
       expect(transition.ease).toEqual(EASE.out);
@@ -75,7 +75,7 @@ describe("Animations Configuration", () => {
 
     it("accepts custom duration and delay", () => {
       const variant = fadeUp(DURATIONS.slow, DELAYS.fast);
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.slow);
       expect(transition.delay).toBe(DELAYS.fast);
     });
@@ -85,12 +85,12 @@ describe("Animations Configuration", () => {
     it("creates correct hidden and show states", () => {
       const variant = fadeIn();
       expect(variant.hidden).toEqual({ opacity: 0 });
-      expect(variant.show?.opacity).toBe(1);
+      expect((variant.show as any).opacity).toBe(1);
     });
 
     it("accepts custom duration and delay", () => {
       const variant = fadeIn(DURATIONS.emphasis, DELAYS.slow);
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.emphasis);
       expect(transition.delay).toBe(DELAYS.slow);
     });
@@ -104,19 +104,19 @@ describe("Animations Configuration", () => {
 
     it("creates correct show state", () => {
       const variant = scaleUp();
-      expect(variant.show?.opacity).toBe(1);
-      expect(variant.show?.scale).toBe(1);
+      expect((variant.show as any).opacity).toBe(1);
+      expect((variant.show as any).scale).toBe(1);
     });
 
     it("uses emphasis duration by default", () => {
       const variant = scaleUp();
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.emphasis);
     });
 
     it("accepts custom duration and delay", () => {
       const variant = scaleUp(DURATIONS.slow, DELAYS.normal);
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.slow);
       expect(transition.delay).toBe(DELAYS.normal);
     });
@@ -130,13 +130,13 @@ describe("Animations Configuration", () => {
 
     it("creates correct show state", () => {
       const variant = slideInLeft();
-      expect(variant.show?.opacity).toBe(1);
-      expect(variant.show?.x).toBe(0);
+      expect((variant.show as any).opacity).toBe(1);
+      expect((variant.show as any).x).toBe(0);
     });
 
     it("accepts custom duration and delay", () => {
       const variant = slideInLeft(DURATIONS.emphasis, DELAYS.fast);
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.emphasis);
       expect(transition.delay).toBe(DELAYS.fast);
     });
@@ -150,13 +150,13 @@ describe("Animations Configuration", () => {
 
     it("creates correct show state", () => {
       const variant = slideInRight();
-      expect(variant.show?.opacity).toBe(1);
-      expect(variant.show?.x).toBe(0);
+      expect((variant.show as any).opacity).toBe(1);
+      expect((variant.show as any).x).toBe(0);
     });
 
     it("accepts custom duration and delay", () => {
       const variant = slideInRight(DURATIONS.slow, DELAYS.emphasis);
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.slow);
       expect(transition.delay).toBe(DELAYS.emphasis);
     });
@@ -165,14 +165,14 @@ describe("Animations Configuration", () => {
   describe("staggerContainer variant generator", () => {
     it("creates container with stagger transition", () => {
       const variant = staggerContainer();
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.staggerChildren).toBe(STAGGER.normal);
       expect(transition.delayChildren).toBe(DELAYS.none);
     });
 
     it("accepts custom stagger and delay", () => {
       const variant = staggerContainer(STAGGER.generous, DELAYS.slow);
-      const transition = variant.show?.transition as any;
+      const transition = (variant.show as any).transition as any;
       expect(transition.staggerChildren).toBe(STAGGER.generous);
       expect(transition.delayChildren).toBe(DELAYS.slow);
     });
@@ -195,22 +195,22 @@ describe("Animations Configuration", () => {
     });
 
     it("has correct enter state", () => {
-      expect(pageEnter.enter?.opacity).toBe(1);
-      expect(pageEnter.enter?.y).toBe(0);
+      expect((pageEnter.enter as any).opacity).toBe(1);
+      expect((pageEnter.enter as any).y).toBe(0);
     });
 
     it("has correct exit state", () => {
-      expect(pageEnter.exit?.opacity).toBe(0);
-      expect(pageEnter.exit?.y).toBe(-12);
+      expect((pageEnter.exit as any).opacity).toBe(0);
+      expect((pageEnter.exit as any).y).toBe(-12);
     });
 
     it("uses slow duration for enter", () => {
-      const transition = pageEnter.enter?.transition as any;
+      const transition = (pageEnter.enter as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.slow);
     });
 
     it("uses quick duration for exit", () => {
-      const transition = pageEnter.exit?.transition as any;
+      const transition = (pageEnter.exit as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.quick);
     });
   });
@@ -223,12 +223,12 @@ describe("Animations Configuration", () => {
 
     it("has correct opacity keyframes", () => {
       const variant = pulse();
-      expect(variant.animate?.opacity).toEqual([0.5, 0.8, 0.5]);
+      expect((variant.animate as any).opacity).toEqual([0.5, 0.8, 0.5]);
     });
 
     it("uses very slow duration", () => {
       const variant = pulse();
-      const transition = variant.animate?.transition as any;
+      const transition = (variant.animate as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.verySlow);
       expect(transition.repeat).toBe(Infinity);
     });
@@ -242,12 +242,12 @@ describe("Animations Configuration", () => {
 
     it("has correct scale keyframes", () => {
       const variant = scalePulse();
-      expect(variant.animate?.scale).toEqual([1, 1.02, 1]);
+      expect((variant.animate as any).scale).toEqual([1, 1.02, 1]);
     });
 
     it("uses very slow duration", () => {
       const variant = scalePulse();
-      const transition = variant.animate?.transition as any;
+      const transition = (variant.animate as any).transition as any;
       expect(transition.duration).toBe(DURATIONS.verySlow);
       expect(transition.repeat).toBe(Infinity);
     });

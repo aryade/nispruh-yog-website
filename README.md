@@ -1,6 +1,6 @@
-# Kriya Yoga Website
+# Kriyayog Website
 
-A calm, minimal Kriya Yoga website built with Next.js for a spiritual, meditative experience.
+A calm, minimal Kriyayog website built with Next.js for a spiritual, meditative experience.
 
 ## 🚀 Quick Start
 
@@ -26,7 +26,7 @@ This single guide contains:
 ## 📋 Quick Links
 
 - Home: `/`
-- About: `/about-kriya-yoga`
+- About: `/about-Kriyayog`
 - Teachings: `/teachings`
 - Practices: `/practices`
 - Courses: `/courses-programs`

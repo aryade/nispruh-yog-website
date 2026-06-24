@@ -113,24 +113,45 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.15;
-  color: var(--secondary);
   margin: 0 0 0.5em;
 }
 
-p { margin: 0 0 1em; }
-p:last-child { margin-bottom: 0; }
-
-a {
-  color: var(--secondary);
-  text-decoration: none;
+/* Default heading color in @layer base so text-* color utilities win
+   (unlayered it would force --secondary, hiding e.g. the footer's green
+   headings and white headings on dark sections). Spacing stays unlayered. */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary);
+  }
 }
 
-blockquote {
-  margin: 1.2rem 0 0;
-  border-left: 2px solid var(--primary);
-  padding-left: 1.1rem;
-  color: var(--text-light);
-  font-style: italic;
+/* Only set vertical margins — leaving left/right unset so utilities like
+   `mx-auto` can center constrained paragraphs (this rule is unlayered and
+   would otherwise override Tailwind's margin utilities). */
+p { margin-top: 0; margin-bottom: 1em; }
+p:last-child { margin-bottom: 0; }
+
+/* In @layer base so per-link color/decoration utilities (e.g. the footer's
+   `text-[var(--text-muted)]`) win; unlayered this rule would override them and
+   render links in --secondary — invisible against the dark footer in light mode. */
+@layer base {
+  a {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+}
+
+/* Default pull-quote styling lives in @layer base so opt-out utilities
+   (e.g. `border-0 p-0 not-italic`) can override it; an unlayered rule would
+   win over Tailwind utilities and force an asymmetric left inset. */
+@layer base {
+  blockquote {
+    margin: 1.2rem 0 0;
+    border-left: 2px solid var(--primary);
+    padding-left: 1.1rem;
+    color: var(--text-light);
+    font-style: italic;
+  }
 }
 
 blockquote footer {

@@ -1,7 +1,19 @@
 "use client";
 
+import "leaflet/dist/leaflet.css";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { ContactForm } from "../../components/ContactForm";
+import dynamic from "next/dynamic";
+
+const LocationMap = dynamic(() => import("../../components/LocationMap").then(mod => ({ default: mod.LocationMap })), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full aspect-[4/3] rounded-2xl bg-[var(--border-soft)]/20 flex items-center justify-center">
+      <p className="text-[0.85rem] text-[var(--text-muted)]/60">Loading map...</p>
+    </div>
+  ),
+});
 
 /* ── animation variants ───────────────────────────────────────────── */
 const FADE_UP: Variants = {
@@ -33,9 +45,9 @@ const DETAILS = [
     ),
   },
   {
-    label: "Phone",
-    value: "+91 98765 43210",
-    href: "tel:+919876543210",
+    label: "Phone – India",
+    value: "+91 99756 90339",
+    href: "tel:+919975690339",
     icon: (
       <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4"
         strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5" aria-hidden="true">
@@ -44,8 +56,19 @@ const DETAILS = [
     ),
   },
   {
-    label: "Address",
-    value: "Nispruh Yog Centre\nAndheri West, Mumbai\nMaharashtra, India",
+    label: "Phone – Finland",
+    value: "+358 46 571 0507",
+    href: "tel:+35846571507",
+    icon: (
+      <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4"
+        strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5" aria-hidden="true">
+        <path d="M5 2h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 11l5 2v4a2 2 0 0 1-2 2C7.4 19 3 14.6 3 4a2 2 0 0 1 2-2z" />
+      </svg>
+    ),
+  },
+  {
+    label: "Locations",
+    value: "Nashik, India\nJyväskylä, Tampere, Helsinki/Espoo — Finland",
     href: null,
     icon: (
       <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4"
@@ -56,16 +79,10 @@ const DETAILS = [
     ),
   },
   {
-    label: "Hours",
-    value: "Mon – Sat: 7 am – 8 pm\nSunday: by appointment",
+    label: "WhatsApp Community",
+    value: "Scan to join",
     href: null,
-    icon: (
-      <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4"
-        strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 shrink-0 mt-0.5" aria-hidden="true">
-        <circle cx="11" cy="11" r="9" />
-        <path d="M11 6v5l3 3" />
-      </svg>
-    ),
+    isQR: true,
   },
 ];
 
@@ -121,73 +138,61 @@ export default function ContactClient() {
             >
               {/* Contact details */}
               <motion.ul role="list" variants={FADE_UP} className="flex flex-col gap-7 mb-14">
-                {DETAILS.map(({ label, value, href, icon }) => (
-                  <li key={label} className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[var(--pista-green)]/10 text-[var(--pista-green)] flex items-center justify-center shrink-0">
-                      {icon}
-                    </div>
-                    <div>
-                      <p className="text-[0.7rem] uppercase tracking-[0.16em] font-semibold text-[var(--text-muted)]/60 mb-1">
-                        {label}
-                      </p>
-                      {href ? (
-                        <a
-                          href={href}
-                          className="text-[0.95rem] font-medium text-[var(--text-heading)] hover:text-[var(--pista-green)] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
-                        >
-                          {value}
-                        </a>
-                      ) : (
-                        <p className="text-[0.95rem] font-medium text-[var(--text-heading)] whitespace-pre-line leading-relaxed">
-                          {value}
+                {DETAILS.map(({ label, value, href, icon, isQR }) => (
+                  <li key={label} className={isQR ? "col-span-1" : "flex items-start gap-4"}>
+                    {isQR ? (
+                      <div>
+                        <p className="text-[0.7rem] uppercase tracking-[0.16em] font-semibold text-[var(--text-muted)]/60 mb-4">
+                          {label}
                         </p>
-                      )}
-                    </div>
+                        <div className="w-56 h-56 rounded-2xl overflow-hidden border-2 border-[var(--pista-green)]/20 bg-white p-3">
+                          <Image
+                            src="/images/whatsapp-qr-code.png"
+                            alt="WhatsApp QR code - Scan to join Nispruhyog Kriyayog Meditation & Yoga community"
+                            width={224}
+                            height={224}
+                            className="w-full h-full object-cover rounded-lg"
+                          />
+                        </div>
+                        <p className="text-[0.85rem] text-[var(--text-muted)]/70 mt-3 italic">
+                          Scan with your phone camera to join our community
+                        </p>
+                      </div>
+                    ) : (
+                      <>
+                        <div className="w-10 h-10 rounded-xl bg-[var(--pista-green)]/10 text-[var(--pista-green)] flex items-center justify-center shrink-0">
+                          {icon}
+                        </div>
+                        <div>
+                          <p className="text-[0.7rem] uppercase tracking-[0.16em] font-semibold text-[var(--text-muted)]/60 mb-1">
+                            {label}
+                          </p>
+                          {href ? (
+                            <a
+                              href={href}
+                              className="text-[0.95rem] font-medium text-[var(--text-heading)] hover:text-[var(--pista-green)] transition-colors duration-200 focus-visible:outline-none focus-visible:underline"
+                            >
+                              {value}
+                            </a>
+                          ) : (
+                            <p className="text-[0.95rem] font-medium text-[var(--text-heading)] whitespace-pre-line leading-relaxed">
+                              {value}
+                            </p>
+                          )}
+                        </div>
+                      </>
+                    )}
                   </li>
                 ))}
               </motion.ul>
 
-              {/* Map placeholder */}
+              {/* Map */}
               <motion.div variants={FADE_UP}>
                 <p className="text-[0.7rem] uppercase tracking-[0.16em] font-semibold text-[var(--text-muted)]/60 mb-4">
                   Find us
                 </p>
-                <div
-                  role="img"
-                  aria-label="Map showing Nispruh Yog Centre location — interactive map coming soon"
-                  className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-[var(--border-soft)]/60 bg-gradient-to-br from-[#e8e4dc] via-[#dcd7ce] to-[#d0cbbf] flex flex-col items-center justify-center gap-3"
-                >
-                  {/* Faint grid lines — suggests a map */}
-                  <svg
-                    viewBox="0 0 400 300"
-                    className="absolute inset-0 w-full h-full opacity-[0.12]"
-                    aria-hidden="true"
-                  >
-                    {[0,1,2,3,4].map((i) => (
-                      <line key={`h${i}`} x1="0" y1={i * 75} x2="400" y2={i * 75} stroke="var(--text-heading)" strokeWidth="1" />
-                    ))}
-                    {[0,1,2,3,4,5].map((i) => (
-                      <line key={`v${i}`} x1={i * 80} y1="0" x2={i * 80} y2="300" stroke="var(--text-heading)" strokeWidth="1" />
-                    ))}
-                    {/* Suggested roads */}
-                    <path d="M0 140 Q100 120 200 150 Q300 180 400 155" stroke="var(--text-heading)" strokeWidth="2" fill="none" />
-                    <path d="M160 0 Q170 100 165 150 Q158 220 162 300" stroke="var(--text-heading)" strokeWidth="2" fill="none" />
-                  </svg>
-
-                  {/* Pin */}
-                  <div className="relative z-10 flex flex-col items-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-[var(--pista-green)] flex items-center justify-center shadow-[0_4px_16px_rgba(95,122,97,0.4)]">
-                      <svg viewBox="0 0 16 16" fill="white" className="w-5 h-5" aria-hidden="true">
-                        <path d="M8 1a5 5 0 0 1 5 5c0 3.5-5 9-5 9S3 9.5 3 6a5 5 0 0 1 5-5zm0 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
-                      </svg>
-                    </div>
-                    <span className="text-[0.75rem] font-medium text-[var(--text-heading)]/70 bg-white/80 backdrop-blur-sm px-3 py-1 rounded-full">
-                      Nispruh Yog Centre
-                    </span>
-                  </div>
-                  <p className="relative z-10 text-[0.68rem] uppercase tracking-[0.18em] text-[var(--text-muted)]/50 font-medium">
-                    Map placeholder
-                  </p>
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-[var(--border-soft)]/60 shadow-[0_8px_24px_rgba(31,42,68,0.08)]">
+                  <LocationMap />
                 </div>
               </motion.div>
 

@@ -30,6 +30,7 @@ interface Post {
   title: string;
   excerpt: string;
   featured?: boolean;
+  image: string;
 }
 
 const TAG_COLOUR: Record<Tag, string> = {
@@ -47,10 +48,11 @@ const POSTS: Post[] = [
     readTime: "8 min",
     date: "3 May 2026",
     dateISO: "2026-05-03",
-    title: "Who is Swami Nispruh Spandan?",
+    title: "Who is Paramahamsa Shri Swami Nispruh Spandan?",
     excerpt:
       "The life, journey, and teachings of the Kriya yogi guiding students in India and Finland since the early 2000s.",
     featured: true,
+    image: "/images/blog/55.png",
   },
   {
     slug: "what-happens-when-you-sit",
@@ -61,6 +63,7 @@ const POSTS: Post[] = [
     title: "What Actually Happens When You Sit",
     excerpt:
       "Most people expect meditation to feel peaceful. Often it feels like the opposite — restless, loud, resistant. This is not failure. This is the practice beginning.",
+    image: "/images/blog/56.png",
   },
   {
     slug: "lineage-why-it-matters",
@@ -68,9 +71,10 @@ const POSTS: Post[] = [
     readTime: "8 min",
     date: "14 March 2026",
     dateISO: "2026-03-14",
-    title: "Why Lineage Matters in Kriya Yoga",
+    title: "Why Lineage Matters in Kriyayog",
     excerpt:
       "The word \u2018transmission\u2019 is not mystical jargon. It points at something precise: the difference between reading a map and walking the terrain with someone who knows it.",
+    image: "/images/blog/57.png",
   },
   {
     slug: "guru-parampara-lineage",
@@ -81,9 +85,10 @@ const POSTS: Post[] = [
     title: "1,200 Years of Kriyayog — The Guru Parampara Lineage Explained",
     excerpt:
       "How an ancient science passed from Lord Krishna through the Himalayas, across continents, and into living rooms in Finland today.",
+    image: "/images/blog/58.png",
   },
   {
-    slug: "begin-kriyayog-practice",
+    slug: "begin-Kriyayog-practice",
     tag: "Practice",
     readTime: "9 min",
     date: "5 May 2026",
@@ -91,6 +96,7 @@ const POSTS: Post[] = [
     title: "How to Begin Your Kriyayog Practice — A Guide for Complete Beginners",
     excerpt:
       "Everything you need to know before your first session, from someone who has never meditated before.",
+    image: "/images/blog/59.png",
   },
   {
     slug: "morning-without-a-phone",
@@ -101,6 +107,7 @@ const POSTS: Post[] = [
     title: "One Morning Without the Phone",
     excerpt:
       "An experiment: no screen for the first hour after waking. What happens in that hour is surprisingly ordinary — and quietly transformative.",
+    image: "/images/blog/60.png",
   },
   {
     slug: "breath-retention-kumbhaka",
@@ -111,6 +118,7 @@ const POSTS: Post[] = [
     title: "The Held Breath: A Note on Kumbhaka",
     excerpt:
       "Between the inhale and the exhale is a threshold most practitioners skip over. The held breath is not a technique for advanced yogis. It is available to anyone willing to pause.",
+    image: "/images/blog/61.png",
   },
   {
     slug: "on-not-achieving-peace",
@@ -120,7 +128,8 @@ const POSTS: Post[] = [
     dateISO: "2026-02-05",
     title: "On Not Achieving Peace",
     excerpt:
-      "Peace is not a state to be manufactured through effort. The practitioner\u2019s work is subtler: to remove what obscures what is already there.",
+      "Peace is not a state to be manufactured through effort. The practitioners work is subtler: to remove what obscures what is already there.",
+    image: "/images/blog/62.png",
   },
   {
     slug: "returning-after-a-gap",
@@ -130,7 +139,8 @@ const POSTS: Post[] = [
     dateISO: "2026-01-24",
     title: "Returning After a Long Gap",
     excerpt:
-      "You stopped. Weeks passed, perhaps months. The cushion collected dust. This note is for the moment of returning \u2014 and why the gap does not matter as much as you think.",
+      "You stopped. Weeks passed, perhaps months. The cushion collected dust. This note is for the moment of returning  and why the gap does not matter as much as you think.",
+    image: "/images/blog/63.png",
   },
   {
     slug: "sattvic-life-small-choices",
@@ -141,6 +151,7 @@ const POSTS: Post[] = [
     title: "The Sattvic Life Is Made of Small Choices",
     excerpt:
       "Sattva is not achieved in the meditation hall. It is built slowly, meal by meal, conversation by conversation, in the ten thousand ordinary moments of a day.",
+    image: "/images/blog/64.png",
   },
   {
     slug: "lahiri-mahasaya-householder",
@@ -150,7 +161,8 @@ const POSTS: Post[] = [
     dateISO: "2025-12-22",
     title: "Lahiri Mahasaya: The Householder Who Changed Everything",
     excerpt:
-      "He worked as a clerk, raised children, and cooked food for his family. He also initiated thousands into Kriya Yoga. His life is a quiet argument against the idea that depth requires renunciation.",
+      "He worked as a clerk, raised children, and cooked food for his family. He also initiated thousands into Kriyayog. His life is a quiet argument against the idea that depth requires renunciation.",
+    image: "/images/blog/65.png",
   },
   {
     slug: "the-witness",
@@ -161,6 +173,7 @@ const POSTS: Post[] = [
     title: "The Witness: Who Is Watching the Mind?",
     excerpt:
       "Yoga speaks of the \u2018drashta\u2019 \u2014 the seer. Not a separate soul hovering above experience, but a quality of awareness that can be cultivated until it becomes the default relationship with one\u2019s own mind.",
+    image: "/images/blog/68.png",
   },
 ];
 
@@ -258,14 +271,15 @@ export default function BlogClient() {
                 </span>
               </div>
 
-              {/* Image placeholder */}
-              <div
-                className="relative hidden lg:flex items-center justify-center bg-gradient-to-br from-[#e8e4dc] to-[#d4cfc7] min-h-[280px]"
-                aria-hidden="true"
-              >
-                <div className="absolute inset-0"
-                  style={{ background: "radial-gradient(ellipse at 40% 40%, rgba(95,122,97,0.15) 0%, transparent 65%)" }} />
-                <span className="text-[4rem] text-[var(--pista-green)]/20 select-none">꩜</span>
+              {/* Image */}
+              <div className="relative hidden lg:block min-h-[280px] bg-[#f7f4ee] overflow-hidden">
+                <img
+                  src={FEATURED.image}
+                  alt={FEATURED.title}
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.85)] via-[rgba(255,255,255,0.25)] to-transparent" />
               </div>
             </Link>
           </motion.div>
@@ -310,14 +324,16 @@ export default function BlogClient() {
                   href={`/blog/${post.slug}`}
                   className="group flex flex-col h-full rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                 >
-                  {/* Thumbnail placeholder */}
-                  <div
-                    className="h-44 relative flex items-center justify-center bg-gradient-to-br from-[#eae6de] to-[#d8d3ca] overflow-hidden"
-                    aria-hidden="true"
-                  >
+                  {/* Thumbnail */}
+                  <div className="h-44 relative overflow-hidden">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="absolute inset-0 h-full w-full object-cover object-center"
+                      loading="lazy"
+                    />
                     <div className="absolute inset-0"
                       style={{ background: `radial-gradient(ellipse at 40% 40%, ${TAG_COLOUR[post.tag]}18 0%, transparent 65%)` }} />
-                    <span className="text-[2rem] select-none" style={{ color: `${TAG_COLOUR[post.tag]}30` }}>꩜</span>
                   </div>
 
                   <div className="flex flex-col flex-1 p-6">

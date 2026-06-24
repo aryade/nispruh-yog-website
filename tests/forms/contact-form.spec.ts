@@ -42,7 +42,7 @@ test.describe('Contact Form', () => {
     
     // Fill message field
     const textarea = form.locator('label:has-text("Message") textarea');
-    await textarea.fill('I am interested in learning more about Kriya Yoga courses');
+    await textarea.fill('I am interested in learning more about Kriyayog courses');
     
     // Submit form
     const submitButton = form.locator('button[type="submit"]');

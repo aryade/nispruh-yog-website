@@ -36,7 +36,7 @@ const SOCIAL_LINKS = [
   },
   {
     label: "Facebook",
-    href: "https://www.facebook.com/nispruhyogkriyayogpath/",
+    href: "https://www.facebook.com/nispruhyogKriyayogpath/",
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -59,7 +59,7 @@ const fadeUp = {
   show: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.08, duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+    transition: { delay: i * 0.08, duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
   }),
 };
 
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
           <p className="text-[0.9rem] leading-[1.75] text-[var(--text-muted)] max-w-[32ch]">
             A quiet space for sincere seekers. Rooted in the ancient science of
-            Kriya Yoga — awakening through breath, stillness, and self-inquiry.
+            Kriyayog — awakening through breath, stillness, and self-inquiry.
           </p>
           {/* Social icons */}
           <div className="mt-8">
@@ -112,7 +112,8 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Follow us on ${label}`}
-                  className="w-10 h-10 rounded-full flex items-center justify-center text-[var(--pista-green)] border-2 border-[var(--pista-green)]/40 hover:text-white hover:border-[var(--pista-green)] hover:bg-[var(--pista-green)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
+                  style={{ color: "#ffffff" }}
+                  className="w-10 h-10 rounded-full flex items-center justify-center bg-[var(--pista-green)]/25 border-2 border-[var(--pista-green)]/70 hover:border-[var(--pista-green)] hover:bg-[var(--pista-green)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                   whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -163,23 +164,23 @@ export default function Footer() {
             <li>
               <a
                 href="tel:+358465710507"
-                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
                 +358 (46) 571 0507
               </a>
             </li>
             <li>
               <a
-                href="mailto:nispruhyogkriyayog@gmail.com"
-                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                href="mailto:info@nispruhyog.com"
+                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
-                nispruhyogkriyayog@gmail.com
+                info@nispruhyog.com
               </a>
             </li>
             <li>
               <Link
                 href="/contact"
-                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
                 Send a message
               </Link>
@@ -187,7 +188,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/courses-programs"
-                className="hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
               >
                 Join a course
               </Link>
@@ -195,7 +196,7 @@ export default function Footer() {
           </ul>
 
           {/* Sanskrit pull-quote */}
-          <blockquote className="mt-10 border-l-2 border-[var(--pista-green)]/40 pl-4\">
+          <blockquote className="mt-10 border-l-2 border-[var(--pista-green)]/40 pl-4">
             <p className="text-[1.05rem] text-[var(--text-muted)]/80 italic leading-relaxed font-light">
               "Tat tvam asi."
             </p>

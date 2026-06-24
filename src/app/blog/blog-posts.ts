@@ -19,14 +19,14 @@ export interface BlogPostContent {
 export const BLOG_POSTS: Record<string, BlogPostContent> = {
   "swami-nispruh-spandan": {
     slug: "swami-nispruh-spandan",
-    title: "Who is Swami Nispruh Spandan?",
+    title: "Who is Paramahamsa Shri Swami Nispruh Spandan?",
     excerpt:
       "The life, journey, and teachings of the Kriya yogi guiding students in India and Finland since the early 2000s.",
     tag: "Lineage",
     readTime: "8 min",
     date: "3 May 2026",
     dateISO: "2026-05-03",
-    content: `# Who is Swami Nispruh Spandan?
+    content: `# Who is Paramahamsa Shri Swami Nispruh Spandan?
 
 *The life, journey, and teachings of the Kriya yogi guiding students in India and Finland since the early 2000s.*
 
@@ -35,7 +35,7 @@ export const BLOG_POSTS: Record<string, BlogPostContent> = {
 His name carries its own meaning. **"Nispruh"** means a person with no negativity or jealousy. **"Spandan"** means a ball of bright light shining in the sky on its own. Together, they describe exactly what Param Pujya Paramhansa Nispruh Spandan Swamiji offers to those seeking the ultimate truth — a steady, radiant light on the path to higher consciousness.
 
 > "My love for you is pure and unconditional. But until you will not break the barriers of your Ego, you will never experience the divinity of my love."
-> — Swami Nispruh Spandan
+> — Paramahamsa Shri Swami Nispruh Spandan
 
 ---
 
@@ -57,7 +57,7 @@ He travelled to holy places across India — staying at ashrams in Khanddawa, Pu
 
 He eventually found his primary Guru in **Kriya Yogi Madan Mohanji Sahay**, with whom he spent the longest and most transformative period of his spiritual journey. He also received guidance from Tauji (Banarsilal Saraf) and Hakamchand Dixit Dadaji — both disciples of Guruji who became important teachers in their own right.
 
-It was Guruji himself who gave Swamiji the name **Paramhansa Nispruh Spandan** — not chosen, but bestowed, as is traditional in the Guru–disciple lineage.
+It was Guruji himself who gave Swamiji the name **Paramahamsa Shri Swami Nispruh Spandan** — not chosen, but bestowed, as is traditional in the Guru–disciple lineage.
 
 ---
 
@@ -115,7 +115,7 @@ To encounter Swamiji is to encounter that entire stream — offered freely, with
 
 Online Kriyayog meditation runs every **Thursday and Sunday**. In-person courses are held regularly across Finland and India, open to all levels — from complete beginners to experienced practitioners.
 
-📧 nispruhyogkriyayog@gmail.com
+📧 info@nispruhyog.com
 📞 +358 46 571 0507 (Finland) | +91 99756 90339 (India)
 
 ---
@@ -218,9 +218,9 @@ After his encounter with Pahadi Baba, his life turned entirely toward spirituali
 
 ---
 
-## Swami Nispruh Spandan — the living link
+## Paramahamsa Shri Swami Nispruh Spandan — the living link
 
-**Param Pujya Paramhansa Nispruh Spandan Swamiji** is the present-day keeper of this flame. Initiated and named by Madan Mohanji Sahay, he has been teaching Kriyayog in India and Finland since the early 2000s — holding weekly online meditation sessions, residential courses, and spiritual retreats that bring this ancient science into the lives of modern seekers.
+**Param Pujya Paramahamsa Shri Swami Nispruh Spandan** is the present-day keeper of this flame. Initiated and named by Madan Mohanji Sahay, he has been teaching Kriyayog in India and Finland since the early 2000s — holding weekly online meditation sessions, residential courses, and spiritual retreats that bring this ancient science into the lives of modern seekers.
 
 He was also shaped by two of Guruji's disciples: **Tauji** (Banarsilal Saraf), who passed his own spiritual knowledge and blessings to the young Swamiji, and his father **Nirmohi Aghorinath** (Shobharam) — himself a sadhak — who was Swamiji's first teacher from childhood.
 
@@ -235,13 +235,13 @@ In many modern traditions, a teacher's authority comes from credentials, publica
 This is not merely symbolic. Practitioners of Kriyayog often describe the feeling of connecting to something far larger than themselves during meditation — as if the practice carries the accumulated intention of every teacher who has ever held it.
 
 > *"Checking our sadhana with our Guru is different from doubting the sadhana given by Guru. Doubting the sadhana given by Guru means doubting the Guru himself."*
-> — Swami Nispruh Spandan
+> — Paramahamsa Shri Swami Nispruh Spandan
 
 ---
 
 ## The lineage at a glance
 
-**Lord Krishna → Mahavatar Babaji → Lahiri Mahasaya → Sri Yukteswar Giri → Paramahansa Yogananda / Sathyananda Giri → Pahadi Baba → Madan Mohanji Sahay → Swami Nispruh Spandan**
+**Lord Krishna → Mahavatar Babaji → Lahiri Mahasaya → Sri Yukteswar Giri → Paramahansa Yogananda / Sathyananda Giri → Pahadi Baba → Madan Mohanji Sahay → Paramahamsa Shri Swami Nispruh Spandan**
 
 Over 1,200 years. One unbroken science.
 
@@ -251,12 +251,12 @@ Over 1,200 years. One unbroken science.
 
 Weekly online Kriyayog meditation runs every Thursday and Sunday, open to all initiated students. Courses for beginners are held regularly in Finland and India.
 
-📧 nispruhyogkriyayog@gmail.com  
+📧 info@nispruhyog.com  
 📞 +358 46 571 0507 (Finland) | +91 99756 90339 (India)`,
     author: "Nispruh Yog",
   },
-  "begin-kriyayog-practice": {
-    slug: "begin-kriyayog-practice",
+  "begin-Kriyayog-practice": {
+    slug: "begin-Kriyayog-practice",
     title: "How to Begin Your Kriyayog Practice — A Guide for Complete Beginners",
     excerpt:
       "Everything you need to know before your first session, from someone who has never meditated before.",
@@ -287,7 +287,7 @@ It is a scientific meditation technique from the Krishna Parampara — a lineage
 Unlike physical yoga, which focuses primarily on the body, Kriyayog works primarily on the mental and spiritual dimensions. Asanas and pranayama are part of it, but they are doorways into something deeper — not the destination itself.
 
 > *"Kriyayog is a Yog of Awareness."*
-> — Swami Nispruh Spandan
+> — Paramahamsa Shri Swami Nispruh Spandan
 
 ---
 
@@ -331,7 +331,7 @@ This is perhaps the most unfamiliar element for anyone coming from a Western wel
 
 In Kriyayog, the Guru–disciple relationship is not optional or decorative. It is the mechanism through which the practice is transmitted. Kriyayog is not simply a set of techniques you can learn from a book or a YouTube video. It is a living science passed through direct initiation — from an awakened teacher to a ready student.
 
-Swami Nispruh Spandan carries this transmission through an unbroken lineage from Lord Krishna through Mahavatar Babaji, Lahiri Mahasaya, Sri Yukteswar Giri, and Madan Mohanji Sahay. When Swamiji initiates a student, that student steps into the same stream.
+Paramahamsa Shri Swami Nispruh Spandan carries this transmission through an unbroken lineage from Lord Krishna through Mahavatar Babaji, Lahiri Mahasaya, Sri Yukteswar Giri, and Madan Mohanji Sahay. When Swamiji initiates a student, that student steps into the same stream.
 
 This is why trust matters so much in the practice.
 
@@ -344,7 +344,7 @@ This is why trust matters so much in the practice.
 
 ### Step 1 — Attend a preparatory session
 
-Before initiation, Nispruhyog offers a **Preparatory Course** (approximately 4 hours) where Swamiji introduces:
+Before initiation, Nispruhyog offers a **Preparatory Course** (approximately 4 hours) where Paramahamsa Shri Swami Nispruh Spandan introduces:
 
 - What Kriyayog is and where it comes from
 - How Kriya works on the human body and mind
@@ -360,17 +360,17 @@ After the preparatory session, the two-day **Kriyayog Advance Course** takes you
 
 ### Step 3 — Practice weekly
 
-Once initiated, you are welcome to join the online weekly meditation sessions held every **Thursday and Sunday**, guided live by Swamiji. These sessions are the heartbeat of the practice — the regular commitment that keeps the inner work alive between courses and retreats.
+Once initiated, you are welcome to join the online weekly meditation sessions held every **Thursday and Sunday**, guided live by Paramahamsa Shri Swami Nispruh Spandan. These sessions are the heartbeat of the practice — the regular commitment that keeps the inner work alive between courses and retreats.
 
 ---
 
 ## What to expect in a session
 
-A typical session with Swamiji includes:
+A typical session with Paramahamsa Shri Swami Nispruh Spandan includes:
 
 - **Breathing exercises and pranayama** — to prepare the body and settle the nervous system
 - **Kriya meditation** — the core practice, working through the chakras with specific techniques
-- **Satsang** — open conversation with Swamiji, where questions are welcomed and teachings arise naturally from whatever is present in the group
+- **Satsang** — open conversation with Paramahamsa Shri Swami Nispruh Spandan, where questions are welcomed and teachings arise naturally from whatever is present in the group
 
 You do not need special equipment. You do not need to be flexible. You do not need to already believe in anything in particular. You need a quiet space, a willingness to sit still, and a genuine desire to look inward.
 
@@ -390,9 +390,10 @@ These experiences tend to accelerate the inner work in ways that weekly sessions
 
 The single most important factor in any meditation practice is **showing up regularly**.
 
-Swamiji often speaks about how transformation works: it is not about dramatic peak experiences or sudden enlightenment. It is about the slow, patient carving away of what is not you — until what remains is clearer, steadier, and more genuinely yourself.
+Paramahamsa Shri Swami Nispruh Spandan often speaks about how transformation works: it is not about dramatic peak experiences or sudden enlightenment. It is about the slow, patient carving away of what is not you — until what remains is clearer, steadier, and more genuinely yourself.
 
 > *"Kriyayog carves you and introduces you to the real you within."*
+> — Paramahamsa Shri Swami Nispruh Spandan
 
 One session will not do it. Ten sessions will begin to. A sustained practice over months and years changes something fundamental — the way you relate to your own mind, to others, and to life itself.
 

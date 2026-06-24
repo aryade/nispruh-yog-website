@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s · Nispruh Yog",
   },
   description:
-    "A sacred space for sincere seekers. Rooted in the ancient science of Kriya Yoga — a path of breath, awareness, and inner inquiry.",
+    "A sacred space for sincere seekers. Rooted in the ancient science of Kriyayog — a path of breath, awareness, and inner inquiry.",
   openGraph: {
     siteName: "Nispruh Yog",
     locale: "en_US",

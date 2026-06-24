@@ -52,7 +52,7 @@ export default function WhatIsKriyaYoga() {
               variants={FADE_UP}
               className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-8"
             >
-              What is Kriya Yoga?
+              What is Kriyayog?
             </motion.h2>
 
             {/* Paragraphs */}
@@ -60,7 +60,7 @@ export default function WhatIsKriyaYoga() {
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-5"
             >
-              Yog of Awareness. Krishna explains Kriya Yog as the practice of purifying the physiological as well as mental and spiritual systems. It is an ancient meditation technique that is a part of the spiritual path.
+              Yog of Awareness. Krishna explains Kriyayog as the practice of purifying the physiological as well as mental and spiritual systems. It is an ancient meditation technique that is a part of the spiritual path.
             </motion.p>
 
             <motion.p
@@ -74,7 +74,7 @@ export default function WhatIsKriyaYoga() {
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-10"
             >
-              Kriya Yoga is a living meditation tradition woven by breath, attention, and simple devotion. It is not a product, but an invitation into yourself. Repeat quiet practice and hold awareness with tenderness. Allow small shifts to settle into your daily rhythm.
+              Kriyayog is a living meditation tradition woven by breath, attention, and simple devotion. It is not a product, but an invitation into yourself. Repeat quiet practice and hold awareness with tenderness. Allow small shifts to settle into your daily rhythm.
             </motion.p>
 
             {/* Learn more link */}
@@ -117,9 +117,9 @@ export default function WhatIsKriyaYoga() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-[1.5rem] aspect-[4/5]">
               <img
-                src="/images/practices/kriya-meditation.png"
-                alt="Kriya Yoga meditation practice"
-                className="w-full h-full object-cover"
+                src="/images/practices/kriya-meditation-new.png"
+                alt="Kriyayog meditation practice"
+                className="w-full h-full object-contain object-center"
               />
             </div>
 
@@ -135,7 +135,7 @@ export default function WhatIsKriyaYoga() {
                 "Breathe. Be still. The answer you seek is already within."
               </p>
               <p className="mt-2 text-[0.7rem] uppercase tracking-[0.14em] text-[var(--pista-green)] font-semibold">
-                Kriya teaching
+                Kriyayog teaching
               </p>
             </motion.div>
           </motion.div>

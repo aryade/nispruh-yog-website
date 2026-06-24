@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { openNav } from '../helpers/nav';
 
 test.describe('Home Page Navigation', () => {
   test('should load home page with hero section and navigation', async ({ page }) => {
@@ -11,8 +12,9 @@ test.describe('Home Page Navigation', () => {
     const hero = page.locator('section').first();
     await expect(hero).toBeVisible();
     
-    // Check navigation bar is present
-    const navbar = page.locator('nav');
+    // Check navigation bar is present (header banner is visible on all viewports;
+    // the desktop <nav> is hidden behind the hamburger on mobile).
+    const navbar = page.getByRole('banner');
     await expect(navbar).toBeVisible();
     
     // Check footer is visible (use more specific selector)
@@ -33,8 +35,10 @@ test.describe('Home Page Navigation', () => {
       'Contact'
     ];
 
+    // Open the navbar (desktop nav is visible directly; mobile opens the drawer).
+    const nav = await openNav(page);
     for (const linkText of navLinks) {
-      const link = page.getByLabel('Primary').getByRole('link', { name: new RegExp(linkText, 'i') });
+      const link = nav.getByRole('link', { name: new RegExp(linkText, 'i') });
       await expect(link).toBeVisible();
     }
   });

@@ -37,7 +37,7 @@ const SERVICES = [
     title: "Kriya Yog Courses – Meditation",
     description: "Meditation is not about becoming a different person — it is about training yourself with full awareness and getting a healthy sense of perspective. It teaches you to systematically explore your inner dimensions.",
     highlights: ["What is Kriyayog? Background of Kriyayog", "How Kriya works on the human body and mind", "Importance of Exercises, Pranayam, and breathing techniques", "Kriya – Practices to heal yourself, body and mind", "Satsang with Pujya Guruji on different topics"],
-    contact: { phone: "(91) 99756 90339 (India) | (+358) 46 5710507 (Finland)", email: "nispruhyogkriyayog (at) gmail.com" },
+    contact: { phone: "(91) 99756 90339 (India) | (+358) 46 5710507 (Finland)", email: "nispruhyogKriyayog (at) gmail.com" },
     icon: "📿",
   },
   {
@@ -45,7 +45,7 @@ const SERVICES = [
     title: "Yoga Courses",
     description: "Yoga offers physical and mental health benefits for people of all ages. Improves flexibility, strength, stamina, relaxes body and mind for better sleep, and leads to better moods and more energy.",
     highlights: ["Asanas, Pranayama, Stretching exercises", "Surya Namaskar and relaxing techniques", "Benefits: improved flexibility, strength, and stamina"],
-    contact: { phone: "(91) 99756 90339", email: "nispruhyogkriyayog (at) gmail.com" },
+    contact: { phone: "(91) 99756 90339", email: "nispruhyogKriyayog (at) gmail.com" },
     icon: "🙏",
   },
   {
@@ -53,7 +53,7 @@ const SERVICES = [
     title: "Astrology – Horoscope",
     description: "The study of movements and relative positions of celestial bodies interpreted as having an influence on human affairs. The 7 colours in sunlight represent 7 Chakras in the body.",
     highlights: ["Kundali (Patrika) creation", "Reading of horoscope (Patrika)", "Solutions to help reduce issues"],
-    contact: { phone: "(91) 99756 90339", email: "nispruhyogkriyayog (at) gmail.com" },
+    contact: { phone: "(91) 99756 90339", email: "nispruhyogKriyayog (at) gmail.com" },
     icon: "🌟",
   },
   {
@@ -61,8 +61,57 @@ const SERVICES = [
     title: "Spiritual Healing Tattoos",
     description: "Tattoo designs laden with symbolism and deeply rooted in spirituality. Tattoos can restore energy when someone experiences a blockage around a particular chakra.",
     highlights: ["Identification of your Spiritual Tattoo", "Tattoo Designing based on Yantra, Mantra, and Tantra", "Tattoo Restructuring"],
-    contact: { phone: "(91) 99756 90339", email: "nispruhyogkriyayog (at) gmail.com" },
+    contact: { phone: "(91) 99756 90339", email: "nispruhyogKriyayog (at) gmail.com" },
     icon: "🎨",
+  },
+];
+
+const ONGOING_PROGRAMS = [
+  {
+    id: "daily-morning-yoga",
+    title: "Daily Morning Yoga",
+    subtitle: "Online guided session — open to all levels",
+    time: "5:00 – 6:00 am Online",
+    frequency: "EVERY DAY",
+    description: "All welcome",
+    icon: "🌅",
+  },
+  {
+    id: "weekly-meditation",
+    title: "Weekly Meditation Sessions",
+    subtitle: "Foundation practice for initiated sadhakas",
+    time: "Thursdays & Sundays",
+    frequency: "WEEKLY",
+    description: "Initiated sadhakas (beginner)",
+    icon: "🧘",
+  },
+  {
+    id: "mantra-chanting",
+    title: "Mantra Chanting & Meditation",
+    subtitle: "Biweekly group session at a fixed venue",
+    time: "5:30 – 7:00 pm Fixed venue",
+    frequency: "BIWEEKLY",
+    description: "Group meditation practice",
+    icon: "🎵",
+  },
+  {
+    id: "yoga-meditation-sadhaka",
+    title: "Yoga & Meditation Session",
+    subtitle: "Floating gathering at a sadhaka's home",
+    time: "At sadhaka's home",
+    frequency: "BIWEEKLY",
+    description: "Sadhaka's community",
+    icon: "🤝",
+  },
+  {
+    id: "alternate-saturday",
+    title: "Alternate Saturday Sessions",
+    subtitle: "At the library — schedule resumes after summer break",
+    time: "Library venue",
+    frequency: "2× A MONTH",
+    description: "Alternate Saturdays",
+    note: "1st Saturday, 3rd Saturday, 2nd Saturday – TBC, 4th Saturday – TBC",
+    icon: "📚",
   },
 ];
 
@@ -122,16 +171,16 @@ const COURSES = [
     id: "kriya-course",
     tag: "8-Week Programme",
     format: "Small group · Max 8 students",
-    title: "Kriya Yoga Course",
-    subtitle: "A structured initiation into the Kriya techniques",
+    title: "Kriyayog Course",
+    subtitle: "A structured initiation into the Kriyayog techniques",
     description:
-      "A careful, unhurried introduction to the foundational practices of Kriya Yoga — pranayama, dharana, the spinal breath, and mahamudra. Taught in small groups to preserve the intimacy the tradition requires. Each week builds on the last.",
+      "A careful, unhurried introduction to the foundational practices of Kriyayog — pranayama, dharana, the spinal breath, and mahamudra. Taught in small groups to preserve the intimacy the tradition requires. Each week builds on the last.",
     duration: "8 weeks · 2 hrs per session",
     frequency: "Once weekly, plus home practice",
     groupSize: "Max 8 students",
     price: "Fee on enquiry",
     includes: [
-      "Full initiation into foundational Kriya techniques",
+      "Full initiation into foundational Kriyayog techniques",
       "Weekly guided practice session",
       "Home practice guidelines",
       "One private 1-to-1 session with the teacher",
@@ -163,7 +212,7 @@ const COURSES = [
     price: "Sliding scale — no one turned away",
     includes: [
       "Accommodation and all meals",
-      "Morning and evening guided Kriya sessions",
+      "Morning and evening guided Kriyayog sessions",
       "One private interview with the teacher",
       "Access to nature walks and personal practice time",
       "Post-retreat integration call",
@@ -412,6 +461,84 @@ export default function CoursesClient() {
               </div>
             </motion.article>
           ))}
+        </div>
+      </section>
+
+      {/* ── Ongoing Programmes ────────────────────────────────── */}
+      <section
+        id="ongoing-programs"
+        aria-labelledby="ongoing-heading"
+        className="py-20 bg-[var(--bg-primary)] border-t border-[var(--border-soft)]/50"
+      >
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] as const }}
+            viewport={{ once: true }}
+            className="max-w-[48ch] mb-12"
+          >
+            <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
+              Weekly, biweekly, and ongoing
+            </p>
+            <h2
+              id="ongoing-heading"
+              className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
+            >
+              Ongoing Programmes
+            </h2>
+            <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)] mt-3">
+              All sessions free of charge
+            </p>
+          </motion.div>
+
+          <motion.div
+            variants={STAGGER}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-60px" }}
+            className="space-y-4"
+          >
+            {ONGOING_PROGRAMS.map(({ id, title, subtitle, time, frequency, description, note, icon }) => (
+              <motion.div
+                key={id}
+                variants={FADE_UP}
+                className="rounded-xl border border-[var(--border-soft)]/60 bg-white p-6 hover:border-[var(--pista-green)]/40 hover:shadow-sm transition-all duration-300"
+              >
+                <div className="flex items-start gap-4">
+                  {/* Left accent stripe */}
+                  <div className="shrink-0 w-1 h-20 rounded-full bg-[var(--pista-green)]" aria-hidden="true" />
+
+                  <div className="flex-1">
+                    <div className="flex items-start justify-between gap-4 mb-2">
+                      <div>
+                        <h3 className="text-[1.05rem] font-semibold text-[var(--text-heading)]">
+                          {title}
+                        </h3>
+                        <p className="text-[0.85rem] text-[var(--text-muted)] mt-1">
+                          {subtitle}
+                        </p>
+                      </div>
+                      <span className="text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-3 py-1 rounded-full whitespace-nowrap"
+                        style={{ color: "var(--pista-green)", background: "rgba(147, 197, 114, 0.15)" }}>
+                        {frequency}
+                      </span>
+                    </div>
+
+                    <div className="mt-3 text-[0.9rem] text-[var(--text-muted)]">
+                      <p className="font-medium text-[var(--text-heading)]/70">{time}</p>
+                      <p className="text-[0.82rem] mt-1">{description}</p>
+                      {note && (
+                        <p className="text-[0.75rem] italic text-[var(--text-muted)]/60 mt-2 p-2 rounded bg-[var(--bg-primary)]">
+                          Note: {note}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 

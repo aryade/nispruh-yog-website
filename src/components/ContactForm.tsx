@@ -61,8 +61,10 @@ export function ContactForm() {
       <button type="submit" className="cta" disabled={response.status === "loading"}>
         {response.status === "loading" ? "Sending..." : "Send request"}
       </button>
-      {response.status === "success" && <p className="notice success">{response.message}</p>}
-      {response.status === "error" && <p className="notice error">{response.message}</p>}
+      <div aria-live="polite" role="status">
+        {response.status === "success" && <p className="notice success">{response.message}</p>}
+        {response.status === "error" && <p className="notice error">{response.message}</p>}
+      </div>
     </form>
   );
 }

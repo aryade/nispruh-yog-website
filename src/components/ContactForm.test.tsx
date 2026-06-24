@@ -46,7 +46,7 @@ describe("ContactForm", () => {
 
     await user.type(screen.getByLabelText(/name/i), "John Doe");
     await user.type(screen.getByLabelText(/email/i), "john@example.com");
-    await user.type(screen.getByLabelText(/message/i), "Hello, I'm interested in Kriya Yoga");
+    await user.type(screen.getByLabelText(/message/i), "Hello, I'm interested in Kriyayog");
 
     const button = screen.getByRole("button", { name: /send request/i });
     await user.click(button);

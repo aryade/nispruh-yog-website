@@ -24,7 +24,7 @@ const HOW_IT_WORKS = [
   {
     step: "01",
     title: "Breath as the vehicle",
-    body: "Kriya Yoga begins with pranayama — conscious, rhythmic breathing that links the mind to the subtle currents of life-force (prana) running through the spine. The breath is not a metaphor; it is the actual mechanism.",
+    body: "Kriyayog begins with pranayama — conscious, rhythmic breathing that links the mind to the subtle currents of life-force (prana) running through the spine. The breath is not a metaphor; it is the actual mechanism.",
   },
   {
     step: "02",
@@ -34,7 +34,7 @@ const HOW_IT_WORKS = [
   {
     step: "03",
     title: "Repetition builds depth",
-    body: "A single session offers rest. A month of daily practice opens subtlety. A year changes the texture of ordinary experience. Kriya Yoga is cumulative — each sitting adds to what came before.",
+    body: "A single session offers rest. A month of daily practice opens subtlety. A year changes the texture of ordinary experience. Kriyayog is cumulative — each sitting adds to what came before.",
   },
   {
     step: "04",
@@ -116,7 +116,7 @@ const GURU_PARAMPARA = [
     subsections: [
       {
         title: "Madan Mohanji Sahay",
-        content: "Shree Madan Mohanji Sahay was a family man who retired as a Divisional Manager from LIC in 1989. After meeting Pahadi Baba, his life turned toward spirituality. Pahadi Baba tested and transformed him through various trials, turning his materialistic habits into spiritual ones. He later became the Guru of Swami Nispruh Spandan and gave Swamiji his current name — Paramhansa Swami Nispruh Spandan.",
+        content: "Shree Madan Mohanji Sahay was a family man who retired as a Divisional Manager from LIC in 1989. After meeting Pahadi Baba, his life turned toward spirituality. Pahadi Baba tested and transformed him through various trials, turning his materialistic habits into spiritual ones. He later became the Guru of Paramahamsa Shri Swami Nispruh Spandan and gave Swamiji his current name — Paramahamsa Shri Swami Nispruh Spandan.",
       },
     ],
   },
@@ -134,7 +134,7 @@ const GURU_PARAMPARA = [
     subsections: [
       {
         title: "Shree Aghorinath-Shobharam (Hariom Wale Babaji)",
-        content: "Shree Aghorinath-Shobharam was a government servant and family man, blessed with many Siddhis by his Guru. He was the father and first Guru of Swami Nispruh Spandan, training him with strict rules and discipline. Enlightened yogis and saints frequently visited their home for Satsang. At a young age, Nispruh Spandan left home to find a Guru, stayed at many holy places including the Himalayas and Puri, and eventually found Madan Mohanji Sahay.",
+        content: "Shree Aghorinath-Shobharam was a government servant and family man, blessed with many Siddhis by his Guru. He was the father and first Guru of Paramahamsa Shri Swami Nispruh Spandan, training him with strict rules and discipline. Enlightened yogis and saints frequently visited their home for Satsang. At a young age, Nispruh Spandan left home to find a Guru, stayed at many holy places including the Himalayas and Puri, and eventually found Madan Mohanji Sahay.",
       },
     ],
   },
@@ -143,7 +143,7 @@ const GURU_PARAMPARA = [
     subsections: [
       {
         title: "Paramahansa Yogananda – Autobiography of a Yogi",
-        content: "As guided by Babaji, Sri Yukteswara Giri met a boy named Mukunda at the Kumbha Mela in Allahabad in 1894, who later became the renowned Paramahansa Yogananda. Born January 5, 1893, in Gorakhpur, India, Yogananda taught meditation and Kriyayog to millions in India and the USA. His book Autobiography of a Yogi sold over four million copies and was listed by HarperSan Francisco as one of the \"100 best spiritual books of the 20th Century.\" He attained Nirvana on March 7, 1952.",
+        content: "Born January 5, 1893, in Gorakhpur, India, Yogananda taught meditation and Kriyayog to millions in India and the USA. His book Autobiography of a Yogi sold over four million copies and was listed by HarperSan Francisco as one of the \"100 best spiritual books of the 20th Century.\" He attained Nirvana on March 7, 1952.",
       },
     ],
   },// ... rest of GURU_PARAMPARA array
@@ -189,7 +189,7 @@ export default function AboutKriyaYogaPage() {
             >
               About
               <br />
-              <span className="text-[var(--pista-green)]">Kriya Yoga</span>
+              <span className="text-[var(--pista-green)]">Kriyayog</span>
             </motion.h1>
             <motion.p variants={FADE_UP}
               className="text-[1.05rem] leading-[1.85] text-[#5a5a5a] max-w-[52ch]">
@@ -202,7 +202,7 @@ export default function AboutKriyaYogaPage() {
         </div>
       </section>
 
-      {/* ── What is Kriya Yoga ────────────────────────────────────── */}
+      {/* ── What is Kriyayog ────────────────────────────────────── */}
       <section
         id="what-is"
         aria-labelledby="what-is-heading"
@@ -227,10 +227,10 @@ export default function AboutKriyaYogaPage() {
                 variants={FADE_UP}
                 className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-8"
               >
-                What is Kriya Yoga?
+                What is Kriyayog?
               </motion.h2>
               {[
-                'The word Kriya means \u201caction with awareness.\u201d Kriya Yoga is a precise set of inner techniques \u2014 primarily breath-based \u2014 that work directly with the spine and the life-force to still the mind and awaken self-awareness.',
+                'The word Kriya means \u201caction with awareness.\u201d Kriyayog is a precise set of inner techniques \u2014 primarily breath-based \u2014 that work directly with the spine and the life-force to still the mind and awaken self-awareness.',
                 "Unlike philosophy or belief, Kriya is entirely practical. It asks no faith in doctrine, only a willingness to sit quietly, breathe consciously, and observe honestly. The transformation that follows is the natural consequence of the practice itself.",
                 "Carried through the lineage of Mahavatar Babaji, Lahiri Mahasaya, Sri Yukteswar Giri, and Paramahansa Yogananda, these teachings have guided sincere seekers for centuries. They remain as alive today as they were in the Himalayan solitude where they were first transmitted.",
               ].map((para, i) => (
@@ -252,9 +252,9 @@ export default function AboutKriyaYogaPage() {
               <div className="absolute -inset-3 rounded-[2rem] border border-[var(--pista-green)]/10 pointer-events-none" aria-hidden="true" />
               <div className="relative overflow-hidden rounded-[1.5rem] aspect-square">
                 <img
-                  src="/images/practices/kriya-meditation-about.png"
-                  alt="Kriya Yoga meditation practice"
-                  className="w-full h-full object-cover"
+                  src="/images/practices/kriya-meditation-about-new2.png"
+                  alt="Kriyayog meditation practice"
+                  className="w-full h-full object-contain object-center"
                 />
               </div>
             </motion.div>
@@ -285,7 +285,7 @@ export default function AboutKriyaYogaPage() {
               id="how-heading"
               className="text-[clamp(1.7rem,3.5vw,2.4rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)]"
             >
-              How Kriya Yoga
+              How Kriyayog
               <br />
               <span className="text-[var(--pista-green)]">actually works</span>
             </h2>
@@ -417,7 +417,7 @@ export default function AboutKriyaYogaPage() {
               <span className="text-[var(--pista-green)]">An unbroken chain</span>
             </h2>
             <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)] mt-6">
-              The teachings of Kriya Yoga have been transmitted through an unbroken lineage of enlightened masters. Each master received the sacred techniques and passed them forward to sincere seekers, preserving the authenticity and power of this ancient science.
+              The teachings of Kriyayog have been transmitted through an unbroken lineage of enlightened masters. Each master received the sacred techniques and passed them forward to sincere seekers, preserving the authenticity and power of this ancient science.
             </p>
           </motion.div>
 
@@ -432,14 +432,14 @@ export default function AboutKriyaYogaPage() {
               <motion.div
                 key={name}
                 variants={FADE_UP}
-                className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Banarasilal Saraf" || name === "Mahavatar Babaji" || name === "Shamacharan Lahiri (Lahiri Mahasaya)" || name === "Sri Yukteswara Giri" || name === "Sathyananda Giri" || name === "Pahadi Baba (Shree Hariharanandji)" || name === "Madan Mohanji Sahay" || name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
+                className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Banarasilal Saraf" || name === "Mahavatar Babaji" || name === "Shamacharan Lahiri (Lahiri Mahasaya)" || name === "Sri Yukteswara Giri" || name === "Sathyananda Giri" || name === "Pahadi Baba (Shree Hariharanandji)" || name === "Madan Mohanji Sahay" || name === "Paramahansa Yogananda – Autobiography of a Yogi" || name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
               >
                 {idx === 0 && (
                   <div className="relative">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/krishna_image.png"
-                      alt="Lord Krishna - Avatar of Vishnu, transmitter of Kriya Yoga"
+                      alt="Lord Krishna - Avatar of Vishnu, transmitter of Kriyayog"
                       width={300}
                       height={400}
                       className="relative w-80 h-auto rounded-xl shadow-lg"
@@ -465,7 +465,7 @@ export default function AboutKriyaYogaPage() {
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Lahiri_Mahashay_300x400.png"
-                      alt="Shamacharan Lahiri (Lahiri Mahasaya) - Transmitter of Kriya Yoga"
+                      alt="Shamacharan Lahiri (Lahiri Mahasaya) - Transmitter of Kriyayog"
                       width={300}
                       height={400}
                       className="relative w-72 h-auto rounded-xl shadow-lg"
@@ -531,6 +531,19 @@ export default function AboutKriyaYogaPage() {
                     <Image
                       src="/images/gurus/Banarasilal_Saraf_BW.png"
                       alt="Sri Banarasilal Saraf (Tauji) - Spiritual guide and mentor"
+                      width={300}
+                      height={400}
+                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      priority
+                    />
+                  </div>
+                )}
+                {name === "Paramahansa Yogananda – Autobiography of a Yogi" && (
+                  <div className="relative">
+                    <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
+                    <Image
+                      src="/images/gurus/Front-Cover-Autobiography-of-Yogi.png.webp"
+                      alt="Autobiography of a Yogi cover"
                       width={300}
                       height={400}
                       className="relative w-72 h-auto rounded-xl shadow-lg"

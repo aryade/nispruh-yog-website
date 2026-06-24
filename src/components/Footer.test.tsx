@@ -20,10 +20,10 @@ describe("Footer", () => {
 
   it("renders social media links", () => {
     render(<Footer />);
-    expect(screen.getByLabelText("YouTube")).toBeInTheDocument();
-    expect(screen.getByLabelText("Instagram")).toBeInTheDocument();
-    expect(screen.getByLabelText("Facebook")).toBeInTheDocument();
-    expect(screen.getByLabelText("X / Twitter")).toBeInTheDocument();
+    expect(screen.getByLabelText(/follow us on youtube/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/follow us on instagram/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/follow us on facebook/i)).toBeInTheDocument();
+    expect(screen.getByLabelText(/follow us on x \/ twitter/i)).toBeInTheDocument();
   });
 
   it("renders explore section with navigation links", () => {
@@ -75,13 +75,13 @@ describe("Footer", () => {
   it("renders social icons with proper styling", () => {
     render(<Footer />);
     const socialLinks = [
-      screen.getByLabelText("YouTube"),
-      screen.getByLabelText("Instagram"),
-      screen.getByLabelText("Facebook"),
-      screen.getByLabelText("X / Twitter"),
+      screen.getByLabelText(/follow us on youtube/i),
+      screen.getByLabelText(/follow us on instagram/i),
+      screen.getByLabelText(/follow us on facebook/i),
+      screen.getByLabelText(/follow us on x \/ twitter/i),
     ];
     socialLinks.forEach((link) => {
-      expect(link).toHaveClass("w-9", "h-9", "rounded-full");
+      expect(link).toHaveClass("w-10", "h-10", "rounded-full");
     });
   });
 
