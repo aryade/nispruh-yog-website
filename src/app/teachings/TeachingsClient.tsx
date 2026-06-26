@@ -96,6 +96,15 @@ const ARTICLES = [
     image: "/images/events/47.png",
   },
   {
+    category: "Philosophy",
+    readTime: "9 min read",
+    title: "From Indulgence to Understanding",
+    excerpt:
+      "Life's Quietest Journey — a teaching on the search for wholeness, detachment, and the transformation from endless outer pursuits to peace within.",
+    href: "/teachings/indulgence-to-understanding",
+    image: "/images/events/48.png",
+  },
+  {
     category: "Daily Practice",
     readTime: "4 min read",
     title: "Morning Practice: A Simple Framework for Sincere Beginners",
