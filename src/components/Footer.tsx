@@ -90,7 +90,8 @@ export default function Footer() {
               alt=""
               width={40}
               height={40}
-              className="h-10 w-auto"
+              style={{ width: 'auto', height: 'auto' }}
+              className="h-10"
               priority
             />
             <span className="text-white font-semibold tracking-wide text-[0.95rem]">Nispruh Yog</span>
@@ -113,7 +114,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   aria-label={`Follow us on ${label}`}
                   style={{ color: "#ffffff" }}
-                  className="w-10 h-10 rounded-full flex items-center justify-center bg-[var(--pista-green)]/25 border-2 border-[var(--pista-green)]/70 hover:border-[var(--pista-green)] hover:bg-[var(--pista-green)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
+                  className="w-11 h-11 rounded-full flex items-center justify-center bg-[var(--pista-green)]/25 border-2 border-[var(--pista-green)]/70 hover:border-[var(--pista-green)] hover:bg-[var(--pista-green)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                   whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -140,7 +141,7 @@ export default function Footer() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="text-[0.88rem] text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                  className="block text-[0.88rem] text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-3 py-2.5 -mx-3 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline min-h-[2.5rem] flex items-center"
                 >
                   {label}
                 </Link>
@@ -164,7 +165,7 @@ export default function Footer() {
             <li>
               <a
                 href="tel:+358465710507"
-                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                className="block text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-3 py-2.5 -mx-3 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline min-h-[2.5rem] flex items-center"
               >
                 +358 (46) 571 0507
               </a>
@@ -172,7 +173,7 @@ export default function Footer() {
             <li>
               <a
                 href="mailto:info@nispruhyog.com"
-                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                className="block text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-3 py-2.5 -mx-3 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline min-h-[2.5rem] flex items-center"
               >
                 info@nispruhyog.com
               </a>
@@ -180,7 +181,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/contact"
-                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                className="block text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-3 py-2.5 -mx-3 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline min-h-[2.5rem] flex items-center"
               >
                 Send a message
               </Link>
@@ -188,7 +189,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/courses-programs"
-                className="text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-2 py-1 -mx-2 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline"
+                className="block text-[var(--text-muted)] hover:text-white hover:bg-[rgba(201,162,39,0.08)] px-3 py-2.5 -mx-3 rounded-sm transition-all duration-200 focus-visible:outline-none focus-visible:underline min-h-[2.5rem] flex items-center"
               >
                 Join a course
               </Link>

@@ -80,7 +80,8 @@ export default function Navbar() {
               alt=""
               width={40}
               height={40}
-              className="h-10 w-auto transition-transform duration-700 group-hover:scale-110"
+              style={{ width: 'auto', height: 'auto' }}
+              className="h-10 transition-transform duration-700 group-hover:scale-110"
               priority
             />
           </Link>
@@ -127,7 +128,7 @@ export default function Navbar() {
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
             onClick={() => setMenuOpen((v) => !v)}
-            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)]"
+            className="lg:hidden flex flex-col justify-center items-center w-11 h-11 gap-1.5 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)]"
           >
             <motion.span
               className="block h-px w-5 bg-[var(--text-heading)] dark:bg-[var(--c-heading)] origin-center"
