@@ -20,7 +20,7 @@ export function Hero() {
   return (
     <section
       aria-label="Welcome to Nispruh Yog"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-5 sm:px-8"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-5 sm:px-8 pb-24 sm:pb-0"
     >
       {/* Background gradient — layered radial washes, no harsh edges */}
       <motion.div

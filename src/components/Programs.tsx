@@ -158,7 +158,7 @@ export default function Programs() {
                 {/* CTA */}
                 <Link
                   href={cta.href}
-                  className="inline-flex items-center gap-2 self-start text-[0.85rem] font-medium rounded-full px-5 py-2.5 border transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                  className="inline-flex items-center gap-2 self-start text-[0.85rem] font-medium rounded-full px-5 py-3 border transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 min-h-[2.5rem]"
                   style={
                     {
                       color: accent,

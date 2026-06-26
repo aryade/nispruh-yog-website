@@ -338,18 +338,20 @@ export default function BlogClient() {
 
                   <div className="flex flex-col flex-1 p-6">
                     {/* Meta */}
-                    <div className="flex flex-wrap items-center gap-2 mb-4">
+                    <div className="flex items-center justify-between gap-2 mb-4">
                       <span
                         className="text-[0.65rem] uppercase tracking-[0.14em] font-semibold px-2 py-0.5 rounded-full"
                         style={{ color: TAG_COLOUR[post.tag], background: `${TAG_COLOUR[post.tag]}14` }}
                       >
                         {post.tag}
                       </span>
-                      <span className="text-[0.7rem] text-[var(--text-muted)]/60">{post.readTime} read</span>
-                      <span className="text-[0.7rem] text-[var(--text-muted)]/60">&middot;</span>
-                      <time dateTime={post.dateISO} className="text-[0.7rem] text-[var(--text-muted)]/60">
-                        {post.date}
-                      </time>
+                      <div className="flex items-center gap-1 text-[0.7rem] text-[var(--text-muted)]/60">
+                        <span>{post.readTime} read</span>
+                        <span>&middot;</span>
+                        <time dateTime={post.dateISO}>
+                          {post.date}
+                        </time>
+                      </div>
                     </div>
 
                     {/* Title */}

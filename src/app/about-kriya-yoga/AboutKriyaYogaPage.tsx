@@ -435,131 +435,131 @@ export default function AboutKriyaYogaPage() {
                 className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Banarasilal Saraf" || name === "Mahavatar Babaji" || name === "Shamacharan Lahiri (Lahiri Mahasaya)" || name === "Sri Yukteswara Giri" || name === "Sathyananda Giri" || name === "Pahadi Baba (Shree Hariharanandji)" || name === "Madan Mohanji Sahay" || name === "Paramahansa Yogananda – Autobiography of a Yogi" || name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
               >
                 {idx === 0 && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/krishna_image.png"
                       alt="Lord Krishna - Avatar of Vishnu, transmitter of Kriyayog"
-                      width={300}
-                      height={400}
-                      className="relative w-80 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Mahavatar Babaji" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Mahaavatar_Babaji_300x400.png"
                       alt="Mahavatar Babaji - Supreme Guru of all Yogis"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Shamacharan Lahiri (Lahiri Mahasaya)" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Lahiri_Mahashay_300x400.png"
                       alt="Shamacharan Lahiri (Lahiri Mahasaya) - Transmitter of Kriyayog"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Sri Yukteswara Giri" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Yukteshwar_Giri_ji_300x400.png"
                       alt="Sri Yukteswara Giri - Guru of Paramahansa Yogananda"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Sathyananda Giri" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Satyanandji_300x400.png"
                       alt="Sathyananda Giri - Direct disciple of Sri Yukteswar Giri"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Pahadi Baba (Shree Hariharanandji)" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/PahadiBaba_Hariharanand_300x400.png"
                       alt="Pahadi Baba (Shree Hariharanandji) - Enlightened Kriyayogi"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Madan Mohanji Sahay" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Madan_Mohanji_Sahay_300x400.png"
                       alt="Madan Mohanji Sahay - Guru of Swami Nispruh Spandan"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Tauji – Banarasilal Saraf" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Banarasilal_Saraf_BW.png"
                       alt="Sri Banarasilal Saraf (Tauji) - Spiritual guide and mentor"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Paramahansa Yogananda – Autobiography of a Yogi" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Front-Cover-Autobiography-of-Yogi.png.webp"
                       alt="Autobiography of a Yogi cover"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>
                 )}
                 {name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)" && (
-                  <div className="relative">
+                  <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Guru_300x400.png"
                       alt="Shree Aghorinath-Shobharam (Hariom Wale Babaji) - Father and first Guru of Swami Nispruh Spandan"
-                      width={300}
-                      height={400}
-                      className="relative w-72 h-auto rounded-xl shadow-lg"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="relative rounded-xl shadow-lg"
                       priority
                     />
                   </div>

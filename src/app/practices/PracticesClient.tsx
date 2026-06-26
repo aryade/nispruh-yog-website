@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import Link from "next/link";
 import { motion, type Variants } from "framer-motion";
 
@@ -278,6 +278,10 @@ const LEVEL_COLOUR: Record<string, string> = {
 export default function PracticesClient() {
   const [selectedLevel, setSelectedLevel] = useState<string>("All");
 
+  const handleLevelChange = useCallback((level: string) => {
+    setSelectedLevel(level);
+  }, []);
+
   const filteredPractices = selectedLevel === "All"
     ? PRACTICES
     : PRACTICES.filter(p => p.level === selectedLevel);
@@ -339,9 +343,14 @@ export default function PracticesClient() {
           <nav aria-label="Filter practices by level" className="flex gap-1.5 overflow-x-auto py-4 scrollbar-none">
             {LEVELS.map((lvl) => (
               <button
-                key={lvl}
+                key={`level-${lvl}`}
                 type="button"
-                onClick={() => setSelectedLevel(lvl)}
+                data-level={lvl}
+                onClick={(e) => {
+                  const level = (e.currentTarget as HTMLButtonElement).getAttribute('data-level') || 'All';
+                  console.log('Button clicked, setting level to:', level);
+                  setSelectedLevel(level);
+                }}
                 className={`shrink-0 px-4 py-1.5 rounded-full text-[0.78rem] font-medium tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50 ${
                   selectedLevel === lvl
                     ? "bg-[var(--pista-green)] text-white"
@@ -396,9 +405,9 @@ export default function PracticesClient() {
             )}
 
             {/* Practices list */}
-            {filteredPractices.map(({ level, duration, type, title, description, steps, icon }) => (
+            {filteredPractices.map(({ level, duration, type, title, description, steps, href, icon }) => (
               <motion.div key={title} variants={FADE_UP}>
-                <div className="group rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_8px_32px_rgba(31,42,68,0.07)] transition-shadow duration-300">
+                <Link href={href} className="block group rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_8px_32px_rgba(31,42,68,0.07)] transition-shadow duration-300">
                   <div className="p-7 sm:p-8">
                     {/* Meta row */}
                     <div className="flex flex-wrap items-center gap-3 mb-5">
@@ -450,7 +459,7 @@ export default function PracticesClient() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
