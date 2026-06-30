@@ -1,0 +1,52 @@
+# Robots.txt for Nispruh Yog
+# Directs search engine crawlers to index the site efficiently
+# Best Practice: Allow all legitimate content, disallow only private/admin areas
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Disallow private/admin areas (create these if they exist)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+
+# Disallow specific file types
+Disallow: *.json$
+Disallow: *.xml$
+
+# Specify sitemap location
+# This tells search engines where to find your sitemap
+Sitemap: https://nispruhyog.com/sitemap.xml
+
+# Crawl delay (in seconds)
+# Prevents server overload from aggressive crawling
+# Average: 0.5-1 second between requests
+Crawl-delay: 1
+
+# Request rate
+Request-rate: 30/1m
+
+# Google-specific optimizations
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Bing-specific
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots known for spam
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+User-agent: SemrushBot-BA
+User-agent: SemrushBot-BLH
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

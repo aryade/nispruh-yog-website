@@ -88,10 +88,10 @@ export default function Footer() {
             <Image
               src="/images/logo_A_tnsp.png"
               alt=""
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               style={{ width: 'auto', height: 'auto' }}
-              className="h-10"
+              className="h-[100px]"
               priority
             />
             <span className="text-white font-semibold tracking-wide text-[0.95rem]">Nispruh Yog</span>

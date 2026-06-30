@@ -78,10 +78,10 @@ export default function Navbar() {
             <Image
               src="/images/logo_A_tnsp.png"
               alt=""
-              width={40}
-              height={40}
+              width={100}
+              height={100}
               style={{ width: 'auto', height: 'auto' }}
-              className="h-10 transition-transform duration-700 group-hover:scale-110"
+              className="h-[100px] transition-transform duration-700 group-hover:scale-110"
               priority
             />
           </Link>

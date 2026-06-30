@@ -26,6 +26,42 @@ const ARTICLES = [
   {
     category: "Philosophy",
     readTime: "8 min read",
+    title: "The Divine Call: Awakening to Your True Nature",
+    excerpt:
+      "A message on remembering your eternal relationship with the Divine, piercing the veil of Maya, and the sacred promise of Kriya practice.",
+    href: "/teachings/divine-call-awakening",
+    image: "/images/events/50.png",
+  },
+  {
+    category: "Philosophy",
+    readTime: "7 min read",
+    title: "Can Destiny Be Changed? The Power of Austerity and Devotion",
+    excerpt:
+      "Yes, destiny can be transformed through tapas (austerity) and bhajan (devotion). Learn how to reshape your fate and find lasting happiness through surrender.",
+    href: "/teachings/changing-destiny",
+    image: "/images/events/51.png",
+  },
+  {
+    category: "Lineage",
+    readTime: "10 min read",
+    title: "The Complete Puranic Story of Sage Rishyashringa",
+    excerpt:
+      "A remarkable tale of austerity, celibacy, and innocence—how one sage's righteousness blessed an entire kingdom and made possible the birth of Lord Rama.",
+    href: "/teachings/rishyashringa",
+    image: "/images/events/55.png",
+  },
+  {
+    category: "Philosophy",
+    readTime: "8 min read",
+    title: "The Mistake Is Not Outside—It Lies in Inner Desire",
+    excerpt:
+      "Part 1 — On taking responsibility for our expectations, releasing blame, and changing how we perceive the world instead of trying to change others.",
+    href: "/teachings/mistake-not-outside",
+    image: "/images/events/52.png",
+  },
+  {
+    category: "Philosophy",
+    readTime: "8 min read",
     title: "The Shadow of Prejudice: Finding Peace Beyond the Judgment of Others",
     excerpt:
       "When judgment veils your true nature, spiritual maturity is not about changing others—it is about resting in your own inner freedom.",
