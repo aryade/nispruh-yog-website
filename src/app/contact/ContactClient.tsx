@@ -46,8 +46,8 @@ const DETAILS = [
   },
   {
     label: "Phone – India",
-    value: "+91 99756 90339",
-    href: "tel:+919975690339",
+    value: "+919975060537",
+    href: "tel:+919975060537",
     icon: (
       <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4"
         strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5" aria-hidden="true">
@@ -57,8 +57,8 @@ const DETAILS = [
   },
   {
     label: "Phone – Finland",
-    value: "+358 46 571 0507",
-    href: "tel:+35846571507",
+    value: "+358452342133",
+    href: "tel:+358452342133",
     icon: (
       <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="1.4"
         strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5" aria-hidden="true">
