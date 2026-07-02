@@ -87,7 +87,11 @@ const DETAILS = [
 ];
 
 /* ── component ────────────────────────────────────────────────────── */
-export default function ContactClient() {
+interface ContactClientProps {
+  searchParams?: Record<string, string | string[] | undefined>;
+}
+
+export default function ContactClient({ searchParams }: ContactClientProps) {
   return (
     <div className="bg-[var(--bg-primary)]">
 
@@ -127,7 +131,7 @@ export default function ContactClient() {
       {/* ── Main content ───────────────────────────────────────── */}
       <section aria-label="Contact details and form" className="py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_480px] gap-16 lg:gap-20 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_520px] gap-16 lg:gap-20 items-start">
 
             {/* ── Left column ──────────────────────────────────── */}
             <motion.div
@@ -230,7 +234,7 @@ export default function ContactClient() {
                 We&apos;d love to hear from you
               </h2>
 
-              <ContactForm />
+              <ContactForm searchParams={searchParams} />
 
               <p className="mt-5 text-center text-[0.78rem] text-[var(--text-muted)]/60">
                 No push. No urgency. Just an open door.

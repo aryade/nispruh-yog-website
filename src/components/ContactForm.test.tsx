@@ -137,4 +137,51 @@ describe("ContactForm", () => {
 
     expect(button).toBeDisabled();
   });
+
+  it("displays prefilled interest field when program param is provided", async () => {
+    render(<ContactForm searchParams={{ program: "meditation" }} />);
+
+    await waitFor(() => {
+      const interestInput = screen.getByDisplayValue(/meditation/i) as HTMLInputElement;
+      expect(interestInput).toBeInTheDocument();
+      expect(interestInput).toBeDisabled();
+    });
+  });
+
+  it("displays prefilled interest field when event param is provided", async () => {
+    render(<ContactForm searchParams={{ event: "spring-retreat-2026" }} />);
+
+    await waitFor(() => {
+      const interestInput = screen.getByDisplayValue(/spring retreat 2026/i) as HTMLInputElement;
+      expect(interestInput).toBeInTheDocument();
+      expect(interestInput).toBeDisabled();
+    });
+  });
+
+  it("includes subject in form submission when provided", async () => {
+    const user = userEvent.setup();
+    (global.fetch as any).mockResolvedValueOnce({
+      ok: true,
+      json: async () => ({}),
+    });
+
+    render(<ContactForm searchParams={{ event: "kriya-course-august" }} />);
+
+    // Wait for useEffect to set the subject
+    await new Promise(resolve => setTimeout(resolve, 100));
+
+    await user.type(screen.getByLabelText(/name/i), "John Doe");
+    await user.type(screen.getByLabelText(/email/i), "john@example.com");
+    await user.type(screen.getByLabelText(/message/i), "I'm interested");
+    await user.click(screen.getByRole("button", { name: /send request/i }));
+
+    await waitFor(() => {
+      expect(global.fetch).toHaveBeenCalledWith(
+        "/api/contact",
+        expect.objectContaining({
+          body: expect.stringContaining('"subject":"Kriya Course August"'),
+        })
+      );
+    });
+  });
 });

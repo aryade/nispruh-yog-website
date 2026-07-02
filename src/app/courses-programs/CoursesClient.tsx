@@ -557,7 +557,7 @@ export default function CoursesClient() {
             className="max-w-[48ch] mb-12"
           >
             <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
-              Coming soon
+              Special intensive programs
             </p>
             <h2
               id="featured-heading"

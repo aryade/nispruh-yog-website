@@ -1,17 +1,37 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useState, useEffect } from "react";
 
 type ResponseState = {
   status: "idle" | "loading" | "success" | "error";
   message?: string;
 };
 
-export function ContactForm() {
+interface ContactFormProps {
+  searchParams?: Record<string, string | string[] | undefined>;
+}
+
+export function ContactForm({ searchParams }: ContactFormProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
   const [response, setResponse] = useState<ResponseState>({ status: "idle" });
+
+  useEffect(() => {
+    if (searchParams) {
+      const program = searchParams.program;
+      const event = searchParams.event;
+      const prefill = event || program;
+
+      if (prefill) {
+        const formatted = typeof prefill === "string"
+          ? prefill.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")
+          : "";
+        setSubject(formatted);
+      }
+    }
+  }, [searchParams]);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -27,7 +47,7 @@ export function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({ name, email, message, subject: subject || undefined }),
       });
 
       if (!res.ok) {
@@ -39,6 +59,7 @@ export function ContactForm() {
       setName("");
       setEmail("");
       setMessage("");
+      setSubject("");
     } catch (error) {
       setResponse({ status: "error", message: (error as Error).message });
     }
@@ -46,6 +67,12 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="contact-form" aria-label="Contact form">
+      {subject && (
+        <label>
+          Interest
+          <input type="text" value={subject} disabled className="disabled" />
+        </label>
+      )}
       <label>
         Name
         <input value={name} onChange={(event) => setName(event.target.value)} required />

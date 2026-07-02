@@ -26,6 +26,15 @@ const ARTICLES = [
   {
     category: "Philosophy",
     readTime: "8 min read",
+    title: "The Scholar's Thirst and the False Accusation",
+    excerpt:
+      "A Puranic teaching on character, virtue, and the dangers of false morality. Learn why the company you keep shapes the fragrance you carry into the world.",
+    href: "/teachings/scholars-thirst-false-accusation",
+    image: "/images/events/49.png",
+  },
+  {
+    category: "Philosophy",
+    readTime: "8 min read",
     title: "The Divine Call: Awakening to Your True Nature",
     excerpt:
       "A message on remembering your eternal relationship with the Divine, piercing the veil of Maya, and the sacred promise of Kriya practice.",
@@ -85,6 +94,15 @@ const ARTICLES = [
       "The Kriya lineage is not a historical record — it is a living current. This teaching traces the unbroken thread from Babaji through Lahiri Mahasaya to the present day.",
     href: "/teachings/lineage",
     image: "/images/events/37.png",
+  },
+  {
+    category: "Lineage",
+    readTime: "14 min read",
+    title: "Mandodari's Untold Life: The Queen of Lanka, the Daughter of a Sage, the Wife of a Demon",
+    excerpt:
+      "The story of the Queen of Lanka—a woman of wisdom who lived among demons, loved a flawed man, and embodied dharma through suffering and grace.",
+    href: "/teachings/mandodaris-untold-life",
+    image: "/images/events/56.png",
   },
   {
     category: "Meditation",

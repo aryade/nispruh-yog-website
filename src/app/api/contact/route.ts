@@ -2,8 +2,9 @@ import { Resend } from "resend";
 
 export async function POST(request: Request) {
   try {
-    const { name, email, message } = await request.json();
+    const { name, email, message, subject } = await request.json();
     const resend = new Resend(process.env.RESEND_API_KEY);
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@nispruhyog.com";
 
     if (!name || !email || !message) {
       return Response.json(
@@ -14,7 +15,7 @@ export async function POST(request: Request) {
 
     // Send email to info@nispruhyog.com with the inquiry
     const adminEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: fromEmail,
       to: "info@nispruhyog.com",
       subject: `New Contact Form Inquiry from ${name}`,
       html: `
@@ -22,6 +23,7 @@ export async function POST(request: Request) {
           <h2>New Contact Form Inquiry</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
+          ${subject ? `<p><strong>Interest/Program:</strong> ${subject}</p>` : ""}
           <p><strong>Message:</strong></p>
           <p style="white-space: pre-wrap; background: #f5f5f5; padding: 12px; border-radius: 4px;">
             ${message}
@@ -51,6 +53,7 @@ export async function POST(request: Request) {
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333;">
           <p>Dear ${name},</p>
           <p>Thank you for reaching out to us. We have received your message and appreciate you taking the time to contact Nispruh Yog.</p>
+          ${subject ? `<p><strong>Interest:</strong> ${subject}</p>` : ""}
           <p>We will review your inquiry carefully and respond within 2-3 working days from a calm place.</p>
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
           <p style="font-size: 12px; color: #666;">

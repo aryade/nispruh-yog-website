@@ -32,7 +32,12 @@ export const metadata: Metadata = {
   }),
 };
 
-export default function ContactPage() {
+interface ContactPageProps {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}
+
+export default async function ContactPage({ searchParams }: ContactPageProps) {
+  const params = await searchParams;
   const schemaData = getWebPageSchema({
     title: "Contact Nispruh Yog",
     description: "Get in touch with us for questions about Kriya Yoga courses, retreats, and programs.",
@@ -42,7 +47,7 @@ export default function ContactPage() {
   return (
     <>
       <StructuredData data={schemaData} />
-      <ContactClient />
+      <ContactClient searchParams={params} />
     </>
   );
 }
