@@ -15,6 +15,11 @@ const QUICK_LINKS = [
   { label: "Contact", href: "/contact" },
 ];
 
+const LEGAL_LINKS = [
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms & Conditions", href: "/terms" },
+];
+
 const SOCIAL_LINKS = [
   {
     label: "YouTube",
@@ -201,11 +206,24 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/[0.06] mx-5 sm:mx-8">
-        <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-3 py-6 text-[0.78rem] text-[var(--text-muted)]/80">
-          <p>© {new Date().getFullYear()} Nispruh Yog · All rights reserved</p>
-          <p className="text-center">
-            Crafted with stillness &middot; Guided by inner light
-          </p>
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 py-6">
+            <p className="text-[0.78rem] text-[var(--text-muted)]/80">© {new Date().getFullYear()} Nispruh Yog · All rights reserved</p>
+            <div className="flex gap-4 text-[0.78rem]">
+              {LEGAL_LINKS.map(({ label, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="text-[var(--text-muted)]/80 hover:text-white transition-colors focus-visible:outline-none focus-visible:underline"
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+            <p className="text-[0.78rem] text-[var(--text-muted)]/80">
+              Crafted with stillness &middot; Guided by inner light
+            </p>
+          </div>
         </div>
       </div>
     </footer>

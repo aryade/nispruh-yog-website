@@ -53,15 +53,6 @@ export const metadata: Metadata = {
     ],
   },
 
-  // SEO: Twitter Card tags optimize appearance when shared on Twitter/X
-  twitter: {
-    card: "summary_large_image",
-    title: "Nispruh Yog – A Quiet Practice",
-    description: "A sacred space for sincere seekers practicing Kriya Yoga meditation.",
-    images: [`${SITE_URL}/images/twitter-image.png`],
-    creator: "@nispruhyog",
-    site: "@nispruhyog",
-  },
 
   // SEO: Meta robots controls indexing behavior
   robots: {

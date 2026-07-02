@@ -1,5 +1,16 @@
 import { Resend } from "resend";
 
+function escapeHtml(text: string): string {
+  const map: Record<string, string> = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;",
+  };
+  return text.replace(/[&<>"']/g, (char) => map[char]);
+}
+
 export async function POST(request: Request) {
   try {
     const { name, email, message, subject } = await request.json();
@@ -13,20 +24,25 @@ export async function POST(request: Request) {
       );
     }
 
+    const escapedName = escapeHtml(name);
+    const escapedEmail = escapeHtml(email);
+    const escapedMessage = escapeHtml(message);
+    const escapedSubject = subject ? escapeHtml(subject) : "";
+
     // Send email to info@nispruhyog.com with the inquiry
     const adminEmailResponse = await resend.emails.send({
       from: fromEmail,
       to: "info@nispruhyog.com",
-      subject: `New Contact Form Inquiry from ${name}`,
+      subject: `New Contact Form Inquiry from ${escapedName}`,
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333;">
           <h2>New Contact Form Inquiry</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          ${subject ? `<p><strong>Interest/Program:</strong> ${subject}</p>` : ""}
+          <p><strong>Name:</strong> ${escapedName}</p>
+          <p><strong>Email:</strong> ${escapedEmail}</p>
+          ${escapedSubject ? `<p><strong>Interest/Program:</strong> ${escapedSubject}</p>` : ""}
           <p><strong>Message:</strong></p>
           <p style="white-space: pre-wrap; background: #f5f5f5; padding: 12px; border-radius: 4px;">
-            ${message}
+            ${escapedMessage}
           </p>
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
           <p style="font-size: 12px; color: #666;">
@@ -47,19 +63,19 @@ export async function POST(request: Request) {
     // Send confirmation email to the user
     const userEmailResponse = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: email,
+      to: escapedEmail,
       subject: "Thank you for reaching out to Nispruh Yog",
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333;">
-          <p>Dear ${name},</p>
+          <p>Dear ${escapedName},</p>
           <p>Thank you for reaching out to us. We have received your message and appreciate you taking the time to contact Nispruh Yog.</p>
-          ${subject ? `<p><strong>Interest:</strong> ${subject}</p>` : ""}
+          ${escapedSubject ? `<p><strong>Interest:</strong> ${escapedSubject}</p>` : ""}
           <p>We will review your inquiry carefully and respond within 2-3 working days from a calm place.</p>
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
           <p style="font-size: 12px; color: #666;">
             <strong>Your message:</strong><br/>
             <span style="white-space: pre-wrap; background: #f5f5f5; padding: 12px; border-radius: 4px; display: block;">
-              ${message}
+              ${escapedMessage}
             </span>
           </p>
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
