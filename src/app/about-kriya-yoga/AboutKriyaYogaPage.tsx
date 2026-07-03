@@ -251,9 +251,10 @@ export default function AboutKriyaYogaPage() {
             >
               <div className="absolute -inset-3 rounded-[2rem] border border-[var(--pista-green)]/10 pointer-events-none" aria-hidden="true" />
               <div className="relative overflow-hidden rounded-[1.5rem] aspect-square">
-                <img
+                <Image
                   src="/images/practices/kriya-meditation-about-new2.png"
                   alt="Kriyayog meditation practice"
+                  fill
                   className="w-full h-full object-contain object-center"
                 />
               </div>

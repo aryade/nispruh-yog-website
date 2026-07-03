@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 const FADE_UP: Variants = {
@@ -116,9 +117,10 @@ export default function WhatIsKriyaYoga() {
 
             {/* Image */}
             <div className="relative overflow-hidden rounded-[1.5rem] aspect-[4/5]">
-              <img
+              <Image
                 src="/images/practices/kriya-meditation-new.png"
                 alt="Kriyayog meditation practice"
+                fill
                 className="w-full h-full object-contain object-center"
               />
             </div>

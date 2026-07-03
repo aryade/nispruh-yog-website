@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 /* ── animation variants ───────────────────────────────────────────── */
@@ -273,11 +274,11 @@ export default function BlogClient() {
 
               {/* Image */}
               <div className="relative hidden lg:block min-h-[280px] bg-[#f7f4ee] overflow-hidden">
-                <img
+                <Image
                   src={FEATURED.image}
                   alt={FEATURED.title}
+                  fill
                   className="absolute inset-0 h-full w-full object-cover object-center"
-                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(255,255,255,0.85)] via-[rgba(255,255,255,0.25)] to-transparent" />
               </div>
@@ -326,11 +327,11 @@ export default function BlogClient() {
                 >
                   {/* Thumbnail */}
                   <div className="h-44 relative overflow-hidden">
-                    <img
+                    <Image
                       src={post.image}
                       alt={post.title}
+                      fill
                       className="absolute inset-0 h-full w-full object-cover object-center"
-                      loading="lazy"
                     />
                     <div className="absolute inset-0"
                       style={{ background: `radial-gradient(ellipse at 40% 40%, ${TAG_COLOUR[post.tag]}18 0%, transparent 65%)` }} />

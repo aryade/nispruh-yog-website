@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { motion, type Variants } from "framer-motion";
 
@@ -102,7 +103,7 @@ const ARTICLES = [
     excerpt:
       "The story of the Queen of Lanka—a woman of wisdom who lived among demons, loved a flawed man, and embodied dharma through suffering and grace.",
     href: "/teachings/mandodaris-untold-life",
-    image: "/images/events/56.png",
+    image: "/images/events/46.png",
   },
   {
     category: "Meditation",
@@ -310,9 +311,10 @@ export default function TeachingsClient() {
                     className="group flex flex-col h-full rounded-2xl border border-[var(--border-soft)]/60 bg-white overflow-hidden hover:shadow-[0_10px_36px_rgba(31,42,68,0.08)] transition-shadow duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                   >
                     <div className="h-44 bg-gradient-to-br from-[#e8e4dc] to-[#d4cfc7] flex items-center justify-center relative overflow-hidden">
-                      <img
+                      <Image
                         src={image}
                         alt={title}
+                        fill
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
