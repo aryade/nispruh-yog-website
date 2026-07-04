@@ -12,7 +12,7 @@ interface Location {
 }
 
 const LOCATIONS: Location[] = [
-  { name: "Nashik", lat: 19.9975, lng: 73.7898, phone: "+91 99756 90339", country: "India" },
+  { name: "Nashik", lat: 19.9975, lng: 73.7898, phone: "+919975631901", country: "India" },
   { name: "Jyväskylä", lat: 62.2329, lng: 25.7482, phone: "+358 46 571 0507", country: "Finland" },
   { name: "Tampere", lat: 61.4978, lng: 23.7609, phone: "+358 46 524 2629", country: "Finland" },
   { name: "Helsinki/Espoo", lat: 60.2054, lng: 24.6519, phone: "+358 46 571 0507", country: "Finland" },

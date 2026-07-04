@@ -116,7 +116,7 @@ To encounter Swamiji is to encounter that entire stream — offered freely, with
 Online Kriyayog meditation runs every **Thursday and Sunday**. In-person courses are held regularly across Finland and India, open to all levels — from complete beginners to experienced practitioners.
 
 📧 info@nispruhyog.com
-📞 +358 46 571 0507 (Finland) | +91 99756 90339 (India)
+📞 +358 46 571 0507 (Finland) | +919975631901 (India)
 
 ---
 
