@@ -70,7 +70,7 @@ export default function AboutTeacher() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5, duration: 0.55, ease: [0.22, 1, 0.36, 1] as const }}
               viewport={{ once: true }}
-              className="absolute left-1/2 -translate-x-1/2 top-full mt-4 sm:left-auto sm:translate-x-0 sm:top-8 sm:-right-8 sm:mt-0 z-20 bg-[var(--text-heading)] text-white rounded-2xl px-5 py-4 shadow-[0_8px_32px_rgba(31,42,68,0.18)]"
+              className="absolute left-1/2 -translate-x-1/2 top-full -mt-2 sm:left-auto sm:translate-x-0 sm:top-8 sm:-right-8 sm:mt-0 z-20 bg-[var(--text-heading)] text-white rounded-2xl px-5 py-4 shadow-[0_8px_32px_rgba(31,42,68,0.18)]"
             >
               <p className="text-[1.6rem] font-semibold leading-none">30+</p>
               <p className="text-[0.7rem] uppercase tracking-[0.14em] text-white/60 mt-1 font-medium">
