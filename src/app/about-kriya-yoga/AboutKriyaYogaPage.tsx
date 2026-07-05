@@ -618,7 +618,7 @@ export default function AboutKriyaYogaPage() {
       <section
         id="begin"
         aria-labelledby="about-cta-heading"
-        className="py-24 bg-[var(--text-heading)] border-t border-white/[0.06]"
+        className="py-24 bg-[#2D2A4A] dark:bg-[#25222E] border-t border-white/[0.06]"
       >
         <div className="mx-auto max-w-3xl px-5 sm:px-8 text-center">
 

@@ -467,7 +467,7 @@ export default function PracticesClient() {
       </section>
 
       {/* ── Not yet initiated note ─────────────────────────────── */}
-      <section className="py-20 bg-[var(--text-heading)] border-t border-white/[0.06]">
+      <section className="py-20 bg-[#2D2A4A] dark:bg-[#25222E] border-t border-white/[0.06]">
         <div className="mx-auto max-w-3xl px-5 sm:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 14 }}
