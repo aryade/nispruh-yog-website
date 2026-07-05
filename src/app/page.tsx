@@ -7,6 +7,7 @@
  */
 
 import { Hero } from "../components/Hero";
+import { UpcomingEventBanner } from "../components/UpcomingEventBanner";
 import WhatIsKriyaYoga from "../components/WhatIsKriyaYoga";
 import Benefits from "../components/Benefits";
 import Programs from "../components/Programs";
@@ -21,6 +22,9 @@ export default function HomePage() {
     <>
       {/* 1 · Full-screen entry point */}
       <Hero />
+
+      {/* 1.5 · Featured upcoming event */}
+      <UpcomingEventBanner />
 
       {/* 2 · Orient the curious visitor */}
       <WhatIsKriyaYoga />

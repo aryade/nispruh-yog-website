@@ -15,7 +15,7 @@ export async function POST(request: Request) {
   try {
     const { name, email, message, subject } = await request.json();
     const resend = new Resend(process.env.RESEND_API_KEY);
-    const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@nispruhyog.com";
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev";
 
     if (!name || !email || !message) {
       return Response.json(
@@ -62,7 +62,7 @@ export async function POST(request: Request) {
 
     // Send confirmation email to the user
     const userEmailResponse = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: fromEmail,
       to: escapedEmail,
       subject: "Thank you for reaching out to Nispruh Yog",
       html: `

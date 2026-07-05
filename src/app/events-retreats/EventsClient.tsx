@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
 /* ── animation variants ───────────────────────────────────────────── */
@@ -38,6 +39,9 @@ interface Event {
   highlights: string[];
   cta: { label: string; href: string };
   past?: boolean;
+  image?: string;          // Image path
+  isUpcoming?: boolean;    // Show "Upcoming" badge
+  accentColor?: string;    // Custom accent color override
 }
 
 /* ── data ─────────────────────────────────────────────────────────── */
@@ -49,6 +53,32 @@ const TYPE_COLOUR: Record<EventType, string> = {
 };
 
 const EVENTS: Event[] = [
+  {
+    id: "guru-purnima-utsav-2026",
+    type: "Satsang",
+    title: "Guru Purnima Utsav 2026",
+    subtitle: "A sacred celebration with Nispruhyog Kriyayog Parivar",
+    dateLabel: "29 July 2026",
+    dateISO: "2026-07-29",
+    location: "Nashik",
+    locationDetail: "Eka One Life Community Hall, Pathardi Gaon Circle",
+    duration: "Full day · 10:00 AM – 4:00 PM",
+    spotsLeft: null,
+    spotsTotal: 0,
+    price: "Free · Dana welcome",
+    description:
+      "Join the Nispruhyog Kriyayog Parivar for a sacred celebration of Guru Purnima — a day to honour the lineage of gurus and the transmission of wisdom. Together we will gather in community, engage in practice, and celebrate the light of guidance that illuminates the path.",
+    highlights: [
+      "Wear white or yellow clothes",
+      "Contact: +91 9975060537",
+      "Contact: +91 9975560613",
+      "Community celebration of the guru principle",
+    ],
+    cta: { label: "Get more info", href: "/contact?event=guru-purnima-utsav-2026" },
+    image: "/images/events/guru-purnima-details.jpg",
+    isUpcoming: true,
+    accentColor: "#D4920A",
+  },
   {
     id: "spring-retreat-2026",
     type: "Retreat",
@@ -352,7 +382,7 @@ function SpotsBar({ left, total }: { left: number; total: number }) {
 }
 
 function EventCard({ event, variants }: { event: Event; variants: Variants }) {
-  const accent = TYPE_COLOUR[event.type];
+  const accent = event.accentColor || TYPE_COLOUR[event.type];
   const isOpen = !event.past;
 
   return (
@@ -369,11 +399,25 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
       {/* Accent stripe */}
       <div className="h-[3px]" style={{ background: accent }} aria-hidden="true" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-[1fr_220px]">
+      {/* Image (if present) */}
+      {event.image && (
+        <div className="relative w-full h-72 sm:h-80 md:h-96 bg-[var(--border-soft)]/20">
+          <Image
+            src={event.image}
+            alt={event.title}
+            width={800}
+            height={1000}
+            className="w-full h-full object-cover object-center"
+            priority={event.isUpcoming}
+          />
+        </div>
+      )}
+
+      <div className={event.image ? "grid grid-cols-1 lg:grid-cols-[1fr_220px]" : "grid grid-cols-1 lg:grid-cols-[1fr_220px]"}>
 
         {/* ── Main content ─────────────────────────────────────── */}
         <div className="p-7 sm:p-8">
-          {/* Type + past badge */}
+          {/* Type + badges */}
           <div className="flex flex-wrap items-center gap-2.5 mb-5">
             <span
               className="text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-2.5 py-1 rounded-full"
@@ -381,6 +425,12 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
             >
               {event.type}
             </span>
+            {event.isUpcoming && (
+              <span className="text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-2.5 py-1 rounded-full text-white"
+                style={{ background: accent }}>
+                Upcoming
+              </span>
+            )}
             {event.past && (
               <span className="text-[0.65rem] uppercase tracking-[0.16em] font-semibold px-2.5 py-1 rounded-full text-[var(--text-muted)] bg-[var(--border-soft)]/40">
                 Past event

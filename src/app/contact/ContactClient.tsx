@@ -131,7 +131,7 @@ export default function ContactClient({ searchParams }: ContactClientProps) {
       {/* ── Main content ───────────────────────────────────────── */}
       <section aria-label="Contact details and form" className="py-20">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_520px] gap-16 lg:gap-20 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
             {/* ── Left column ──────────────────────────────────── */}
             <motion.div
@@ -225,7 +225,7 @@ export default function ContactClient({ searchParams }: ContactClientProps) {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] as const }}
               viewport={{ once: true, margin: "-60px" }}
-              className="rounded-2xl border border-[var(--border-soft)]/60 bg-white p-8 sm:p-10 shadow-[0_8px_48px_rgba(31,42,68,0.06)]"
+              className="rounded-2xl border border-[var(--border-soft)]/60 bg-white p-8 sm:p-10 shadow-[0_8px_48px_rgba(31,42,68,0.06)] max-w-md lg:max-w-none"
             >
               <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-2">
                 Send a message
