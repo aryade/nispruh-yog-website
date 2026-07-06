@@ -86,7 +86,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth dark">
       <head>
         {/* SEO: Organization Schema - helps search engines understand business structure */}
         <StructuredData data={getOrganizationSchema()} />

@@ -526,7 +526,7 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
           {/* CTA */}
           <Link
             href={event.cta.href}
-            className="inline-flex items-center justify-center gap-2 w-full px-5 py-3.5 rounded-full text-[0.85rem] font-medium text-white transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 group"
+            className={`inline-flex items-center justify-center gap-2 w-full px-5 py-3.5 rounded-full text-[0.85rem] font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 group ${event.type === "Retreat" ? "text-white dark:text-[#121018] dark:font-semibold" : "text-white"}`}
             style={{ background: isOpen ? accent : "#a0a0a0" }}
             aria-disabled={!isOpen}
             onMouseEnter={(e) => {
@@ -602,7 +602,7 @@ export default function EventsClient() {
               <motion.span
                 key={type}
                 variants={FADE_UP}
-                className="flex items-center gap-2.5 text-[0.78rem] text-[var(--text-muted)] bg-white border border-[var(--border-soft)]/60 rounded-full px-3.5 py-1.5"
+                className="flex items-center gap-2.5 text-[0.78rem] text-[var(--text-muted)] dark:text-[var(--c-heading)] bg-white dark:bg-[var(--bg-secondary)] border border-[var(--border-soft)]/60 dark:border-[var(--border-soft)]/90 rounded-full px-3.5 py-1.5"
               >
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ background: color }} aria-hidden="true" />
                 {type}

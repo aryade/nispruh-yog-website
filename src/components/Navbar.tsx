@@ -101,9 +101,9 @@ export default function Navbar() {
                   key={href}
                   href={href}
                   className={[
-                    "relative px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)]",
+                    "relative isolate px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)]",
                     active
-                      ? "text-[var(--text-heading)] dark:text-[var(--c-heading)]"
+                      ? "text-[var(--text-heading)] dark:text-[#121018] dark:font-semibold"
                       : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)] hover:bg-[rgba(147,197,114,0.08)] dark:hover:bg-[rgba(168,217,135,0.06)]",
                   ].join(" ")}
                 >
@@ -111,7 +111,7 @@ export default function Navbar() {
                   {active && (
                     <motion.span
                       layoutId="nav-pill"
-                      className="absolute inset-0 rounded-full bg-gradient-to-r from-[rgba(147,197,114,0.2)] to-[rgba(147,197,114,0.08)] dark:from-[rgba(168,217,135,0.15)] dark:to-[rgba(168,217,135,0.05)]"
+                      className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-[rgba(147,197,114,0.2)] to-[rgba(147,197,114,0.08)] dark:from-[rgba(168,217,135,0.9)] dark:to-[rgba(152,204,120,0.85)] dark:ring-1 dark:ring-[rgba(168,217,135,0.95)]"
                       transition={{ type: "spring", stiffness: 340, damping: 36 }}
                     />
                   )}
@@ -198,7 +198,7 @@ export default function Navbar() {
                         className={[
                           "block py-3 text-base font-medium tracking-wide border-b border-[rgba(232,224,235,0.4)] dark:border-[rgba(58,53,64,0.4)] transition-colors duration-200 focus-visible:outline-none",
                           active
-                            ? "text-[var(--text-heading)]"
+                            ? "text-[var(--text-heading)] dark:text-[#121018] bg-[rgba(168,217,135,0.08)] dark:bg-[rgba(168,217,135,0.85)] rounded-md px-3 font-semibold"
                             : "text-[var(--text-muted)] hover:text-[var(--text-heading)] dark:text-[var(--text-muted)] dark:hover:text-[var(--c-heading)]",
                         ].join(" ")}
                       >

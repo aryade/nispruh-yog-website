@@ -54,12 +54,9 @@ describe("Navbar", () => {
     expect(aboutLink).toHaveAttribute("href", "/about-kriya-yoga");
   });
 
-  it("renders theme toggle button", () => {
+  it("renders dark mode indicator", () => {
     render(<Navbar />);
-    const themeButton = screen.getByRole("button", {
-      name: /switch to (light|dark) mode/i,
-    });
-    expect(themeButton).toBeInTheDocument();
+    expect(screen.getByLabelText(/dark mode enabled/i)).toBeInTheDocument();
   });
 
   it("is sticky and fixed to top", () => {

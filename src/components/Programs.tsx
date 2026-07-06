@@ -113,7 +113,7 @@ export default function Programs() {
             <motion.article
               key={title}
               variants={CARD}
-              className="group relative flex flex-col rounded-2xl border border-[var(--border-soft)]/60 bg-gradient-to-br from-white/80 to-[var(--bg-secondary)]/50 overflow-hidden transition-all duration-300 hover:shadow-[0_16px_48px_rgba(147,197,114,0.12)] hover:from-white hover:to-[var(--bg-secondary)]/60"
+              className="group relative flex flex-col rounded-2xl border border-[var(--border-soft)]/60 bg-gradient-to-br from-white/80 to-[var(--bg-secondary)]/50 dark:from-[rgba(37,34,46,0.96)] dark:to-[rgba(42,37,48,0.92)] overflow-hidden transition-all duration-300 hover:shadow-[0_16px_48px_rgba(147,197,114,0.12)] hover:from-white hover:to-[var(--bg-secondary)]/60 dark:hover:from-[rgba(46,42,56,0.98)] dark:hover:to-[rgba(50,45,60,0.94)]"
               aria-labelledby={`prog-${title.replace(/\s+/g, "-").toLowerCase()}`}
             >
               {/* Top accent stripe */}

@@ -312,7 +312,7 @@ export default function CoursesClient() {
                 key={id}
                 variants={FADE_UP}
                 href={`#${id}`}
-                className="flex items-center gap-3 rounded-xl border border-[var(--border-soft)]/60 bg-white px-4 py-3.5 text-[0.82rem] font-medium text-[var(--text-heading)] hover:border-[var(--pista-green)]/40 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
+                className="flex items-center gap-3 rounded-xl border border-[var(--border-soft)]/60 bg-white dark:bg-[var(--bg-secondary)]/80 px-4 py-3.5 text-[0.82rem] font-medium text-[var(--text-heading)] dark:text-[var(--c-heading)] hover:border-[var(--pista-green)]/40 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
               >
                 <span className="w-2 h-2 rounded-full shrink-0" style={{ background: accent }} aria-hidden="true" />
                 {title}
@@ -351,7 +351,7 @@ export default function CoursesClient() {
               {/* Top accent stripe */}
               <div className="h-[3px]" style={{ background: accent }} aria-hidden="true" />
 
-              <div className="bg-white grid grid-cols-1 lg:grid-cols-[1fr_300px]">
+              <div className="bg-white dark:bg-[var(--bg-secondary)]/84 grid grid-cols-1 lg:grid-cols-[1fr_300px]">
 
                 {/* Left — main content */}
                 <div className="p-8 sm:p-10">
@@ -372,7 +372,7 @@ export default function CoursesClient() {
                         >
                           {tag}
                         </span>
-                        <span className="text-[0.75rem] text-[var(--text-muted)]/70">{format}</span>
+                        <span className="text-[0.75rem] text-[var(--text-muted)]/70 dark:text-[var(--text-muted)]/90">{format}</span>
                       </div>
                       <h2
                         id={`course-${id}-title`}
@@ -380,23 +380,23 @@ export default function CoursesClient() {
                       >
                         {title}
                       </h2>
-                      <p className="text-[0.88rem] text-[var(--text-muted)] mt-1">{subtitle}</p>
+                      <p className="text-[0.88rem] text-[var(--text-muted)] dark:text-[var(--text-muted)]/95 mt-1">{subtitle}</p>
                     </div>
                   </div>
 
                   {/* Description */}
-                  <p className="text-[0.95rem] leading-[1.82] text-[#5a5a5a] mb-8 max-w-[60ch]">
+                  <p className="text-[0.95rem] leading-[1.82] text-[var(--text-primary)] dark:text-[var(--text-primary)] mb-8 max-w-[60ch]">
                     {description}
                   </p>
 
                   {/* What's included */}
                   <div className="mb-6">
-                    <p className="text-[0.72rem] uppercase tracking-[0.16em] font-semibold text-[var(--text-heading)]/50 mb-3">
+                    <p className="text-[0.72rem] uppercase tracking-[0.16em] font-semibold text-[var(--text-heading)]/50 dark:text-[var(--c-heading)]/80 mb-3">
                       What&apos;s included
                     </p>
                     <ul role="list" className="grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6">
                       {includes.map((item) => (
-                        <li key={item} className="flex items-start gap-2.5 text-[0.85rem] text-[var(--text-muted)]">
+                        <li key={item} className="flex items-start gap-2.5 text-[0.85rem] text-[var(--text-muted)] dark:text-[var(--text-primary)]/95">
                           <span
                             className="mt-[0.35rem] w-1.5 h-1.5 rounded-full shrink-0"
                             style={{ background: accent }}
@@ -409,15 +409,15 @@ export default function CoursesClient() {
                   </div>
 
                   {/* Suitable for */}
-                  <p className="text-[0.82rem] text-[var(--text-muted)] italic">
-                    <span className="font-medium not-italic text-[var(--text-heading)]/70">Suitable for: </span>
+                  <p className="text-[0.82rem] text-[var(--text-muted)] dark:text-[var(--text-primary)]/90 italic">
+                    <span className="font-medium not-italic text-[var(--text-heading)]/70 dark:text-[var(--c-heading)]/90">Suitable for: </span>
                     {suitable}
                   </p>
                 </div>
 
                 {/* Right — details + CTA */}
                 <div
-                  className="flex flex-col justify-between p-8 border-t lg:border-t-0 lg:border-l border-[var(--border-soft)]/40"
+                  className="flex flex-col justify-between p-8 border-t lg:border-t-0 lg:border-l border-[var(--border-soft)]/40 dark:border-[var(--border-soft)]/60"
                   style={{ background: `${accent}07` }}
                 >
                   {/* Detail rows */}
@@ -429,10 +429,10 @@ export default function CoursesClient() {
                       { label: "Investment", value: price },
                     ].map(({ label, value }) => (
                       <div key={label}>
-                        <dt className="text-[0.68rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 mb-0.5">
+                        <dt className="text-[0.68rem] uppercase tracking-[0.14em] font-semibold text-[var(--text-muted)]/60 dark:text-[var(--text-muted)]/85 mb-0.5">
                           {label}
                         </dt>
-                        <dd className="text-[0.9rem] font-medium text-[var(--text-heading)]">{value}</dd>
+                        <dd className="text-[0.9rem] font-medium text-[var(--text-heading)] dark:text-[var(--c-heading)]">{value}</dd>
                       </div>
                     ))}
                   </dl>
@@ -440,7 +440,7 @@ export default function CoursesClient() {
                   {/* CTA */}
                   <Link
                     href={cta.href}
-                    className="inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-full text-[0.88rem] font-medium text-white transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 group"
+                    className={`inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-full text-[0.88rem] font-medium transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 group ${id === "retreats" ? "text-white dark:text-[var(--bg-primary)]" : "text-white"}`}
                     style={{ background: accent }}
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLElement).style.filter = "brightness(0.88)";
