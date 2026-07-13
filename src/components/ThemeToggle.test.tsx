@@ -1,16 +1,35 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 import { ThemeToggle } from "./ThemeToggle";
 
 describe("ThemeToggle", () => {
-  it("renders a dark mode indicator", () => {
-    render(<ThemeToggle />);
-    const indicator = screen.getByLabelText(/dark mode enabled/i);
-    expect(indicator).toBeInTheDocument();
+  beforeEach(() => {
+    localStorage.clear();
+    document.documentElement.classList.remove("dark");
   });
 
-  it("has proper accessibility label", () => {
+  it("renders an accessible toggle button", () => {
     render(<ThemeToggle />);
-    expect(screen.getByLabelText(/dark mode enabled/i)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /switch to dark mode/i })).toBeInTheDocument();
+  });
+
+  it("applies dark mode when clicked", async () => {
+    const user = userEvent.setup();
+    render(<ThemeToggle />);
+
+    const toggle = screen.getByRole("button", { name: /switch to dark mode/i });
+    await user.click(toggle);
+
+    expect(document.documentElement.classList.contains("dark")).toBe(true);
+    expect(screen.getByRole("button", { name: /switch to light mode/i })).toBeInTheDocument();
+  });
+
+  it("loads saved theme preference", () => {
+    localStorage.setItem("theme", "dark");
+    render(<ThemeToggle />);
+
+    expect(document.documentElement.classList.contains("dark")).toBe(true);
+    expect(screen.getByRole("button", { name: /switch to light mode/i })).toBeInTheDocument();
   });
 });
