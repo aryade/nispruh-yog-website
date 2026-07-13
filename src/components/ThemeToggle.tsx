@@ -47,8 +47,17 @@ export function ThemeToggle() {
           strokeLinejoin="round"
           className="w-4 h-4"
           aria-hidden="true"
+          data-testid="theme-icon-sun"
         >
-          <path d="M17.5 12.5A7.5 7.5 0 0 1 7.5 2.5a7.5 7.5 0 1 0 10 10z" />
+          <circle cx="10" cy="10" r="3.5" />
+          <path d="M10 1.75v2" />
+          <path d="M10 16.25v2" />
+          <path d="M1.75 10h2" />
+          <path d="M16.25 10h2" />
+          <path d="M4.17 4.17l1.42 1.42" />
+          <path d="M14.41 14.41l1.42 1.42" />
+          <path d="M14.41 5.59l1.42-1.42" />
+          <path d="M4.17 15.83l1.42-1.42" />
         </svg>
       ) : (
         <svg
@@ -60,16 +69,9 @@ export function ThemeToggle() {
           strokeLinejoin="round"
           className="w-4 h-4"
           aria-hidden="true"
+          data-testid="theme-icon-moon"
         >
-          <circle cx="10" cy="10" r="3.5" />
-          <path d="M10 1.75v2" />
-          <path d="M10 16.25v2" />
-          <path d="M1.75 10h2" />
-          <path d="M16.25 10h2" />
-          <path d="M4.17 4.17l1.42 1.42" />
-          <path d="M14.41 14.41l1.42 1.42" />
-          <path d="M14.41 5.59l1.42-1.42" />
-          <path d="M4.17 15.83l1.42-1.42" />
+          <path d="M17.5 12.5A7.5 7.5 0 0 1 7.5 2.5a7.5 7.5 0 1 0 10 10z" />
         </svg>
       )}
     </button>

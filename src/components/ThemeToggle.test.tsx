@@ -12,6 +12,7 @@ describe("ThemeToggle", () => {
   it("renders an accessible toggle button", () => {
     render(<ThemeToggle />);
     expect(screen.getByRole("button", { name: /switch to dark mode/i })).toBeInTheDocument();
+    expect(screen.getByTestId("theme-icon-moon")).toBeInTheDocument();
   });
 
   it("applies dark mode when clicked", async () => {
@@ -23,6 +24,7 @@ describe("ThemeToggle", () => {
 
     expect(document.documentElement.classList.contains("dark")).toBe(true);
     expect(screen.getByRole("button", { name: /switch to light mode/i })).toBeInTheDocument();
+    expect(screen.getByTestId("theme-icon-sun")).toBeInTheDocument();
   });
 
   it("loads saved theme preference", () => {
@@ -31,5 +33,6 @@ describe("ThemeToggle", () => {
 
     expect(document.documentElement.classList.contains("dark")).toBe(true);
     expect(screen.getByRole("button", { name: /switch to light mode/i })).toBeInTheDocument();
+    expect(screen.getByTestId("theme-icon-sun")).toBeInTheDocument();
   });
 });
