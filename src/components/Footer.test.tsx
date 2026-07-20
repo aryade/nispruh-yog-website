@@ -12,7 +12,7 @@ describe("Footer", () => {
 
   it("displays brand name and mission statement", () => {
     render(<Footer />);
-    expect(screen.getByText("Nispruh Yog")).toBeInTheDocument();
+    expect(screen.getByText("Nispruhyog")).toBeInTheDocument();
     expect(
       screen.getByText(/quiet space for sincere seekers/i)
     ).toBeInTheDocument();

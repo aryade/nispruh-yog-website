@@ -11,7 +11,7 @@ const STEPS = [
   {
     number: "02",
     title: "Seeker",
-    body: "The question deepens. You explore teachings, attend a class, and begin a gentle sitting practice. The search becomes sincere.",
+    body: "The question deepens. You explore teachings, attend a class and begin a gentle sitting practice. The search becomes sincere.",
   },
   {
     number: "03",

@@ -90,11 +90,11 @@ export default function Footer() {
               className="h-[100px]"
               priority
             />
-            <span className="text-white font-semibold tracking-wide text-[0.95rem]">Nispruh Yog</span>
+            <span className="text-white font-semibold tracking-wide text-[0.95rem]">Nispruhyog</span>
           </div>
           <p className="text-[0.9rem] leading-[1.75] text-[var(--text-muted)] max-w-[32ch]">
             A quiet space for sincere seekers. Rooted in the ancient science of
-            Kriyayog — awakening through breath, stillness, and self-inquiry.
+            Kriyayog — awakening through breath, stillness and self-inquiry.
           </p>
           {/* Social icons */}
           <div className="mt-8">
@@ -208,7 +208,7 @@ export default function Footer() {
       <div className="border-t border-white/[0.06] mx-5 sm:mx-8">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 py-6">
-            <p className="text-[0.78rem] text-[var(--text-muted)]/80">© {new Date().getFullYear()} Nispruh Yog · All rights reserved</p>
+            <p className="text-[0.78rem] text-[var(--text-muted)]/80">© {new Date().getFullYear()} Nispruhyog · All rights reserved</p>
             <div className="flex gap-4 text-[0.78rem]">
               {LEGAL_LINKS.map(({ label, href }) => (
                 <Link

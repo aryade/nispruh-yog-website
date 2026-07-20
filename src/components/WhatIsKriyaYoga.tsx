@@ -75,7 +75,7 @@ export default function WhatIsKriyaYoga() {
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-10"
             >
-              Kriyayog is a living meditation tradition woven by breath, attention, and simple devotion. It is not a product, but an invitation into yourself. Repeat quiet practice and hold awareness with tenderness. Allow small shifts to settle into your daily rhythm.
+              Kriyayog is a living meditation tradition woven by breath, attention and simple devotion. It is not a product, but an invitation into yourself. Repeat quiet practice and hold awareness with tenderness. Allow small shifts to settle into your daily rhythm.
             </motion.p>
 
             {/* Learn more link */}
@@ -118,8 +118,8 @@ export default function WhatIsKriyaYoga() {
             {/* Image */}
             <div className="relative overflow-hidden rounded-[1.5rem] aspect-[4/5]">
               <Image
-                src="/images/practices/kriya-meditation-new.png"
-                alt="Kriyayog meditation practice"
+                src="/images/teacher/WhatsApp%20Image%202026-07-15%20at%2012.51.28.jpeg"
+                alt="Paramahamsa Swami Shri Nispruh Spandanji portrait"
                 fill
                 className="w-full h-full object-contain object-center"
               />

@@ -14,8 +14,8 @@ vi.mock("next/navigation", () => ({
 describe("Navbar", () => {
   it("renders logo with accessible brand link", () => {
     render(<Navbar />);
-    // Brand is a logo-only link; its accessible name comes from aria-label.
-    const brandLink = screen.getByRole("link", { name: /nispruh yog – home/i });
+    const brandLink = screen.getByRole("link", { name: /nispruhyog – home/i });
+    const brandLink = screen.getByRole("link", { name: /nispruhyog – home/i });
     expect(brandLink).toBeInTheDocument();
     expect(brandLink).toHaveAttribute("href", "/");
   });
@@ -66,8 +66,8 @@ describe("Navbar", () => {
   });
 
   it("has proper aria labels for accessibility", () => {
-    render(<Navbar />);
-    expect(screen.getByLabelText("Nispruh Yog – home")).toBeInTheDocument();
+    expect(screen.getByLabelText("Nispruhyog – home")).toBeInTheDocument();
+    expect(screen.getByLabelText("Nispruhyog – home")).toBeInTheDocument();
     expect(screen.getByLabelText("Primary")).toBeInTheDocument();
   });
 

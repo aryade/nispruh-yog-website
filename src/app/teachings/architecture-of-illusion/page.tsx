@@ -49,7 +49,7 @@ export default function ArchitectureOfIllusionPage() {
 
           <article className="prose prose-sm max-w-none text-[var(--text-body)] mt-12">
             <p>
-              Spiritual growth requires us to be acutely aware of where we invest our energy. One of the most subtle, draining, and spiritually displacing experiences a person can undergo is the encounter with narcissism.
+              Spiritual growth requires us to be acutely aware of where we invest our energy. One of the most subtle, draining and spiritually displacing experiences a person can undergo is the encounter with narcissism.
             </p>
 
             <p>
@@ -59,7 +59,7 @@ export default function ArchitectureOfIllusionPage() {
             <h2>Phase 1: The Mirage of the Perfect Mirror</h2>
 
             <p>
-              In the beginning, a narcissistic connection feels like a spiritual homecoming. They appear incredibly special, deeply caring, and profoundly understanding. They listen to your every word and make you feel uniquely seen.
+              In the beginning, a narcissistic connection feels like a spiritual homecoming. They appear incredibly special, deeply caring and profoundly understanding. They listen to your every word and make you feel uniquely seen.
             </p>
 
             <p>You will often hear phrases like:</p>
@@ -71,7 +71,7 @@ export default function ArchitectureOfIllusionPage() {
             </ul>
 
             <p>
-              Because human beings naturally long for deep connection, you believe them. Slowly, almost imperceptibly, they become your entire world. Your priorities shift, your friendships fade into the background, and your happiness becomes entirely dependent on their validation.
+              Because human beings naturally long for deep connection, you believe them. Slowly, almost imperceptibly, they become your entire world. Your priorities shift, your friendships fade into the background and your happiness becomes entirely dependent on their validation.
             </p>
 
             <p>
@@ -96,7 +96,7 @@ export default function ArchitectureOfIllusionPage() {
             <h2>Phase 3: The Erosion of Reality (Gaslighting)</h2>
 
             <p>
-              As your boundaries weaken, the behavior shifts from emotional distance to subtle emotional attacks. They will compliment you in one breath, and strike at your deepest insecurity in the next.
+              As your boundaries weaken, the behavior shifts from emotional distance to subtle emotional attacks. They will compliment you in one breath and strike at your deepest insecurity in the next.
             </p>
 
             <p>
@@ -110,7 +110,7 @@ export default function ArchitectureOfIllusionPage() {
             </blockquote>
 
             <p>
-              Slowly, you fall silent. You begin to doubt your own intuition, your own understanding, and your own emotions. You allow them to dictate your reality. What hurts you is normalized; your valid pain is labeled as “overthinking.”
+              Slowly, you fall silent. You begin to doubt your own intuition, your own understanding and your own emotions. You allow them to dictate your reality. What hurts you is normalized; your valid pain is labeled as “overthinking.”
             </p>
 
             <h3>The Narcissistic Loop</h3>
@@ -144,11 +144,11 @@ export default function ArchitectureOfIllusionPage() {
             </p>
 
             <p>
-              Your willingness to love, to forgive, and to see the good in others is a beautiful, pure quality. It was simply misdirected toward someone who used those virtues to bind you.
+              Your willingness to love, to forgive and to see the good in others is a beautiful, pure quality. It was simply misdirected toward someone who used those virtues to bind you.
             </p>
 
             <p>
-              Recognizing this pattern is the first step of your awakening. Reclaiming your reality, trusting your intuition, and pulling your energy back into your own being is where your true spiritual power is reborn.
+              Recognizing this pattern is the first step of your awakening. Reclaiming your reality, trusting your intuition and pulling your energy back into your own being is where your true spiritual power is reborn.
             </p>
           </article>
         </div>

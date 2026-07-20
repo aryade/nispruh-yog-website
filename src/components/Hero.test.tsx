@@ -5,7 +5,7 @@ import { Hero } from "./Hero";
 describe("Hero", () => {
   it("renders hero section", () => {
     render(<Hero />);
-    const section = screen.getByLabelText(/welcome to nispruh yog/i);
+      const section = screen.getByLabelText(/welcome to nispruhyog/i);
     expect(section).toBeInTheDocument();
   });
 
@@ -68,7 +68,7 @@ describe("Hero", () => {
 
   it("has full screen min-height", () => {
     render(<Hero />);
-    const section = screen.getByLabelText(/welcome to nispruh yog/i);
+      const section = screen.getByLabelText(/welcome to nispruhyog/i);
     expect(section).toHaveClass("min-h-screen");
   });
 });

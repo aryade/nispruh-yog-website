@@ -29,7 +29,7 @@ const ARTICLES = [
     readTime: "8 min read",
     title: "The Scholar's Thirst and the False Accusation",
     excerpt:
-      "A Puranic teaching on character, virtue, and the dangers of false morality. Learn why the company you keep shapes the fragrance you carry into the world.",
+      "A Puranic teaching on character, virtue and the dangers of false morality. Learn why the company you keep shapes the fragrance you carry into the world.",
     href: "/teachings/scholars-thirst-false-accusation",
     image: "/images/events/49.png",
   },
@@ -38,7 +38,7 @@ const ARTICLES = [
     readTime: "8 min read",
     title: "The Divine Call: Awakening to Your True Nature",
     excerpt:
-      "A message on remembering your eternal relationship with the Divine, piercing the veil of Maya, and the sacred promise of Kriya practice.",
+      "A message on remembering your eternal relationship with the Divine, piercing the veil of Maya and the sacred promise of Kriya practice.",
     href: "/teachings/divine-call-awakening",
     image: "/images/events/50.png",
   },
@@ -56,7 +56,7 @@ const ARTICLES = [
     readTime: "10 min read",
     title: "The Complete Puranic Story of Sage Rishyashringa",
     excerpt:
-      "A remarkable tale of austerity, celibacy, and innocence—how one sage's righteousness blessed an entire kingdom and made possible the birth of Lord Rama.",
+      "A remarkable tale of austerity, celibacy and innocence—how one sage's righteousness blessed an entire kingdom and made possible the birth of Lord Rama.",
     href: "/teachings/rishyashringa",
     image: "/images/events/55.png",
   },
@@ -65,7 +65,7 @@ const ARTICLES = [
     readTime: "8 min read",
     title: "The Mistake Is Not Outside—It Lies in Inner Desire",
     excerpt:
-      "Part 1 — On taking responsibility for our expectations, releasing blame, and changing how we perceive the world instead of trying to change others.",
+      "Part 1 — On taking responsibility for our expectations, releasing blame and changing how we perceive the world instead of trying to change others.",
     href: "/teachings/mistake-not-outside",
     image: "/images/events/52.png",
   },
@@ -92,7 +92,7 @@ const ARTICLES = [
     readTime: "8 min read",
     title: "Mahavatar Babaji and the Living Transmission",
     excerpt:
-      "The Kriya lineage is not a historical record — it is a living current. This teaching traces the unbroken thread from Babaji through Lahiri Mahasaya to the present day.",
+      "The Kriya lineage is not a historical record — it is a living current. This teaching traces the unbroken thread from Babaji through Shri Lahiri Mahasayaji to the present day.",
     href: "/teachings/lineage",
     image: "/images/events/37.png",
   },
@@ -101,14 +101,14 @@ const ARTICLES = [
     readTime: "14 min read",
     title: "Mandodari's Untold Life: The Queen of Lanka, the Daughter of a Sage, the Wife of a Demon",
     excerpt:
-      "The story of the Queen of Lanka—a woman of wisdom who lived among demons, loved a flawed man, and embodied dharma through suffering and grace.",
+      "The story of the Queen of Lanka—a woman of wisdom who lived among demons, loved a flawed man and embodied dharma through suffering and grace.",
     href: "/teachings/mandodaris-untold-life",
     image: "/images/events/46.png",
   },
   {
     category: "Meditation",
     readTime: "5 min read",
-    title: "How to Sit: Posture, Stillness, and Inner Alignment",
+    title: "How to Sit: Posture, Stillness and Inner Alignment",
     excerpt:
       "Before technique, there is posture. Before posture, there is intention. This practical guide addresses the most common obstacles beginners face when they first sit to meditate.",
     href: "/teachings/how-to-sit",
@@ -137,7 +137,7 @@ const ARTICLES = [
     readTime: "8 min read",
     title: "The Armor of Truth: Breaking the Cycle of Moral Twisting and Blame Shifting",
     excerpt:
-      "A teaching on the conscious mechanics of manipulation, and the spiritual path of reclaiming your power through honesty and boundary.",
+      "A teaching on the conscious mechanics of manipulation and the spiritual path of reclaiming your power through honesty and boundary.",
     href: "/teachings/armor-of-truth",
     image: "/images/events/46.png",
   },
@@ -146,7 +146,7 @@ const ARTICLES = [
     readTime: "7 min read",
     title: "The Sacred Confluence: The Sweetness of Giving and the Salt of Waiting",
     excerpt:
-      "A poetic teaching that uses the river and the ocean as spiritual mirrors for giving, waiting, and the depth of true love.",
+      "A poetic teaching that uses the river and the ocean as spiritual mirrors for giving, waiting and the depth of true love.",
     href: "/teachings/sacred-confluence",
     image: "/images/events/47.png",
   },
@@ -155,7 +155,7 @@ const ARTICLES = [
     readTime: "9 min read",
     title: "From Indulgence to Understanding",
     excerpt:
-      "Life's Quietest Journey — a teaching on the search for wholeness, detachment, and the transformation from endless outer pursuits to peace within.",
+      "Life's Quietest Journey — a teaching on the search for wholeness, detachment and the transformation from endless outer pursuits to peace within.",
     href: "/teachings/indulgence-to-understanding",
     image: "/images/events/48.png",
   },
@@ -164,7 +164,7 @@ const ARTICLES = [
     readTime: "4 min read",
     title: "Morning Practice: A Simple Framework for Sincere Beginners",
     excerpt:
-      "You do not need an hour. You do not need incense or silence or a perfect room. You need fifteen minutes, a straight spine, and honest attention. Here is where to start.",
+      "You do not need an hour. You do not need incense or silence or a perfect room. You need fifteen minutes, a straight spine and honest attention. Here is where to start.",
     href: "/teachings/morning-practice",
     image: "/images/events/40.png",
   },
@@ -256,7 +256,7 @@ export default function TeachingsClient() {
               Teachings
             </motion.h1>
             <motion.p variants={FADE_UP} className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[46ch]">
-              Direct guidance for those walking the path — on breath, posture, lineage, and the lived texture of sincere practice. Read slowly.
+              Direct guidance for those walking the path — on breath, posture, lineage and the lived texture of sincere practice. Read slowly.
               Return often.
             </motion.p>
           </motion.div>

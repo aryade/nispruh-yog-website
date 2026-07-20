@@ -4,9 +4,9 @@ import StructuredData from "@/components/StructuredData";
 import { getWebPageSchema, getOGMetadata, getTwitterMetadata, SITE_URL } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Contact Nispruh Yog | Get in Touch",
+  title: "Contact Nispruhyog | Get in Touch",
   description:
-    "Reach out to Nispruh Yog — for questions about courses, retreats, or simply to say hello. We respond mindfully. Contact us for more information about Kriya Yoga practice.",
+    "Reach out to Nispruhyog — for questions about courses, retreats, or simply to say hello. We respond mindfully. Contact us for more information about Kriya Yoga practice.",
   keywords: [
     "contact",
     "get in touch",
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     canonical: `${SITE_URL}/contact`,
   },
   openGraph: getOGMetadata({
-    title: "Contact Nispruh Yog",
+    title: "Contact Nispruhyog",
     description: "Get in touch for questions about courses, retreats, or Kriya Yoga practice.",
     type: "website",
     url: `${SITE_URL}/contact`,
     image: `${SITE_URL}/images/og-contact.png`,
   }),
   twitter: getTwitterMetadata({
-    title: "Contact Nispruh Yog",
+    title: "Contact Nispruhyog",
     description: "Reach out for more information about our programs.",
     image: `${SITE_URL}/images/twitter-contact.png`,
   }),
@@ -39,8 +39,8 @@ interface ContactPageProps {
 export default async function ContactPage({ searchParams }: ContactPageProps) {
   const params = await searchParams;
   const schemaData = getWebPageSchema({
-    title: "Contact Nispruh Yog",
-    description: "Get in touch with us for questions about Kriya Yoga courses, retreats, and programs.",
+    title: "Contact Nispruhyog",
+    description: "Get in touch with us for questions about Kriya Yoga courses, retreats and programs.",
     url: `${SITE_URL}/contact`,
   });
 

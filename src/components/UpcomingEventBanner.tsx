@@ -46,7 +46,7 @@ export function UpcomingEventBanner() {
               <br />
               We bow down to the feet of our beloved Guruji
               <br />
-              Shri Swami Nispruh Spandan.
+              Paramahamsa Swami Shri Nispruh Spandanji.
             </p>
 
             {/* Details row */}

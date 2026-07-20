@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Mistake Is Not Outside—It Lies in Inner Desire | Teachings",
   description:
-    "A teaching on taking responsibility for our own inner desires, expectations, and perceptions rather than blaming external circumstances.",
+    "A teaching on taking responsibility for our own inner desires, expectations and perceptions rather than blaming external circumstances.",
 };
 
 export default function MistakeNotOutsidePage() {
@@ -43,7 +43,7 @@ export default function MistakeNotOutsidePage() {
               The Mistake Is Not Outside—It Lies in Inner Desire
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              Part 1 — On taking responsibility for our expectations and the way we perceive the world. Based on the teachings of Swami Nispruha Spandan.
+              Part 1 — On taking responsibility for our expectations and the way we perceive the world. Based on the teachings of Paramahamsa Swami Shri Nispruh Spandanji.
             </p>
           </header>
 
@@ -63,11 +63,11 @@ export default function MistakeNotOutsidePage() {
             </p>
 
             <p>
-              One relationship ends, and another begins.
+              One relationship ends and another begins.
             </p>
 
             <p>
-              One desire is fulfilled, and ten new desires arise.
+              One desire is fulfilled and ten new desires arise.
             </p>
 
             <p>
@@ -218,7 +218,7 @@ export default function MistakeNotOutsidePage() {
             </p>
 
             <p className="italic">
-              — Swami Nispruha Spandan
+              — Paramahamsa Swami Shri Nispruh Spandanji
             </p>
           </article>
         </div>

@@ -4,8 +4,8 @@
  */
 
 export const SITE_URL = "https://nispruhyog.com"; // Update with your actual domain
-export const SITE_NAME = "Nispruh Yog";
-export const BRAND_NAME = "Nispruh Yog";
+export const SITE_NAME = "Nispruhyog";
+export const BRAND_NAME = "Nispruhyog";
 
 export interface SEOMetadata {
   title: string;
@@ -84,7 +84,7 @@ export function getOrganizationSchema() {
     alternateName: BRAND_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo_A_tnsp.png`,
-    description: "A sacred space for sincere seekers. Rooted in the ancient science of Kriyayog — a path of breath, awareness, and inner inquiry.",
+    description: "A sacred space for sincere seekers. Rooted in the ancient science of Kriyayog — a path of breath, awareness and inner inquiry.",
     sameAs: [
       "https://www.facebook.com/nispruhyog", // Update with your actual social URLs
       "https://www.instagram.com/nispruhyog",
@@ -274,7 +274,7 @@ export const SEO_KEYWORDS = {
  * Improves accessibility and image SEO
  */
 export const IMAGE_ALT_TEMPLATES = {
-  logo: "Nispruh Yog logo - sacred symbol",
+  logo: "Nispruhyog logo - sacred symbol",
   teacher: "Teacher leading meditation practice",
   meditation: "Person meditating in peaceful setting",
   breathwork: "Guide demonstrating pranayama breathing technique",

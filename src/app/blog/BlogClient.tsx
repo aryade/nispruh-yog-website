@@ -49,9 +49,9 @@ const POSTS: Post[] = [
     readTime: "8 min",
     date: "3 May 2026",
     dateISO: "2026-05-03",
-    title: "Who is Paramahamsa Shri Swami Nispruh Spandan?",
+    title: "Who is Paramahamsa Swami Shri Nispruh Spandanji?",
     excerpt:
-      "The life, journey, and teachings of the Kriya yogi guiding students in India and Finland since the early 2000s.",
+      "The life, journey and teachings of the Kriya yogi guiding students in India and Finland since the early 2000s.",
     featured: true,
     image: "/images/blog/55.png",
   },
@@ -85,7 +85,7 @@ const POSTS: Post[] = [
     dateISO: "2026-05-04",
     title: "1,200 Years of Kriyayog — The Guru Parampara Lineage Explained",
     excerpt:
-      "How an ancient science passed from Lord Krishna through the Himalayas, across continents, and into living rooms in Finland today.",
+      "How an ancient science passed from Lord Krishna through the Himalayas, across continents and into living rooms in Finland today.",
     image: "/images/blog/58.png",
   },
   {
@@ -160,9 +160,9 @@ const POSTS: Post[] = [
     readTime: "9 min",
     date: "22 December 2025",
     dateISO: "2025-12-22",
-    title: "Lahiri Mahasaya: The Householder Who Changed Everything",
+    title: "Shri Lahiri Mahasayaji: The Householder Who Changed Everything",
     excerpt:
-      "He worked as a clerk, raised children, and cooked food for his family. He also initiated thousands into Kriyayog. His life is a quiet argument against the idea that depth requires renunciation.",
+      "He worked as a clerk, raised children and cooked food for his family. He also initiated thousands into Kriyayog. His life is a quiet argument against the idea that depth requires renunciation.",
     image: "/images/blog/65.png",
   },
   {
@@ -213,7 +213,7 @@ export default function BlogClient() {
             </motion.h1>
             <motion.p variants={FADE_UP}
               className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[46ch]">
-              Short reflections on practice, quiet living, and the daily unfolding
+              Short reflections on practice, quiet living and the daily unfolding
               of awareness. Written when there is something simple and true to share
               — not on a content schedule.
             </motion.p>

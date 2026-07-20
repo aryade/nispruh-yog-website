@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Sacred Confluence: The Sweetness of Giving and the Salt of Waiting | Teachings",
   description:
-    "A poetic teaching on how rivers and oceans mirror love, surrender, waiting, and the depth of spiritual connection.",
+    "A poetic teaching on how rivers and oceans mirror love, surrender, waiting and the depth of spiritual connection.",
 };
 
 export default function SacredConfluencePage() {
@@ -43,17 +43,17 @@ export default function SacredConfluencePage() {
               The Sacred Confluence: The Sweetness of Giving and the Salt of Waiting
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              Based on the teachings of Paramahamsa Shri Swami Nispruh Spandan.
+              Based on the teachings of Paramahamsa Swami Shri Nispruh Spandanji.
             </p>
           </header>
 
           <article className="prose prose-sm max-w-none text-[var(--text-body)] mt-12">
             <p>
-              In the tapestry of existence, nature speaks to us in the language of profound spiritual truths. We often look at the rivers and the oceans as mere elements of geography, but through the eyes of deep spiritual awareness, they reveal the ultimate nature of love, sacrifice, and human connection.
+              In the tapestry of existence, nature speaks to us in the language of profound spiritual truths. We often look at the rivers and the oceans as mere elements of geography, but through the eyes of deep spiritual awareness, they reveal the ultimate nature of love, sacrifice and human connection.
             </p>
 
             <p>
-              Why are rivers sweet, and why is the ocean salty? The answer lies not just in the science of the earth, but in the sacred anatomy of the heart.
+              Why are rivers sweet and why is the ocean salty? The answer lies not just in the science of the earth, but in the sacred anatomy of the heart.
             </p>
 
             <h2>The Path of the River: The Sweetness of Giving</h2>
@@ -63,13 +63,13 @@ export default function SacredConfluencePage() {
             </p>
 
             <ul>
-              <li>She leaps, skips, and sways through valleys.</li>
+              <li>She leaps, skips and sways through valleys.</li>
               <li>She smiles at every sharp turn.</li>
               <li>She refuses to give up, even when colliding with the hardest stones.</li>
             </ul>
 
             <p>
-              The river can endure all obstacles because she carries a single, unshakeable dream in her heart: <strong>to meet the ocean.</strong> For centuries, she flows entirely for him. Along her journey, she hoards nothing. She freely shares her coolness, her life-giving water, her love, and her very existence with the banks she passes.
+              The river can endure all obstacles because she carries a single, unshakeable dream in her heart: <strong>to meet the ocean.</strong> For centuries, she flows entirely for him. Along her journey, she hoards nothing. She freely shares her coolness, her life-giving water, her love and her very existence with the banks she passes.
             </p>
 
             <p>
@@ -83,11 +83,11 @@ export default function SacredConfluencePage() {
             </p>
 
             <p>
-              The ocean’s destiny is simply to wait. For ages and ages, day and night, he waits. Every rising wave is a call; every surging tide is a deep yearning for connection. The rivers arrive, merge into him, and vanish.
+              The ocean’s destiny is simply to wait. For ages and ages, day and night, he waits. Every rising wave is a call; every surging tide is a deep yearning for connection. The rivers arrive, merge into him and vanish.
             </p>
 
             <p>
-              But with every cycle of arrival and departure, the ocean experiences the silent agony of separation. Unable to move, the ocean breaks down internally. His tears fall invisibly, silently, and unspoken into his own depths.
+              But with every cycle of arrival and departure, the ocean experiences the silent agony of separation. Unable to move, the ocean breaks down internally. His tears fall invisibly, silently and unspoken into his own depths.
             </p>
 
             <p>
@@ -126,8 +126,8 @@ export default function SacredConfluencePage() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border-t px-4 py-3">Flows, leaps, and moves across boundaries.</td>
-                    <td className="border-t px-4 py-3">Remains still, bound, and confined to one place.</td>
+                    <td className="border-t px-4 py-3">Flows, leaps and moves across boundaries.</td>
+                    <td className="border-t px-4 py-3">Remains still, bound and confined to one place.</td>
                   </tr>
                   <tr>
                     <td className="border-t px-4 py-3">Becomes <strong>sweet</strong> by sharing everything on her path.</td>
@@ -142,7 +142,7 @@ export default function SacredConfluencePage() {
             </div>
 
             <p>
-              This is why the ocean is often at its saltiest where it meets the river mouth—where it spreads its arms wide open to receive her. That confluence is the exact point where the most love has flowed, the most waiting has burned, and the most tears have fallen.
+              This is why the ocean is often at its saltiest where it meets the river mouth—where it spreads its arms wide open to receive her. That confluence is the exact point where the most love has flowed, the most waiting has burned and the most tears have fallen.
             </p>
 
             <h2>The Spiritual Mirror</h2>
@@ -152,11 +152,11 @@ export default function SacredConfluencePage() {
             </p>
 
             <p>
-              Some people are like <strong>rivers</strong>—their love is dynamic, expressive, and sweet. They give everything they have, moving mountains to reach the ones they care about.
+              Some people are like <strong>rivers</strong>—their love is dynamic, expressive and sweet. They give everything they have, moving mountains to reach the ones they care about.
             </p>
 
             <p>
-              Other people are like <strong>oceans</strong>—their love is silent, stationary, and deep. They are bound by circumstances, unable to run, destined to simply wait, absorbing the pain of distance in quiet loneliness.
+              Other people are like <strong>oceans</strong>—their love is silent, stationary and deep. They are bound by circumstances, unable to run, destined to simply wait, absorbing the pain of distance in quiet loneliness.
             </p>
 
             <p>

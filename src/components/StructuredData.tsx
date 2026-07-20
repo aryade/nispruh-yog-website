@@ -1,7 +1,7 @@
 /**
  * StructuredData Component
  * Renders JSON-LD structured data for search engines
- * Improves rich snippets, knowledge panels, and semantic understanding
+ * Improves rich snippets, knowledge panels and semantic understanding
  */
 
 interface StructuredDataProps {

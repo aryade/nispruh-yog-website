@@ -130,7 +130,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             More from the path
           </h2>
           <p className="text-[0.95rem] text-[var(--text-muted)] mb-8 max-w-[50ch] mx-auto">
-            Explore more reflections on practice, philosophy, and the daily
+            Explore more reflections on practice, philosophy and the daily
             unfolding of awareness.
           </p>
           <Link
@@ -278,7 +278,7 @@ function renderInlineMarkdown(text: string) {
   const parts: (string | React.ReactNode)[] = [];
   let lastIndex = 0;
 
-  // Match bold, italic, and links
+  // Match bold, italic and links
   const regex = /\*\*(.+?)\*\*|_(.+?)_|\*(.+?)\*|https?:\/\/[^\s]+/g;
   let match;
 

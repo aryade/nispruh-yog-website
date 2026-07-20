@@ -62,7 +62,7 @@ const GURU_PARAMPARA = [
       },
       {
         title: "Krishna – Kriyayog",
-        content: "Krishna explains Kriyayog as the practice of purifying the physiological, mental, and spiritual systems — a Yog of Awareness. \"Kri\" means karma or action and \"ya\" means soul — the action of the soul. A kriya is the action done for the soul, or which frees us from the bondage of karma by burning physical and mental impurities. Kriyayog includes Asanas, Pranayama, and spirituality, but focuses more on mental and spiritual benefits. Through the breathing technique of inhaling and exhaling, a yogi balances breath and releases Prana to bring bodily systems into synchrony.",
+        content: "Krishna explains Kriyayog as the practice of purifying the physiological, mental and spiritual systems — a Yog of Awareness. \"Kri\" means karma or action and \"ya\" means soul — the action of the soul. A kriya is the action done for the soul, or which frees us from the bondage of karma by burning physical and mental impurities. Kriyayog includes Asanas, Pranayama and spirituality, but focuses more on mental and spiritual benefits. Through the breathing technique of inhaling and exhaling, a yogi balances breath and releases Prana to bring bodily systems into synchrony.",
       },
     ],
   },
@@ -71,78 +71,78 @@ const GURU_PARAMPARA = [
     subsections: [
       {
         title: "Mahavatar Babaji",
-        content: "Mahavatar Babaji is the supreme Guru for all Yogis, believed to have been living in the Himalayas for hundreds of years. He is said to have been born on November 30, 203 AD in a coastal village in Tamil Nadu. Babaji revived the technique of Kriyayog for the betterment of humankind and passed it to Lahiri Mahasaya. He reportedly said that the Kriyayog he was transmitting in the 19th century was the same science Krishna gave to Arjuna millennia ago, and which was later known to Patanjali and other disciples.",
+        content: "Mahavatar Babaji is the supreme Guru for all Yogis, believed to have been living in the Himalayas for hundreds of years. He is said to have been born on November 30, 203 AD in a coastal village in Tamil Nadu. Babaji revived the technique of Kriyayog for the betterment of humankind and passed it to Shri Lahiri Mahasayaji. He reportedly said that the Kriyayog he was transmitting in the 19th century was the same science Krishna gave to Arjuna millennia ago and which was later known to Patanjali and other disciples.",
       },
     ],
   },
   {
-    name: "Shamacharan Lahiri (Lahiri Mahasaya)",
+    name: "Shri Lahiri Mahasayaji",
     subsections: [
       {
-        title: "Shamacharan Lahiri (Lahiri Mahasaya)",
-        content: "Shyama Charan Lahiri was a householder working in British Railways in Bengal. While on official duty in Ranikhet near the Himalayas, he heard a young man calling his name — who turned out to be Mahavatar Babaji. Babaji's gentle touch on his forehead awakened memories of previous incarnations. Babaji then initiated him into the sacred science of Kriyayog and later gave him permission to teach and initiate others. Lahiri Mahasaya entered Maha Samadhi in Banaras on September 26, 1985.",
+        title: "Shri Lahiri Mahasayaji",
+        content: "Shyama Charan Lahiri was a householder working in British Railways in Bengal. While on official duty in Ranikhet near the Himalayas, he heard a young man calling his name — who turned out to be Mahavatar Babaji. Babaji's gentle touch on his forehead awakened memories of previous incarnations. Babaji then initiated him into the sacred science of Kriyayog and later gave him permission to teach and initiate others. Shri Lahiri Mahasayaji entered Maha Samadhi in Banaras on September 26, 1985.",
       },
     ],
   },
   {
-    name: "Sri Yukteswara Giri",
+    name: "Shri Yukteswar Giriji",
     subsections: [
       {
-        title: "Sri Yukteswara Giri",
-        content: "Born on May 10, 1855, in Serampore, West Bengal (birth name: Priyanath Karar), Sri Yukteswara Giri was initiated into Kriyayog by Lahiri Mahasaya. He met Mahavatar Babaji at the Kumbha Mela in Allahabad in 1894, and at Babaji's request wrote a book called Kaivalya Darsanam. His most famous disciple was Paramahansa Yogananda, who later carried Kriyayog to the West. He attained Mahasamadhi on March 9, 1935.",
+        title: "Shri Yukteswar Giriji",
+        content: "Born on May 10, 1855, in Serampore, West Bengal (birth name: Priyanath Karar), Shri Yukteswar Giriji was initiated into Kriyayog by Shri Lahiri Mahasayaji. He met Mahavatar Babaji at the Kumbha Mela in Allahabad in 1894 and at Babaji's request wrote a book called Kaivalya Darsanam. His most famous disciple was Paramahansa Swami Shri Yoganandaji, who later carried Kriyayog to the West. He attained Mahasamadhi on March 9, 1935.",
       },
     ],
   },
   {
-    name: "Sathyananda Giri",
+    name: "Shri Sathyananda Giriji",
     subsections: [
       {
-        title: "Sathyananda Giri",
-        content: "Born on November 17, 1896, in Bengal, Sathyananda Giri was trained by Swami Sri Yukteswar Giri at his Puri Karar Ashram in 1919 and was also a disciple of Paramahansa Yogananda. He lived in hermitages at Puri and Ranchi and had thousands of devotees. He attained Nirvana on August 2, 1971, at the age of 74.",
+        title: "Shri Sathyananda Giriji",
+        content: "Born on November 17, 1896, in Bengal, Shri Sathyananda Giriji was trained by Swami Shri Yukteswar Giriji at his Puri Karar Ashram in 1919 and was also a disciple of Paramahansa Swami Shri Yoganandaji. He lived in hermitages at Puri and Ranchi and had thousands of devotees. He attained Nirvana on August 2, 1971 at the age of 74.",
       },
     ],
   },
   {
-    name: "Pahadi Baba (Shree Hariharanandji)",
+    name: "Pahadi Baba (Shri Hariharanandji)",
     subsections: [
       {
-        title: "Pahadi Baba (Shree Hariharanandji)",
-        content: "Shree Hariharanandji was a Tantra Samrat and Kriyayogi who lived in a cave on the hills (\"Pahadi\" in Hindi), and so was called \"Pahadi Baba.\" He was an enlightened yogi (Sidhha Purush) knowledgeable in many sadhanas. Madan Mohanji Sahay met him while passing by those hills, kept visiting, and was later initiated by Pahadi Baba into Kriyayog.",
+        title: "Pahadi Baba (Shri Hariharanandji)",
+        content: "Shri Hariharanandji was a Tantra Samrat and Kriyayogi who lived in a cave on the hills (\"Pahadi\" in Hindi) and so was called \"Pahadi Baba.\" He was an enlightened yogi (Sidhha Purush) knowledgeable in many sadhanas. Shri Madan Mohan Sahayji met him while passing by those hills, kept visiting and was later initiated by Pahadi Baba into Kriyayog.",
       },
     ],
   },
   {
-    name: "Madan Mohanji Sahay",
+    name: "Shri Madan Mohan Sahayji",
     subsections: [
       {
-        title: "Madan Mohanji Sahay",
-        content: "Shree Madan Mohanji Sahay was a family man who retired as a Divisional Manager from LIC in 1989. After meeting Pahadi Baba, his life turned toward spirituality. Pahadi Baba tested and transformed him through various trials, turning his materialistic habits into spiritual ones. He later became the Guru of Paramahamsa Shri Swami Nispruh Spandan and gave Swamiji his current name — Paramahamsa Shri Swami Nispruh Spandan.",
+        title: "Shri Madan Mohan Sahayji",
+        content: "Shri Madan Mohan Sahayji was a family man who retired as a Divisional Manager from LIC in 1989. After meeting Pahadi Baba, his life turned toward spirituality. Pahadi Baba tested and transformed him through various trials, turning his materialistic habits into spiritual ones. He later became the Guru of Paramahamsa Swami Shri Nispruh Spandanji and gave Swamiji his current name — Paramahamsa Swami Shri Nispruh Spandanji.",
       },
     ],
   },
   {
-    name: "Tauji – Banarasilal Saraf",
+    name: "Tauji – Shri Banarasilal Sarafji",
     subsections: [
       {
-        title: "Tauji – Banarasilal Saraf",
-        content: "Sri Banarasilal Saraf was a disciple of Madan Mohanji Sahay. Swamiji met him at Guruji's Ashram and called him \"Tauji\" affectionately. Tauji loved the young and devoted Swamiji and passed on his spiritual knowledge and blessings to him.",
+        title: "Tauji – Shri Banarasilal Sarafji",
+        content: "Shri Banarasilal Sarafji was a disciple of Shri Madan Mohan Sahayji. Swamiji met him at Guruji's Ashram and called him \"Tauji\" affectionately. Tauji loved the young and devoted Swamiji and passed on his spiritual knowledge and blessings to him.",
       },
     ],
   },
   {
-    name: "Shree Aghorinath-Shobharam (Hariom Wale Babaji)",
+    name: "Shri Aghorinath-Shobharam (Hariom Wale Babaji)",
     subsections: [
       {
-        title: "Shree Aghorinath-Shobharam (Hariom Wale Babaji)",
-        content: "Shree Aghorinath-Shobharam was a government servant and family man, blessed with many Siddhis by his Guru. He was the father and first Guru of Paramahamsa Shri Swami Nispruh Spandan, training him with strict rules and discipline. Enlightened yogis and saints frequently visited their home for Satsang. At a young age, Nispruh Spandan left home to find a Guru, stayed at many holy places including the Himalayas and Puri, and eventually found Madan Mohanji Sahay.",
+        title: "Shri Aghorinath-Shobharam (Hariom Wale Babaji)",
+        content: "Shri Aghorinath-Shobharam was a government servant and family man, blessed with many Siddhis by his Guru. He was the father and first Guru of Paramahamsa Swami Shri Nispruh Spandanji, training him with strict rules and discipline. Enlightened yogis and saints frequently visited their home for Satsang. At a young age, Nispruh Spandanji left home to find a Guru, stayed at many holy places including the Himalayas and Puri and eventually found Shri Madan Mohan Sahayji.",
       },
     ],
   },
   {
-    name: "Paramahansa Yogananda – Autobiography of a Yogi",
+    name: "Paramahansa Swami Shri Yoganandaji – Autobiography of a Yogi",
     subsections: [
       {
-        title: "Paramahansa Yogananda – Autobiography of a Yogi",
+        title: "Paramahansa Swami Shri Yoganandaji – Autobiography of a Yogi",
         content: "Born January 5, 1893, in Gorakhpur, India, Yogananda taught meditation and Kriyayog to millions in India and the USA. His book Autobiography of a Yogi sold over four million copies and was listed by HarperSan Francisco as one of the \"100 best spiritual books of the 20th Century.\" He attained Nirvana on March 7, 1952.",
       },
     ],
@@ -151,7 +151,7 @@ const GURU_PARAMPARA = [
 
 const GURU_STATS = [
   { stat: "1200+", label: "years of Yog Parampara given by Lord Krishna" },
-  { stat: "20+", label: "years of Nispruh Yog's experience in Kriyayog" },
+  { stat: "30+", label: "years of Nispruhyog's experience in Kriyayog" },
 ];
 
 /* ── component ────────────────────────────────────────────────────── */
@@ -195,7 +195,7 @@ export default function AboutKriyaYogaPage() {
               className="text-[1.05rem] leading-[1.85] text-[#5a5a5a] max-w-[52ch]">
               An ancient meditative science transmitted through an unbroken lineage
               of masters. Not a belief system — an experiential path of breath,
-              awareness, and self-inquiry that reveals the stillness already
+              awareness and self-inquiry that reveals the stillness already
               present within you.
             </motion.p>
           </motion.div>
@@ -231,8 +231,8 @@ export default function AboutKriyaYogaPage() {
               </motion.h2>
               {[
                 'The word Kriya means \u201caction with awareness.\u201d Kriyayog is a precise set of inner techniques \u2014 primarily breath-based \u2014 that work directly with the spine and the life-force to still the mind and awaken self-awareness.',
-                "Unlike philosophy or belief, Kriya is entirely practical. It asks no faith in doctrine, only a willingness to sit quietly, breathe consciously, and observe honestly. The transformation that follows is the natural consequence of the practice itself.",
-                "Carried through the lineage of Mahavatar Babaji, Lahiri Mahasaya, Sri Yukteswar Giri, and Paramahansa Yogananda, these teachings have guided sincere seekers for centuries. They remain as alive today as they were in the Himalayan solitude where they were first transmitted.",
+                "Unlike philosophy or belief, Kriya is entirely practical. It asks no faith in doctrine, only a willingness to sit quietly, breathe consciously and observe honestly. The transformation that follows is the natural consequence of the practice itself.",
+                "Carried through the lineage of Mahavatar Babaji, Shri Lahiri Mahasayaji, Shri Yukteswar Giriji and Paramahansa Swami Shri Yoganandaji, these teachings have guided sincere seekers for centuries. They remain as alive today as they were in the Himalayan solitude where they were first transmitted.",
               ].map((para, i) => (
                 <motion.p key={i} variants={FADE_UP}
                   className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-5 last:mb-0">
@@ -377,15 +377,12 @@ export default function AboutKriyaYogaPage() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-14 border-l-2 border-[var(--pista-green)]/35 pl-5 max-w-[48ch] not-italic"
+            className="mt-14 mx-auto max-w-[48ch] text-center not-italic"
           >
             <p className="text-[0.95rem] leading-[1.8] text-[var(--text-muted)] italic font-light">
               "These are not promises to be sold — they are natural movements
               that arise when we stop resisting our own depth."
             </p>
-            <footer className="mt-2 text-[0.72rem] uppercase tracking-[0.14em] text-[var(--pista-green)] font-semibold not-italic">
-              From the teachings
-            </footer>
           </motion.blockquote>
 
         </div>
@@ -433,7 +430,7 @@ export default function AboutKriyaYogaPage() {
               <motion.div
                 key={name}
                 variants={FADE_UP}
-                className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Banarasilal Saraf" || name === "Mahavatar Babaji" || name === "Shamacharan Lahiri (Lahiri Mahasaya)" || name === "Sri Yukteswara Giri" || name === "Sathyananda Giri" || name === "Pahadi Baba (Shree Hariharanandji)" || name === "Madan Mohanji Sahay" || name === "Paramahansa Yogananda – Autobiography of a Yogi" || name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
+                className={`rounded-2xl border border-[var(--border-soft)]/40 bg-white/40 p-8 sm:p-10 ${(idx === 0 || name === "Tauji – Shri Banarasilal Sarafji" || name === "Mahavatar Babaji" || name === "Shri Lahiri Mahasayaji" || name === "Shri Yukteswar Giriji" || name === "Shri Sathyananda Giriji" || name === "Pahadi Baba (Shri Hariharanandji)" || name === "Shri Madan Mohan Sahayji" || name === "Paramahansa Swami Shri Yoganandaji – Autobiography of a Yogi" || name === "Shri Aghorinath-Shobharam (Hariom Wale Babaji)") ? 'grid grid-cols-1 lg:grid-cols-2 gap-10 items-center' : ''}`}
               >
                 {idx === 0 && (
                   <div className="relative w-72 h-96">
@@ -461,12 +458,12 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Shamacharan Lahiri (Lahiri Mahasaya)" && (
+                {name === "Shri Lahiri Mahasayaji" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Lahiri_Mahashay_300x400.png"
-                      alt="Shamacharan Lahiri (Lahiri Mahasaya) - Transmitter of Kriyayog"
+                      alt="Shri Lahiri Mahasayaji - Transmitter of Kriyayog"
                       fill
                       style={{ objectFit: 'cover' }}
                       className="relative rounded-xl shadow-lg"
@@ -474,12 +471,12 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Sri Yukteswara Giri" && (
+                {name === "Shri Yukteswar Giriji" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Yukteshwar_Giri_ji_300x400.png"
-                      alt="Sri Yukteswara Giri - Guru of Paramahansa Yogananda"
+                      alt="Shri Yukteswar Giriji - Guru of Paramahansa Swami Shri Yoganandaji"
                       fill
                       style={{ objectFit: 'cover' }}
                       className="relative rounded-xl shadow-lg"
@@ -487,12 +484,12 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Sathyananda Giri" && (
+                {name === "Shri Sathyananda Giriji" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Satyanandji_300x400.png"
-                      alt="Sathyananda Giri - Direct disciple of Sri Yukteswar Giri"
+                      alt="Shri Sathyananda Giriji - Direct disciple of Shri Yukteswar Giriji"
                       fill
                       style={{ objectFit: 'cover' }}
                       className="relative rounded-xl shadow-lg"
@@ -500,12 +497,12 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Pahadi Baba (Shree Hariharanandji)" && (
+                {name === "Pahadi Baba (Shri Hariharanandji)" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/PahadiBaba_Hariharanand_300x400.png"
-                      alt="Pahadi Baba (Shree Hariharanandji) - Enlightened Kriyayogi"
+                      alt="Pahadi Baba (Shri Hariharanandji) - Enlightened Kriyayogi"
                       fill
                       style={{ objectFit: 'cover' }}
                       className="relative rounded-xl shadow-lg"
@@ -513,12 +510,12 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Madan Mohanji Sahay" && (
+                {name === "Shri Madan Mohan Sahayji" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Madan_Mohanji_Sahay_300x400.png"
-                      alt="Madan Mohanji Sahay - Guru of Swami Nispruh Spandan"
+                      alt="Shri Madan Mohan Sahayji - Guru of Paramahamsa Swami Shri Nispruh Spandanji"
                       fill
                       style={{ objectFit: 'cover' }}
                       className="relative rounded-xl shadow-lg"
@@ -526,12 +523,12 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Tauji – Banarasilal Saraf" && (
+                {name === "Tauji – Shri Banarasilal Sarafji" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Banarasilal_Saraf_BW.png"
-                      alt="Sri Banarasilal Saraf (Tauji) - Spiritual guide and mentor"
+                      alt="Shri Banarasilal Sarafji (Tauji) - Spiritual guide and mentor"
                       fill
                       style={{ objectFit: 'cover' }}
                       className="relative rounded-xl shadow-lg"
@@ -539,7 +536,7 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Paramahansa Yogananda – Autobiography of a Yogi" && (
+                {name === "Paramahansa Swami Shri Yoganandaji – Autobiography of a Yogi" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
@@ -552,12 +549,12 @@ export default function AboutKriyaYogaPage() {
                     />
                   </div>
                 )}
-                {name === "Shree Aghorinath-Shobharam (Hariom Wale Babaji)" && (
+                {name === "Shri Aghorinath-Shobharam (Hariom Wale Babaji)" && (
                   <div className="relative w-72 h-96">
                     <div className="absolute -inset-3 rounded-2xl border border-[var(--pista-green)]/20 pointer-events-none" aria-hidden="true" />
                     <Image
                       src="/images/gurus/Guru_300x400.png"
-                      alt="Shree Aghorinath-Shobharam (Hariom Wale Babaji) - Father and first Guru of Swami Nispruh Spandan"
+                      alt="Shri Aghorinath-Shobharam (Hariom Wale Babaji) - Father and first Guru of Paramahamsa Swami Shri Nispruh Spandanji"
                       fill
                       style={{ objectFit: 'cover' }}
                       className="relative rounded-xl shadow-lg"

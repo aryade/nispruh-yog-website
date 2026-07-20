@@ -1,5 +1,5 @@
 /**
- * Homepage — Nispruh Yog
+ * Homepage — Nispruhyog
  *
  * Section order mirrors the intended visitor journey:
  *   Hero → What is it → Benefits → Programs → Journey →

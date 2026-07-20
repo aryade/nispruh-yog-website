@@ -6,7 +6,7 @@ import { getWebPageSchema, getOGMetadata, getTwitterMetadata, SITE_URL } from "@
 export const metadata: Metadata = {
   title: "Kriya Yoga Practices | Breathing, Meditation & Rituals Guide",
   description:
-    "Step-by-step practice guides for Kriya Yoga — breath work, mantra repetition, meditation, and daily rituals for sincere seekers at every stage. Learn proven techniques.",
+    "Step-by-step practice guides for Kriya Yoga — breath work, mantra repetition, meditation and daily rituals for sincere seekers at every stage. Learn proven techniques.",
   keywords: [
     "kriya yoga practices",
     "breathing exercises",

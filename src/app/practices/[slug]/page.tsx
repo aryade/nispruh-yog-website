@@ -10,7 +10,7 @@ const PRACTICES = [
     duration: "10 min",
     type: "Breath",
     title: "Conscious Breath Awareness",
-    description: "The foundation of all Kriya practice. Simply sit, close the eyes, and follow the natural rhythm of the breath without altering it. A quiet but profound entry point.",
+    description: "The foundation of all Kriya practice. Simply sit, close the eyes and follow the natural rhythm of the breath without altering it. A quiet but profound entry point.",
     steps: ["Find a comfortable, upright seat", "Close the eyes softly", "Follow each inhale and exhale without control", "When the mind wanders, gently return"],
   },
   {
@@ -19,7 +19,7 @@ const PRACTICES = [
     duration: "8 min",
     type: "Breathing Exercise",
     title: "Anulom Vilom — Alternate Nostril Breathing",
-    description: "A gentle alternating breath technique that balances the left and right energy channels. Calms the nervous system, clears mental blocks, and prepares the mind for meditation.",
+    description: "A gentle alternating breath technique that balances the left and right energy channels. Calms the nervous system, clears mental blocks and prepares the mind for meditation.",
     steps: ["Sit upright with spine straight and shoulders relaxed", "Close right nostril gently with right thumb", "Inhale slowly through left nostril for 4 counts", "Close left nostril with ring finger, release right nostril", "Exhale through right nostril for 4 counts", "Inhale through right nostril for 4 counts", "Alternate for 5-10 minutes without forcing"],
   },
   {
@@ -28,8 +28,8 @@ const PRACTICES = [
     duration: "5 min",
     type: "Breathing Exercise",
     title: "Bhramari — Bee Breath",
-    description: "A soothing humming breath that resonates through the body, quieting scattered thoughts. Effective for anxiety, stress relief, and awakening inner peace.",
-    steps: ["Sit in a comfortable, upright position", "Inhale deeply through both nostrils", "On exhale, make a gentle humming sound (like a bee)", "Feel the vibration in the head, chest, and body", "Keep lips sealed while humming", "Practice 5-10 rounds, focusing on the resonance"],
+    description: "A soothing humming breath that resonates through the body, quieting scattered thoughts. Effective for anxiety, stress relief and awakening inner peace.",
+    steps: ["Sit in a comfortable, upright position", "Inhale deeply through both nostrils", "On exhale, make a gentle humming sound (like a bee)", "Feel the vibration in the head, chest and body", "Keep lips sealed while humming", "Practice 5-10 rounds, focusing on the resonance"],
   },
   {
     slug: "bhastrika",
@@ -37,7 +37,7 @@ const PRACTICES = [
     duration: "3 min",
     type: "Breathing Exercise",
     title: "Bhastrika — Bellows Breath",
-    description: "A powerful, rhythmic breathing technique that energizes the body and clears stagnant energy. Builds heat, increases oxygen flow, and strengthens the lungs.",
+    description: "A powerful, rhythmic breathing technique that energizes the body and clears stagnant energy. Builds heat, increases oxygen flow and strengthens the lungs.",
     steps: ["Sit upright with spine straight", "Take a deep breath in through both nostrils", "Exhale forcefully through both nostrils like bellows", "Let the inhale happen naturally as a reaction", "Continue this forceful rhythm for 20-30 breaths", "Rest and breathe naturally, noticing the energy surge"],
   },
   {
@@ -55,7 +55,7 @@ const PRACTICES = [
     duration: "12 min",
     type: "Yoga",
     title: "Gentle Hatha Yoga — Beginner Asanas",
-    description: "Basic yoga postures that prepare the body for pranayama and meditation. Improves flexibility, strengthens the spine, and calms the nervous system.",
+    description: "Basic yoga postures that prepare the body for pranayama and meditation. Improves flexibility, strengthens the spine and calms the nervous system.",
     steps: ["Start in Tadasana (Mountain pose) — feet together, arms at sides", "Move into Uttanasana (Forward fold) — fold from hips, letting head hang", "Step back to Chaturanga (Low plank) or knees-down variation", "Flow into Bhujangasana (Cobra pose) — chest forward, elbows bent", "Return to Downward Dog — hold for 5 breaths", "Move to Balasana (Child's pose) — rest forehead on ground", "Complete 3-5 gentle cycles at a slow, meditative pace"],
   },
   {
@@ -73,7 +73,7 @@ const PRACTICES = [
     duration: "10 min",
     type: "Mantra",
     title: "Mantra Chanting — Sacred Sound Meditation",
-    description: "Repetition of sacred mantras that attune the mind to higher frequencies. Builds concentration, purifies thought patterns, and connects to spiritual tradition.",
+    description: "Repetition of sacred mantras that attune the mind to higher frequencies. Builds concentration, purifies thought patterns and connects to spiritual tradition.",
     steps: ["Sit in a comfortable, upright position", "Choose a mantra: 'Om', 'So Hum', or 'Om Namah Shivaya'", "Begin chanting aloud slowly, feeling the vibration in the body", "Let your voice find a natural rhythm and pitch", "Continue for 5-10 minutes, gradually internalizing the sound", "End with 3 deep breaths and observe the inner silence", "Feel the lingering vibration and peace in your being"],
   },
   {
@@ -136,7 +136,7 @@ const PRACTICES = [
     duration: "60 min",
     type: "Kriya",
     title: "Mahamudra — The Great Gesture",
-    description: "A powerful preparatory practice combining physical posture, breath retention, and inner focus. It awakens the energy of the spine before the Kriyas proper.",
+    description: "A powerful preparatory practice combining physical posture, breath retention and inner focus. It awakens the energy of the spine before the Kriyas proper.",
     steps: ["Traditionally practised before the Kriyas", "Involves forward fold with specific mudra and kumbhaka", "Held for measured counts on each side", "Detailed instruction given by the teacher"],
   },
 ];

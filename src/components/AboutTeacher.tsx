@@ -51,12 +51,12 @@ export default function AboutTeacher() {
 
             <div
               role="img"
-              aria-label="Swami Nispruh Spandan — Kriyayog Teacher"
+              aria-label="Paramahamsa Swami Shri Nispruh Spandanji — Kriyayog Teacher"
               className="relative z-10 overflow-hidden rounded-[1.5rem] aspect-[3/4]"
             >
               <Image
                 src="/images/teacher/Swami_Nispruh_Spandan_color_900x1350 copy.png"
-                alt="Swami Nispruh Spandan"
+                alt="Paramahamsa Swami Shri Nispruh Spandanji"
                 width={900}
                 height={1350}
                 priority={true}
@@ -99,7 +99,7 @@ export default function AboutTeacher() {
               variants={FADE_UP}
               className="text-[clamp(1.8rem,4vw,2.6rem)] font-semibold leading-[1.15] tracking-tight text-[var(--text-heading)] mb-2"
             >
-              Paramahamsa Shri Swami{isMounted ? " Nispruh Spandan" : ""}
+              Paramahamsa Swami Shri{isMounted ? " Nispruh Spandanji" : ""}
             </motion.h2>
 
             <motion.p
@@ -113,10 +113,10 @@ export default function AboutTeacher() {
               variants={FADE_UP}
               className="text-[1rem] leading-[1.85] text-[#5a5a5a] mb-5"
             >
-              Paramahamsa Shri Swami Nispruh Spandan has walked the path of Kriyayog for over two
+              Paramahamsa Swami Shri Nispruh Spandanji has walked the path of Kriyayog for over two
               decades, receiving initiation and guidance from teachers in the
               direct lineage of Mahavatar Babaji. His teaching is quiet,
-              unhurried, and grounded in lived experience rather than
+              unhurried and grounded in lived experience rather than
               doctrine.
             </motion.p>
 

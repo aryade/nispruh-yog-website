@@ -19,7 +19,7 @@ const sections = [
   },
   {
     title: '2. Use License',
-    content: `Permission is granted to temporarily download one copy of the materials (information or software) on Nispruh Yog's website for personal, non-commercial transitory viewing only. This is a license, not a transfer of title, and under this license you may not:
+    content: `Permission is granted to temporarily download one copy of the materials (information or software) on Nispruhyog's website for personal, non-commercial transitory viewing only. This is a license, not a transfer of title and under this license you may not:
 
     • Modify or copy the materials
     • Use the materials for any commercial purpose or for any public display
@@ -31,35 +31,35 @@ const sections = [
   },
   {
     title: '3. Disclaimer of Warranties',
-    content: `The materials on Nispruh Yog's website are provided on an "as is" basis. Nispruh Yog makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.`,
+    content: `The materials on Nispruhyog's website are provided on an "as is" basis. Nispruhyog makes no warranties, expressed or implied and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.`,
   },
   {
     title: '4. Limitations of Liability',
-    content: `In no event shall Nispruh Yog or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Nispruh Yog's website, even if Nispruh Yog or an authorized representative has been notified orally or in writing of the possibility of such damage.`,
+    content: `In no event shall Nispruhyog or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Nispruhyog's website, even if Nispruhyog or an authorized representative has been notified orally or in writing of the possibility of such damage.`,
   },
   {
     title: '5. Accuracy of Materials',
-    content: `The materials appearing on Nispruh Yog's website could include technical, typographical, or photographic errors. Nispruh Yog does not warrant that any of the materials on its website are accurate, complete, or current. Nispruh Yog may make changes to the materials contained on its website at any time without notice.`,
+    content: `The materials appearing on Nispruhyog's website could include technical, typographical, or photographic errors. Nispruhyog does not warrant that any of the materials on its website are accurate, complete, or current. Nispruhyog may make changes to the materials contained on its website at any time without notice.`,
   },
   {
     title: '6. Materials on Other Websites',
-    content: `Nispruh Yog has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Nispruh Yog of the site. Use of any such linked website is at the user's own risk.`,
+    content: `Nispruhyog has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Nispruhyog of the site. Use of any such linked website is at the user's own risk.`,
   },
   {
     title: '7. Modifications',
-    content: `Nispruh Yog may revise these terms and conditions for its website at any time without notice. By using this website, you are agreeing to be bound by the then-current version of these terms and conditions.`,
+    content: `Nispruhyog may revise these terms and conditions for its website at any time without notice. By using this website, you are agreeing to be bound by the then-current version of these terms and conditions.`,
   },
   {
     title: '8. Governing Law',
-    content: `These terms and conditions are governed by and construed in accordance with the laws of Finland, and you irrevocably submit to the exclusive jurisdiction of the courts in that location.`,
+    content: `These terms and conditions are governed by and construed in accordance with the laws of Finland and you irrevocably submit to the exclusive jurisdiction of the courts in that location.`,
   },
   {
     title: '9. Intellectual Property',
-    content: `All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Nispruh Yog or its content suppliers and is protected by international copyright laws. You may not reproduce, distribute, or transmit any content without our prior written permission.`,
+    content: `All content on this website, including but not limited to text, graphics, logos, images and software, is the property of Nispruhyog or its content suppliers and is protected by international copyright laws. You may not reproduce, distribute, or transmit any content without our prior written permission.`,
   },
   {
     title: '10. User-Generated Content',
-    content: `Any comments, feedback, or suggestions you provide about our website or services may be used by Nispruh Yog without restriction or compensation. By submitting content, you grant Nispruh Yog a non-exclusive, worldwide license to use that content.`,
+    content: `Any comments, feedback, or suggestions you provide about our website or services may be used by Nispruhyog without restriction or compensation. By submitting content, you grant Nispruhyog a non-exclusive, worldwide license to use that content.`,
   },
   {
     title: '11. Limitation on Contact',
@@ -67,7 +67,7 @@ const sections = [
   },
   {
     title: '12. Spiritual Guidance Disclaimer',
-    content: `The teachings, practices, and guidance provided on this website are for educational and spiritual purposes only. They should not be considered medical advice, mental health treatment, or a substitute for professional medical or psychological consultation. If you are experiencing mental health concerns, please consult a qualified healthcare provider.`,
+    content: `The teachings, practices and guidance provided on this website are for educational and spiritual purposes only. They should not be considered medical advice, mental health treatment, or a substitute for professional medical or psychological consultation. If you are experiencing mental health concerns, please consult a qualified healthcare provider.`,
   },
   {
     title: '13. Contact Information',
@@ -78,7 +78,7 @@ const sections = [
   },
   {
     title: '14. Termination',
-    content: `Nispruh Yog reserves the right to terminate access to this website at any time without notice for any reason, including violation of these terms and conditions.
+    content: `Nispruhyog reserves the right to terminate access to this website at any time without notice for any reason, including violation of these terms and conditions.
 
     Last Updated: July 2, 2026`,
   },

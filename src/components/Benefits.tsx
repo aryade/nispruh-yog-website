@@ -49,7 +49,7 @@ const BENEFITS = [
       </svg>
     ),
     title: "Better Focus",
-    body: "Single-pointed concentration — practised inwardly — naturally carries into work, relationships, and creative life with greater depth.",
+    body: "Single-pointed concentration — practised inwardly — naturally carries into work, relationships and creative life with greater depth.",
   },
   {
     icon: (

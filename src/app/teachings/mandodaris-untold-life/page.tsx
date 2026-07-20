@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Mandodari's Untold Life | Teachings",
   description:
-    "The story of the Queen of Lanka—a woman of wisdom who lived among demons, loved a flawed man, and embodied dharma through suffering and grace.",
+    "The story of the Queen of Lanka—a woman of wisdom who lived among demons, loved a flawed man and embodied dharma through suffering and grace.",
 };
 
 export default function MandodarisUntoldLifePage() {
@@ -43,7 +43,7 @@ export default function MandodarisUntoldLifePage() {
               Mandodari's Untold Life: The Queen of Lanka, the Daughter of a Sage, the Wife of a Demon
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              A meditation on dharma, duty, love, and the unsung wisdom of women in the Ramayana.
+              A meditation on dharma, duty, love and the unsung wisdom of women in the Ramayana.
             </p>
           </header>
 
@@ -55,7 +55,7 @@ export default function MandodarisUntoldLifePage() {
             </p>
 
             <p>
-              She was Ravana's wife, Meghnad's mother, and the chief queen of Lanka. Yet Valmiki devoted only a few verses to her. Tulsidas, only a handful of couplets.
+              She was Ravana's wife, Meghnad's mother and the chief queen of Lanka. Yet Valmiki devoted only a few verses to her. Tulsidas, only a handful of couplets.
             </p>
 
             <p>
@@ -145,7 +145,7 @@ export default function MandodarisUntoldLifePage() {
             </p>
 
             <p>
-              Maya taught his daughter architecture, craftsmanship, astrology, and the Vedas.
+              Maya taught his daughter architecture, craftsmanship, astrology and the Vedas.
             </p>
 
             <p>
@@ -203,7 +203,7 @@ export default function MandodarisUntoldLifePage() {
             </p>
 
             <p>
-              He conquered Lanka. He drove Kubera away. Now he wanted a queen—beautiful, virtuous, and noble.
+              He conquered Lanka. He drove Kubera away. Now he wanted a queen—beautiful, virtuous and noble.
             </p>
 
             <p>
@@ -211,7 +211,7 @@ export default function MandodarisUntoldLifePage() {
             </p>
 
             <p>
-              Ravana approached Maya. Seeing him as a great ascetic, a learned Brahmin, and the son of a sage, Maya agreed.
+              Ravana approached Maya. Seeing him as a great ascetic, a learned Brahmin and the son of a sage, Maya agreed.
             </p>
 
             <p>

@@ -5,7 +5,7 @@ export function Practice() {
         <h2>How we meet</h2>
         <ul className="practice-list">
           <li>
-            <strong>Weekly guided circle</strong> – gentle breath, movement, and
+            <strong>Weekly guided circle</strong> – gentle breath, movement and
             silence (90 minutes).
           </li>
           <li>

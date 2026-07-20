@@ -73,7 +73,7 @@ export default function Navbar() {
           <Link
             href="/"
             className="group flex items-center text-[var(--text-heading)] dark:text-[var(--c-heading)] no-underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)] rounded-sm"
-            aria-label="Nispruh Yog – home"
+            aria-label="Nispruhyog – home"
           >
             <Image
               src="/images/logo_A_tnsp.png"
@@ -211,7 +211,7 @@ export default function Navbar() {
 
               {/* Subtle footer quote */}
               <p className="mt-auto text-xs text-[var(--text-muted)]/70 leading-relaxed italic">
-                "Be still, and know."
+                "Be still and know."
               </p>
             </motion.div>
           </>

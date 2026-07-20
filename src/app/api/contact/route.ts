@@ -64,11 +64,11 @@ export async function POST(request: Request) {
     const userEmailResponse = await resend.emails.send({
       from: fromEmail,
       to: escapedEmail,
-      subject: "Thank you for reaching out to Nispruh Yog",
+      subject: "Thank you for reaching out to Nispruhyog",
       html: `
         <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #333;">
           <p>Dear ${escapedName},</p>
-          <p>Thank you for reaching out to us. We have received your message and appreciate you taking the time to contact Nispruh Yog.</p>
+          <p>Thank you for reaching out to us. We have received your message and appreciate you taking the time to contact Nispruhyog.</p>
           ${escapedSubject ? `<p><strong>Interest:</strong> ${escapedSubject}</p>` : ""}
           <p>We will review your inquiry carefully and respond within 2-3 working days from a calm place.</p>
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
@@ -81,7 +81,7 @@ export async function POST(request: Request) {
           <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;">
           <p style="font-size: 14px; color: #666;">
             Warm regards,<br/>
-            <strong>Nispruh Yog Team</strong>
+            <strong>Nispruhyog Team</strong>
           </p>
         </div>
       `,

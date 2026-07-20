@@ -6,7 +6,7 @@ import { getWebPageSchema, getOGMetadata, getTwitterMetadata, SITE_URL } from "@
 export const metadata: Metadata = {
   title: "What is Kriya Yoga? Ancient Meditation Science Explained",
   description:
-    "Discover the ancient science of Kriya Yoga — what it is, how it works, and the transformation it opens for sincere seekers. Learn about pranayama and spiritual practice.",
+    "Discover the ancient science of Kriya Yoga — what it is, how it works and the transformation it opens for sincere seekers. Learn about pranayama and spiritual practice.",
   keywords: [
     "Kriya Yoga",
     "what is kriya yoga",

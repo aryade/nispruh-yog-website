@@ -23,28 +23,28 @@ const SERVICES = [
   {
     id: "online-meditation",
     title: "Online Meditation Weekly",
-    description: "Weekly online meditation is guided by Pujya Paramahans Swamiji Nispruh Spandan. Those who are already initiated join these sessions on Thursdays and Sundays.",
+    description: "Weekly online meditation is guided by Pujya Paramahamsa Swami Shri Nispruh Spandanji. Those who are already initiated join these sessions on Thursdays and Sundays.",
     icon: "🧘",
   },
   {
     id: "trust-experience",
     title: "Trust Your Own Experience",
-    description: "Kriyayog carves you and introduces you to the real you within. Breathing techniques work on us through meditation practices, helping empty our mind, calm it, and open the door to a stress-free life.",
+    description: "Kriyayog carves you and introduces you to the real you within. Breathing techniques work on us through meditation practices, helping empty our mind, calm it and open the door to a stress-free life.",
     icon: "✨",
   },
   {
     id: "kriya-meditation-courses",
     title: "Kriya Yog Courses – Meditation",
     description: "Meditation is not about becoming a different person — it is about training yourself with full awareness and getting a healthy sense of perspective. It teaches you to systematically explore your inner dimensions.",
-    highlights: ["What is Kriyayog? Background of Kriyayog", "How Kriya works on the human body and mind", "Importance of Exercises, Pranayam, and breathing techniques", "Kriya – Practices to heal yourself, body and mind", "Satsang with Pujya Guruji on different topics"],
+    highlights: ["What is Kriyayog? Background of Kriyayog", "How Kriya works on the human body and mind", "Importance of Exercises, Pranayam and breathing techniques", "Kriya – Practices to heal yourself, body and mind", "Satsang with Pujya Guruji on different topics"],
     contact: { phone: "(91) 99756 90339 (India) | (+358) 46 5710507 (Finland)", email: "nispruhyogKriyayog (at) gmail.com" },
     icon: "📿",
   },
   {
     id: "yoga-courses",
     title: "Yoga Courses",
-    description: "Yoga offers physical and mental health benefits for people of all ages. Improves flexibility, strength, stamina, relaxes body and mind for better sleep, and leads to better moods and more energy.",
-    highlights: ["Asanas, Pranayama, Stretching exercises", "Surya Namaskar and relaxing techniques", "Benefits: improved flexibility, strength, and stamina"],
+    description: "Yoga offers physical and mental health benefits for people of all ages. Improves flexibility, strength, stamina, relaxes body and mind for better sleep and leads to better moods and more energy.",
+    highlights: ["Asanas, Pranayama, Stretching exercises", "Surya Namaskar and relaxing techniques", "Benefits: improved flexibility, strength and stamina"],
     contact: { phone: "(91) 99756 90339", email: "nispruhyogKriyayog (at) gmail.com" },
     icon: "🙏",
   },
@@ -60,7 +60,7 @@ const SERVICES = [
     id: "spiritual-healing-tattoos",
     title: "Spiritual Healing Tattoos",
     description: "Tattoo designs laden with symbolism and deeply rooted in spirituality. Tattoos can restore energy when someone experiences a blockage around a particular chakra.",
-    highlights: ["Identification of your Spiritual Tattoo", "Tattoo Designing based on Yantra, Mantra, and Tantra", "Tattoo Restructuring"],
+    highlights: ["Identification of your Spiritual Tattoo", "Tattoo Designing based on Yantra, Mantra and Tantra", "Tattoo Restructuring"],
     contact: { phone: "(91) 99756 90339", email: "nispruhyogKriyayog (at) gmail.com" },
     icon: "🎨",
   },
@@ -144,7 +144,7 @@ const COURSES = [
     title: "Meditation Classes",
     subtitle: "A quiet hour each week to step out of the noise",
     description:
-      "Guided sitting sessions open to all — beginners, returning practitioners, and those simply curious. Each class moves through breath awareness, body scan, and silent observation. No prior experience required.",
+      "Guided sitting sessions open to all — beginners, returning practitioners and those simply curious. Each class moves through breath awareness, body scan and silent observation. No prior experience required.",
     duration: "90 min per class",
     frequency: "Every Tuesday & Saturday",
     groupSize: "Up to 12 participants",
@@ -174,7 +174,7 @@ const COURSES = [
     title: "Kriyayog Course",
     subtitle: "A structured initiation into the Kriyayog techniques",
     description:
-      "A careful, unhurried introduction to the foundational practices of Kriyayog — pranayama, dharana, the spinal breath, and mahamudra. Taught in small groups to preserve the intimacy the tradition requires. Each week builds on the last.",
+      "A careful, unhurried introduction to the foundational practices of Kriyayog — pranayama, dharana, the spinal breath and mahamudra. Taught in small groups to preserve the intimacy the tradition requires. Each week builds on the last.",
     duration: "8 weeks · 2 hrs per session",
     frequency: "Once weekly, plus home practice",
     groupSize: "Max 8 students",
@@ -479,7 +479,7 @@ export default function CoursesClient() {
             className="max-w-[48ch] mb-12"
           >
             <p className="text-[0.72rem] uppercase tracking-[0.2em] text-[var(--pista-green)] font-semibold mb-4">
-              Weekly, biweekly, and ongoing
+              Weekly, biweekly and ongoing
             </p>
             <h2
               id="ongoing-heading"

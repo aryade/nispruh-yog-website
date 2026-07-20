@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "From Indulgence to Understanding | Teachings",
   description:
-    "Life's Quietest Journey - A spiritual teaching on the search for wholeness, detachment, and the journey from outer pursuits to inner peace.",
+    "Life's Quietest Journey - A spiritual teaching on the search for wholeness, detachment and the journey from outer pursuits to inner peace.",
 };
 
 export default function IndulgenceToUnderstandingPage() {
@@ -63,7 +63,7 @@ export default function IndulgenceToUnderstandingPage() {
             <h2>The Endless Pursuit</h2>
 
             <p>
-              Ordinarily, a person believes that whatever they currently lack is the reason for their incomplete happiness. Therefore, they keep running toward one achievement after another. In childhood, they desire toys. In youth, relationships and success. Later come wealth, status, security, and recognition. One goal is achieved, only for another to appear before them.
+              Ordinarily, a person believes that whatever they currently lack is the reason for their incomplete happiness. Therefore, they keep running toward one achievement after another. In childhood, they desire toys. In youth, relationships and success. Later come wealth, status, security and recognition. One goal is achieved, only for another to appear before them.
             </p>
 
             <p>
@@ -147,7 +147,7 @@ export default function IndulgenceToUnderstandingPage() {
             <h2>Living in Freedom</h2>
 
             <p>
-              Such a person lives in the world, works, loves, and fulfills responsibilities, yet remains inwardly free. Their happiness is not dependent upon possessions. Their balance is not dictated by circumstances.
+              Such a person lives in the world, works, loves and fulfills responsibilities, yet remains inwardly free. Their happiness is not dependent upon possessions. Their balance is not dictated by circumstances.
             </p>
 
             <p>
@@ -173,7 +173,7 @@ export default function IndulgenceToUnderstandingPage() {
             </p>
 
             <p>
-              Then indulgence loses its attraction, and renunciation loses its ego.
+              Then indulgence loses its attraction and renunciation loses its ego.
             </p>
 
             <p>

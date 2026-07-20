@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Divine Call: Awakening to Your True Nature | Teachings",
   description:
-    "A message on remembering your eternal relationship with the Divine, piercing the veil of Maya, and the sacred path of Kriya practice.",
+    "A message on remembering your eternal relationship with the Divine, piercing the veil of Maya and the sacred path of Kriya practice.",
 };
 
 export default function DivinCallAwakeningPage() {
@@ -43,7 +43,7 @@ export default function DivinCallAwakeningPage() {
               The Divine Call: Awakening to Your True Nature
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              A message on remembering your eternal relationship with the Divine and the sacred promise of Kriya practice. Based on the teachings of Swami Nispruha Spandan.
+              A message on remembering your eternal relationship with the Divine and the sacred promise of Kriya practice. Based on the teachings of Paramahamsa Swami Shri Nispruh Spandanji.
             </p>
           </header>
 
@@ -75,11 +75,11 @@ export default function DivinCallAwakeningPage() {
             <h2>The Veil of Forgetting</h2>
 
             <p>
-              Yet in this present life, you have forgotten those previous births, forgotten that sacred resolve, and forgotten your eternal relationship with Me. This forgetfulness is not real; it is merely a veil of My Maya that has covered your consciousness.
+              Yet in this present life, you have forgotten those previous births, forgotten that sacred resolve and forgotten your eternal relationship with Me. This forgetfulness is not real; it is merely a veil of My Maya that has covered your consciousness.
             </p>
 
             <p>
-              The moment this veil of Maya is lifted, you will recognize yourself. You will remember who you truly are, who I am, and what you once asked of Me. Then all your searching will come to an end, and only one longing will remain—the longing for wholeness.
+              The moment this veil of Maya is lifted, you will recognize yourself. You will remember who you truly are, who I am and what you once asked of Me. Then all your searching will come to an end and only one longing will remain—the longing for wholeness.
             </p>
 
             <h2>The Work is Yours Alone</h2>
@@ -111,7 +111,7 @@ export default function DivinCallAwakeningPage() {
             </p>
 
             <p>
-              Every event in this world, every circumstance in your life, and even the veil of Maya that now covers you are all part of My divine arrangement. And along with that arrangement, I have also provided the way beyond it.
+              Every event in this world, every circumstance in your life and even the veil of Maya that now covers you are all part of My divine arrangement. And along with that arrangement, I have also provided the way beyond it.
             </p>
 
             <h2>The Path Beyond Maya</h2>
@@ -127,7 +127,7 @@ export default function DivinCallAwakeningPage() {
             </ul>
 
             <p>
-              If, with faith, steadfastness, and regularity, you practice the Kriya I have given you, chant the Guru Mantra, and worship your chosen Guru or Deity every day, then this veil of Maya will surely be torn apart, and your consciousness will awaken to its true nature.
+              If, with faith, steadfastness and regularity, you practice the Kriya I have given you, chant the Guru Mantra and worship your chosen Guru or Deity every day, then this veil of Maya will surely be torn apart and your consciousness will awaken to its true nature.
             </p>
 
             <p>
@@ -153,7 +153,7 @@ export default function DivinCallAwakeningPage() {
             </p>
 
             <p>
-              Take just one step toward Truth, and My grace will hold your hand throughout the rest of the journey.
+              Take just one step toward Truth and My grace will hold your hand throughout the rest of the journey.
             </p>
 
             <p>
@@ -165,7 +165,7 @@ export default function DivinCallAwakeningPage() {
             </p>
 
             <p className="italic">
-              — Swami Nispruha Spandan
+              — Paramahamsa Swami Shri Nispruh Spandanji
             </p>
           </article>
         </div>

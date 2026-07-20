@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Complete Puranic Story of Sage Rishyashringa | Teachings",
   description:
-    "The inspiring tale of Sage Rishyashringa—a story of austerity, celibacy, innocence, and how one sage's righteousness brought blessing to an entire kingdom.",
+    "The inspiring tale of Sage Rishyashringa—a story of austerity, celibacy, innocence and how one sage's righteousness brought blessing to an entire kingdom.",
 };
 
 export default function RishyashringaPage() {
@@ -43,13 +43,13 @@ export default function RishyashringaPage() {
               The Complete Puranic Story of Sage Rishyashringa
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              A remarkable tale of austerity, celibacy, innocence, and how one sage's righteousness blessed an entire kingdom—and made possible the birth of Lord Rama.
+              A remarkable tale of austerity, celibacy, innocence and how one sage's righteousness blessed an entire kingdom—and made possible the birth of Lord Rama.
             </p>
           </header>
 
           <article className="prose prose-sm max-w-none text-[var(--text-body)] mt-12">
             <p>
-              The story of Sage Rishyashringa (Shringi Rishi) is one of the most celebrated and inspiring narratives in Hindu tradition. It is primarily found in the Valmiki Ramayana, the Mahabharata, and several Puranas. It is a remarkable tale of austerity (tapas), celibacy (brahmacharya), innocence, righteousness, and service to the welfare of the world.
+              The story of Sage Rishyashringa (Shringi Rishi) is one of the most celebrated and inspiring narratives in Hindu tradition. It is primarily found in the Valmiki Ramayana, the Mahabharata and several Puranas. It is a remarkable tale of austerity (tapas), celibacy (brahmacharya), innocence, righteousness and service to the welfare of the world.
             </p>
 
             <h2>The Miraculous Birth of Rishyashringa</h2>
@@ -59,7 +59,7 @@ export default function RishyashringaPage() {
             </p>
 
             <p>
-              One day, he happened to behold the celestial apsara Urvashi. For a brief moment, his mind was disturbed, and from his spiritual energy a divine seed was produced. According to the Puranic account, that energy reached a doe (female deer), who subsequently gave birth to a child.
+              One day, he happened to behold the celestial apsara Urvashi. For a brief moment, his mind was disturbed and from his spiritual energy a divine seed was produced. According to the Puranic account, that energy reached a doe (female deer), who subsequently gave birth to a child.
             </p>
 
             <p>
@@ -77,11 +77,11 @@ export default function RishyashringaPage() {
             </p>
 
             <p>
-              From childhood, Rishyashringa had seen only his father, animals, birds, trees, and nature. He had never seen another human being—especially a woman.
+              From childhood, Rishyashringa had seen only his father, animals, birds, trees and nature. He had never seen another human being—especially a woman.
             </p>
 
             <p>
-              He grew into an exceptionally simple, innocent, truthful, and perfectly celibate ascetic.
+              He grew into an exceptionally simple, innocent, truthful and perfectly celibate ascetic.
             </p>
 
             <p>
@@ -131,7 +131,7 @@ export default function RishyashringaPage() {
             <h2>The Plan to Bring Rishyashringa</h2>
 
             <p>
-              The difficulty was that Rishyashringa had never left his hermitage, and his father did not allow anyone to approach him.
+              The difficulty was that Rishyashringa had never left his hermitage and his father did not allow anyone to approach him.
             </p>
 
             <p>
@@ -169,7 +169,7 @@ export default function RishyashringaPage() {
             </p>
 
             <p>
-              The women sang sweet songs, offered him delicious fruits and sweets, and spoke to him with warmth and affection.
+              The women sang sweet songs, offered him delicious fruits and sweets and spoke to him with warmth and affection.
             </p>
 
             <p>
@@ -277,7 +277,7 @@ export default function RishyashringaPage() {
             </p>
 
             <ul>
-              <li>Sri Rama</li>
+              <li>Shri Rama</li>
               <li>Bharata</li>
               <li>Lakshmana</li>
               <li>Shatrughna</li>
@@ -298,7 +298,7 @@ export default function RishyashringaPage() {
             </ul>
 
             <p>
-              The story of Sage Rishyashringa teaches us that the power of austerity, celibacy, humility, and righteousness extends far beyond the individual. It becomes a blessing for society and for generations yet to come.
+              The story of Sage Rishyashringa teaches us that the power of austerity, celibacy, humility and righteousness extends far beyond the individual. It becomes a blessing for society and for generations yet to come.
             </p>
 
             <p className="italic">

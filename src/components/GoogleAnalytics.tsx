@@ -2,7 +2,7 @@
 
 /**
  * Google Analytics 4 Integration
- * Tracks user behavior, page views, and events
+ * Tracks user behavior, page views and events
  * Essential for monitoring SEO performance and user engagement
  */
 

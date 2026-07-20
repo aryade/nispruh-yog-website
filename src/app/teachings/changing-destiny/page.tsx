@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Can Destiny Be Changed? The Power of Austerity and Devotion | Teachings",
   description:
-    "A teaching on how austerity (tapas) and devotion can transform your destiny, and the path to lasting happiness through surrender to God.",
+    "A teaching on how austerity (tapas) and devotion can transform your destiny and the path to lasting happiness through surrender to God.",
 };
 
 export default function ChangingDestinyPage() {
@@ -43,7 +43,7 @@ export default function ChangingDestinyPage() {
               Can Destiny Be Changed? The Power of Austerity and Devotion
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              A teaching on transforming your fate through tapas, name repetition, and complete surrender to the Divine.
+              A teaching on transforming your fate through tapas, name repetition and complete surrender to the Divine.
             </p>
           </header>
 
@@ -71,7 +71,7 @@ export default function ChangingDestinyPage() {
             <h2>The Practice and Its Fruits</h2>
 
             <p>
-              Observe fasts, chant God's holy name, and you can accomplish whatever you wish. Whatever you desire—wealth, a good car, a happy family—these are usually the kinds of aspirations people have. All of these desires will come to you as the "interest" earned through devotion, while the principal reward will be God Himself.
+              Observe fasts, chant God's holy name and you can accomplish whatever you wish. Whatever you desire—wealth, a good car, a happy family—these are usually the kinds of aspirations people have. All of these desires will come to you as the "interest" earned through devotion, while the principal reward will be God Himself.
             </p>
 
             <p>
@@ -95,7 +95,7 @@ export default function ChangingDestinyPage() {
             </p>
 
             <p>
-              Perfect and lasting happiness is found only in complete surrender to God, and only in devotion to Him.
+              Perfect and lasting happiness is found only in complete surrender to God and only in devotion to Him.
             </p>
 
             <p className="italic">

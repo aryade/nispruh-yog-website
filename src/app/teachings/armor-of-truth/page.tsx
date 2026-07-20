@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Armor of Truth | Teachings",
   description:
-    "A teaching on breaking the cycle of moral twisting, blame shifting, and reclaiming your power through spiritual clarity.",
+    "A teaching on breaking the cycle of moral twisting, blame shifting and reclaiming your power through spiritual clarity.",
 };
 
 export default function ArmorOfTruthPage() {
@@ -43,7 +43,7 @@ export default function ArmorOfTruthPage() {
               The Armor of Truth: Breaking the Cycle of Moral Twisting and Blame Shifting
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              Based on the teachings of Paramahamsa Shri Swami Nispruh Spandan.
+              Based on the teachings of Paramahamsa Swami Shri Nispruh Spandanji.
             </p>
           </header>
 
@@ -53,13 +53,13 @@ export default function ArmorOfTruthPage() {
             </p>
 
             <p>
-              Awakening requires looking at reality without the filters of hope or justification. To fully heal, you must understand the mechanics of how a manipulator evades guilt, and how you can reclaim your power.
+              Awakening requires looking at reality without the filters of hope or justification. To fully heal, you must understand the mechanics of how a manipulator evades guilt and how you can reclaim your power.
             </p>
 
             <h2>1. The Mechanics of Deception: The Conscious Choice</h2>
 
             <p>
-              The most difficult realization for a pure-hearted person to accept is that the manipulator was never confused. Every lie told, every double life managed, and every tear dismissed as “too emotional”—they knew it was wrong.
+              The most difficult realization for a pure-hearted person to accept is that the manipulator was never confused. Every lie told, every double life managed and every tear dismissed as “too emotional”—they knew it was wrong.
             </p>
 
             <p>
@@ -154,17 +154,17 @@ export default function ArmorOfTruthPage() {
             <h3>III. Respond, Do Not React</h3>
 
             <p>
-              Your tears, your anger, and your desperate pleas are their emotional supply. It validates their control over you.
+              Your tears, your anger and your desperate pleas are their emotional supply. It validates their control over you.
             </p>
 
             <p>
-              When you must interact, keep your responses calm, minimal, brief, and purely factual. When you remove your emotional reaction, you completely diminish their power.
+              When you must interact, keep your responses calm, minimal, brief and purely factual. When you remove your emotional reaction, you completely diminish their power.
             </p>
 
             <h3>IV. Release the Self-Blame</h3>
 
             <p>
-              You were not “too sensitive” or “too fragile.” You were being truthful, open, and authentic. Truthful people are the natural targets for those who live in illusion, because your light exposes their darkness.
+              You were not “too sensitive” or “too fragile.” You were being truthful, open and authentic. Truthful people are the natural targets for those who live in illusion, because your light exposes their darkness.
             </p>
 
             <h2>The Ultimate Remembrance</h2>
@@ -174,7 +174,7 @@ export default function ArmorOfTruthPage() {
             </p>
 
             <p>
-              This is not a battle you have to fight out in the world; it is an awakening that takes place within your own heart. Walk away, close the door, and step firmly onto the path of your own truth. Your healing has already begun.
+              This is not a battle you have to fight out in the world; it is an awakening that takes place within your own heart. Walk away, close the door and step firmly onto the path of your own truth. Your healing has already begun.
             </p>
           </article>
         </div>

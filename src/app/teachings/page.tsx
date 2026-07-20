@@ -6,7 +6,7 @@ import { getWebPageSchema, getOGMetadata, getTwitterMetadata, SITE_URL } from "@
 export const metadata: Metadata = {
   title: "Kriya Yoga Teachings | Spiritual Wisdom & Ancient Knowledge",
   description:
-    "Explore the core teachings of Kriya Yoga — breath, awareness, lineage wisdom, and the path of sincere self-inquiry. Profound spiritual teachings for inner awakening.",
+    "Explore the core teachings of Kriya Yoga — breath, awareness, lineage wisdom and the path of sincere self-inquiry. Profound spiritual teachings for inner awakening.",
   keywords: [
     "kriya yoga teachings",
     "spiritual wisdom",

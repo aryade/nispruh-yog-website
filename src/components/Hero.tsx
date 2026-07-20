@@ -19,7 +19,7 @@ const FADE_IN = fadeIn(DURATIONS.slow);
 export function Hero() {
   return (
     <section
-      aria-label="Welcome to Nispruh Yog"
+      aria-label="Welcome to Nispruhyog"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-5 sm:px-8 pb-24 sm:pb-0"
     >
       {/* Background gradient — layered radial washes, no harsh edges */}
@@ -89,7 +89,7 @@ export function Hero() {
           className="text-[1.05rem] leading-[1.8] text-[var(--text-muted)] max-w-[40ch] mx-auto mb-10"
         >
           A sacred space for sincere seekers. Rooted in the living tradition of
-          Kriyayog — a path of breath, awareness, and inner inquiry.
+          Kriyayog — a path of breath, awareness and inner inquiry.
         </motion.p>
 
         {/* Featured Quote */}
@@ -97,8 +97,8 @@ export function Hero() {
           variants={FADE_UP}
           className="text-[1.15rem] leading-[1.8] text-[var(--text-heading)] max-w-[42ch] mx-auto mb-10 border-l-4 border-[var(--pista-green)] pl-6 italic"
         >
-          <p className="mb-3">My love for you is pure and unconditional. But until you will not break the barriers of your Ego, you will never experience the divinity of my love.</p>
-          <p className="text-[0.95rem] text-[var(--text-muted)] mt-3">— Paramahamsa Shri Swami Nispruh Spandan</p>
+          <p className="mb-3">My love for you is pure and unconditional, but until you break the barriers of your ego, you will never experience the divinity of my love.</p>
+          <p className="text-[0.95rem] text-[var(--text-muted)] mt-3">— Paramahamsa Swami Shri Nispruh Spandanji</p>
           <footer className="text-[0.9rem] font-semibold not-italic text-[var(--pista-green)]">
             {/* — Paramhans Yogananda */}
           </footer>

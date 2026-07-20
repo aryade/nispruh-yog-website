@@ -6,7 +6,7 @@ import { getWebPageSchema, getOGMetadata, getTwitterMetadata, SITE_URL } from "@
 export const metadata: Metadata = {
   title: "Kriya Yoga Retreats & Events | Meditation Gatherings",
   description:
-    "Upcoming Kriya Yoga events, silent retreats, and community gatherings. Each is an invitation to rest, deepen practice, and return to stillness with sincere seekers.",
+    "Upcoming Kriya Yoga events, silent retreats and community gatherings. Each is an invitation to rest, deepen practice and return to stillness with sincere seekers.",
   keywords: [
     "yoga retreats",
     "meditation events",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 export default function EventsRetreatsPage() {
   const schemaData = getWebPageSchema({
     title: "Kriya Yoga Retreats & Events",
-    description: "Upcoming silent retreats, events, and community gatherings for Kriya Yoga practitioners.",
+    description: "Upcoming silent retreats, events and community gatherings for Kriya Yoga practitioners.",
     url: `${SITE_URL}/events-retreats`,
   });
 

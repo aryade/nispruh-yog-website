@@ -67,7 +67,7 @@ const EVENTS: Event[] = [
     spotsTotal: 0,
     price: "Free · Dana welcome",
     description:
-      "Join the Nispruhyog Kriyayog Parivar for a sacred celebration of Guru Purnima — a day to honour the lineage of gurus and the transmission of wisdom. Together we will gather in community, engage in practice, and celebrate the light of guidance that illuminates the path.",
+      "Join the Nispruhyog Kriyayog Parivar for a sacred celebration of Guru Purnima — a day to honour the lineage of gurus and the transmission of wisdom. Together we will gather in community, engage in practice and celebrate the light of guidance that illuminates the path.",
     highlights: [
       "Wear white or yellow clothes",
       "Contact: +91 9975060537",
@@ -117,7 +117,7 @@ const EVENTS: Event[] = [
     spotsTotal: 20,
     price: "₹2,500 per person",
     description:
-      "A focused afternoon on the breath — its physiology, its subtle anatomy, and the classical pranayamas of the Kriya tradition. Suitable for complete beginners and established practitioners alike.",
+      "A focused afternoon on the breath — its physiology, its subtle anatomy and the classical pranayamas of the Kriya tradition. Suitable for complete beginners and established practitioners alike.",
     highlights: [
       "Theory of prana and the nadis",
       "Nadi Shodhana and Ujjayi practice",
@@ -130,7 +130,7 @@ const EVENTS: Event[] = [
     id: "satsang-april",
     type: "Satsang",
     title: "Monthly Satsang — April",
-    subtitle: "An open evening of teaching, chanting, and silence",
+    subtitle: "An open evening of teaching, chanting and silence",
     dateLabel: "26 April 2026",
     dateISO: "2026-04-26",
     location: "Online · Zoom",
@@ -140,7 +140,7 @@ const EVENTS: Event[] = [
     spotsTotal: 0,
     price: "Free · Dana welcome",
     description:
-      "The monthly community gathering — open to all. Each satsang includes a short teaching on a classical topic, a period of collective silence, and space for questions. No prior experience needed.",
+      "The monthly community gathering — open to all. Each satsang includes a short teaching on a classical topic, a period of collective silence and space for questions. No prior experience needed.",
     highlights: [
       "Open to everyone",
       "Short classical teaching",
@@ -163,7 +163,7 @@ const EVENTS: Event[] = [
     spotsTotal: 12,
     price: "₹4,500 per person",
     description:
-      "A single-day intensive for those who have already attended the Kriya Course or established a regular practice. The day moves through pranayama, mahamudra, Kriya sitting, and periods of unstructured silence.",
+      "A single-day intensive for those who have already attended the Kriya Course or established a regular practice. The day moves through pranayama, mahamudra, Kriya sitting and periods of unstructured silence.",
     highlights: [
       "For existing students only",
       "Extended Kriya and mahamudra practice",
@@ -186,10 +186,10 @@ const EVENTS: Event[] = [
     spotsTotal: 12,
     price: "Sliding scale · ₹18,000 – ₹36,000",
     description:
-      "The deepest offering of the year. Seven days in a coffee plantation estate during the monsoon — a season the tradition has long associated with inward turning. Full silence, extended practice, and minimal structure.",
+      "The deepest offering of the year. Seven days in a coffee plantation estate during the monsoon — a season the tradition has long associated with inward turning. Full silence, extended practice and minimal structure.",
     highlights: [
       "Seven days of full noble silence",
-      "Morning, afternoon, and evening Kriya",
+      "Morning, afternoon and evening Kriya",
       "Two private teacher interviews",
       "Monsoon nature walks and free time",
       "All meals and accommodation included",
@@ -211,7 +211,7 @@ const EVENTS: Event[] = [
     spotsTotal: 0,
     price: "Sliding scale",
     description:
-      "A group of 20 people enjoyed nature, meditation, and Satsang with Swamiji in Northern Finland. A unique opportunity to deepen practice in the pristine Scandinavian landscape.",
+      "A group of 20 people enjoyed nature, meditation and Satsang with Swamiji in Northern Finland. A unique opportunity to deepen practice in the pristine Scandinavian landscape.",
     highlights: [
       "Group meditation sessions",
       "Satsang with Swamiji",
@@ -235,7 +235,7 @@ const EVENTS: Event[] = [
     spotsTotal: 0,
     price: "Sliding scale",
     description:
-      "A joyous trip with great spring weather, food, and sightseeing. Shared spiritual journey with fellow practitioners through one of Europe's most beautiful cities.",
+      "A joyous trip with great spring weather, food and sightseeing. Shared spiritual journey with fellow practitioners through one of Europe's most beautiful cities.",
     highlights: [
       "Daily practice sessions",
       "Guided city tours",
@@ -259,7 +259,7 @@ const EVENTS: Event[] = [
     spotsTotal: 0,
     price: "Sliding scale",
     description:
-      "A group of 19 people enjoyed an unforgettable spiritual journey through India's most sacred locations. Visiting ashrams, temples, and practicing in the birthplace of Yoga.",
+      "A group of 19 people enjoyed an unforgettable spiritual journey through India's most sacred locations. Visiting ashrams, temples and practicing in the birthplace of Yoga.",
     highlights: [
       "Daily immersive practices",
       "Temple visits and sacred rituals",
@@ -330,7 +330,7 @@ const EVENTS: Event[] = [
     spotsTotal: 15,
     price: "Sliding scale",
     description:
-      "A two-day intensive course in the foundational practices of Kriya Yoga. This course covers the essential techniques, their philosophy, and how to establish a personal practice. Suitable for beginners seeking a solid foundation and returning students looking to deepen their understanding.",
+      "A two-day intensive course in the foundational practices of Kriya Yoga. This course covers the essential techniques, their philosophy and how to establish a personal practice. Suitable for beginners seeking a solid foundation and returning students looking to deepen their understanding.",
     highlights: [
       "Core Kriya Yoga techniques",
       "Philosophy and anatomy of practice",

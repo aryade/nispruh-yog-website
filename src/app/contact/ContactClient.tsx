@@ -261,7 +261,7 @@ export default function ContactClient({ searchParams }: ContactClientProps) {
                 no wrong question to ask, no wrong place to begin.
               </p>
               <footer className="mt-5 text-[0.72rem] uppercase tracking-[0.18em] text-[var(--pista-green)] font-semibold not-italic">
-                Nispruh Yog
+                Nispruhyog
               </footer>
             </blockquote>
           </motion.div>

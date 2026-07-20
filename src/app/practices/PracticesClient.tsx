@@ -29,7 +29,7 @@ const PRACTICES = [
     type: "Breath",
     title: "Conscious Breath Awareness",
     description:
-      "The foundation of all Kriya practice. Simply sit, close the eyes, and follow the natural rhythm of the breath without altering it. A quiet but profound entry point.",
+      "The foundation of all Kriya practice. Simply sit, close the eyes and follow the natural rhythm of the breath without altering it. A quiet but profound entry point.",
     steps: ["Find a comfortable, upright seat", "Close the eyes softly", "Follow each inhale and exhale without control", "When the mind wanders, gently return"],
     href: "/practices/breath-awareness",
     icon: (
@@ -45,7 +45,7 @@ const PRACTICES = [
     type: "Breathing Exercise",
     title: "Anulom Vilom — Alternate Nostril Breathing",
     description:
-      "A gentle alternating breath technique that balances the left and right energy channels. Calms the nervous system, clears mental blocks, and prepares the mind for meditation.",
+      "A gentle alternating breath technique that balances the left and right energy channels. Calms the nervous system, clears mental blocks and prepares the mind for meditation.",
     steps: ["Sit upright with spine straight and shoulders relaxed", "Close right nostril gently with right thumb", "Inhale slowly through left nostril for 4 counts", "Close left nostril with ring finger, release right nostril", "Exhale through right nostril for 4 counts", "Inhale through right nostril for 4 counts", "Alternate for 5-10 minutes without forcing"],
     href: "/practices/anulom-vilom",
     icon: (
@@ -61,8 +61,8 @@ const PRACTICES = [
     type: "Breathing Exercise",
     title: "Bhramari — Bee Breath",
     description:
-      "A soothing humming breath that resonates through the body, quieting scattered thoughts. Effective for anxiety, stress relief, and awakening inner peace.",
-    steps: ["Sit in a comfortable, upright position", "Inhale deeply through both nostrils", "On exhale, make a gentle humming sound (like a bee)", "Feel the vibration in the head, chest, and body", "Keep lips sealed while humming", "Practice 5-10 rounds, focusing on the resonance"],
+      "A soothing humming breath that resonates through the body, quieting scattered thoughts. Effective for anxiety, stress relief and awakening inner peace.",
+    steps: ["Sit in a comfortable, upright position", "Inhale deeply through both nostrils", "On exhale, make a gentle humming sound (like a bee)", "Feel the vibration in the head, chest and body", "Keep lips sealed while humming", "Practice 5-10 rounds, focusing on the resonance"],
     href: "/practices/bhramari",
     icon: (
       <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6" aria-hidden="true">
@@ -77,7 +77,7 @@ const PRACTICES = [
     type: "Breathing Exercise",
     title: "Bhastrika — Bellows Breath",
     description:
-      "A powerful, rhythmic breathing technique that energizes the body and clears stagnant energy. Builds heat, increases oxygen flow, and strengthens the lungs.",
+      "A powerful, rhythmic breathing technique that energizes the body and clears stagnant energy. Builds heat, increases oxygen flow and strengthens the lungs.",
     steps: ["Sit upright with spine straight", "Take a deep breath in through both nostrils", "Exhale forcefully through both nostrils like bellows", "Let the inhale happen naturally as a reaction", "Continue this forceful rhythm for 20-30 breaths", "Rest and breathe naturally, noticing the energy surge"],
     href: "/practices/bhastrika",
     icon: (
@@ -108,7 +108,7 @@ const PRACTICES = [
     type: "Yoga",
     title: "Gentle Hatha Yoga — Beginner Asanas",
     description:
-      "Basic yoga postures that prepare the body for pranayama and meditation. Improves flexibility, strengthens the spine, and calms the nervous system.",
+      "Basic yoga postures that prepare the body for pranayama and meditation. Improves flexibility, strengthens the spine and calms the nervous system.",
     steps: ["Start in Tadasana (Mountain pose) — feet together, arms at sides", "Move into Uttanasana (Forward fold) — fold from hips, letting head hang", "Step back to Chaturanga (Low plank) or knees-down variation", "Flow into Bhujangasana (Cobra pose) — chest forward, elbows bent", "Return to Downward Dog — hold for 5 breaths", "Move to Balasana (Child's pose) — rest forehead on ground", "Complete 3-5 gentle cycles at a slow, meditative pace"],
     href: "/practices/hatha-yoga-beginner",
     icon: (
@@ -139,7 +139,7 @@ const PRACTICES = [
     type: "Mantra",
     title: "Mantra Chanting — Sacred Sound Meditation",
     description:
-      "Repetition of sacred mantras that attune the mind to higher frequencies. Builds concentration, purifies thought patterns, and connects to spiritual tradition.",
+      "Repetition of sacred mantras that attune the mind to higher frequencies. Builds concentration, purifies thought patterns and connects to spiritual tradition.",
     steps: ["Sit in a comfortable, upright position", "Choose a mantra: 'Om', 'So Hum', or 'Om Namah Shivaya'", "Begin chanting aloud slowly, feeling the vibration in the body", "Let your voice find a natural rhythm and pitch", "Continue for 5-10 minutes, gradually internalizing the sound", "End with 3 deep breaths and observe the inner silence", "Feel the lingering vibration and peace in your being"],
     href: "/practices/mantra-chanting",
     icon: (
@@ -255,7 +255,7 @@ const PRACTICES = [
     type: "Kriya",
     title: "Mahamudra — The Great Gesture",
     description:
-      "A powerful preparatory practice combining physical posture, breath retention, and inner focus. It awakens the energy of the spine before the Kriyas proper.",
+      "A powerful preparatory practice combining physical posture, breath retention and inner focus. It awakens the energy of the spine before the Kriyas proper.",
     steps: ["Traditionally practised before the Kriyas", "Involves forward fold with specific mudra and kumbhaka", "Held for measured counts on each side", "Detailed instruction given by the teacher"],
     href: "/practices/mahamudra",
     icon: (
@@ -384,7 +384,7 @@ export default function PracticesClient() {
                   Intermediate Level
                 </p>
                 <p className="text-[0.95rem] leading-[1.75] text-[var(--text-muted)]">
-                  Intermediate practices should be undertaken with proper instruction from Swami. These techniques require personal guidance to ensure correct practice and prevent any imbalance. Please reach out to discuss your readiness and receive personalized instruction.
+                  Intermediate practices should be undertaken with proper instruction from Swamiji. These techniques require personal guidance to ensure correct practice and prevent any imbalance. Please reach out to discuss your readiness and receive personalized instruction.
                 </p>
               </motion.div>
             )}
@@ -399,7 +399,7 @@ export default function PracticesClient() {
                   Advanced Level
                 </p>
                 <p className="text-[0.95rem] leading-[1.75] text-[var(--text-muted)]">
-                  Advanced practices will develop progressively under Swamiji's direct instruction and guidance. These sacred techniques require consistent practice, proper foundation, and the presence of a qualified teacher. Your practice unfolds at its own pace through dedicated commitment and regular interaction with Swamiji.
+                  Advanced practices will develop progressively under Swamiji's direct instruction and guidance. These sacred techniques require consistent practice, proper foundation and the presence of a qualified teacher. Your practice unfolds at its own pace through dedicated commitment and regular interaction with Swamiji.
                 </p>
               </motion.div>
             )}
@@ -479,7 +479,7 @@ export default function PracticesClient() {
               A gentle note
             </p>
             <p className="text-[1rem] leading-[1.85] text-white/65 max-w-[46ch] mx-auto mb-10">
-              The advanced Kriya techniques — spinal breath, mahamudra, and
+              The advanced Kriya techniques — spinal breath, mahamudra and
               the higher kriyas — are traditionally transmitted by a teacher,
               not learned from a screen. The guides here are orientation, not
               initiation. When you are ready, reach out.

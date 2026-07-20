@@ -11,13 +11,13 @@ import { GoogleAnalytics } from "../components/GoogleAnalytics";
 export const metadata: Metadata = {
   // SEO: Page title affects click-through rate in search results
   title: {
-    default: "Nispruh Yog – A Quiet Practice | Kriya Yoga Meditation",
-    template: "%s | Nispruh Yog",
+    default: "Nispruhyog – A Quiet Practice | Kriya Yoga Meditation",
+    template: "%s | Nispruhyog",
   },
 
   // SEO: Meta description (155-160 chars) appears below title in search results
   description:
-    "A sacred space for sincere seekers. Rooted in the ancient science of Kriyayog — a path of breath, awareness, and inner inquiry. Learn meditation techniques for inner peace.",
+    "A sacred space for sincere seekers. Rooted in the ancient science of Kriyayog — a path of breath, awareness and inner inquiry. Learn meditation techniques for inner peace.",
 
   // SEO: Keywords help search engines understand page topic (use naturally in content)
   keywords: [
@@ -37,18 +37,18 @@ export const metadata: Metadata = {
   // SEO: Open Graph tags improve social media sharing appearance
   // ~38% higher CTR when OG tags are present
   openGraph: {
-    siteName: "Nispruh Yog",
+    siteName: "Nispruhyog",
     locale: "en_US",
     type: "website",
     url: SITE_URL,
-    title: "Nispruh Yog – A Quiet Practice",
+    title: "Nispruhyog – A Quiet Practice",
     description: "A sacred space for sincere seekers practicing Kriya Yoga meditation.",
     images: [
       {
         url: `${SITE_URL}/images/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Nispruh Yog - Kriya Yoga meditation practice",
+        alt: "Nispruhyog - Kriya Yoga meditation practice",
       },
     ],
   },
@@ -71,13 +71,13 @@ export const metadata: Metadata = {
   // SEO: Author attribution helps with credibility
   authors: [
     {
-      name: "Nispruh Yog",
+      name: "Nispruhyog",
       url: SITE_URL,
     },
   ],
 
   // SEO: Creator information
-  creator: "Nispruh Yog",
+  creator: "Nispruhyog",
 };
 
 export const viewport: Viewport = {
@@ -117,7 +117,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="fixed inset-0 pointer-events-none z-10 flex items-center justify-center overflow-hidden">
           <Image
             src="/images/logo_A_tnsp.png"
-            alt="Nispruh Yog - Sacred meditation practice"
+            alt="Nispruhyog - Sacred meditation practice"
             width={800}
             height={800}
             style={{ width: 'auto', height: 'auto' }}

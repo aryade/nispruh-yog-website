@@ -60,7 +60,7 @@ const sections = [
     • Google Analytics: For website analytics
     • Google Search Console: For search performance monitoring
 
-    These services have their own privacy policies, and we encourage you to review them.`,
+    These services have their own privacy policies and we encourage you to review them.`,
   },
   {
     title: '6. Cookies and Tracking',
@@ -119,7 +119,7 @@ export default function PrivacyPolicy() {
               Privacy Policy
             </h1>
             <p className="text-lg text-[var(--text-muted)] leading-relaxed">
-              Your privacy matters to us. This policy explains how we collect, use, and protect your information.
+              Your privacy matters to us. This policy explains how we collect, use and protect your information.
             </p>
           </motion.div>
         </div>

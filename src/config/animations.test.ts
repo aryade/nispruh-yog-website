@@ -184,7 +184,7 @@ describe("Animations Configuration", () => {
   });
 
   describe("pageEnter variant", () => {
-    it("has hidden, enter, and exit states", () => {
+    it("has hidden, enter and exit states", () => {
       expect(pageEnter.hidden).toBeDefined();
       expect(pageEnter.enter).toBeDefined();
       expect(pageEnter.exit).toBeDefined();

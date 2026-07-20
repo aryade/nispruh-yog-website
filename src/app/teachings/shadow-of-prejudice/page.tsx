@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Shadow of Prejudice | Teachings",
   description:
-    "A teaching on moving beyond the judgment of others and finding peace within, based on the writings of Paramahamsa Shri Swami Nispruh Spandan.",
+    "A teaching on moving beyond the judgment of others and finding peace within, based on the writings of Paramahamsa Swami Shri Nispruh Spandanji.",
 };
 
 export default function ShadowOfPrejudicePage() {
@@ -43,7 +43,7 @@ export default function ShadowOfPrejudicePage() {
               The Shadow of Prejudice: Finding Peace Beyond the Judgment of Others
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              Based on the teachings of Paramahamsa Shri Swami Nispruh Spandan.
+              Based on the teachings of Paramahamsa Swami Shri Nispruh Spandanji.
             </p>
           </header>
 
@@ -53,7 +53,7 @@ export default function ShadowOfPrejudicePage() {
             </p>
 
             <p>
-              When someone forms a false impression of you, your actual truth, your goodness, and your pure intentions cease to matter to them. Their vision is veiled by prejudice. In the court of their mind, you have already been declared guilty, and no amount of evidence will change the verdict.
+              When someone forms a false impression of you, your actual truth, your goodness and your pure intentions cease to matter to them. Their vision is veiled by prejudice. In the court of their mind, you have already been declared guilty and no amount of evidence will change the verdict.
             </p>
 
             <h2>The Illusion of Judgment</h2>
@@ -75,7 +75,7 @@ export default function ShadowOfPrejudicePage() {
             </ul>
 
             <p>
-              They are not interacting with you as you truly are. Instead, they have accepted their own imagination as truth, projected their internal fears onto you, and passed judgment on their own creation.
+              They are not interacting with you as you truly are. Instead, they have accepted their own imagination as truth, projected their internal fears onto you and passed judgment on their own creation.
             </p>
 
             <hr />
@@ -106,7 +106,7 @@ export default function ShadowOfPrejudicePage() {
                 <strong>Some relationships naturally end in silence.</strong> Letting go without anger or resentment is a vital step toward inner freedom.
               </li>
               <li>
-                <strong>Validation comes from within.</strong> Your connection to truth, innocence, and your highest self is the only anchor you truly need.
+                <strong>Validation comes from within.</strong> Your connection to truth, innocence and your highest self is the only anchor you truly need.
               </li>
             </ol>
 

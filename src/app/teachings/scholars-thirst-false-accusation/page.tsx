@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "The Scholar's Thirst and the False Accusation | Teachings",
   description:
-    "A powerful Puranic teaching on fake feminism, character, and the importance of keeping company with the virtuous.",
+    "A powerful Puranic teaching on fake feminism, character and the importance of keeping company with the virtuous.",
 };
 
 export default function ScholarsThirstPage() {
@@ -43,13 +43,13 @@ export default function ScholarsThirstPage() {
               The Scholar's Thirst and the False Accusation
             </h1>
             <p className="text-[1.02rem] leading-[1.85] text-[var(--text-muted)] max-w-[48ch]">
-              A Puranic teaching on character, virtue, and the dangers of false morality.
+              A Puranic teaching on character, virtue and the dangers of false morality.
             </p>
           </header>
 
           <article className="prose prose-sm max-w-none text-[var(--text-body)] mt-12">
             <p>
-              A learned scholar was returning from Varanasi after completing his studies of the Vedas, scriptures, and Puranas. On the way, he became thirsty. He approached a well, where a woman was standing, and said:
+              A learned scholar was returning from Varanasi after completing his studies of the Vedas, scriptures and Puranas. On the way, he became thirsty. He approached a well, where a woman was standing and said:
             </p>
 
             <p>
@@ -73,7 +73,7 @@ export default function ScholarsThirstPage() {
             </p>
 
             <p>
-              The scholar replied, "I have just returned from Varanasi after studying all the Vedas, scriptures, and Puranas."
+              The scholar replied, "I have just returned from Varanasi after studying all the Vedas, scriptures and Puranas."
             </p>
 
             <p>
@@ -184,7 +184,7 @@ export default function ScholarsThirstPage() {
             <h2>The Fragrance of Virtue</h2>
 
             <p>
-              The couplet of Kabir reminds us that virtue is not a practice you do alone. It is a fragrance you absorb from those around you. You do not need to spend all your time with a perfumer. You do not need to study the science of fragrance. You simply need to sit near one, and the scent will settle into your being.
+              The couplet of Kabir reminds us that virtue is not a practice you do alone. It is a fragrance you absorb from those around you. You do not need to spend all your time with a perfumer. You do not need to study the science of fragrance. You simply need to sit near one and the scent will settle into your being.
             </p>
 
             <p>
