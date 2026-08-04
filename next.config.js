@@ -91,12 +91,16 @@ const nextConfig = {
   // SEO: Redirect non-www to www (if desired) or ensure consistency
   async redirects() {
     return [
-      // Example: Redirect old URLs to new ones
-      // {
-      //   source: '/old-page',
-      //   destination: '/new-page',
-      //   permanent: true, // 301 redirect for SEO value transfer
-      // },
+      {
+        source: "/blog",
+        destination: "/books",
+        permanent: true,
+      },
+      {
+        source: "/blog/:slug*",
+        destination: "/books/:slug*",
+        permanent: true,
+      },
     ];
   },
 

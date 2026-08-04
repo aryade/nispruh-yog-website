@@ -15,7 +15,7 @@ const NAV_LINKS = [
   { label: "Practices", href: "/practices" },
   { label: "Courses", href: "/courses-programs" },
   { label: "Events", href: "/events-retreats" },
-  { label: "Blog", href: "/blog" },
+  { label: "Books", href: "/books" },
   { label: "Contact", href: "/contact" },
 ];
 

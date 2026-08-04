@@ -23,6 +23,36 @@ const STAGGER: Variants = {
 /* ── data ─────────────────────────────────────────────────────────── */
 const CATEGORIES = ["All", "Breath", "Lineage", "Meditation", "Philosophy", "Daily Practice"];
 
+const PILLARS = [
+  {
+    key: "I",
+    title: "Complete surrender to Guruji",
+    color: "text-[#5e3a93] bg-[#f3ecff] border-[#d7c2f2]",
+  },
+  {
+    key: "II",
+    title: "No judgement of others",
+    color: "text-[#0f6a6f] bg-[#e6f8f7] border-[#b8ece8]",
+  },
+  {
+    key: "III",
+    title: "Constant devoted sādhanā",
+    color: "text-[#935b13] bg-[#fff4de] border-[#f2ddb1]",
+  },
+] as const;
+
+const PILLAR_BY_CATEGORY: Record<string, "I" | "II" | "III"> = {
+  Lineage: "I",
+  Philosophy: "II",
+  Breath: "III",
+  Meditation: "III",
+  "Daily Practice": "III",
+};
+
+function getPillar(category: string): "I" | "II" | "III" {
+  return PILLAR_BY_CATEGORY[category] ?? "III";
+}
+
 const ARTICLES = [
   {
     category: "Philosophy",
@@ -241,7 +271,7 @@ export default function TeachingsClient() {
         </div>
 
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
-          <motion.div variants={STAGGER} initial="hidden" animate="show" className="max-w-[52ch]">
+          <motion.div variants={STAGGER} initial="hidden" animate="show" className="max-w-[58rem]">
             <motion.p
               variants={FADE_UP}
               className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6"
@@ -259,6 +289,15 @@ export default function TeachingsClient() {
               Direct guidance for those walking the path — on breath, posture, lineage and the lived texture of sincere practice. Read slowly.
               Return often.
             </motion.p>
+
+            <motion.div variants={FADE_UP} className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+              {PILLARS.map((pillar) => (
+                <article key={pillar.key} className={`rounded-xl border px-4 py-3.5 ${pillar.color}`}>
+                  <p className="text-[0.68rem] uppercase tracking-[0.2em] font-semibold mb-1.5">Pillar {pillar.key}</p>
+                  <h2 className="text-[0.95rem] leading-snug font-medium text-current">{pillar.title}</h2>
+                </article>
+              ))}
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -304,7 +343,10 @@ export default function TeachingsClient() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {visibleArticles.length > 0 ? (
-              visibleArticles.map(({ category, readTime, title, excerpt, href, image }) => (
+              visibleArticles.map(({ category, readTime, title, excerpt, href, image }) => {
+                const pillar = getPillar(category);
+
+                return (
                 <motion.li key={title} variants={FADE_UP}>
                   <Link
                     href={href}
@@ -315,19 +357,20 @@ export default function TeachingsClient() {
                         src={image}
                         alt={title}
                         fill
+                        sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 33vw"
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
 
                     <div className="flex flex-col flex-1 p-6">
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="text-[0.68rem] uppercase tracking-[0.16em] font-semibold text-[var(--pista-green)]">
+                      <div className="flex items-center justify-between mb-4 gap-3">
+                        <span className="inline-flex items-center rounded-full border border-[var(--pista-green)]/30 px-2.5 py-1 text-[0.64rem] uppercase tracking-[0.16em] font-semibold text-[var(--pista-green)] bg-[var(--pista-green)]/5">
                           {category}
                         </span>
                         <span className="text-[0.72rem] text-[var(--text-muted)]/70">{readTime}</span>
                       </div>
 
-                      <h2 className="text-[1rem] font-semibold leading-snug text-[var(--text-heading)] mb-3 group-hover:text-[var(--pista-green)] transition-colors duration-200">
+                      <h2 className="text-[1.06rem] font-serif leading-snug text-[var(--text-heading)] mb-3 group-hover:text-[var(--pista-green)] transition-colors duration-200">
                         {title}
                       </h2>
 
@@ -335,25 +378,31 @@ export default function TeachingsClient() {
                         {excerpt}
                       </p>
 
-                      <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[var(--pista-green)]">
-                        Read teaching
-                        <svg
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.6"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
-                          aria-hidden="true"
-                        >
-                          <path d="M3 8h10M9 4l4 4-4 4" />
-                        </svg>
-                      </span>
+                      <div className="mt-auto flex items-center justify-between gap-3">
+                        <span className="inline-flex items-center rounded-full px-2.5 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.14em] bg-[#f5f5f2] text-[#5f5b54] border border-[var(--border-soft)]/70">
+                          Pillar {pillar}
+                        </span>
+
+                        <span className="inline-flex items-center gap-1.5 text-[0.8rem] font-medium text-[var(--pista-green)]">
+                          Read teaching
+                          <svg
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
+                            aria-hidden="true"
+                          >
+                            <path d="M3 8h10M9 4l4 4-4 4" />
+                          </svg>
+                        </span>
+                      </div>
                     </div>
                   </Link>
                 </motion.li>
-              ))
+              )})
             ) : (
               <motion.li variants={FADE_UP} className="col-span-full rounded-2xl border border-[var(--border-soft)]/60 bg-white p-10 text-center text-[0.95rem] text-[var(--text-muted)]">
                 No teachings match that category yet.
@@ -400,6 +449,9 @@ export default function TeachingsClient() {
               <p className="text-[1.05rem] leading-[1.85] text-[#5a5a5a] italic font-light max-w-[44ch] mx-auto">
                 The practice is not a destination; it is the way of arriving back into yourself.
               </p>
+              <cite className="mt-5 block text-[0.75rem] tracking-[0.14em] uppercase not-italic text-[var(--text-muted)]/80">
+                — Shri Swami Nispruh Spandan
+              </cite>
             </blockquote>
           </motion.div>
         </div>

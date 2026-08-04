@@ -112,7 +112,7 @@
   - [ ] Teachings (/teachings)
   - [ ] Courses (/courses-programs)
   - [ ] Events (/events-retreats)
-  - [ ] Blog (/blog)
+  - [ ] Books (/books)
   - [ ] Contact (/contact)
 - [ ] Breadcrumbs appear on sub-pages
 - [ ] Back button works

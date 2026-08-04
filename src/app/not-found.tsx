@@ -80,10 +80,10 @@ export default function NotFound() {
                 Courses
               </Link>
               <Link
-                href="/blog"
+                href="/books"
                 className="text-pista-green hover:underline"
               >
-                Blog
+                Books
               </Link>
               <Link
                 href="/contact"

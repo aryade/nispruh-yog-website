@@ -25,7 +25,7 @@ const pages: Page[] = [
   { path: "/teachings", priority: 0.8, changefreq: "weekly" },
   { path: "/courses-programs", priority: 0.9, changefreq: "monthly" },
   { path: "/events-retreats", priority: 0.8, changefreq: "weekly" },
-  { path: "/blog", priority: 0.8, changefreq: "daily" },
+  { path: "/books", priority: 0.8, changefreq: "monthly" },
 
   // Key teaching pages
   { path: "/teachings/sacred-confluence", priority: 0.7, changefreq: "monthly" },
@@ -50,8 +50,8 @@ const pages: Page[] = [
   { path: "/practices/spine-resonance", priority: 0.8, changefreq: "monthly" },
 ];
 
-// Add blog posts (example - in production fetch from API/database)
-// { path: "/blog/post-title", priority: 0.7, changefreq: "monthly" },
+// Add books detail pages (example - in production fetch from API/database)
+// { path: "/books/book-slug", priority: 0.7, changefreq: "monthly" },
 
 /**
  * Generate XML sitemap

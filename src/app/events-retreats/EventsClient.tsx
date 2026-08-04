@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
+import { UpcomingEventBanner } from "@/components/UpcomingEventBanner";
 
 /* ── animation variants ───────────────────────────────────────────── */
 const FADE_UP: Variants = {
@@ -54,10 +55,36 @@ const TYPE_COLOUR: Record<EventType, string> = {
 
 const EVENTS: Event[] = [
   {
+    id: "mantra-chanting-meditation-15-aug-2026",
+    type: "Satsang",
+    title: "Mantra Chanting and Meditation",
+    subtitle: "Special gathering with Nispruhyog Parivar · Open to all",
+    dateLabel: "15 August 2026",
+    dateISO: "2026-08-15",
+    location: "Järvenperä, Espoo",
+    locationDetail: "Pehtorintie 3, Järvenperä, Espoo 02940",
+    duration: "5:00 PM – 7:30 PM",
+    spotsLeft: null,
+    spotsTotal: 0,
+    price: "Open to all · Free",
+    description:
+      "With deep reverence and respect, Nispruhyog Parivar invites you to join this special event of mantra chanting and meditation in the presence of a spiritual master from the lineage of Mahavtaar Babaji.",
+    highlights: [
+      "Guided mantra chanting and meditation",
+      "In presence of Paramhans Shri Swami Nispruh Spandan ji",
+      "Contact: Maa Nispruh Drupda +358 45 2342133",
+      "Contact: Maa Nispruh Bhavpriya +358 41 3173195",
+    ],
+    cta: { label: "Get event info", href: "/contact?event=mantra-chanting-meditation-15-aug-2026" },
+    image: "/images/events/mantra-chanting-meditation-15-aug-2026.jpg",
+    isUpcoming: true,
+    accentColor: "#B86B00",
+  },
+  {
     id: "guru-purnima-utsav-2026",
     type: "Satsang",
     title: "Guru Purnima Utsav 2026",
-    subtitle: "A sacred celebration with Nispruhyog Kriyayog Parivar",
+    subtitle: "A sacred celebration with Nispruhyog Kriyayog Parivar · Recording available",
     dateLabel: "29 July 2026",
     dateISO: "2026-07-29",
     location: "Nashik",
@@ -74,9 +101,9 @@ const EVENTS: Event[] = [
       "Contact: +91 9975560613",
       "Community celebration of the guru principle",
     ],
-    cta: { label: "Get more info", href: "/contact?event=guru-purnima-utsav-2026" },
+    cta: { label: "Watch on YouTube", href: "https://www.youtube.com/@KriyayogNispruhyog" },
     image: "/images/events/guru-purnima-details.jpg",
-    isUpcoming: true,
+    past: true,
     accentColor: "#D4920A",
   },
   {
@@ -383,7 +410,8 @@ function SpotsBar({ left, total }: { left: number; total: number }) {
 
 function EventCard({ event, variants }: { event: Event; variants: Variants }) {
   const accent = event.accentColor || TYPE_COLOUR[event.type];
-  const isOpen = !event.past;
+  const isExternalCta = /^https?:\/\//.test(event.cta.href);
+  const isOpen = !event.past || (event.past && isExternalCta);
 
   return (
     <motion.article
@@ -526,6 +554,8 @@ function EventCard({ event, variants }: { event: Event; variants: Variants }) {
           {/* CTA */}
           <Link
             href={event.cta.href}
+            target={isExternalCta ? "_blank" : undefined}
+            rel={isExternalCta ? "noopener noreferrer" : undefined}
             className={`inline-flex items-center justify-center gap-2 w-full px-5 py-3.5 rounded-full text-[0.85rem] font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 group ${event.type === "Retreat" ? "text-white dark:text-[#121018] dark:font-semibold" : "text-white"}`}
             style={{ background: isOpen ? accent : "#a0a0a0" }}
             aria-disabled={!isOpen}
@@ -611,6 +641,11 @@ export default function EventsClient() {
           </motion.div>
         </div>
       </section>
+
+      <UpcomingEventBanner
+        ctaHref="/contact?event=mantra-chanting-meditation-15-aug-2026"
+        ctaLabel="Register / Ask Details"
+      />
 
       {/* ── Upcoming events ────────────────────────────────────── */}
       <section aria-labelledby="upcoming-heading" className="py-16">

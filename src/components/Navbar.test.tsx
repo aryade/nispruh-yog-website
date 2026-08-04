@@ -28,7 +28,7 @@ describe("Navbar", () => {
     expect(screen.getByText("Practices")).toBeInTheDocument();
     expect(screen.getByText("Courses")).toBeInTheDocument();
     expect(screen.getByText("Events")).toBeInTheDocument();
-    expect(screen.getByText("Blog")).toBeInTheDocument();
+    expect(screen.getByText("Books")).toBeInTheDocument();
     expect(screen.getByText("Contact")).toBeInTheDocument();
   });
 

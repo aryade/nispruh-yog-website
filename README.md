@@ -31,7 +31,7 @@ This single guide contains:
 - Practices: `/practices`
 - Courses: `/courses-programs`
 - Events: `/events-retreats`
-- Blog: `/blog`
+- Books: `/books`
 - Contact: `/contact`
 
 ## 🛠️ Basic Commands

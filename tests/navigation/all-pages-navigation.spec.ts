@@ -9,11 +9,11 @@ test.describe('Main Pages Navigation', () => {
     expect(page.url()).toContain('about-kriya-yoga');
   });
 
-  test('should navigate to Blog page', async ({ page }) => {
+  test('should navigate to Books page', async ({ page }) => {
     await page.goto('/');
-    await clickNavLink(page, /blog/i);
-    await page.waitForURL(/blog/);
-    expect(page.url()).toContain('blog');
+    await clickNavLink(page, /books/i);
+    await page.waitForURL(/books/);
+    expect(page.url()).toContain('books');
   });
 
   test('should navigate to Courses/Programs page', async ({ page }) => {

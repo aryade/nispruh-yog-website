@@ -4,12 +4,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-export function UpcomingEventBanner() {
+interface UpcomingEventBannerProps {
+  ctaHref?: string;
+  ctaLabel?: string;
+}
+
+export function UpcomingEventBanner({ ctaHref = '/events-retreats', ctaLabel = 'View Event Details' }: UpcomingEventBannerProps) {
   return (
     <section
       className="relative py-12 md:py-20 overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #2D1A00 0%, #8B5E00 100%)',
+        background: 'linear-gradient(135deg, #4a2a00 0%, #8c5a10 100%)',
       }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,47 +36,51 @@ export function UpcomingEventBanner() {
                   color: '#FFF',
                 }}
               >
-                Upcoming Event · 29 July 2026
+                Next Event · 15 August 2026
               </span>
             </div>
 
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Guru Purnima Utsav 2026
+              Mantra Chanting and Meditation
             </h2>
 
             {/* Subtext */}
             <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-md">
-              On this Guru Purnima, embrace yourself in the Divine.
+              Nispruhyog Parivar warmly invites you to this special gathering
               <br />
-              We bow down to the feet of our beloved Guruji
+              in the presence of a spiritual master from
               <br />
-              Paramahamsa Swami Shri Nispruh Spandanji.
+              the lineage of Mahavtaar Babaji.
+            </p>
+
+            <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-md">
+              Paramhans Shri Swami Nispruh Spandan ji
             </p>
 
             {/* Details row */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-white pt-2">
+            <div className="flex flex-col gap-3 text-white pt-2">
               <div className="flex items-center gap-2">
                 <span className="text-lg">📍</span>
-                <span className="font-medium">Nashik</span>
+                <span className="font-medium">Pehtorintie 3, Jarvenpera, Espoo 02940</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="text-lg">🕙</span>
-                <span className="font-medium">10:00 AM – 4:00 PM</span>
+                <span className="font-medium">5:00 PM – 7:30 PM</span>
               </div>
             </div>
 
-            {/* Dress code */}
+            {/* Contact details */}
             <div className="pt-1">
               <p className="text-sm md:text-base text-white/80">
-                <span className="font-semibold text-white">Dress Code:</span> Wear White or Yellow
+                <span className="font-semibold text-white">Info:</span> +358 45 2342133, +358 41 3173195
               </p>
             </div>
 
             {/* Button */}
             <div className="pt-4">
-              <Link href="/events-retreats" className="btn btn-primary">
-                Learn More
+              <Link href={ctaHref} className="btn btn-primary">
+                {ctaLabel}
               </Link>
             </div>
           </motion.div>
@@ -86,8 +95,8 @@ export function UpcomingEventBanner() {
           >
             <div className="relative w-full max-w-sm md:max-w-none">
               <Image
-                src="/images/events/guru-purnima-poster.jpg"
-                alt="Guru Purnima Utsav 2026"
+                src="/images/events/mantra-chanting-meditation-15-aug-2026.jpg"
+                alt="Mantra chanting and meditation event notice"
                 width={600}
                 height={750}
                 priority

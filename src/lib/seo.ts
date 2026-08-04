@@ -292,6 +292,6 @@ export const INTERNAL_LINKS = {
   teachings: "/teachings",
   courses: "/courses-programs",
   events: "/events-retreats",
-  blog: "/blog",
+  books: "/books",
   contact: "/contact",
 };

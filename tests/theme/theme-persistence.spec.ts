@@ -31,7 +31,7 @@ test.describe('Theme Persistence Across Pages', () => {
     await ensureTheme(page, 'dark');
 
     const html = page.locator('html');
-    for (const pageUrl of ['/about-kriya-yoga', '/blog', '/contact']) {
+    for (const pageUrl of ['/about-kriya-yoga', '/books', '/contact']) {
       await page.goto(pageUrl);
       await expect(html, `Theme should persist on ${pageUrl}`).toHaveClass(/dark/);
     }
@@ -42,7 +42,7 @@ test.describe('Theme Persistence Across Pages', () => {
     await ensureTheme(page, 'light');
 
     const html = page.locator('html');
-    await page.goto('/blog');
+    await page.goto('/books');
     await expect(html).not.toHaveClass(/dark/);
   });
 

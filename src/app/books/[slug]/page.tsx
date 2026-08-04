@@ -19,7 +19,7 @@ export async function generateMetadata(
   }
 
   return {
-    title: `${post.title} | Blog`,
+    title: `${post.title} | Books`,
     description: post.excerpt,
     openGraph: {
       type: "article",
@@ -52,7 +52,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <div className="border-b border-[var(--border-soft)]/50">
         <div className="mx-auto max-w-4xl px-5 sm:px-8 py-6">
           <Link
-            href="/blog"
+            href="/books"
             className="inline-flex items-center gap-2 text-[0.85rem] font-medium text-[var(--pista-green)] hover:text-[var(--pista-green)]/80 transition-colors duration-200"
           >
             <svg
@@ -67,7 +67,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             >
               <path d="M13 8H3M7 12l-4-4 4-4" />
             </svg>
-            Back to blog
+            Back to books
           </Link>
         </div>
       </div>
@@ -134,10 +134,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             unfolding of awareness.
           </p>
           <Link
-            href="/blog"
+            href="/books"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--pista-green)] text-white text-[0.85rem] font-medium hover:bg-[var(--pista-green)]/90 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
           >
-            View all posts
+            View all books
             <svg
               viewBox="0 0 16 16"
               fill="none"

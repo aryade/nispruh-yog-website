@@ -59,7 +59,7 @@ After uploading photos, update the component files with new image paths.
 | Practices | `src/app/practices/page.tsx` |
 | Courses/Programs | `src/app/courses-programs/page.tsx` |
 | Events/Retreats | `src/app/events-retreats/page.tsx` |
-| Blog | `src/app/blog/page.tsx` |
+| Books | `src/app/books/page.tsx` |
 | Contact | `src/app/contact/page.tsx` |
 
 ---

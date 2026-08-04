@@ -60,7 +60,7 @@ Your website now has **complete, production-ready SEO** following all Google bes
 4. Teachings (/teachings)
 5. Courses & Programs (/courses-programs)
 6. Events & Retreats (/events-retreats)
-7. Blog (/blog)
+7. Books (/books)
 8. Contact (/contact)
 
 ### 4. **Structured Data (Schema.org)**
