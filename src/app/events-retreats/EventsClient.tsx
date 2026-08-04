@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
-import { UpcomingEventBanner } from "@/components/UpcomingEventBanner";
 
 /* ── animation variants ───────────────────────────────────────────── */
 const FADE_UP: Variants = {
@@ -641,11 +640,6 @@ export default function EventsClient() {
           </motion.div>
         </div>
       </section>
-
-      <UpcomingEventBanner
-        ctaHref="/contact?event=mantra-chanting-meditation-15-aug-2026"
-        ctaLabel="Register / Ask Details"
-      />
 
       {/* ── Upcoming events ────────────────────────────────────── */}
       <section aria-labelledby="upcoming-heading" className="py-16">

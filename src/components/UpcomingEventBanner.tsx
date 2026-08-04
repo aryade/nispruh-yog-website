@@ -47,9 +47,7 @@ export function UpcomingEventBanner({ ctaHref = '/events-retreats', ctaLabel = '
 
             {/* Subtext */}
             <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-md">
-              Nispruhyog Parivar warmly invites you to this special gathering
-              <br />
-              in the presence of a spiritual master from
+              Nispruhyog Parivar warmly invites you to this special gathering in the presence of a spiritual master from
               <br />
               the lineage of Mahavtaar Babaji.
             </p>
