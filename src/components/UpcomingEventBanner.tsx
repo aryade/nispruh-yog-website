@@ -9,7 +9,9 @@ interface UpcomingEventBannerProps {
   ctaLabel?: string;
 }
 
-export function UpcomingEventBanner({ ctaHref = '/events-retreats', ctaLabel = 'View Event Details' }: UpcomingEventBannerProps) {
+export function UpcomingEventBanner({ ctaHref = 'https://forms.gle/cuk6cRp69rs6oeeEA', ctaLabel = 'Register now' }: UpcomingEventBannerProps) {
+  const isExternalCta = /^https?:\/\//.test(ctaHref);
+
   return (
     <section
       className="relative py-12 md:py-20 overflow-hidden"
@@ -36,48 +38,52 @@ export function UpcomingEventBanner({ ctaHref = '/events-retreats', ctaLabel = '
                   color: '#FFF',
                 }}
               >
-                Next Event · 15 August 2026
+                Upcoming course · 22-23 August 2026
               </span>
             </div>
 
             {/* Heading */}
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              Mantra Chanting and Meditation
+              Kriyayog Course - Awaken Within
             </h2>
 
             {/* Subtext */}
             <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-md">
-              Nispruhyog Parivar warmly invites you to this special gathering in the presence of a spiritual master from
-              <br />
-              the lineage of Mahavtaar Babaji.
+              A two-day introduction to Kriyayog, the ancient science of breath, with theory, guided practice, and
+              satsang.
             </p>
 
             <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-md">
-              Paramhans Shri Swami Nispruh Spandan ji
+              Guided by Paramahans Swami Shri Nispruh Spandan ji, from the lineage of Mahavtaar Babaji.
             </p>
 
             {/* Details row */}
             <div className="flex flex-col gap-3 text-white pt-2">
               <div className="flex items-center gap-2">
-                <span className="text-lg">📍</span>
-                <span className="font-medium">Pehtorintie 3, Jarvenpera, Espoo 02940</span>
+                <span className="text-sm font-semibold">Location:</span>
+                <span className="font-medium">Espoo</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="text-lg">🕙</span>
-                <span className="font-medium">5:00 PM – 7:30 PM</span>
+                <span className="text-sm font-semibold">Time:</span>
+                <span className="font-medium">10:00 AM - 4:30 PM · 22-23 August</span>
               </div>
             </div>
 
             {/* Contact details */}
             <div className="pt-1">
               <p className="text-sm md:text-base text-white/80">
-                <span className="font-semibold text-white">Info:</span> +358 45 2342133, +358 41 3173195
+                <span className="font-semibold text-white">Info:</span> Maa Nispruh Drupda +358 45 2342133 · Maa Nispruh Anugamini +358 45 3195013
               </p>
             </div>
 
             {/* Button */}
             <div className="pt-4">
-              <Link href={ctaHref} className="btn btn-primary">
+              <Link
+                href={ctaHref}
+                target={isExternalCta ? "_blank" : undefined}
+                rel={isExternalCta ? "noopener noreferrer" : undefined}
+                className="btn btn-primary"
+              >
                 {ctaLabel}
               </Link>
             </div>
@@ -93,8 +99,8 @@ export function UpcomingEventBanner({ ctaHref = '/events-retreats', ctaLabel = '
           >
             <div className="relative w-full max-w-sm md:max-w-none">
               <Image
-                src="/images/events/mantra-chanting-meditation-15-aug-2026.jpg"
-                alt="Mantra chanting and meditation event notice"
+                src="/images/events/kriyayog-course-awaken-within-august-2026.jpeg"
+                alt="Kriyayog Course - Awaken Within event poster"
                 width={600}
                 height={750}
                 priority

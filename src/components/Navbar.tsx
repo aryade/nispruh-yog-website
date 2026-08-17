@@ -98,7 +98,7 @@ export default function Navbar() {
                   : pathname.startsWith(href);
               return (
                 <Link
-                  key={href}
+                  key={`${label}-${href}`}
                   href={href}
                   className={[
                     "relative isolate px-3 py-1.5 text-[0.83rem] font-medium tracking-wide rounded-full transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgba(147,197,114,0.3)]",
@@ -188,7 +188,7 @@ export default function Navbar() {
                       : pathname.startsWith(href);
                   return (
                     <motion.div
-                      key={href}
+                      key={`${label}-${href}`}
                       initial={{ opacity: 0, x: 18 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: 0.05 + i * 0.045, duration: 0.35, ease: "easeOut" }}

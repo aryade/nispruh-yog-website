@@ -54,6 +54,32 @@ const TYPE_COLOUR: Record<EventType, string> = {
 
 const EVENTS: Event[] = [
   {
+    id: "kriyayog-course-awaken-within-august-2026",
+    type: "Workshop",
+    title: "Kriyayog Course - Awaken Within",
+    subtitle: "A two-day introduction to the ancient science of breath",
+    dateLabel: "22-23 August 2026",
+    dateISO: "2026-08-22/2026-08-23",
+    location: "Espoo, Finland",
+    locationDetail: "Venue details shared with registered participants",
+    duration: "2 days · 10:00 AM - 4:30 PM",
+    spotsLeft: null,
+    spotsTotal: 0,
+    price: "EUR 150",
+    description:
+      "Nispruhyog offers an opportunity to learn about Kriyayog, an ancient science of breath. Guided by Paramahans Swami Shri Nispruh Spandan ji from the lineage of Mahavtaar Babaji, the course brings together study, practice, and satsang.",
+    highlights: [
+      "Guru Parampara, Kriyayog background, Kundalini, and Chakras",
+      "Pranayam, Asanas, HanSa Meditation, theory, and practical sessions",
+      "Queries welcome in Marathi, Hindi, English, and Finnish",
+      "Join the WhatsApp group for course queries",
+    ],
+    cta: { label: "Register now", href: "https://forms.gle/cuk6cRp69rs6oeeEA" },
+    image: "/images/events/kriyayog-course-awaken-within-august-2026.jpeg",
+    isUpcoming: true,
+    accentColor: "#B86B00",
+  },
+  {
     id: "mantra-chanting-meditation-15-aug-2026",
     type: "Satsang",
     title: "Mantra Chanting and Meditation",
@@ -76,7 +102,7 @@ const EVENTS: Event[] = [
     ],
     cta: { label: "Get event info", href: "/contact?event=mantra-chanting-meditation-15-aug-2026" },
     image: "/images/events/mantra-chanting-meditation-15-aug-2026.jpg",
-    isUpcoming: true,
+    past: true,
     accentColor: "#B86B00",
   },
   {
@@ -341,29 +367,6 @@ const EVENTS: Event[] = [
       "Community gathering",
     ],
     cta: { label: "Join us", href: "/contact?event=mantra-meditation-august" },
-  },
-  {
-    id: "kriya-course-august",
-    type: "Retreat",
-    title: "Kriya Yoga Course",
-    subtitle: "Two-day immersion in foundational practices",
-    dateLabel: "22–23 August 2026",
-    dateISO: "2026-08-22/2026-08-23",
-    location: "Espoo, Finland",
-    locationDetail: "EIS School classroom B280",
-    duration: "2 days · 10:00 AM – 4:30 PM",
-    spotsLeft: 8,
-    spotsTotal: 15,
-    price: "Sliding scale",
-    description:
-      "A two-day intensive course in the foundational practices of Kriya Yoga. This course covers the essential techniques, their philosophy and how to establish a personal practice. Suitable for beginners seeking a solid foundation and returning students looking to deepen their understanding.",
-    highlights: [
-      "Core Kriya Yoga techniques",
-      "Philosophy and anatomy of practice",
-      "Meditation and pranayama",
-      "Personal practice guidance",
-    ],
-    cta: { label: "Reserve your spot", href: "/contact?event=kriya-course-august" },
   },
   {
     id: "satsang-march",

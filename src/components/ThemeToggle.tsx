@@ -12,11 +12,11 @@ function applyTheme(theme: Theme) {
 }
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
 
   useEffect(() => {
     const savedTheme = localStorage.getItem(STORAGE_KEY);
-    const initialTheme: Theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "light";
+    const initialTheme: Theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : "dark";
     setTheme(initialTheme);
     applyTheme(initialTheme);
   }, []);
@@ -32,8 +32,8 @@ export function ThemeToggle() {
   return (
     <button
       type="button"
-      aria-label={`Switch to ${nextTheme} mode`}
-      title={`Switch to ${nextTheme} mode`}
+      aria-label={theme === "dark" ? "Dark mode enabled" : "Switch to dark mode"}
+      title={theme === "dark" ? "Dark mode enabled" : "Switch to dark mode"}
       onClick={handleToggle}
       className="relative w-11 h-11 rounded-full flex items-center justify-center text-[var(--text-light)] hover:text-[var(--text-heading)] dark:hover:text-[var(--text-heading)] border border-[rgba(232,224,235,0.8)] dark:border-[rgba(58,53,64,0.7)] bg-[rgba(246,224,232,0.55)] dark:bg-[rgba(26,22,32,0.45)] transition-colors duration-200"
     >

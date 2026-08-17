@@ -27,7 +27,7 @@ test.describe('Home Page Navigation', () => {
     
     const navLinks = [
       'About',
-      'Blog',
+      'Books',
       'Courses',
       'Events',
       'Practices',
@@ -54,6 +54,23 @@ test.describe('Home Page Navigation', () => {
     const scrollHeight = await page.evaluate(() => document.documentElement.scrollHeight);
     const windowHeight = await page.evaluate(() => window.innerHeight);
     expect(scrollHeight).toBeGreaterThan(windowHeight);
+  });
+
+  test('should show the upcoming Kriyayog course on home and events pages', async ({ page }) => {
+    await page.goto('/');
+
+    const homeCourse = page.getByRole('heading', { name: 'Kriyayog Course - Awaken Within' });
+    await expect(homeCourse).toBeVisible();
+    await expect(page.getByRole('link', { name: 'Register now' })).toHaveAttribute(
+      'href',
+      'https://forms.gle/cuk6cRp69rs6oeeEA',
+    );
+
+    await page.goto('/events-retreats');
+
+    const eventCourse = page.getByRole('heading', { name: 'Kriyayog Course - Awaken Within' });
+    await expect(eventCourse).toBeVisible();
+    await expect(page.getByAltText('Kriyayog Course - Awaken Within')).toBeVisible();
   });
 
   test('should have footer visible at bottom', async ({ page }) => {

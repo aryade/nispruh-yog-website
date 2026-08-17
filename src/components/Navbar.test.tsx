@@ -3,18 +3,18 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Navbar from "./Navbar";
 
-// Mock usePathname to control current route
+const mockUsePathname = vi.fn(() => "/");
+
 vi.mock("next/navigation", () => ({
   useRouter: () => ({
     push: vi.fn(),
   }),
-  usePathname: () => "/",
+  usePathname: () => mockUsePathname(),
 }));
 
 describe("Navbar", () => {
   it("renders logo with accessible brand link", () => {
     render(<Navbar />);
-    const brandLink = screen.getByRole("link", { name: /nispruhyog – home/i });
     const brandLink = screen.getByRole("link", { name: /nispruhyog – home/i });
     expect(brandLink).toBeInTheDocument();
     expect(brandLink).toHaveAttribute("href", "/");
@@ -62,13 +62,13 @@ describe("Navbar", () => {
   it("is sticky and fixed to top", () => {
     render(<Navbar />);
     const header = screen.getByRole("banner");
-    expect(header).toHaveClass("fixed", "top-0", "left-0", "right-0", "z-50");
+    expect(header).toHaveClass("fixed", "top-0", "left-0", "right-0", "z-[100]");
   });
 
   it("has proper aria labels for accessibility", () => {
+    render(<Navbar />);
     expect(screen.getByLabelText("Nispruhyog – home")).toBeInTheDocument();
-    expect(screen.getByLabelText("Nispruhyog – home")).toBeInTheDocument();
-    expect(screen.getByLabelText("Primary")).toBeInTheDocument();
+    expect(screen.getByRole("navigation", { name: /primary/i })).toBeInTheDocument();
   });
 
   it("closes mobile menu when clicking outside", async () => {
@@ -87,26 +87,21 @@ describe("Navbar", () => {
 
   it("closes mobile menu on route change", async () => {
     const user = userEvent.setup();
+    mockUsePathname.mockReturnValue("/");
     const { rerender } = render(<Navbar />);
 
     const menuButton = screen.getByRole("button", { name: /open menu/i });
     await user.click(menuButton);
     expect(screen.getByRole("button", { name: /close menu/i })).toBeInTheDocument();
 
-    // Rerender with different pathname to simulate route change
-    vi.mock("next/navigation", () => ({
-      useRouter: () => ({
-        push: vi.fn(),
-      }),
-      usePathname: () => "/about-kriya-yoga",
-    }));
+    mockUsePathname.mockReturnValue("/about-kriya-yoga");
     rerender(<Navbar />);
   });
 
   it("changes appearance when scrolled", async () => {
     render(<Navbar />);
     const header = screen.getByRole("banner");
-    expect(header).toHaveClass("fixed", "top-0", "left-0", "right-0", "z-50");
+    expect(header).toHaveClass("fixed", "top-0", "left-0", "right-0", "z-[100]");
 
     // Simulate scroll event
     window.scrollY = 50;

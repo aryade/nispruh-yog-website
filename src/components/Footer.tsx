@@ -48,6 +48,15 @@ const SOCIAL_LINKS = [
       </svg>
     ),
   },
+  {
+    label: "X / Twitter",
+    href: "https://x.com/nispruhyog",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5" aria-hidden="true">
+        <path d="M18.901 2h3.68l-8.04 9.19L24 22h-7.406l-5.8-8.005L4.74 22H1.06l8.6-9.83L0 2h7.594l5.243 7.495L18.901 2Zm-1.29 18h2.04L7.15 3.9H4.98L17.611 20Z" />
+      </svg>
+    ),
+  },
 ];
 
 const fadeUp = {
@@ -110,7 +119,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   aria-label={`Follow us on ${label}`}
                   style={{ color: "#ffffff" }}
-                  className="w-11 h-11 rounded-full flex items-center justify-center bg-[var(--pista-green)]/25 border-2 border-[var(--pista-green)]/70 hover:border-[var(--pista-green)] hover:bg-[var(--pista-green)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
+                  className="w-10 h-10 rounded-full flex items-center justify-center bg-[var(--pista-green)]/25 border-2 border-[var(--pista-green)]/70 hover:border-[var(--pista-green)] hover:bg-[var(--pista-green)] transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/50"
                   whileHover={{ scale: 1.15 }}
                   whileTap={{ scale: 0.95 }}
                 >

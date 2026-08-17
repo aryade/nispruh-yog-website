@@ -70,7 +70,7 @@ export function Hero() {
           variants={FADE_UP}
           className="text-[0.72rem] uppercase tracking-[0.22em] text-[var(--pista-green)] font-semibold mb-6"
         >
-          Kriyayog · Ancient Science of Breath
+          Kriya Yoga · Ancient Science of Breath
         </motion.p>
 
         {/* Headline */}
@@ -130,7 +130,7 @@ export function Hero() {
             href="/about-kriya-yoga"
             className="inline-flex items-center gap-1.5 px-5 py-3.5 rounded-full text-[0.88rem] font-medium text-[var(--pista-green)] border-2 border-[var(--pista-green)] hover:bg-[rgba(147,197,114,0.08)] transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--pista-green)]/60"
           >
-            What is Kriyayog?
+            What is Kriya Yoga?
           </Link>
         </motion.div>
       </motion.div>

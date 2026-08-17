@@ -7,10 +7,10 @@
  */
 
 import { Hero } from "../components/Hero";
-import { UpcomingEventBanner } from "../components/UpcomingEventBanner";
 import WhatIsKriyaYoga from "../components/WhatIsKriyaYoga";
 import Benefits from "../components/Benefits";
 import Programs from "../components/Programs";
+import { UpcomingEventBanner } from "../components/UpcomingEventBanner";
 import { Journey } from "../components/Journey";
 import AboutTeacher from "../components/AboutTeacher";
 import { Testimonials } from "../components/Testimonials";
@@ -23,9 +23,6 @@ export default function HomePage() {
       {/* 1 · Full-screen entry point */}
       <Hero />
 
-      {/* 1.5 · Featured upcoming event */}
-      <UpcomingEventBanner />
-
       {/* 2 · Orient the curious visitor */}
       <WhatIsKriyaYoga />
 
@@ -35,19 +32,22 @@ export default function HomePage() {
       {/* 4 · Present available offerings */}
       <Programs />
 
-      {/* 5 · Show where they are on the path */}
+      {/* 5 · Highlight the next opportunity to practice together */}
+      <UpcomingEventBanner />
+
+      {/* 6 · Show where they are on the path */}
       <Journey />
 
-      {/* 6 · Build trust through the teacher */}
+      {/* 7 · Build trust through the teacher */}
       <AboutTeacher />
 
-      {/* 7 · Let practitioners speak */}
+      {/* 8 · Let practitioners speak */}
       <Testimonials />
 
-      {/* 8 · Invite action — warmly, without pressure */}
+      {/* 9 · Invite action — warmly, without pressure */}
       <FinalCTA />
 
-      {/* 9 · Open door for direct contact */}
+      {/* 10 · Open door for direct contact */}
       <ContactSection />
     </>
   );
